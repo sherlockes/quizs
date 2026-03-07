@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿En qué año se estableció la democracia en España con la aprobación de su actual ley fundamental?",
+    "opciones": ["1975", "1978", "1982", "1986"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Constitución de 1978 es la norma suprema que marca el inicio del sistema democrático español."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cómo se define la Constitución española dentro del ordenamiento jurídico?",
+    "opciones": ["Como la ley fundamental del Estado", "Como un reglamento de convivencia", "Como un código de comercio", "Como un decreto real"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La Constitución es la ley de mayor rango que establece el sistema de gobierno y garantiza derechos."
+  },
+  {
+    "id": 3,
+    "pregunta": "España se organiza políticamente como una:",
+    "opciones": ["República unitaria", "Monarquía absoluta", "Monarquía parlamentaria", "Dictadura democrática"],
+    "respuestaCorrecta": 2,
+    "explicacion": "En este sistema, el Rey es el Jefe del Estado pero no ejerce labores de gobierno."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál es el papel del Rey en el sistema democrático español?",
+    "opciones": ["Dictar las sentencias judiciales", "Aprobar los presupuestos del Estado", "Escribir las leyes en el Parlamento", "Reinar pero no gobernar"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El Rey asume la jefatura del Estado de forma simbólica, estando obligado a respetar las decisiones de las Cortes."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Sobre quién recae la soberanía o el poder en la democracia española?",
+    "opciones": ["Sobre los ministros", "Sobre los ciudadanos y ciudadanas", "Sobre el Tribunal Supremo", "Sobre la Guardia Civil"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En democracia, el poder emana del pueblo, que elige libremente a sus representantes mediante el voto."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué institución tiene la misión de garantizar que los poderes públicos respeten la Constitución?",
+    "opciones": ["La Comisión Europea", "La Mesa Electoral", "El Tribunal Constitucional", "El Ayuntamiento"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Este tribunal supervisa que ninguna ley o acción del Estado contradiga la norma fundamental."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿En cuántos poderes se divide el Estado español para garantizar el equilibrio?",
+    "opciones": ["Tres: legislativo, ejecutivo y judicial", "Dos: monárquico y parlamentario", "Cuatro: nacional, regional, provincial y local", "Uno: el poder central"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La división de poderes evita la concentración de autoridad en una sola persona o institución."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué nombre recibe el Parlamento en España?",
+    "opciones": ["Gobierno de la Nación", "Cortes Generales", "Asamblea de Ministros", "Consejo de Estado"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las Cortes Generales representan al pueblo y ejercen la potestad legislativa."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué dos cámaras componen las Cortes Generales?",
+    "opciones": ["El Ayuntamiento y la Diputación", "El Tribunal Supremo y el Constitucional", "El Congreso de los Diputados y el Senado", "La Comisión y el Consejo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es un sistema bicameral donde ambas cámaras participan en el proceso de elaboración de leyes."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cada cuántos años se eligen normalmente a los miembros de las Cortes Generales?",
+    "opciones": ["Cada dos años", "Cada cinco años", "Cada diez años", "Cada cuatro años"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es el periodo de tiempo estándar establecido para renovar la representación legislativa nacional."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Quién es el encargado de ejercer el poder ejecutivo en España?",
+    "opciones": ["El Gobierno", "Los Jueces", "El Rey", "El Presidente del Senado"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El Gobierno aplica las leyes, dirige la política interior y exterior y la administración civil."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué institución tiene la responsabilidad de elegir al Presidente del Gobierno?",
+    "opciones": ["El Senado", "El Congreso de los Diputados", "El Tribunal de Cuentas", "Los ciudadanos directamente"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Tras las elecciones, los diputados votan para otorgar su confianza al candidato a la presidencia."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Quiénes ejercen el poder judicial en el Estado?",
+    "opciones": ["Los Diputados y Senadores", "Los Ministros y Secretarios", "Los Jueces y Magistrados", "Los Alcaldes y Concejales"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los jueces son los únicos autorizados para juzgar y hacer ejecutar lo juzgado."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué característica es indispensable en los jueces para garantizar un sistema justo?",
+    "opciones": ["Que sean elegidos por los ciudadanos", "Que pertenezcan a un partido político", "Que dependan directamente del Gobierno", "Que sean independientes de los otros poderes"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La independencia judicial asegura que las sentencias se basen únicamente en la ley, sin presiones externas."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué significa que las elecciones en una democracia deben ser 'periódicas'?",
+    "opciones": ["Que deben celebrarse cada cierto tiempo establecido", "Que se publican en los periódicos", "Que solo votan los periodistas", "Que se celebran una vez en la vida"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La periodicidad garantiza que el pueblo pueda renovar o cambiar a sus representantes regularmente."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿A partir de qué edad se tiene derecho a voto en España?",
+    "opciones": ["16 años", "18 años", "21 años", "14 años"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La mayoría de edad legal a efectos electorales se alcanza a los 18 años."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cómo se llama el derecho de todos los ciudadanos adultos a votar?",
+    "opciones": ["Sufragio restringido", "Sufragio censitario", "Sufragio universal", "Sufragio calificado"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El sufragio universal es un pilar democrático que no discrimina por riqueza o nivel de estudios."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué documento elaboran los partidos para explicar cómo gobernarán si ganan?",
+    "opciones": ["La Constitución", "El Código Penal", "El Estatuto de Autonomía", "El programa electoral"],
+    "respuestaCorrecta": 3,
+    "explicacion": "En el programa se detallan las propuestas y objetivos que el partido se compromete a cumplir."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cómo se llama el periodo previo a las elecciones donde los candidatos presentan sus ideas?",
+    "opciones": ["Campaña electoral", "Asamblea general", "Mesa de votación", "Recuento de votos"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La campaña permite a los ciudadanos conocer las diferentes opciones políticas antes de votar."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué característica debe tener el recuento de votos para ser democrático?",
+    "opciones": ["Debe ser secreto", "Debe ser transparente", "Debe ser privado", "Debe ser rápido"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La transparencia asegura que los resultados sean fiables y verificables por cualquier ciudadano."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cada cuántos años se celebran las elecciones municipales para elegir los Ayuntamientos?",
+    "opciones": ["Cada cinco años", "Cada tres años", "Cada cuatro años", "Cada seis años"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las elecciones locales en España tienen un mandato fijado en cuatro años."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿A quiénes eligen los ciudadanos en las elecciones municipales?",
+    "opciones": ["Al Alcalde directamente", "A los Ministros", "A los Senadores", "A los Concejales"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los ciudadanos eligen concejales, y estos posteriormente eligen al alcalde."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Qué periodicidad tienen las elecciones al Parlamento Europeo?",
+    "opciones": ["Cada cinco años", "Cada cuatro años", "Cada ocho años", "Cada dos años"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los representantes europeos tienen un mandato más largo que los nacionales o locales."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cuántos eurodiputados corresponden a España actualmente en el Parlamento Europeo?",
+    "opciones": ["27 eurodiputados", "59 eurodiputados", "705 eurodiputados", "100 eurodiputados"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es el número de representantes asignado a España en función de su población dentro de la UE."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué tipo de derechos limitan el poder del Estado y protegen la libertad personal?",
+    "opciones": ["Derechos sociales", "Derechos colectivos", "Derechos individuales", "Derechos económicos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los derechos individuales aseguran que el Estado no interfiera arbitrariamente en la vida privada."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué derechos obligan al Estado a intervenir para garantizar bienestar (salud, educación)?",
+    "opciones": ["Derechos de defensa", "Derechos de propiedad", "Derechos políticos", "Derechos sociales"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los derechos sociales buscan la igualdad real mediante la prestación de servicios públicos."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cuál es el deber constitucional que permite financiar los gastos públicos?",
+    "opciones": ["Contribuir mediante el pago de impuestos", "Trabajar obligatoriamente", "Ser miembro de una mesa electoral", "Votar en todas las elecciones"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El pago de impuestos es un deber fundamental para sostener servicios como hospitales y escuelas."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿En cuántas Comunidades Autónomas se organiza el territorio español?",
+    "opciones": ["En 50", "En 17", "En 15", "En 19"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Constitución establece 17 comunidades con autonomía para gestionar sus propios asuntos."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué estatus territorial tienen Ceuta y Melilla?",
+    "opciones": ["Son provincias de Andalucía", "Son colonias españolas", "Son Ciudades Autónomas", "Son Estados libres asociados"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Ceuta y Melilla tienen un régimen de autonomía similar pero con algunas diferencias respecto a las Comunidades."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuál es la norma institucional básica de una Comunidad Autónoma?",
+    "opciones": ["El Reglamento Municipal", "La Ley de Presupuestos", "La Constitución Regional", "El Estatuto de Autonomía"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El Estatuto define la organización, competencias y símbolos de la comunidad."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Quién es la máxima autoridad que dirige el Gobierno de una Comunidad Autónoma?",
+    "opciones": ["El Presidente de la Comunidad", "El Delegado del Gobierno", "El Rey de España", "El Alcalde de la capital"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El Presidente autonómico lidera el poder ejecutivo a nivel regional."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿En qué año se fundó la CEE, antecedente de la Unión Europea?",
+    "opciones": ["1945", "1957", "1978", "1992"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Comunidad Económica Europea nació con el Tratado de Roma en 1957."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cuántos países forman actualmente la Unión Europea?",
+    "opciones": ["12 países", "17 países", "27 países", "50 países"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La Unión ha crecido desde sus 6 fundadores hasta los 27 estados miembros actuales."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué día se celebra anualmente el Día de Europa?",
+    "opciones": ["El 1 de enero", "El 6 de diciembre", "El 12 de octubre", "El 9 de mayo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Esta fecha conmemora la histórica declaración de Schuman que inició la cooperación europea."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué institución de la UE propone políticas y vigila que se cumplan los acuerdos?",
+    "opciones": ["La Comisión Europea", "El Tribunal de Cuentas", "El Defensor del Pueblo", "La Agencia Espacial"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La Comisión actúa como el motor ejecutivo y guardián de los tratados europeos."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué institución europea está formada por los ministros de los estados miembros?",
+    "opciones": ["El Parlamento Europeo", "El Consejo de la Unión Europea", "El Banco Central", "La Corte de Justicia"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El Consejo representa los intereses de los gobiernos de cada país integrante."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué ventaja permite el mercado único europeo a sus ciudadanos?",
+    "opciones": ["Tener todos el mismo sueldo", "Hablar todos el mismo idioma", "Circular libremente (personas, mercancías, capitales)", "No tener que pagar nunca impuestos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El mercado único elimina las fronteras interiores para facilitar la economía y los viajes."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cómo se llama la moneda única de la mayoría de los países de la UE?",
+    "opciones": ["La Libra", "El Dólar", "El Franco", "El Euro"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El euro simplifica el comercio y los desplazamientos entre los países de la eurozona."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Qué programa europeo fomenta el intercambio de estudiantes entre países?",
+    "opciones": ["Programa Erasmus", "Programa Schengen", "Programa Galileo", "Programa Horizon"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Erasmus es un programa clave para la formación y convivencia de los jóvenes europeos."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿En qué consiste la igualdad de género?",
+    "opciones": ["En que todos seamos iguales físicamente", "En tener mismos derechos, responsabilidades y oportunidades", "En que las niñas saquen mejores notas", "En eliminar los nombres de hombre y mujer"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Busca que el sexo no sea una barrera para el desarrollo personal o profesional."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Qué es la 'brecha salarial' entre hombres y mujeres?",
+    "opciones": ["Una diferencia en el tipo de trabajo", "Una diferencia en las horas de sueño", "La diferencia de sueldo por realizar el mismo trabajo", "Una ley que prohíbe trabajar a las mujeres"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es una forma de desigualdad económica que la sociedad busca corregir."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué son los estereotipos de género?",
+    "opciones": ["Normas de tráfico europeas", "Premios a la mejor película", "Leyes del Parlamento", "Ideas tradicionales sobre roles de 'niños' y 'niñas'"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Son prejuicios que limitan las actividades de las personas según su sexo."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Cuál es la forma más común de practicar la democracia en la escuela?",
+    "opciones": ["Elegir al delegado o delegada de curso", "Hacer siempre lo que dice el más fuerte", "No opinar nunca en clase", "Copiar en los exámenes"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las elecciones de delegado permiten aprender el proceso electoral y la representación."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué se hace en una asamblea de clase?",
+    "opciones": ["Solo gritar", "Debatir propuestas y votar normas de convivencia", "Hacer los deberes en silencio", "Repartir caramelos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La asamblea es un órgano de participación directa para resolver conflictos y mejorar el aula."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué significa que España es un 'Estado social' según la Constitución?",
+    "opciones": ["Que obliga a ir a fiestas", "Que prohíbe estar solo", "Que garantiza el bienestar y servicios básicos", "Que todos deben usar redes sociales"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El Estado tiene la obligación de asegurar que todos tengan una vida digna."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cuál es la función del poder legislativo?",
+    "opciones": ["Gobernar el país a diario", "Nombrar a los directores de hospital", "Vigilar las fronteras", "Elaborar, debatir y aprobar las leyes"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es la función central del Parlamento o Cortes Generales."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué función tiene el poder judicial?",
+    "opciones": ["Resolver conflictos aplicando el derecho", "Hacer los mapas de España", "Organizar las olimpiadas", "Cobrar las multas de aparcamiento"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los jueces aseguran que se haga justicia basándose en las leyes aprobadas."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué símbolos suelen tener las Comunidades Autónomas?",
+    "opciones": ["Un coche oficial", "Bandera, escudo e himno", "Un canal de televisión propio", "Una moneda diferente"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Estos símbolos representan la identidad histórica y cultural de cada región."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué institución recoge las quejas de los ciudadanos sobre la administración en las CC.AA.?",
+    "opciones": ["La Policía Local", "El Tribunal de Cuentas", "El Defensor del Pueblo", "El Consejo Escolar"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Esta figura protege los derechos de los ciudadanos ante posibles errores del Gobierno."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué documento asegura asistencia médica gratuita en viajes por la UE?",
+    "opciones": ["El pasaporte", "El carné de biblioteca", "El DNI electrónico", "La Tarjeta Sanitaria Europea"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es un beneficio de la ciudadanía europea para garantizar la salud en desplazamientos."
+  }
+]

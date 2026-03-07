@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué componentes integran un ecosistema según las fuentes?",
+    "opciones": [
+      "Solo el medio biológico y el clima.",
+      "El medio físico, el medio biológico y las relaciones entre ellos.",
+      "Únicamente los animales y las rocas del entorno.",
+      "Los seres vivos y el aire exclusivamente."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Un ecosistema se define como el conjunto formado por los seres vivos, el entorno donde habitan y las relaciones que se dan entre ellos."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cómo se define a una población dentro de un ecosistema?",
+    "opciones": [
+      "Un grupo de individuos de la misma especie que viven en un lugar.",
+      "El conjunto de todos los animales de un bosque.",
+      "Un organismo aislado que busca alimento.",
+      "La unión de diferentes comunidades biológicas."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Una población es el conjunto de individuos de la misma especie que conviven en un área determinada."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué es una comunidad biológica?",
+    "opciones": [
+      "Un grupo de rocas y agua en movimiento.",
+      "Un solo individuo de una especie protegida.",
+      "El conjunto de poblaciones que viven en un espacio determinado.",
+      "La suma de los factores climáticos de una región."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La comunidad está formada por las diversas poblaciones de seres vivos que habitan e interactúan en un mismo espacio."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuándo se considera que dos organismos son de la misma especie?",
+    "opciones": [
+      "Si comen el mismo tipo de alimento.",
+      "Si viven en el mismo árbol o madriguera.",
+      "Si son físicamente idénticos en color y tamaño.",
+      "Si pueden reproducirse entre ellos y tener descendencia fértil."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los individuos de una misma especie comparten características semejantes y son capaces de generar hijos que también puedan reproducirse."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuál es la función del aire en el medio físico para los seres vivos?",
+    "opciones": [
+      "Solo sirve para que las aves puedan volar.",
+      "Contiene el oxígeno para respirar y el dióxido de carbono para la fotosíntesis.",
+      "Proporciona sales minerales a las raíces.",
+      "Mantiene el suelo húmedo durante el verano."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El aire es indispensable porque suministra el oxígeno necesario para la respiración y el dióxido de carbono que las plantas usan para fabricar alimento."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Por qué el suelo es vital para las plantas terrestres?",
+    "opciones": [
+      "Porque les proporciona sombra a las raíces.",
+      "Porque evita que la luz solar queme la planta.",
+      "Sirve de sujeción y suministra agua y sales minerales.",
+      "Porque es donde se realiza la fotosíntesis."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El suelo permite que las plantas se fijen al terreno y absorban los nutrientes y el agua necesarios para su desarrollo."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué adaptación presentan las plantas tropicales ante la luz?",
+    "opciones": [
+      "Tienen hojas grandes para captar la mayor cantidad de luz posible.",
+      "Sus hojas son muy pequeñas para no quemarse.",
+      "No necesitan realizar la fotosíntesis.",
+      "Crecen solo durante la noche para evitar el sol."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Debido a la competencia por la luz en zonas densas, las plantas tropicales suelen desarrollar hojas de gran tamaño para maximizar la absorción lumínica."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cómo se adaptan los animales a las temperaturas extremadamente frías?",
+    "opciones": [
+      "Desarrollan orejas muy grandes para soltar calor.",
+      "Tienen una piel muy fina para transpirar mejor.",
+      "Poseen capas de grasa y abundante pelaje para retener el calor.",
+      "Cambian su alimentación a una dieta basada en rocas."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Animales como el oso polar cuentan con grasa subcutánea y pelo denso para protegerse del frío intenso de su hábitat [4]."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué es la salinidad en los ecosistemas acuáticos?",
+    "opciones": [
+      "La velocidad a la que fluye el agua de un río.",
+      "La cantidad de sales disueltas que se encuentran en el agua.",
+      "La temperatura media del océano en verano.",
+      "La profundidad máxima a la que llega la luz solar."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La salinidad mide la concentración de sales en el agua, siendo un factor clave que diferencia los medios marinos de los de agua dulce [4]."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿En qué consiste la relación de mutualismo?",
+    "opciones": [
+      "Un organismo vive a costa de otro perjudicándolo.",
+      "Dos organismos luchan por el mismo alimento.",
+      "Una asociación donde ambos organismos obtienen beneficios.",
+      "Un ser vivo ignora por completo al otro."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En el mutualismo, los individuos asociados se ayudan mutuamente, como ocurre con la polinización por insectos [5]."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué ejemplo representa una relación de comensalismo?",
+    "opciones": [
+      "Un león cazando a una cebra en la sabana.",
+      "Las rémoras que se alimentan de los restos de comida de un tiburón.",
+      "Los piojos que habitan en la cabeza de los mamíferos.",
+      "Dos plantas que crecen juntas para darse sombra."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El comensalismo es una relación donde una especie se beneficia sin que la otra resulte perjudicada ni beneficiada [5]."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué caracteriza al parasitismo como relación perjudicial?",
+    "opciones": [
+      "Ambas especies mueren al poco tiempo.",
+      "Las dos especies obtienen comida extra del entorno.",
+      "Una especie se beneficia y la otra resulta perjudicada.",
+      "Es una lucha por el territorio entre dos machos."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En el parasitismo, un parásito obtiene beneficio a expensas de la salud del hospedador, como las lombrices intestinales [5]."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué sucede en una relación de competencia?",
+    "opciones": [
+      "Los animales cooperan para construir un refugio.",
+      "Dos o más seres vivos tratan de obtener un mismo recurso limitado.",
+      "Un productor fabrica alimento para un consumidor.",
+      "Es una relación siempre beneficiosa para la biodiversidad."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La competencia ocurre cuando los individuos luchan por recursos como la luz, el agua, la comida o la pareja [5]."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Quiénes ocupan el primer nivel de una cadena alimentaria?",
+    "opciones": [
+      "Los consumidores primarios.",
+      "Los descomponedores.",
+      "Los carnívoros finales.",
+      "Los productores (plantas y algas)."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los productores son seres autótrofos que fabrican su propio alimento y sirven de base para el resto de los niveles [6]."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿De qué se alimentan los consumidores primarios?",
+    "opciones": [
+      "De animales muertos en descomposición.",
+      "De los productores.",
+      "De otros consumidores secundarios.",
+      "Únicamente de bacterias del suelo."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los consumidores primarios son animales herbívoros que obtienen su energía directamente de las plantas o algas [6]."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuál es la función principal de los descomponedores?",
+    "opciones": [
+      "Cazar a los grandes depredadores del ecosistema.",
+      "Transformar restos orgánicos en sales minerales para los productores.",
+      "Producir oxígeno mediante la fotosíntesis marina.",
+      "Evitar que la lluvia ácida caiga sobre los bosques."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Bacterias y hongos degradan la materia orgánica muerta, devolviendo minerales al suelo que son aprovechados por las plantas [6]."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué diferencia hay entre una cadena y una red alimentaria?",
+    "opciones": [
+      "La red es un conjunto de cadenas que se entrecruzan.",
+      "La cadena es más importante para los océanos.",
+      "La red solo incluye a los animales descomponedores.",
+      "Son términos iguales y se pueden usar indistintamente."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Una red alimentaria es una representación más compleja que muestra cómo varias cadenas se conectan en un ecosistema [5]."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué es el plancton y dónde se encuentra?",
+    "opciones": [
+      "Un mineral que se extrae de las minas terrestres.",
+      "Seres microscópicos que flotan en el agua.",
+      "Un tipo de árbol que crece en las praderas.",
+      "La capa de aire que rodea a las montañas."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El plancton está compuesto por organismos microscópicos acuáticos que son esenciales en las redes alimentarias marinas [7]."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cómo se define la biosfera?",
+    "opciones": [
+      "La parte de la Tierra donde habitan los seres vivos.",
+      "La capa más alta de la atmósfera donde no hay vida.",
+      "Un ecosistema artificial creado en laboratorios.",
+      "El núcleo interno del planeta Tierra."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La biosfera abarca desde las profundidades del mar hasta las cumbres más altas donde reside la vida [8]."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué es un bioma?",
+    "opciones": [
+      "Un ecosistema muy pequeño, como una gota de agua.",
+      "Un animal que ha evolucionado en cautividad.",
+      "Ecosistemas que ocupan extensiones muy amplias de la Tierra.",
+      "El nombre técnico que reciben los descomponedores."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los biomas son grandes regiones ecológicas que comparten climas y comunidades similares a gran escala [8]."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué caracteriza al hábitat de una especie?",
+    "opciones": [
+      "Es el conjunto de todas sus cadenas alimentarias.",
+      "Es el lugar que reúne las condiciones para que una especie viva.",
+      "Es el nombre científico que se le da a la población.",
+      "Representa la suma de todos los Parques Nacionales."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El hábitat es el espacio físico concreto donde un organismo encuentra alimento, clima y refugio adecuados [8]."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué son los ecosistemas de agua dulce?",
+    "opciones": [
+      "Océanos y mares con alta salinidad.",
+      "Cualquier ecosistema creado por el hombre.",
+      "Ríos, lagunas y charcas con baja concentración de sales.",
+      "Ecosistemas terrestres que reciben mucha lluvia."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Estos ecosistemas se caracterizan por tener aguas con muy poca sal, como sucede en los ríos y lagos [8]."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Dónde se localizan los bosques de ribera?",
+    "opciones": [
+      "En los picos más altos de las montañas nevadas.",
+      "En el centro de los grandes desiertos arenosos.",
+      "En las orillas de los ríos, donde el agua es abundante.",
+      "Exclusivamente dentro de las ciudades modernas."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los bosques de ribera crecen junto a los ríos aprovechando la humedad constante del suelo [8]."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué diferencia principal hay entre un bosque y una pradera?",
+    "opciones": [
+      "En el bosque predominan los árboles y en la pradera la hierba.",
+      "En la pradera no viven animales de ningún tipo.",
+      "El bosque es siempre un ecosistema artificial.",
+      "La pradera tiene mayor salinidad que el bosque."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los bosques se definen por sus masas arbóreas, mientras que las praderas están dominadas por vegetación herbácea [9]."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Por qué las ciudades se clasifican como ecosistemas artificiales?",
+    "opciones": [
+      "Porque no hay ningún ser vivo en ellas.",
+      "Porque han sido creadas por el ser humano.",
+      "Porque tienen un clima natural perfecto.",
+      "Porque no consumen energía del exterior."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se consideran artificiales porque su estructura y funcionamiento dependen de la intervención y construcción humana [8, 9]."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Cuál es la causa principal de la contaminación atmosférica?",
+    "opciones": [
+      "La respiración de los animales salvajes.",
+      "La liberación de gases por coches y fábricas.",
+      "El crecimiento excesivo de las plantas verdes.",
+      "La evaporación natural del agua del mar."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La quema de combustibles fósiles en vehículos e industrias libera gases nocivos a la atmósfera [10]."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué efecto produce el incremento del efecto invernadero?",
+    "opciones": [
+      "Un enfriamiento global de los océanos.",
+      "Un aumento de la biodiversidad en los polos.",
+      "El calentamiento global del planeta.",
+      "La eliminación de toda la lluvia ácida."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El exceso de gases impide que el calor escape de la atmósfera, provocando que la temperatura media de la Tierra suba [10]."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cómo se origina la lluvia ácida?",
+    "opciones": [
+      "Por la mezcla de contaminantes con el vapor de agua del aire.",
+      "Al caer agua dulce sobre los suelos salinos.",
+      "Por el deshielo de los glaciares en las cumbres.",
+      "Es un proceso natural necesario para el suelo."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los gases contaminantes reaccionan con la humedad de la atmósfera y forman ácidos que caen con la precipitación [10]."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿De dónde proceden los contaminantes del agua más comunes?",
+    "opciones": [
+      "De las hojas que caen de los árboles.",
+      "De las rocas que se deshacen en el fondo.",
+      "De vertidos industriales, aguas residuales y petróleo.",
+      "Únicamente de la lluvia ácida de los bosques."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La contaminación hídrica suele deberse a residuos de ciudades, fábricas y vertidos accidentales de barcos [10]."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué significa que una especie esté en peligro de extinción?",
+    "opciones": [
+      "Que su población es muy numerosa y fuerte.",
+      "Que está a punto de desaparecer de la Tierra.",
+      "Que vive en un ecosistema artificial.",
+      "Que ha sido trasladada a un Parque Nacional."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Significa que quedan tan pocos individuos que la especie corre el riesgo de dejar de existir definitivamente [11]."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cuál es la principal amenaza para el lince ibérico?",
+    "opciones": [
+      "La falta de luz solar en Doñana.",
+      "La caza furtiva y la alteración de su hábitat.",
+      "El exceso de competidores carnívoros.",
+      "La salinidad de los ríos cercanos."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La acción humana, a través de la caza y la destrucción de su entorno, ha llevado al lince al peligro de extinción [11]."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué es la biodiversidad?",
+    "opciones": [
+      "La variedad de seres vivos que existen en el planeta.",
+      "El estudio de los ecosistemas artificiales solamente.",
+      "El número de habitantes de una ciudad.",
+      "La cantidad de basura reciclada en un año."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La biodiversidad abarca toda la inmensa variedad de especies vegetales, animales y microorganismos [12]."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué objetivo tienen los Parques Nacionales?",
+    "opciones": [
+      "Fomentar la construcción de hoteles de lujo.",
+      "Proteger ecosistemas y asegurar la biodiversidad.",
+      "Facilitar la caza de especies exóticas.",
+      "Proporcionar madera ilimitada a las industrias."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Son espacios protegidos por ley para conservar la naturaleza y evitar la desaparición de especies amenazadas [12]."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué recurso vital obtenemos de las plantas según las fuentes?",
+    "opciones": [
+      "Combustibles fósiles como el petróleo.",
+      "Materias primas y medicamentos (como la aspirina).",
+      "Gases nocivos para el efecto invernadero.",
+      "Sales minerales que limpian el aire."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La biodiversidad vegetal es fuente de alimentos, fibras para tejidos y sustancias para fabricar medicinas [12]."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿En qué contenedor se reciclan los envases de plástico y latas?",
+    "opciones": [
+      "Contenedor azul.",
+      "Contenedor verde.",
+      "Contenedor amarillo.",
+      "Contenedor gris."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Siguiendo las normas de reciclaje, el contenedor amarillo es el destinado a plásticos y latas [13]."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es un ave emblemática española en peligro de extinción?",
+    "opciones": [
+      "El águila imperial ibérica.",
+      "El gorrión común.",
+      "La paloma mensajera.",
+      "El avestruz."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El águila imperial ibérica es una de las especies protegidas más amenazadas en nuestro territorio [11]."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué sucede si desaparece una especie de una red alimentaria?",
+    "opciones": [
+      "Se rompe el equilibrio y afecta a todas las demás.",
+      "El ecosistema se vuelve más saludable de inmediato.",
+      "Las plantas crecen más rápido sin depredadores.",
+      "No ocurre nada porque los animales cambian de dieta."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La desaparición de un solo eslabón repercute negativamente en todo el sistema, pudiendo causar extinciones en cadena [14]."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué animal acuático valenciano está en peligro crítico?",
+    "opciones": [
+      "El delfín mular.",
+      "El samaruc.",
+      "El tiburón blanco.",
+      "La ballena azul."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El samaruc es un pequeño pez endémico de la Comunidad Valenciana que se encuentra muy amenazado [11]."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Qué acción ayuda a conservar el medio ambiente?",
+    "opciones": [
+      "Usar siempre el transporte privado individual.",
+      "No separar los residuos en casa.",
+      "Ahorrar agua y utilizar transporte público.",
+      "Comprar productos con muchos envoltorios de plástico."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El ahorro de recursos y la movilidad sostenible reducen el impacto negativo del ser humano en los ecosistemas [13, 14]."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Cuándo se celebra el Día Mundial del Medio Ambiente?",
+    "opciones": [
+      "El 1 de enero.",
+      "El 5 de junio.",
+      "El 25 de diciembre.",
+      "El 12 de octubre."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La ONU estableció el 5 de junio como fecha clave para concienciar sobre la protección del entorno [15]."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Qué caracteriza a un consumidor secundario?",
+    "opciones": [
+      "Se alimenta solo de plantas terrestres.",
+      "Es un animal carnívoro que come herbívoros.",
+      "Fabrica su propia materia orgánica.",
+      "Es el encargado de reciclar los minerales del suelo."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los consumidores secundarios son depredadores que se sitúan por encima de los consumidores primarios en la cadena [6]."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Cómo influye la temperatura en el zorro del desierto?",
+    "opciones": [
+      "Le obliga a invernar durante seis meses.",
+      "Tiene orejas grandes para disipar el calor corporal.",
+      "Su pelaje es extremadamente grueso para sudar.",
+      "Le impide salir a buscar comida durante la noche."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las orejas grandes de los zorros del desierto son una adaptación para liberar calor en ambientes muy cálidos [4]."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué ecosistema es Doñana?",
+    "opciones": [
+      "Un desierto de dunas sin vida.",
+      "Un Parque Nacional con gran biodiversidad.",
+      "Un ecosistema artificial de regadío.",
+      "Una cordillera montañosa de gran altura."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Doñana es un Parque Nacional vital para la protección de especies como el lince ibérico [16]."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Por qué es importante reciclar pilas en puntos específicos?",
+    "opciones": [
+      "Porque son muy pesadas para los camiones normales.",
+      "Porque contienen sustancias muy tóxicas y contaminantes.",
+      "Porque se pueden usar para fabricar plástico amarillo.",
+      "Porque no ocupan espacio en el contenedor gris."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las pilas tienen componentes químicos peligrosos que pueden dañar gravemente el suelo y el agua si no se gestionan bien [13]."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿A qué grupo pertenecen las bacterias que limpian el ecosistema?",
+    "opciones": [
+      "Productores primarios.",
+      "Consumidores finales.",
+      "Descomponedores.",
+      "Depredadores acuáticos."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las bacterias y hongos cierran el ciclo de la materia al descomponer restos orgánicos [6]."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué factor limita la vegetación en el fondo del mar?",
+    "opciones": [
+      "La falta de agua líquida.",
+      "La ausencia de luz solar para la fotosíntesis.",
+      "El exceso de peces herbívoros.",
+      "La temperatura demasiado cálida del agua."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Sin luz, los productores no pueden realizar la fotosíntesis, por lo que la vegetación es escasa en zonas profundas [4]."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué contaminante del suelo procede de la agricultura?",
+    "opciones": [
+      "Dióxido de carbono.",
+      "Aguas residuales domésticas.",
+      "Pesticidas y herbicidas.",
+      "Gases de combustión de tractores."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El uso de químicos para controlar plagas y malezas es una fuente principal de contaminación del suelo agrícola [10]."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué es la penicilina en relación con la biodiversidad?",
+    "opciones": [
+      "Un hongo que nos proporciona medicina.",
+      "Un animal carnívoro del bosque mediterráneo.",
+      "Un contaminante del aire muy peligroso.",
+      "Un tipo de roca que se encuentra en los ríos."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La penicilina es un ejemplo de cómo la biodiversidad (en este caso un hongo) beneficia la salud humana [12]."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué acción humana es perjudicial para la fauna?",
+    "opciones": [
+      "El uso de luces LED en las calles.",
+      "El reciclaje de residuos orgánicos.",
+      "La caza furtiva y el comercio ilegal de especies.",
+      "La creación de Parques Nacionales."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Estas actividades reducen drásticamente las poblaciones de animales y amenazan el equilibrio natural [2, 11]."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cómo se llaman los ecosistemas que cubren grandes regiones terrestres?",
+    "opciones": [
+      "Hábitats locales.",
+      "Biomas.",
+      "Microecosistemas.",
+      "Ciudades sostenibles."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los biomas son unidades ecológicas a gran escala definidas por su clima y vegetación dominante [8]."
+  }
+]

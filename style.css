@@ -1,0 +1,239 @@
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #e8f5e9; /* Verde muy clarito de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 95%;
+    max-width: 600px;
+}
+
+/* Encabezado y Progreso */
+.progress-bar {
+    background: #c8e6c9;
+    border-radius: 10px;
+    height: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2e7d32; /* Verde bosque para la pregunta */
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+/* CONTENEDOR DE OPCIONES */
+.options {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para que no se corten los textos largos */
+    gap: 12px;
+}
+
+/* EL BOTÓN (Aquí estaba el fallo) */
+.btn-opcion {
+    background-color: #f1f8e9; /* Fondo crema/verde suave */
+    color: #1b5e20;           /* Texto verde oscuro MUY legible */
+    border: 2px solid #a5d6a7;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: left;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+/* Efecto al pasar el ratón */
+.btn-opcion:hover:not(:disabled) {
+    background-color: #c8e6c9;
+    border-color: #4caf50;
+    transform: translateY(-2px);
+}
+
+/* Botones deshabilitados (cuando ya respondiste) */
+.btn-opcion:disabled {
+    cursor: default;
+    opacity: 0.8;
+}
+
+/* Colores de feedback (se activan por JS) */
+.correct {
+    background-color: #4caf50 !important;
+    color: white !important;
+    border-color: #2e7d32 !important;
+}
+
+.wrong {
+    background-color: #ef5350 !important;
+    color: white !important;
+    border-color: #c62828 !important;
+}
+
+.results h1 { color: #2e7d32; }
+
+.hidden { display: none; }
+
+#feedback-container {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #e8f5e9;
+    animation: fadeIn 0.5s ease;
+}
+
+.explicacion-box {
+    background-color: #fff9c4; /* Amarillo suave tipo post-it */
+    padding: 15px;
+    border-left: 5px solid #fbc02d;
+    border-radius: 5px;
+    margin: 15px 0;
+    color: #5d4037;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.msg-correct { color: #2e7d32; font-weight: bold; margin: 0; }
+.msg-wrong { color: #c62828; font-weight: bold; margin: 0; }
+
+#next-btn {
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 0 #1b5e20;
+}
+
+#next-btn:hover { background-color: #388e3c; }
+#next-btn:active { transform: translateY(2px); box-shadow: none; }
+
+.score-circle {
+    width: 100px;
+    height: 100px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Si acierta, el botón de siguiente puede ser más llamativo en verde */
+.msg-correct + #next-btn {
+    background-color: #43a047;
+}
+
+/* Espaciado para cuando no hay explicación */
+.msg-correct {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.selector-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #2e7d32;
+    font-size: 1rem;
+    color: #2e7d32;
+    outline: none;
+}
+
+.progress-bar-container {
+    background: #eee;
+    height: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-fill {
+    background: #2e7d32;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.quiz-badge {
+    background-color: #f1f8e9;
+    color: #2e7d32;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 1px solid #c8e6c9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Ajuste para que el título de resultados también quede bien */
+.results small {
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Contenedor para el título y la nota */
+.quiz-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quiz-badge {
+    background-color: #f1f8e9;
+    color: #2e7d32;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #c8e6c9;
+    text-transform: uppercase;
+}
+
+.live-score {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.live-score span {
+    color: #2e7d32; /* Verde para la nota */
+    font-size: 1.1rem;
+    background: #e8f5e9;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* Un pequeño toque: si la nota es baja (menos de 5), la ponemos en rojo */
+/* Esto se puede hacer por JS, pero por ahora lo dejamos en verde/gris */
