@@ -143,3 +143,16 @@ function shuffle(a) {
 }
 
 initApp();
+
+// Bloquear el menú contextual del botón derecho
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+}, false);
+
+// Opcional: Bloquear atajos de teclado comunes para inspeccionar (F12, Ctrl+Shift+I)
+document.addEventListener('keydown', function(e) {
+    if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) {
+        e.preventDefault();
+        return false;
+    }
+}, false);
