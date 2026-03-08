@@ -168,16 +168,35 @@ async function enviarPuntuacion(puntos) {
 }
 
 async function cargarRanking() {
-    const res = await fetch(GOOGLE_SCRIPT_URL);
-    const registros = await res.json();
-    let html = "<h3>Top 10 Global</h3><table style='width:100%; font-size:0.9rem;'>";
-    
-    registros.forEach((reg, i) => {
-        html += `<tr><td>${i+1}. ${reg[1]}</td><td style='text-align:right;'><b>${reg[2]}</b></td></tr>`;
-    });
-    
-    html += "</table>";
-    document.getElementById('tabla-ranking').innerHTML = html;
+    try {
+        const res = await fetch(GOOGLE_SCRIPT_URL);
+        const registros = await res.json();
+        
+        let html = `
+            <h3 style="color: #2e7d32; margin-top: 20px;">🏆 Top 10 Global</h3>
+            <table style="width:100%; border-collapse: collapse; margin-top: 10px; font-size: 0.95rem;">
+        `;
+        
+        registros.forEach((reg, i) => {
+            // reg[0] es la fecha (la ignoramos)
+            // reg[1] es el nombre
+            // reg[2] es la puntuación
+            // reg[3] es el nombre del examen
+            
+            html += `
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 8px 0; color: #666; width: 30px;">${i + 1}.</td>
+                    <td style="padding: 8px 0; font-weight: 500;">${reg[1]}</td>
+                    <td style="padding: 8px 0; text-align: right; color: #2e7d32; font-weight: bold;">${reg[2]} pts</td>
+                </tr>
+            `;
+        });
+        
+        html += "</table>";
+        document.getElementById('tabla-ranking').innerHTML = html;
+    } catch (e) {
+        document.getElementById('tabla-ranking').innerHTML = "<p style='color:gray; font-size:0.8rem;'>El ranking se actualizará en unos instantes...</p>";
+    }
 }
 
 function shuffle(a) {
