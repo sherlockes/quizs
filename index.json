@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "5º Lengua - Tema 5 (Tu localidad)",
+    "archivo": "cuestionarios/ian-5-lengua-t5.json"
+  },
+  {
+    "titulo": "5º Lengua - Tema 6 (Deporte)",
+    "archivo": "cuestionarios/ian-5-lengua-t6.json"
+  },
+  {
     "titulo": "5º Naturaleza - Tema 3 (Las plantas)",
     "archivo": "cuestionarios/ian-5-natu-t4.json"
   },

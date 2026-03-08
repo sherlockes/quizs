@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué es una 'urbe' según el vocabulario de la unidad?",
+    "opciones": ["Un pueblo pequeño", "Una ciudad grande", "Un edificio oficial", "Una zona de campo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El vocabulario inicial define urbe como una ciudad grande."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿A qué se refiere el término 'casco urbano'?",
+    "opciones": ["A las afueras de la ciudad", "A un parque infantil", "A una calle peatonal", "A la zona más antigua de la localidad"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El casco urbano se identifica como el centro o la parte histórica de la ciudad."
+  },
+  {
+    "id": 3,
+    "pregunta": "En urbanismo, ¿qué es una 'manzana'?",
+    "opciones": ["Un grupo de casas rodeado por calles", "Una fruta típica de la zona", "Una calle muy estrecha", "Un tipo de árbol de ciudad"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La fuente asocia la manzana con la distribución de bloques de viviendas en una cuadrícula urbana."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué característica define a una 'calle peatonal'?",
+    "opciones": ["Es solo para bicicletas", "Es por donde pasan los autobuses", "Es una calle donde no circulan vehículos", "Es la calle principal de la urbe"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las calles peatonales están reservadas exclusivamente para el tránsito de personas a pie."
+  },
+  {
+    "id": 5,
+    "pregunta": "En el cuento 'El Pasaje de la Oca', ¿cómo se describe inicialmente el pasaje?",
+    "opciones": ["Como una callecita muy angosta", "Como una avenida muy ancha", "Como un parque abandonado", "Como un edificio de oficinas"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto narrativo comienza describiendo el pasaje como una callecita muy angosta."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué significa la palabra 'angosta'?",
+    "opciones": ["Ruidosa", "Larga", "Estrecha", "Oscura"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El vocabulario de apoyo del texto define angosta como sinónimo de estrecha."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuál es el significado de 'demoler' según el contexto de Álvaro Rueda?",
+    "opciones": ["Construir", "Derribar", "Pintar", "Limpiar"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Álvaro Rueda quiere echar abajo las casas, lo cual se define como demoler o derribar."
+  },
+  {
+    "id": 8,
+    "pregunta": "Si algo se está 'bamboleando', ¿qué está haciendo?",
+    "opciones": ["Estando quieto", "Haciendo mucho ruido", "Brillando mucho", "Moviéndose de un lado a otro"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El glosario del cuento explica que bambolearse es balancearse o moverse lateralmente."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Quién es la autora del cuento 'El Pasaje de la Oca'?",
+    "opciones": ["Gianni Rodari", "Ana Merino", "Elsa Bornemann", "Roald Dahl"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto indica que es una adaptación de la obra de Elsa Bornemann."
+  },
+  {
+    "id": 10,
+    "pregunta": "Si el narrador de un cuento cuenta su propia historia, se trata de un:",
+    "opciones": ["Narrador protagonista", "Narrador testigo", "Narrador externo", "Narrador secundario"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La teoría sobre el narrador explica que cuando el narrador es el protagonista usa la primera persona."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿En qué persona suele hablar un narrador externo (ajeno a los hechos)?",
+    "opciones": ["Primera persona", "Tercera persona", "Segunda persona", "Persona neutra"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El libro indica que el narrador ajeno usa formas verbales como 'llegó' o 'marcharon' (3ª persona)."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué solución propone Don Martín para salvar el pasaje?",
+    "opciones": ["Llamar a la policía", "Vender sellos", "Hacer una huelga", "Mudar la calle entera"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Don Martín propone empujar el pasaje para llevarlo a otro terreno libre."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué demostrativo indica cercanía en masculino singular?",
+    "opciones": ["Este", "Ese", "Aquel", "Esto"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Según el cuadro de demostrativos, 'este' corresponde a cercanía y género masculino."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuál es el demostrativo de distancia media en femenino singular?",
+    "opciones": ["Esta", "Esa", "Aquella", "Eso"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cuadro clasifica 'esa' como demostrativo de distancia media femenino."
+  },
+  {
+    "id": 15,
+    "pregunta": "Analiza 'aquellos':",
+    "opciones": ["Cercanía, masc, plur", "Lejanía, masc, plur", "Distancia media, masc, plur", "Lejanía, fem, plur"],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Aquellos' es la forma de lejanía para el género masculino plural."
+  },
+  {
+    "id": 16,
+    "pregunta": "En la frase 'este edificio', ¿qué función tiene el demostrativo?",
+    "opciones": ["Complemento", "Núcleo", "Sujeto", "Determinante"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los demostrativos son determinantes cuando van delante del sustantivo."
+  },
+  {
+    "id": 17,
+    "pregunta": "En la frase 'la casa aquella', ¿qué función tiene 'aquella'?",
+    "opciones": ["Complemento", "Núcleo", "Determinante", "Adjetivo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Cuando el demostrativo va detrás del sustantivo funciona como complemento."
+  },
+  {
+    "id": 18,
+    "pregunta": "En la oración 'Eso es estropeado', ¿qué función cumple 'eso'?",
+    "opciones": ["Determinante", "Complemento", "Núcleo", "Atributo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los demostrativos funcionan como núcleo cuando aparecen en lugar del sustantivo."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cuáles son los demostrativos neutros?",
+    "opciones": ["Este, ese, aquel", "Esto, eso, aquello", "Estos, esos, aquellos", "Esta, esa, aquella"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cuadro especifica que las formas neutras son esto, eso y aquello."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cuál es el posesivo de un solo poseedor, 1ª persona, masc, singular?",
+    "opciones": ["Tu", "Su", "Nuestro", "Mío"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Según la tabla de posesivos, la 1ª persona de un solo poseedor es mío o mi."
+  },
+  {
+    "id": 21,
+    "pregunta": "Analiza 'vuestra':",
+    "opciones": ["Varios poseedores, 2ª persona", "Un solo poseedor, 2ª persona", "Varios poseedores, 1ª persona", "Un solo poseedor, 3ª persona"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Vuestra indica que el objeto pertenece a varias personas que escuchan (2ª pers)."
+  },
+  {
+    "id": 22,
+    "pregunta": "Analiza 'nuestras':",
+    "opciones": ["1ª pers, sing, masc", "1ª pers, plur, masc", "1ª pers, plur, fem", "2ª pers, plur, fem"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Nuestras corresponde a la 1ª persona del plural femenino para varios poseedores."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cuál es el posesivo de varios poseedores, 2ª persona, masc, singular?",
+    "opciones": ["Tuyo", "Vuestro", "Vuestro", "Suyo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cuadro indica que para varios poseedores en 2ª persona masculino es vuestro."
+  },
+  {
+    "id": 24,
+    "pregunta": "En 'mi bicicleta', ¿qué función tiene el posesivo?",
+    "opciones": ["Núcleo", "Complemento", "Adjetivo", "Determinante"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los posesivos son determinantes cuando van delante del sustantivo."
+  },
+  {
+    "id": 25,
+    "pregunta": "En 'la casa suya', ¿qué función tiene 'suya'?",
+    "opciones": ["Complemento", "Núcleo", "Determinante", "Pronombre"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los posesivos son complementos cuando van detrás del sustantivo."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué hacen principalmente los 'booktubers'?",
+    "opciones": ["Escriben libros de texto", "Venden libros en librerías", "Graban vídeos recomendando libros", "Ilustran cuentos infantiles"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tarea literaria define a los booktubers como personas que graban recomendaciones de libros en la red."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cuál es el primer paso para ser un booktuber según el libro?",
+    "opciones": ["Grabar el vídeo", "Elegir el libro que vas a recomendar", "Hacer el guion", "Subirlo a internet"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El proceso comienza obligatoriamente con la elección de un libro leído previamente."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué datos técnicos del libro deben buscar los booktubers?",
+    "opciones": ["Precio y peso", "Color de la portada", "Número de capítulos", "Editorial y fecha de publicación"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El paso 3 de la tarea literaria pide buscar editorial, fecha de publicación y número de páginas."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué debe incluir el guion del vídeo de un booktuber?",
+    "opciones": ["Presentación, resumen y por qué lo recomiendas", "Solo el final del libro", "El precio del libro", "La dirección de la editorial"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El guion debe estructurarse con presentación, resumen del argumento y comentario personal."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cómo se debe colocar la cámara para grabar el vídeo de booktuber?",
+    "opciones": ["En vertical", "En diagonal", "En formato horizontal", "No importa el formato"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las pautas de grabación especifican explícitamente el uso del formato horizontal."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué es una palabra primitiva?",
+    "opciones": ["Una palabra que tiene prefijo", "Una palabra que no deriva de otra", "Una palabra de la prehistoria", "Una palabra con sufijo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La teoría de léxico define palabra primitiva como aquella que no proviene de ninguna otra."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cuál es una palabra derivada de 'flor'?",
+    "opciones": ["Flor", "Flora", "Flores", "Florero"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Florero es una palabra derivada porque se ha formado añadiendo un sufijo a la raíz flor."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué parte se añade al final de una palabra para formar una derivada?",
+    "opciones": ["Sufijo", "Prefijo", "Raíz", "Enlace"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los sufijos son los morfemas que se colocan al final de la palabra primitiva."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué parte se añade al principio de una palabra para formar una derivada?",
+    "opciones": ["Sufijo", "Raíz", "Prefijo", "Acento"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los prefijos se sitúan delante de la palabra primitiva para crear significados nuevos."
+  },
+  {
+    "id": 35,
+    "pregunta": "De estas palabras, ¿cuál es derivada de 'calle'?",
+    "opciones": ["Cállate", "Callejón", "Calor", "Callado"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Callejón deriva de la palabra primitiva calle."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es el sufijo en la palabra 'arboleda'?",
+    "opciones": ["Arbol-", "Arbo-", "-da", "-eda"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El sufijo añadido a la raíz árbol es -eda."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cómo se escriben los sonidos de animales como el del gato según la ortografía de la unidad?",
+    "opciones": ["Maullar (con ll)", "Maullar (con y)", "Maullar (con l)", "Mauyar"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La unidad trabaja la ortografía de la ll con verbos como maullar."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cuál de estos verbos se escribe con 'll'?",
+    "opciones": ["Caminar", "Saltar", "Escabullir", "Correr"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El verbo escabullir termina en -ullir y se escribe con doble ele."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Quién es el personaje que encuentra la solución en el cuento?",
+    "opciones": ["Álvaro Rueda", "Don Martín", "La Oca", "El narrador"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Don Martín es el anciano que propone la idea para salvar la calle."
+  },
+  {
+    "id": 40,
+    "pregunta": "Analiza 'sus':",
+    "opciones": ["Un poseedor, 3ª pers, masc, plur", "Varios poseedores, 1ª pers, masc, plur", "Un poseedor, 2ª pers, fem, plur", "Un solo poseedor o varios, 3ª pers, plur"],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Sus' es el posesivo para la 3ª persona tanto para uno como para varios poseedores."
+  },
+  {
+    "id": 41,
+    "pregunta": "Analiza el demostrativo 'esas':",
+    "opciones": ["Distancia media, fem, plur", "Lejanía, masc, plur", "Cercanía, fem, plur", "Distancia media, neutro"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Esas indica distancia media, género femenino y número plural."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué indica el posesivo 'vuestro'?",
+    "opciones": ["1ª persona del plural", "2ª persona del singular", "2ª persona del plural", "3ª persona del singular"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Vuestro se refiere a la 2ª persona (vosotros/as) de varios poseedores."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué vas a elaborar en la sección 'Pasarás a la acción'?",
+    "opciones": ["Un libro de poemas", "Un folleto turístico de tu localidad", "Un mapa del tesoro", "Una maqueta de una oca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El plan de trabajo de la unidad indica la creación de un folleto turístico."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué nos transmiten a menudo los poemas?",
+    "opciones": ["Solo datos históricos", "Instrucciones de montaje", "Lista de precios", "Emociones"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El taller de literatura explica que los poemas nos transmiten emociones a la vez que sugieren imágenes."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cuál de estas palabras es un verbo terminado en -illar/-ullar?",
+    "opciones": ["Arrodillar", "Caminar", "Patinar", "Hablar"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Arrodillar cumple la norma ortográfica de palabras con ll."
+  },
+  {
+    "id": 46,
+    "pregunta": "Analiza 'nuestros' según el cuadro:",
+    "opciones": ["Un poseedor, 1ª persona", "Varios poseedores, 2ª persona", "Varios poseedores, 1ª persona", "Un poseedor, 3ª persona"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Nuestros indica que somos varios poseedores en 1ª persona."
+  },
+  {
+    "id": 47,
+    "pregunta": "En la frase 'Llegaremos a aquellas montañas', ¿qué función tiene 'aquellas'?",
+    "opciones": ["Núcleo", "Determinante", "Complemento", "Sujeto"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Va delante del sustantivo montañas, por lo que es un determinante."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué lugar de la localidad se menciona en el ejercicio de escucha inicial?",
+    "opciones": ["El zoológico", "El aeropuerto", "La estación", "El auditorio"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las preguntas de escucha mencionan específicamente '¿Dónde está el auditorio?'."
+  },
+  {
+    "id": 49,
+    "pregunta": "Si un narrador usa la forma 'marcharon', ¿qué tipo de narrador es?",
+    "opciones": ["Narrador externo", "Narrador protagonista", "Narrador en 1ª persona", "No hay narrador"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Usa la tercera persona, lo que indica que es ajeno a los hechos (externo)."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cuál es la intención de Álvaro Rueda en el cuento?",
+    "opciones": ["Abrir una tienda de sellos", "Salvar el pasaje", "Construir un edificio para archivar sellos", "Organizar una fiesta nocturna"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto dice que quiere construir un gran edificio para archivar su colección de sellos."
+  }
+]

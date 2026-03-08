@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuál es el numeral ordinal que corresponde al número 11?",
+    "opciones": ["Onceavo", "Undécimo", "Decimoprimero", "Onceno"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la lista de ordinales de la unidad 6, el 11 se denomina undécimo."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué indica la regla sobre las palabras que se escriben con 'cc'?",
+    "opciones": ["Que siempre van delante de la vocal 'a'", "Que todas terminan en -ción", "Que suelen tener en su familia una palabra con 'ct'", "Que son siempre palabras primitivas"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La ortografía de la unidad indica que palabras con 'cc' como 'perfección' tienen en su familia palabras con 'ct' como 'perfecto'."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué edad tiene Maya en el retrato de la unidad 6?",
+    "opciones": ["Diez años", "Doce años", "Nueve años", "Once años"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El texto descriptivo de Maya comienza indicando que tiene once años."
+  },
+  {
+    "id": 4,
+    "pregunta": "En la frase 'tres pruebas', ¿qué función realiza el numeral 'tres'?",
+    "opciones": ["Determinante", "Núcleo", "Complemento", "Adjetivo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los numerales funcionan como determinantes cuando van delante del sustantivo."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿En qué años ganó Rafael Nadal sus medallas de oro olímpicas?",
+    "opciones": ["2004 y 2012", "2008 y 2016", "2000 y 2008", "2012 y 2020"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La biografía de Rafael Nadal en la unidad menciona específicamente los años 2008 y 2016."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuál es el ordinal correcto para el número 20?",
+    "opciones": ["Veinteavo", "Veintésimo", "Vigésimo", "Vigesimal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El cuadro de numerales de la unidad identifica el 20º como vigésimo."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué expresan los indefinidos según la gramática de la unidad?",
+    "opciones": ["Una cantidad exacta", "Un orden preciso", "Una emoción fuerte", "Cantidad o existencia de forma imprecisa"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los indefinidos se definen por indicar cantidad de manera no exacta o vaga."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cómo se divide correctamente la palabra 'protección' a final de línea?",
+    "opciones": ["pro-tección", "protec-ción", "prote-cción", "protecc-ión"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las palabras con 'cc' se dividen dejando una 'c' en cada sílaba (protec-ción)."
+  },
+  {
+    "id": 9,
+    "pregunta": "De acuerdo con el retrato de Maya, ¿cómo es su pelo?",
+    "opciones": ["Castaño, largo y liso", "Rubio, corto y rizado", "Negro, media melena y ondulado", "Castaño, corto y liso"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto describe físicamente a Maya mencionando su pelo castaño, largo y liso."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuál es la palabra con 'ct' de la familia de 'lección'?",
+    "opciones": ["Leccionario", "Leccioncita", "Lector", "Lectura"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Lección se escribe con 'cc' porque pertenece a la familia de lector."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿A qué cardinal corresponde el ordinal 'quincuagésimo'?",
+    "opciones": ["Cinco", "Quince", "Cincuenta", "Quinientos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tabla de correspondencias sitúa al quincuagésimo en el número 50."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo funcionan los indefinidos cuando van detrás del sustantivo?",
+    "opciones": ["Como núcleos", "Como determinantes", "Como enlaces", "Como complementos"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La gramática de la unidad indica que funcionan como complementos si se sitúan tras el sustantivo."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué deporte es la gran pasión de Maya?",
+    "opciones": ["Tenis", "Baloncesto", "Natación", "Fútbol"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto del retrato afirma que el baloncesto es su gran pasión."
+  },
+  {
+    "id": 14,
+    "pregunta": "En la oración 'Vi los libros y elegí uno', ¿qué función tiene 'uno'?",
+    "opciones": ["Núcleo", "Determinante", "Complemento", "Sujeto"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Funciona como núcleo porque sustituye al sustantivo en la oración."
+  },
+  {
+    "id": 15,
+    "pregunta": "Si 'constructor' tiene 'ct', ¿qué palabra derivada tiene 'cc'?",
+    "opciones": ["Construir", "Construcción", "Construido", "Construible"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Siguiendo la regla de ortografía, construcción se escribe con 'cc' por la familia de constructor."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuál es el ordinal para el número 13?",
+    "opciones": ["Treceavo", "Treceno", "Decimotercero", "Decimotercio"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El ordinal del número 13 es decimotercero."
+  },
+  {
+    "id": 17,
+    "pregunta": "En el análisis morfológico de 'algunas manzanas', ¿cómo se define 'algunas'?",
+    "opciones": ["Numeral cardinal", "Indefinido, femenino, plural", "Indefinido, masculino, plural", "Numeral ordinal"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se identifica como indefinido que concuerda en femenino y plural con manzanas."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cuál de estos adjetivos sirve para describir el carácter en un retrato?",
+    "opciones": ["Respingona", "Poblada", "Simpática", "Alargada"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Simpática define la personalidad, mientras que los otros definen rasgos físicos."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué significa actuar con 'deportividad'?",
+    "opciones": ["Ganar siempre", "Hacer trampas", "Actuar con respeto y juego limpio", "Llevar mucha ropa deportiva"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El vocabulario de la unidad asocia deportividad con el respeto a las reglas y al rival."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cómo se escribe el número cardinal 16 en letras?",
+    "opciones": ["Diez y seis", "Diecciséis", "Dieciséis", "Diesiséis"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los cardinales del 16 al 29 se escriben en una sola palabra según la norma dada."
+  },
+  {
+    "id": 21,
+    "pregunta": "Analiza 'nadie' en la oración 'Alguien ha llamado a la puerta. No hay nadie'.",
+    "opciones": ["Indefinido", "Numeral cardinal", "Determinante", "Numeral ordinal"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Nadie es un indefinido que expresa inexistencia de forma imprecisa."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿A qué familia de palabras con 'ct' pertenece 'infección'?",
+    "opciones": ["Infecto", "Infectar", "Infectado", "Infec"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Infección lleva 'cc' porque pertenece a la familia de infecto."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cuál es el ordinal del número 12?",
+    "opciones": ["Doceavo", "Duodécimo", "Decimosegundo", "Doceno"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El numeral ordinal correspondiente al 12 es duodécimo."
+  },
+  {
+    "id": 24,
+    "pregunta": "Según la descripción de Maya, ¿cómo suele ir vestida?",
+    "opciones": ["Con uniforme", "Con ropa de fiesta", "Con ropa deportiva", "Con falda larga"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El retrato indica que suele ir siempre vestida con ropa deportiva."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cuál es la palabra con 'cc' relacionada con 'traductor'?",
+    "opciones": ["Traducción", "Traducir", "Traducido", "Traducible"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Traductor (ct) nos indica que traducción se escribe con 'cc'."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿A qué cardinal corresponde el ordinal 'trigésimo'?",
+    "opciones": ["Trece", "Treinta", "Tres", "Trescientos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ordinal trigésimo representa el orden número 30."
+  },
+  {
+    "id": 27,
+    "pregunta": "En 'pocos días', ¿qué tipo de palabra es 'pocos'?",
+    "opciones": ["Numeral cardinal", "Indefinido", "Numeral ordinal", "Adjetivo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Pocos indica una cantidad imprecisa, por lo que es un indefinido."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cuál es la palabra con 'ct' de la familia de 'dirección'?",
+    "opciones": ["Directo", "Dirigir", "Director", "Directiva"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La palabra director contiene 'ct', por lo que dirección lleva 'cc'."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cuál es el ordinal de 15?",
+    "opciones": ["Quinceavo", "Quinceno", "Décimo cinco", "Decimoquinto"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El ordinal de 15 se escribe decimoquinto."
+  },
+  {
+    "id": 30,
+    "pregunta": "En la receta de 'Ensalada de frutas', ¿qué numeral aparece en 'Tres kiwis'?",
+    "opciones": ["Cardinal", "Ordinal", "Indefinido", "Partitivo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Tres indica cantidad exacta, es un numeral cardinal."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué rasgo físico de Maya se describe como 'algo achatada'?",
+    "opciones": ["Su boca", "Su frente", "Su nariz", "Su barbilla"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto dice que su nariz es pequeña y un poco achatada."
+  },
+  {
+    "id": 32,
+    "pregunta": "De estas palabras, ¿cuál deriva de 'calificar' y lleva una sola 'c'?",
+    "opciones": ["Calificación", "Calificativo", "Calificado", "Cualificación"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Calificación lleva una sola 'c' porque deriva de calificar, que no tiene 'ct'."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cuál es el ordinal para el número 40?",
+    "opciones": ["Cuarentésimo", "Cuarentavo", "Cuadragésimo", "Cuadrado"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El numeral ordinal de 40 es cuadragésimo."
+  },
+  {
+    "id": 34,
+    "pregunta": "Analiza 'demasiada' en 'comió demasiada fruta'.",
+    "opciones": ["Indefinido, femenino, singular", "Indefinido, masculino, singular", "Numeral cardinal", "Numeral ordinal"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Demasiada es un indefinido en forma femenina singular."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Cómo se llama el oponente en una competición deportiva?",
+    "opciones": ["Compañero", "Árbitro", "Adversario", "Socio"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La unidad define adversario como el oponente en el deporte."
+  },
+  {
+    "id": 36,
+    "pregunta": "La palabra 'succión' se escribe con 'cc' porque viene de:",
+    "opciones": ["Succionar", "Suctor", "Succionado", "Suctar"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Proviene de la familia de suctor, que contiene 'ct'."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cuál es el cardinal de 'vigesimoprimero'?",
+    "opciones": ["Diecinueve", "Veinte", "Veintiuno", "Veintidós"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El ordinal vigesimoprimero corresponde al número 21."
+  },
+  {
+    "id": 38,
+    "pregunta": "En 'muchos recuerdos', ¿qué función tiene 'muchos'?",
+    "opciones": ["Complemento", "Núcleo", "Sujeto", "Determinante"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Va delante del sustantivo, por lo que es un determinante."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Qué tipo de ojos tiene Maya?",
+    "opciones": ["Pequeños y claros", "Grandes y de color oscuro", "Rasgados y verdes", "Redondos y azules"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El retrato menciona que tiene los ojos grandes y de color oscuro."
+  },
+  {
+    "id": 40,
+    "pregunta": "De estas palabras, ¿cuál tiene 'cc' por la familia de 'proyectar'?",
+    "opciones": ["Proyección", "Proyectado", "Proyectil", "Proyecto"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Proyección lleva 'cc' porque proyecto/proyectar contienen 'ct'."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cuál es el ordinal de 14?",
+    "opciones": ["Catorceavo", "Decimocuarto", "Décimo cuatro", "Decimocuarto con cc"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ordinal del número 14 es decimocuarto."
+  },
+  {
+    "id": 42,
+    "pregunta": "En 'una manzana' de la receta, 'una' es un numeral:",
+    "opciones": ["Ordinal", "Indefinido", "Cardinal", "Multiplicativo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Una indica cantidad exacta (1), es un cardinal."
+  },
+  {
+    "id": 43,
+    "pregunta": "Maya es descrita como una chica...",
+    "opciones": ["Tímida y seria", "Simpática y amable", "Enfadada y solitaria", "Callada y perezosa"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Sus rasgos de carácter se definen como simpática y amable."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué palabra con 'cc' se relaciona con 'recolecta'?",
+    "opciones": ["Recogida", "Recoger", "Recolección", "Recogedor"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Recolecta (ct) nos indica que recolección se escribe con 'cc'."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cómo se escribe el ordinal 22º?",
+    "opciones": ["Veintidosavo", "Vigésimo segundo", "Veinte y dos", "Vigesimodos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ordinal de 22 es vigésimo segundo."
+  },
+  {
+    "id": 46,
+    "pregunta": "En 'algunos jugadores', 'algunos' es un:",
+    "opciones": ["Determinante indefinido", "Núcleo indefinido", "Complemento indefinido", "Determinante cardinal"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Al ir delante del sustantivo jugadores, actúa como determinante."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cómo se describe la estatura de Maya?",
+    "opciones": ["Baja para su edad", "De estatura media", "Muy alta para su edad", "No se menciona"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto afirma que Maya es muy alta para su edad."
+  },
+  {
+    "id": 48,
+    "pregunta": "Si 'inyectar' tiene 'ct' en su familia (inyector), 'inyección' lleva:",
+    "opciones": ["Una c", "Dos c", "Una x", "Una z"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Por la regla de la familia 'ct', inyección se escribe con 'cc'."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Cuál es el ordinal de 50?",
+    "opciones": ["Cincuentésimo", "Pentagésimo", "Cincuentavo", "Quincuagésimo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El ordinal de 50 es quincuagésimo."
+  },
+  {
+    "id": 50,
+    "pregunta": "En 'estará en plena forma', ¿qué tipo de palabra es 'plena'?",
+    "opciones": ["Indefinido", "Adjetivo", "Numeral", "Sustantivo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Plena funciona como un adjetivo calificativo en ese contexto."
+  }
+]
