@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué dos procesos principales forman parte de la función de nutrición de las plantas?",
+    "opciones": [
+      "La fotosíntesis y la respiración celular",
+      "La polinización y la germinación",
+      "La absorción de agua y la floración",
+      "La poda y el riego por goteo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La nutrición vegetal se basa en fabricar alimento mediante la fotosíntesis y obtener energía mediante la respiración celular."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál es la función principal de la raíz que se encuentra bajo tierra?",
+    "opciones": [
+      "Captar la luz del sol para las hojas",
+      "Absorber agua y sales minerales del suelo",
+      "Producir las semillas de la planta",
+      "Atraer insectos con sus colores"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La raíz se encarga de fijar la planta al suelo y de absorber los nutrientes necesarios para vivir."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cómo se llaman los tallos rígidos y gruesos que conocemos comúnmente como troncos?",
+    "opciones": [
+      "Tallos herbáceos",
+      "Tallos flexibles",
+      "Tallos leñosos",
+      "Tallos acuáticos"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los tallos leñosos son rígidos y gruesos, típicos de árboles y arbustos."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿En qué órgano de la planta se elabora principalmente el alimento?",
+    "opciones": [
+      "En la raíz",
+      "En el tronco",
+      "En los pétalos",
+      "En las hojas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las hojas son los órganos donde se produce la materia orgánica que nutre a toda la planta."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Qué nombre recibe el pigmento verde encargado de captar la luz solar?",
+    "opciones": [
+      "Clorofila",
+      "Savia bruta",
+      "Polen",
+      "Estoma"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La clorofila es el pigmento que da color verde a las plantas y permite captar la energía lumínica."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cómo se llama la cara superior de la hoja que suele ser de color más intenso?",
+    "opciones": [
+      "Envés",
+      "Haz",
+      "Limbo",
+      "Pecíolo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El haz es la parte superior del limbo de la hoja, mientras que la inferior es el envés."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué gas absorben las plantas del aire para realizar la fotosíntesis?",
+    "opciones": [
+      "Oxígeno",
+      "Nitrógeno",
+      "Dióxido de carbono",
+      "Argón"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Para fabricar su alimento, las plantas toman dióxido de carbono a través de los estomas de las hojas."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué es la 'savia bruta'?",
+    "opciones": [
+      "El alimento ya fabricado en las hojas",
+      "El polen que viaja por el aire",
+      "La energía que desprende la planta",
+      "El agua y las sales minerales absorbidas por la raíz"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La mezcla de agua y sales minerales que sube desde la raíz se denomina savia bruta."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué conductos transportan la savia elaborada desde las hojas al resto de la planta?",
+    "opciones": [
+      "Vasos liberianos",
+      "Vasos leñosos",
+      "Raíces secundarias",
+      "Vasos de cristal"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La savia elaborada (alimento) se reparte por la planta a través de los vasos liberianos."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué gas liberan las plantas a la atmósfera durante la fotosíntesis?",
+    "opciones": [
+      "Hidrógeno",
+      "Oxígeno",
+      "Dióxido de carbono",
+      "Vapor de agua"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Como producto del proceso de fotosíntesis, las plantas desprenden oxígeno al medio."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Cuándo realizan las plantas la respiración celular?",
+    "opciones": [
+      "Solo cuando hay luz solar",
+      "Solo durante el invierno",
+      "Tanto de día como de noche",
+      "Únicamente por la noche"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "A diferencia de la fotosíntesis, la respiración es un proceso continuo que ocurre día y noche."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿A través de qué poros de las hojas entran y salen los gases?",
+    "opciones": [
+      "Nervios",
+      "Raíces",
+      "Pecíolos",
+      "Estomas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los estomas son poros microscópicos que permiten el intercambio de gases en la hoja."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué obtienen las plantas mediante la respiración celular?",
+    "opciones": [
+      "Energía",
+      "Materia orgánica nueva",
+      "Luz solar",
+      "Agua del suelo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las plantas respiran para obtener la energía necesaria para vivir a partir de la materia orgánica."
+  },
+  {
+    "id": 14,
+    "pregunta": "En la reproducción asexual, ¿cuántos individuos se necesitan para producir descendientes?",
+    "opciones": [
+      "Dos organismos de distinto sexo",
+      "Un solo individuo",
+      "Tres plantas diferentes",
+      "Ninguno, se crean solas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Un solo individuo es capaz de producir descendientes idénticos en la reproducción asexual."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué grupo de plantas se reproduce mediante esporas?",
+    "opciones": [
+      "Manzanos y rosales",
+      "Pinos y abetos",
+      "Musgos y helechos",
+      "Patatas y cebollas"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los musgos y los helechos utilizan esporas para su reproducción."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Dónde se localizan los esporangios en los helechos?",
+    "opciones": [
+      "En la raíz principal",
+      "En el extremo de un filamento largo",
+      "Dentro de una piña dura",
+      "En el envés de las hojas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En los helechos, los esporangios se agrupan en el envés de las hojas en granos amarillentos."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué es un 'esqueje'?",
+    "opciones": [
+      "Un trozo de tallo u hoja que genera una nueva planta",
+      "Un tallo subterráneo que almacena alimento",
+      "La flor de un pino piñonero",
+      "El polen que viaja con el viento"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los esquejes son fragmentos de la planta que, al plantarse, desarrollan raíces y crecen."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cuál de estos es un ejemplo de tubérculo?",
+    "opciones": [
+      "La cebolla",
+      "La patata",
+      "El lirio",
+      "La fresa"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La patata es un tubérculo, que es el extremo de un tallo subterráneo cargado de alimento."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué nombre reciben los tallos rastreros que crecen sobre el suelo, como los de la fresa?",
+    "opciones": [
+      "Rizomas",
+      "Bulbos",
+      "Estolones",
+      "Troncos"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los estolones son tallos que crecen horizontalmente sobre el suelo y forman nuevas raíces."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué caracteriza a las flores de las plantas gimnospermas, como el pino?",
+    "opciones": [
+      "Son muy grandes y de colores brillantes",
+      "Tienen pétalos perfumados",
+      "Se convierten en frutos dulces",
+      "Son flores incompletas sin pétalos ni sépalos"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las gimnospermas tienen flores sencillas y sus semillas no están encerradas en frutos, sino en piñas."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué tipo de plantas producen flores completas y frutos con semillas?",
+    "opciones": [
+      "Angiospermas",
+      "Musgos",
+      "Gimnospermas",
+      "Helechos"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las angiospermas, como el manzano, tienen flores completas que dan lugar a frutos."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Cuáles son los órganos reproductores masculinos de la flor?",
+    "opciones": [
+      "El pistilo",
+      "Los estambres",
+      "Los sépalos",
+      "Los pétalos"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los estambres producen los granos de polen, que contienen las células masculinas."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cómo se llama el órgano reproductor femenino de la flor con forma de botella?",
+    "opciones": [
+      "Cáliz",
+      "Corola",
+      "Pistilo",
+      "Filamento"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El pistilo es el órgano femenino y contiene el estigma, el estilo y el ovario."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué parte de la flor suele ser de colores vivos para atraer a los animales?",
+    "opciones": [
+      "El cáliz",
+      "Los sépalos",
+      "El ovario",
+      "La corola"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La corola es el conjunto de pétalos, cuyas formas y colores atraen polinizadores."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué es la polinización?",
+    "opciones": [
+      "El viaje del polen desde el estambre al pistilo",
+      "La unión de dos células sexuales",
+      "La salida de la raíz de la semilla",
+      "La fabricación de alimento en la hoja"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La polinización consiste en el desplazamiento de los granos de polen hacia el pistilo."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿De qué dos formas principales puede trasladarse el polen?",
+    "opciones": [
+      "Por el fuego o por la lluvia",
+      "Por el viento o por animales (insectos)",
+      "Por las raíces o por los frutos",
+      "Por el sol o por la luna"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El polen puede ser transportado por el viento o por animales como abejas o colibríes."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué ocurre durante la fecundación en las plantas?",
+    "opciones": [
+      "La planta absorbe agua por primera vez",
+      "Los pétalos crecen mucho",
+      "Se unen la célula masculina y la femenina",
+      "La semilla cae al suelo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fecundación es la unión de las células sexuales dentro del ovario."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué estructura crece desde el grano de polen para llegar al óvulo?",
+    "opciones": [
+      "Una raíz secundaria",
+      "Un vaso leñoso",
+      "Un estolón rastrero",
+      "Un tubo polínico"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El polen origina el tubo polínico para que las células masculinas lleguen al óvulo."
+  },
+  {
+    "id": 29,
+    "pregunta": "Después de la fecundación, ¿en qué se transforma el óvulo?",
+    "opciones": [
+      "En una semilla",
+      "En un fruto",
+      "En un pétalo",
+      "En una raíz"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Como resultado de la fecundación, el óvulo se transforma en semilla."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿En qué se transforma el ovario de la flor tras la fecundación?",
+    "opciones": [
+      "En polen",
+      "En un fruto",
+      "En una hoja",
+      "En un estambre"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las paredes del ovario se engrosan para formar el fruto que protegerá a las semillas."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué contiene la semilla que dará origen a una nueva planta?",
+    "opciones": [
+      "Solo agua salada",
+      "Dióxido de carbono sólido",
+      "El embrión",
+      "Clorofila pura"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La semilla contiene el embrión y sustancias de reserva para que este crezca."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cómo se llama el proceso en el que la semilla da lugar a una nueva planta?",
+    "opciones": [
+      "Fotosíntesis",
+      "Respiración",
+      "Polinización",
+      "Germinación"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La germinación es la transformación de la semilla para originar una nueva planta."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué condiciones necesita una semilla para germinar?",
+    "opciones": [
+      "Humedad y temperatura adecuadas",
+      "Mucha oscuridad y frío extremo",
+      "Estar sumergida en aceite",
+      "Fuego y cenizas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La germinación ocurre cuando la semilla encuentra la humedad y el calor propicios."
+  },
+  {
+    "id": 34,
+    "pregunta": "Desde un punto de vista científico, ¿qué son las nueces y almendras?",
+    "opciones": [
+      "Flores secas",
+      "Semillas comestibles con cubierta dura",
+      "Raíces deshidratadas",
+      "Hojas modificadas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los frutos secos son realmente semillas con una cubierta protectora muy resistente."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué instrumento se usa para observar detalles en relieve sin preparar el material?",
+    "opciones": [
+      "El telescopio",
+      "El termómetro",
+      "La lupa binocular",
+      "El microscopio electrónico"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lupa binocular permite ver objetos en relieve y con un gran campo de visión."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cómo se llaman las lentes por donde se mira en una lupa binocular?",
+    "opciones": [
+      "Platinas",
+      "Tornillos",
+      "Objetivos",
+      "Oculares"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los oculares son las lentes donde el observador sitúa los ojos."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cuál es el primer paso para estudiar los órganos internos de una flor hermafrodita?",
+    "opciones": [
+      "Arrancar los pétalos y contarlos",
+      "Cortar la raíz principal",
+      "Lavar la flor con jabón",
+      "Plantar la flor en el suelo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Para acceder a los órganos internos, primero se retiran los pétalos de la corola."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué partes de la planta producen oxígeno según el experimento de Ingenhousz?",
+    "opciones": [
+      "Las raíces y troncos",
+      "Las partes verdes expuestas a la luz",
+      "Todas las partes de la planta sin excepción",
+      "Solo las flores al mediodía"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El experimento demostró que solo las partes verdes producen oxígeno en presencia de luz."
+  },
+  {
+    "id": 39,
+    "pregunta": "En la respiración de la hoja, ¿qué gas se libera al exterior?",
+    "opciones": [
+      "Oxígeno",
+      "Nitrógeno",
+      "Dióxido de carbono",
+      "Hidrógeno"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Durante la respiración, las plantas consumen oxígeno y expulsan dióxido de carbono."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Cómo se llaman las flores que tienen estambres y pistilo a la vez?",
+    "opciones": [
+      "Flores masculinas",
+      "Flores femeninas",
+      "Flores estériles",
+      "Flores hermafroditas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las flores hermafroditas poseen ambos órganos reproductores en el mismo individuo."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿De qué está formado el cáliz de la flor?",
+    "opciones": [
+      "De sépalos",
+      "De pétalos",
+      "De granos de polen",
+      "De óvulos"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cáliz es el conjunto de sépalos, que suelen ser hojas pequeñas y verdes."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Para qué sirven las sustancias de reserva dentro de la semilla?",
+    "opciones": [
+      "Para alimentar al embrión hasta que crezca",
+      "Para atraer a los insectos",
+      "Para que la semilla pese más",
+      "Para fabricar perfume"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El embrión utiliza estas reservas para desarrollarse hasta que la nueva planta pueda alimentarse sola."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué ocurre con las plantas de hoja caduca durante el invierno?",
+    "opciones": [
+      "Mueren definitivamente",
+      "Crecen muy rápido",
+      "Entran en letargo y pierden las hojas",
+      "Producen gran cantidad de frutos"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Estas plantas entran en una fase de falta de crecimiento y pierden su follaje en invierno."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿A qué velocidad pueden los helechos lanzar sus esporas?",
+    "opciones": [
+      "A 1 metro por hora",
+      "A la velocidad del sonido",
+      "No se mueven, caen solas",
+      "A unos 10 metros por segundo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Células especializadas rodean los esporangios y lanzan las esporas a gran velocidad."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Por qué las plantas cierran sus estomas cuando hace un calor extremo?",
+    "opciones": [
+      "Para evitar perder demasiada agua",
+      "Para que no entre el aire caliente",
+      "Para descansar de la fotosíntesis",
+      "Para cambiar de color"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los estomas se cierran para evitar la desecación de la planta por evaporación excesiva."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Dónde se encuentran las células sexuales femeninas u óvulos?",
+    "opciones": [
+      "En el estambre",
+      "En el ovario",
+      "En el cáliz",
+      "En el pecíolo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los óvulos se localizan en la zona inferior del pistilo, llamada ovario."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cuál de estos es un ejemplo de bulbo?",
+    "opciones": [
+      "La patata",
+      "La fresa",
+      "La cebolla",
+      "El helecho"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La cebolla es un bulbo, un tallo subterráneo envuelto en hojas carnosas."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué nombre reciben los conductos rígidos que suben la savia bruta por el tallo?",
+    "opciones": [
+      "Vasos liberianos",
+      "Vasos de plástico",
+      "Estolones",
+      "Vasos leñosos"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los vasos leñosos transportan el agua y las sales minerales hasta las hojas."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué parte de la hoja une el limbo al tallo?",
+    "opciones": [
+      "El pecíolo",
+      "El estoma",
+      "La raíz",
+      "El estambre"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El pecíolo es la prolongación que sostiene la lámina de la hoja."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cuál es la principal diferencia entre la reproducción sexual y la asexual?",
+    "opciones": [
+      "La asexual siempre requiere flores",
+      "En la sexual intervienen dos organismos",
+      "La asexual es solo para animales",
+      "En la sexual solo se usan esquejes"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La reproducción sexual requiere dos individuos, mientras que la asexual solo uno."
+  }
+]

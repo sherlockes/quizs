@@ -1,7 +1,15 @@
 [
   {
+    "titulo": "5º Naturaleza - Tema 3 (Las plantas)",
+    "archivo": "cuestionarios/ian-5-natu-t4.json"
+  },
+  {
     "titulo": "5º Naturaleza - Tema 4 (Ecosistemas)",
     "archivo": "cuestionarios/ian-5-natu-t4.json"
+  },
+  {
+    "titulo": "5º Sociales - Tema 3 (Relieve de Europa)",
+    "archivo": "cuestionarios/ian-5-soci-t3.json"
   },
   {
     "titulo": "5º Sociales - Tema 4 (Democracia)",

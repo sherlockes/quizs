@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué extensión aproximada tiene el continente europeo?",
+    "opciones": ["20,5 millones de km²", "5,8 millones de km²", "10,2 millones de km²", "15,4 millones de km²"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Según la fuente 1, Europa tiene una extensión de unos 10,2 millones de km², siendo el segundo continente más pequeño."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál es el límite natural de Europa por el Este?",
+    "opciones": ["El océano Atlántico", "Asia, el mar Caspio y los Montes Urales", "El océano Glacial Ártico", "El mar Mediterráneo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 1 indica que Europa limita al Este con Asia, el mar Caspio y los Montes Urales."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cómo se clasifican los Montes Escandinavos según su antigüedad?",
+    "opciones": ["Cordilleras jóvenes", "Macizos antiguos", "Llanuras centrales", "Volcanes activos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los Montes Escandinavos se mencionan en la fuente 1 como parte de los macizos antiguos, formados por montañas de poca altitud."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál es el pico más alto de todo el continente europeo?",
+    "opciones": ["Mont Blanc", "Mulhacén", "Elbrus", "Aneto"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 2 identifica al Elbrus, con 5.642 metros en la cordillera del Cáucaso, como el pico más alto de Europa."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿En qué zona de Europa se localizan principalmente las cordilleras jóvenes?",
+    "opciones": ["En el Norte", "En el Centro", "En el Sur", "En las islas británicas"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 1 explica que las cordilleras jóvenes son relieves elevados que se localizan en el sur del continente."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué es la Gran Llanura Europea?",
+    "opciones": ["Una cadena montañosa en el Este", "Una amplia planicie en el centro y este de Europa", "Una península en el Mediterráneo", "Un conjunto de islas atlánticas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Tal como describe la fuente 1 y 2, es la llanura más extensa de Europa situada en su zona central y oriental."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuál es la cumbre más elevada de los Alpes?",
+    "opciones": ["Elbrus", "Mont Blanc", "Pirineos", "Apeninos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 2 especifica que el Mont Blanc, con 4.810 m, es la cumbre más elevada de los Alpes."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Por qué las costas europeas son muy recortadas?",
+    "opciones": ["Por la falta de mareas", "Debido a la erosión del mar", "Por la construcción de puertos", "Debido a la ausencia de ríos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 1 afirma que las costas son muy recortadas debido a la erosión del mar sobre el terreno."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué elemento representa el eje vertical en un perfil del relieve?",
+    "opciones": ["La distancia en kilómetros", "La temperatura media", "La altitud en metros", "El tiempo de recorrido"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Según la fuente 3, para representar un perfil se utiliza un eje vertical con la altitud de cada punto."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué es lo primero que se debe elegir al planificar una ruta de excursión?",
+    "opciones": ["La comida que se va a llevar", "Los puntos de salida y de destino", "La marca de las botas", "El color de la mochila"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 4 indica que para planificar una ruta se deben elegir primero los puntos de salida y destino."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Para qué sirve elaborar un perfil del relieve en una excursión?",
+    "opciones": ["Para saber qué ropa llevar", "Para identificar zonas donde se caminará más lento o rápido", "Para conocer el nombre de los pájaros", "Para medir la profundidad de los ríos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 4 explica que el perfil sirve para identificar la dificultad y velocidad de la caminata según el terreno."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo son, en general, los ríos españoles comparados con los de Europa?",
+    "opciones": ["Más largos y caudalosos", "Más profundos y navegables", "Cortos, de poco caudal e irregulares", "Constantes durante todo el año"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 5 señala que los ríos españoles son cortos, tienen poco caudal y son muy irregulares en comparación con los europeos."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué factor hace que los ríos de la vertiente cantábrica sean cortos?",
+    "opciones": ["El clima seco", "Que las montañas donde nacen están muy cerca del mar", "La falta de lluvias", "La gran cantidad de embalses"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 5 explica que son cortos porque las montañas donde nacen están muy cerca del mar Cantábrico."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuál es el río más largo de la península ibérica?",
+    "opciones": ["Ebro", "Duero", "Guadalquivir", "Tajo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La fuente 5 y 15 confirman que el Tajo es el río más largo de la Península."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué río de la vertiente mediterránea española no es corto ni irregular?",
+    "opciones": ["Júcar", "Segura", "Ebro", "Turia"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 5 y 6 destacan que el Ebro es la excepción en la vertiente mediterránea por su longitud y caudal."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Qué sufren los ríos mediterráneos durante el verano?",
+    "opciones": ["Crecidas torrenciales", "Estiaje (disminución del caudal)", "Congelación total", "Desbordamientos constantes"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 6 indica que estos ríos sufren estiaje o disminución de caudal en verano por la falta de lluvias."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cuál es el lago más grande de España situado en Castilla y León?",
+    "opciones": ["Albufera", "Gallocanta", "Sanabria", "Banyoles"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 5 menciona que el lago de Sanabria es el más grande de España."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué se ha construido en el curso de muchos ríos españoles para aprovechar el agua?",
+    "opciones": ["Puentes de madera", "Extensa red de embalses", "Molinos de viento", "Parques acuáticos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 5 explica que se han construido embalses para el aprovechamiento de las aguas de los ríos."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué característica tienen muchos ríos europeos que los hace útiles para el transporte?",
+    "opciones": ["Son muy estrechos", "Son navegables", "Están siempre congelados", "Tienen muchas cascadas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 7 señala que gran cantidad de ríos europeos son navegables y sirven como vías de comunicación."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cuál es el río más largo de toda Europa?",
+    "opciones": ["Danubio", "Rin", "Volga", "Vístula"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 7 y 8 indican que el Volga es el río más largo de Europa con 3.530 km."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿En qué mar desemboca el río Danubio?",
+    "opciones": ["Mar Caspio", "Mar Negro", "Océano Atlántico", "Mar Mediterráneo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la fuente 7 y 8, el Danubio pertenece a la vertiente del mar Negro, donde desemboca."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Dónde se localizan los lagos europeos de mayor tamaño?",
+    "opciones": ["En el sur, cerca de Italia", "En el norte, en torno al mar Báltico", "En el centro, en Hungría", "En las islas del Atlántico"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 7 especifica que los lagos de mayor tamaño, como el Ladoga, se localizan en el Norte de Europa."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Qué río europeo permanece helado durante el invierno?",
+    "opciones": ["Sena", "Tajo", "Dvina Septentrional", "Po"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 7 y 8 mencionan que ríos de la vertiente ártica, como el Dvina Septentrional, permanecen helados en invierno."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué son los espacios naturales protegidos?",
+    "opciones": ["Zonas donde no puede entrar nadie", "Lugares con medidas de protección por su interés paisajístico o fauna", "Zonas exclusivas para la caza", "Lugares para construir hoteles sostenibles"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 9 los define como lugares que gozan de protección especial por su valor natural, vegetal o animal."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cuál es la categoría más importante de espacios protegidos en España?",
+    "opciones": ["Paisajes protegidos", "Monumentos naturales", "Parques (nacionales, naturales y regionales)", "Reservas de la biosfera"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 9 indica que los parques son la categoría más importante de espacios protegidos."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué Parque Nacional se encuentra en la isla de Tenerife?",
+    "opciones": ["Doñana", "Monfragüe", "Teide", "Cabañeros"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 9 identifica al Parque Nacional del Teide en Tenerife como el más visitado de España."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué norma de comportamiento es fundamental al salir de excursión?",
+    "opciones": ["Recoger la basura que hayamos generado", "Gritar fuerte para avisar de nuestra presencia", "Arrancar flores para estudiarlas en casa", "Hacer fuego para cocinar"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La fuente 10 destaca la importancia de recoger la basura, especialmente los plásticos, para no dejar huella."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué está prohibido hacer en cualquier terreno forestal para evitar incendios?",
+    "opciones": ["Caminar rápido", "Hacer fotos", "Hacer fuego", "Usar prismáticos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 10 muestra claramente una señal de prohibición de hacer fuego en terreno forestal."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué significa el término 'Desarrollo Sostenible'?",
+    "opciones": ["Gastar todos los recursos ahora", "Mejorar la vida hoy sin arriesgar los recursos de las futuras generaciones", "Construir muchas carreteras en el campo", "Proteger solo a los animales peligrosos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 11 define el desarrollo sostenible como aquel que satisface las necesidades presentes sin comprometer el futuro."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuántos Objetivos de Desarrollo Sostenible (ODS) se establecieron en la Agenda 2030?",
+    "opciones": ["10", "17", "25", "5"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 11 menciona que se han establecido 17 objetivos para conseguir un mundo mejor."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿De qué trata el ODS número 13?",
+    "opciones": ["Vida submarina", "Acción por el clima", "Fin de la pobreza", "Educación de calidad"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 11 identifica el ODS 13 como la acción para reducir el cambio climático y sus efectos."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cuál de estos es un 'eco-reto' para mejorar el planeta?",
+    "opciones": ["Usar pilas desechables", "Dejar las luces encendidas", "Usar bombillas de bajo consumo", "Bañarse todos los días"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 12 lista el uso de bombillas de bajo consumo como un gesto cotidiano para ayudar al planeta."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué debemos hacer con los aparatos electrónicos cuando no los usamos?",
+    "opciones": ["Dejarlos en modo espera", "Desconectarlos", "Mantenerlos siempre cargando", "Regalarlos inmediatamente"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 12 recomienda desconectar los aparatos electrónicos cuando no se usen para ahorrar energía."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué es el ecoturismo?",
+    "opciones": ["Viajar solo en avión privado", "Turismo que respeta el entorno natural y las tradiciones locales", "Visitar solo ciudades grandes", "Ir de vacaciones a centros comerciales"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 13 define el ecoturismo como una alternativa saludable y ecológica que respeta ecosistemas y costumbres."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué porcentaje de las emisiones de gases nocivos proviene aproximadamente de los viajes?",
+    "opciones": ["1%", "20%", "5%", "50%"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 13 indica que el turismo representa el 5% de las emisiones de gases nocivos."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué territorio ocupa más de la mitad de la península ibérica?",
+    "opciones": ["Los Pirineos", "La Meseta", "La Cordillera Cantábrica", "El valle del Ebro"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 15 confirma que la Meseta ocupa más de la mitad del territorio de la Península."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué se puede hacer con la basura orgánica cuando vamos de excursión?",
+    "opciones": ["Tirarla al río", "Enterrarla en el suelo", "Dejarla sobre una piedra", "Llevársela a casa siempre"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 15 sugiere enterrarla en el suelo para acelerar su proceso de descomposición natural."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué cordillera forma el límite natural entre Europa y Asia?",
+    "opciones": ["Alpes", "Cáucaso", "Montes Urales", "Balcanes"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 2 explica que los Montes Urales forman el límite natural entre los dos continentes."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cómo se llama la distancia en vertical desde un punto del relieve hasta el nivel del mar?",
+    "opciones": ["Latitud", "Altitud", "Longitud", "Profundidad"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 17 define la altitud como la distancia vertical medida desde el nivel del mar."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué río español forma un delta muy importante en su desembocadura?",
+    "opciones": ["Duero", "Tajo", "Ebro", "Guadiana"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 15 y 17 mencionan el Delta del Ebro como una característica destacada de este río."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿A qué vertiente pertenece el río Rin?",
+    "opciones": ["Mediterránea", "Atlántica", "Caspio", "Mar Negro"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 8 muestra que el río Rin desemboca en el mar del Norte, que forma parte de la vertiente atlántica."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué característica define a los parques nacionales?",
+    "opciones": ["Son áreas muy pequeñas", "Son espacios naturales de gran extensión poco modificados por el hombre", "Son parques de atracciones en la naturaleza", "Solo existen en las islas Canarias"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 9 describe los parques nacionales como espacios de gran extensión que deben preservarse en su estado natural."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué acción ayuda a conservar los ecosistemas terrestres (ODS 15)?",
+    "opciones": ["Aumentar la deforestación", "Frenar la desertización y la deforestación", "Introducir especies extrañas", "Cazar animales protegidos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 11 indica que para el ODS 15 es necesario frenar la deforestación y la desertización."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cuál es una ventaja de usar bolsas de tela para la compra?",
+    "opciones": ["Son más feas", "Reducen el uso de plásticos de un solo uso", "Son más caras de fabricar", "Ocupan mucho sitio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 12 incluye el uso de bolsas de tela como un eco-reto para mejorar el medioambiente."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué significa 'no dejar huella' al visitar la naturaleza?",
+    "opciones": ["Caminar de puntillas", "No llevar calzado", "Comportarse de forma responsable sin alterar el entorno", "Borrar los pasos con una rama"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 10 usa este eslogan para promover un comportamiento responsable que respete la fauna, flora y limpieza."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué cordillera separa la península ibérica del resto de Europa?",
+    "opciones": ["Sierra Morena", "Pirineos", "Sistema Bético", "Sistema Central"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 1 y 17 sitúan a los Pirineos como la frontera natural en el istmo de la Península."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cuál es el pico más alto de los Pirineos?",
+    "opciones": ["Aneto", "Mulhacén", "Teide", "Pico del Moro"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Aunque la fuente 17 deja el hueco para completar, la información general del tema en las fuentes asocia las altitudes máximas a sus cordilleras respectivas (Aneto en Pirineos)."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué tipo de turismo busca ofrecer opciones más saludables y ecológicas?",
+    "opciones": ["Turismo de masas", "Ecoturismo", "Turismo espacial", "Turismo de compras"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 13 define el ecoturismo como la alternativa al turismo tradicional con esos fines."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué elemento geográfico es el Peloponeso (mencionado en el mapa como península Balcánica)?",
+    "opciones": ["Una isla", "Un cabo", "Una península", "Un fiordo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 1 y 2 incluyen a la Balcánica dentro de las peninsulas más importantes de Europa."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué debemos hacer con los grifos para cumplir con el ahorro de agua?",
+    "opciones": ["Dejarlos abiertos mientras nos cepillamos", "Cerrarlos bien y reducir el tiempo de ducha", "Usar solo agua caliente", "No lavarse nunca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 12 propone reducir el tiempo de ducha como un eco-reto fundamental."
+  }
+]
