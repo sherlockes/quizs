@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿En qué región de Italia se encuentra la ciudad de Cremona?",
+    "opciones": ["Lombardía", "Toscana", "Sicilia", "Piamonte"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto narrativo sitúa específicamente a Cremona en la región de Lombardía, al norte de Italia."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿A qué se dedican los 'lutieres'?",
+    "opciones": ["A tocar el violín en palacios", "A construir o reparar instrumentos de cuerda", "A escribir partituras musicales", "A financiar a los artistas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El vocabulario del texto define a los lutieres como personas que fabrican o arreglan instrumentos de cuerda."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué prefijo indica 'situación'?",
+    "opciones": ["in-", "anti-", "sub-", "super-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tabla de prefijos clasifica 'sub-' como un prefijo de situación, al igual que 'ante-' o 'sobre-'."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cómo se escribe la palabra que empieza por hie- y nombra una planta?",
+    "opciones": ["Yedra", "Iedra", "Hiedra con ll", "Hiedra"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las reglas de ortografía indican que las palabras que empiezan por hie- o hue- se escriben con 'h'."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuál de estos pronombres personales es de primera persona del plural y tónico?",
+    "opciones": ["Nosotros", "Nos", "Os", "Vosotros"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cuadro de pronombres sitúa a 'nosotros' en la primera persona, plural y forma tónica."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué significa la palabra 'toscos' aplicada a los violines en la lectura?",
+    "opciones": ["Muy caros", "Poco trabajados o sin refinar", "De colores brillantes", "Que suenan muy fuerte"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En el vocabulario de la lectura, 'toscos' se refiere a objetos rudimentarios o poco elaborados."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué nombre recibe la unión de la vocal final de una palabra con la inicial de la siguiente en un verso?",
+    "opciones": ["Rima", "Métrica", "Sinalefa", "Arte mayor"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La sinalefa es una norma fundamental para medir los versos en poesía."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cuál es el prefijo de intensidad en la palabra 'archiconocida'?",
+    "opciones": ["con-", "ida-", "archi-", "archi-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El prefijo 'archi-' indica intensidad o grado superior, según la clasificación de prefijos."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué río fluye cerca de la ciudad de Cremona?",
+    "opciones": ["El río Po", "El río Tíber", "El río Arno", "El río Ebro"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La descripción geográfica de la historia menciona que Cremona se alza a orillas del río Po."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuál de estos verbos debe escribirse siempre con 'h'?",
+    "opciones": ["Andar", "Habitar", "Escuchar", "Mirar"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las formas de los verbos haber, hacer, habitar, hablar, hallar, helar, herir, hinchar y hundir llevan 'h'."
+  },
+  {
+    "id": 11,
+    "pregunta": "En la oración 'Le regalaron una guitarra', ¿qué tipo de pronombre es 'le'?",
+    "opciones": ["Tónico", "Posesivo", "Átono", "Demostrativo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los pronombres átonos son los que siempre acompañan a un verbo, como 'le'."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo se llama a las personas que apoyan actividades artísticas con dinero?",
+    "opciones": ["Lutieres", "Músicos", "Pintores", "Mecenas"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El texto define a los mecenas como personas que promueven el arte con sus aportaciones económicas."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Cuál de estos prefijos indica 'oposición'?",
+    "opciones": ["contra-", "sub-", "extra-", "pre-"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El prefijo 'contra-' (como en contraataque) indica oposición a algo."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué tipo de rima ocurre cuando solo coinciden las vocales a partir de la última sílaba tónica?",
+    "opciones": ["Consonante", "Asonante", "Libre", "Blanca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La rima asonante es aquella donde solo las vocales son iguales al final del verso."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué herramienta usaba Stradivari para trabajar la madera?",
+    "opciones": ["Martillo", "Taladro", "Gubias", "Sierra eléctrica"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto menciona herramientas manuales de luthier como gubias, formones y cepillos."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cómo se escribe la palabra que designa a quien no tiene padres?",
+    "opciones": ["Uerfano", "Huerfano", "Yerfano", "Huérfano"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las palabras que comienzan por el diptongo hue- se escriben con h inicial."
+  },
+  {
+    "id": 17,
+    "pregunta": "En la frase 'Ella toca el ukelele', ¿a qué persona corresponde el pronombre?",
+    "opciones": ["Tercera persona del singular", "Segunda persona del singular", "Primera persona del plural", "Tercera persona del plural"],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Ella' es el pronombre tónico de la tercera persona del singular femenino."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué prefijo añadirías a 'decir' para indicar que haces lo contrario de lo que se afirma?",
+    "opciones": ["pre-", "contra-", "re-", "in-"],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Contradecir' utiliza el prefijo de oposición para indicar la acción contraria."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿A qué se refiere el anuncio de la página 123?",
+    "opciones": ["A un concierto de rock", "A una tienda de violines", "A una academia de música", "A un concurso de talentos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El cartel publicitario es de la escuela de música 'Armonía'."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cómo se llaman las palabras que sirven para nombrar seres sin usar sustantivos?",
+    "opciones": ["Adjetivos", "Determinantes", "Preposiciones", "Pronombres personales"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los pronombres personales sustituyen al nombre para referirse a personas, animales u objetos."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuál era el apellido del maestro luthier que buscaba que de la madera surgiera música?",
+    "opciones": ["Stradivari", "Amati", "Guarneri", "Beethoven"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Stradivari es descrito como el maestro que trabajaba la madera con cuidado para infundirle un alma."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué prefijo de negación se usa en la palabra 'imposible'?",
+    "opciones": ["in-", "im-", "des-", "anti-"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El prefijo 'in-' se convierte en 'im-' antes de la letra 'p'."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cuál de estas palabras empieza por 'hum-' seguido de vocal y lleva 'h'?",
+    "opciones": ["Umbral", "Unión", "Húmedo", "Único"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las palabras que empiezan por hum- seguido de vocal se escriben con 'h'."
+  },
+  {
+    "id": 24,
+    "pregunta": "Si sustituimos 'Andrés perdió el autobús' por un pronombre, ¿cuál es correcto?",
+    "opciones": ["Él lo perdió", "Él le perdió", "Él la perdió", "Andrés lo perdió"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El pronombre átono 'lo' sustituye al objeto directo 'el autobús'."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Quién escribió el poema 'Alas quisiera tener...'?",
+    "opciones": ["Concha Méndez", "Antonio Machado", "Federico García Lorca", "Gloria Fuertes"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La autoría del poema sobre el deseo de volar y recorrer espacios es de Concha Méndez."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué indica el prefijo 'pre-'?",
+    "opciones": ["Intensidad", "Anterioridad", "Negación", "Situación debajo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El prefijo 'pre-' indica que algo ocurre antes, como en 'preselección'."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cuál es la forma correcta del verbo 'hacer' en la segunda persona del plural?",
+    "opciones": ["Hacemos", "Haces", "Hacéis", "Hacen"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La conjugación correcta para 'vosotros' requiere la h inicial y la terminación -éis."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué pronombre tónico acompaña a la preposición 'con' en primera persona del singular?",
+    "opciones": ["Con yo", "Con mi", "Con me", "Conmigo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El pronombre 'mí' se transforma en la forma especial 'conmigo' al unirse a la preposición 'con'."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿En qué ciudad transcurre la historia de los mejores violines?",
+    "opciones": ["Cremona", "Roma", "Milán", "Venecia"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Toda la trama sobre los luthiers Amati, Guarneri y Stradivari sucede en Cremona."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuál de estas palabras lleva un prefijo de situación que significa 'debajo de'?",
+    "opciones": ["Sobrevuela", "Subterráneo", "Anteayer", "Extraplano"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El prefijo 'sub-' aporta el significado de 'bajo' o 'debajo de'."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cuál es el antónimo de 'legal' usando un prefijo?",
+    "opciones": ["Deslegal", "Antilegal", "Ilegal", "Sublegal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El prefijo de negación 'in-' se convierte en 'i-' delante de la letra 'l'."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué palabras empiezan por 'horr-' y llevan 'h'?",
+    "opciones": ["Ornamento", "Oro", "Hormiga", "Horrible"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las palabras que empiezan por herm-, histo-, horr- y hosp- se escriben con 'h'."
+  },
+  {
+    "id": 33,
+    "pregunta": "Analiza 'nosotras' en la frase 'A nosotras nos encanta':",
+    "opciones": ["1ª pers, plural, tónico", "1ª pers, plural, átono", "2ª pers, plural, tónico", "3ª pers, singular, tónico"],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Nosotras' es el pronombre de primera persona plural femenino tónico."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cómo se llama el cartel que pone Stradivari al final de la historia?",
+    "opciones": ["Aquí se hacen violines", "Aquí se hacen los mejores violines de esta manzana", "Aquí no se hacen violines", "Aquí se venden violines baratos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Stradivari usa el ingenio para ganar la contienda con un cartel muy específico sobre su ubicación."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué prefijo indica 'exceso' o 'muy'?",
+    "opciones": ["in-", "sub-", "super-", "ante-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los prefijos ultra-, super- y archi- se utilizan para indicar intensidad o exceso."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es la forma correcta de 'hallar' en pasado para 'unos arqueólogos'?",
+    "opciones": ["Allaron", "Hayaron", "Ayaron", "Hallaron"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El verbo hallar se escribe con h y con ll, y concuerda en plural con el sujeto."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué pronombre átono de segunda persona del plural se usa en España?",
+    "opciones": ["Os", "Nos", "Les", "Los"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cuadro especifica que 'os' es el pronombre átono para la segunda persona del plural."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué tipo de rima tiene el poema de Antonio Machado 'Para tu ventana...'?",
+    "opciones": ["Consonante", "Asonante", "No tiene rima", "Rima blanca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los versos pares riman en asonante (mañana, reja, ventana)."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cuál es el prefijo de 'antebrazo'?",
+    "opciones": ["anti-", "an-", "ante-", "brazo-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Ante-' es un prefijo de situación que significa 'delante de'."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué palabras empiezan por 'herm-' y llevan 'h'?",
+    "opciones": ["Ermita", "Ermitaño", "Hermano", "Hermano"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La regla ortográfica incluye las palabras que empiezan por herm-, como hermano o hermético."
+  },
+  {
+    "id": 41,
+    "pregunta": "En la frase '¿Te importa si los invito?', ¿cuáles son los pronombres átonos?",
+    "opciones": ["Te, los", "Si, los", "Te, invito", "Yo, ellos"],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Te' (2ª pers) y 'los' (3ª pers) son formas átonas que acompañan a los verbos."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué instrumento toca la tía Hortensia en el dictado?",
+    "opciones": ["Violín", "Ukelele", "Piano", "Guitarra"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto del dictado se titula 'El ukelele de Hortensia'."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué prefijo le pondrías a 'histórico' para decir que es anterior a la historia?",
+    "opciones": ["in-", "ante-", "pre-", "super-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Prehistórico' usa el prefijo pre- para indicar anterioridad en el tiempo."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué significa el prefijo 'des-' en 'deshacer'?",
+    "opciones": ["Intensidad", "Situación", "Anterioridad", "Negación o inversión de la acción"],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Des-' es un prefijo de negación que indica lo contrario de la palabra primitiva."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cómo se llama el luthier ambicioso que hablaba solo en su taller?",
+    "opciones": ["Guarneri", "Amati", "Stradivari", "Nicolo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto describe a Guarneri como un hombre ambicioso envuelto en el olor del barniz."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué pronombre personal tónico de tercera persona del plural es masculino?",
+    "opciones": ["Ellas", "Ellos", "Vosotros", "Nosotros"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según el cuadro, 'ellos' es la forma tónica para la 3ª persona plural masculina."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué debe incluirse en el anuncio de una academia de música?",
+    "opciones": ["Solo dibujos", "Solo el nombre", "Cursos, localización y contacto", "El precio de los instrumentos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tarea pide listar información clave como cursos, horarios y formas de contacto."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Cuál de estas palabras se escribe con 'h' por empezar con 'hue-'?",
+    "opciones": ["Huevo", "Oeste", "Huida", "Huevo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Huevo es el ejemplo clásico de palabra que empieza por hue- y lleva h."
+  },
+  {
+    "id": 49,
+    "pregunta": "En la frase 'Tú leíste aquellos poemas', ¿qué palabra es el pronombre?",
+    "opciones": ["Tú", "Leíste", "Aquellos", "Poemas"],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Tú' es el pronombre personal tónico de la segunda persona del singular."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué tipo de rima tiene el poema 'Alas quisiera tener...' si riman 'espacios/pájaros'?",
+    "opciones": ["Consonante", "Asonante", "No tiene rima", "Rima perfecta"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es asonante porque solo coinciden las vocales (a-o) al final de las palabras."
+  }
+]
