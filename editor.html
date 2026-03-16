@@ -2,22 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Editor de Cuestionarios - Acceso Restringido</title>
+    <title>Editor de Cuestionarios Pro + Importador</title>
     <style>
         body { font-family: sans-serif; background: #f0f2f5; padding: 20px; display: flex; flex-direction: column; align-items: center; }
         .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; box-sizing: border-box; }
         h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; margin-top: 0; }
         
-        /* Estilos de camuflaje */
+        /* Camuflaje */
         .blur-content { filter: blur(8px); pointer-events: none; user-select: none; opacity: 0.5; }
         .hidden { display: none !important; }
 
-        /* Zona de carga */
+        /* Carga */
         .upload-section { display: flex; gap: 20px; flex-wrap: wrap; }
         .upload-box { flex: 1; min-width: 250px; }
-        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; transition: 0.3s; height: 80px; display: flex; align-items: center; justify-content: center; }
+        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; }
         #drop-zone.hover { background: #e8f5e9; border-color: #2e7d32; }
-        
         select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
         
         #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; }
@@ -32,9 +31,15 @@
         .opcion-input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
         
         .btn-delete { position: absolute; top: 15px; right: 15px; background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 12px; }
-        .btn-add { background: #1976d2; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 15px; font-weight: bold; }
+        .btn-add { background: #1976d2; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 10px; font-weight: bold; }
+        .btn-import { background: #673ab7; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 10px; font-weight: bold; }
         .btn-download { background: #2e7d32; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; width: 100%; }
         .correcta-radio { cursor: pointer; width: 20px; height: 20px; accent-color: #2e7d32; }
+
+        /* Modal Importador */
+        #modal-import { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); display:none; justify-content:center; align-items:center; z-index:100; }
+        .modal-content { background:white; padding:20px; border-radius:12px; width:90%; max-width:600px; }
+        .help-text { font-size: 0.8rem; color: #666; background: #f9f9f9; padding: 10px; border-radius: 4px; margin-bottom: 10px; line-height: 1.4; }
     </style>
 </head>
 <body>
@@ -66,8 +71,28 @@
         <div id="lista-preguntas"></div>
         
         <div id="admin-controls" class="card hidden">
-            <button class="btn-add" onclick="añadirPregunta()">➕ Añadir Nueva Pregunta</button>
+            <button class="btn-import" onclick="abrirImportador()">📥 Importar desde Texto Plano</button>
+            <button class="btn-add" onclick="añadirPregunta()">➕ Añadir Nueva Pregunta Manual</button>
             <button class="btn-download" onclick="descargarJSON()">📥 Guardar y Descargar JSON</button>
+        </div>
+    </div>
+
+    <div id="modal-import">
+        <div class="modal-content">
+            <h3>Importador de Texto</h3>
+            <div class="help-text">
+                <b>Formato esperado:</b><br>
+                Pregunta...<br>
+                - Opción 0 (Correcta si R:0)<br>
+                - Opción 1...<br>
+                R: 0<br>
+                Exp: Explicación opcional.
+            </div>
+            <textarea id="import-area" rows="12" placeholder="Pega aquí tus preguntas..." style="width:100%; margin-bottom:10px;"></textarea>
+            <div style="display:flex; gap:10px">
+                <button class="btn-add" style="margin:0" onclick="procesarTextoPlano()">Procesar e Insertar</button>
+                <button class="btn-delete" style="position:static" onclick="cerrarImportador()">Cancelar</button>
+            </div>
         </div>
     </div>
 
@@ -77,20 +102,18 @@
         const editorContainer = document.getElementById('editor-container');
         const listaPreguntas = document.getElementById('lista-preguntas');
         const adminControls = document.getElementById('admin-controls');
+        const modalImport = document.getElementById('modal-import');
+        const importArea = document.getElementById('import-area');
         
         let quizData = [];
         let originalFileName = "cuestionario.json";
         let modoDios = false;
 
-        // --- SISTEMA DE SEGURIDAD (MODO DIOS) ---
+        // --- SEGURIDAD ---
         document.addEventListener('keydown', (e) => {
             if (e.key === "F2") { 
                 const clave = prompt("Introduce clave maestra:");
-                if(clave === "1234") { // CAMBIA ESTA CLAVE
-                    activarAdmin();
-                } else {
-                    alert("Clave incorrecta");
-                }
+                if(clave === "1234") activarAdmin();
             }
         });
 
@@ -100,10 +123,45 @@
             editorContainer.classList.remove('blur-content');
             adminControls.classList.remove('hidden');
             if(quizData.length > 0) renderEditor(); 
-            mostrarMensaje("Modo administrador activado", "success");
         }
 
-        // --- CARGA DE DATOS ---
+        // --- IMPORTADOR DE TEXTO ---
+        function abrirImportador() { modalImport.style.display = 'flex'; }
+        function cerrarImportador() { modalImport.style.display = 'none'; importArea.value = ''; }
+
+        function procesarTextoPlano() {
+            const texto = importArea.value.trim();
+            if(!texto) return;
+
+            const bloques = texto.split(/\n\s*\n/); // Separar por líneas en blanco
+            bloques.forEach(bloque => {
+                const lineas = bloque.split('\n').map(l => l.trim());
+                let pregunta = lineas[0];
+                let opciones = [];
+                let respuestaCorrecta = 0;
+                let explicacion = "";
+
+                lineas.slice(1).forEach(linea => {
+                    if (linea.startsWith('-') || linea.match(/^\d[\.\)]/)) {
+                        opciones.push(linea.replace(/^[- \d\.\)]+/, '').trim());
+                    } else if (linea.toUpperCase().startsWith('R:')) {
+                        respuestaCorrecta = parseInt(linea.replace(/R:/i, '').trim());
+                    } else if (linea.toUpperCase().startsWith('EXP:')) {
+                        explicacion = linea.replace(/EXP:/i, '').trim();
+                    }
+                });
+
+                if(pregunta && opciones.length > 0) {
+                    quizData.push({ pregunta, opciones, respuestaCorrecta, explicacion });
+                }
+            });
+
+            renderEditor();
+            cerrarImportador();
+            mostrarMensaje("Preguntas importadas con éxito", "success");
+        }
+
+        // --- CARGA Y EDICIÓN ---
         async function cargarIndice() {
             try {
                 const response = await fetch('index.json');
@@ -111,23 +169,16 @@
                 repoSelector.innerHTML = '<option value="" disabled selected>Selecciona un test...</option>';
                 temas.forEach(t => {
                     const opt = document.createElement('option');
-                    opt.value = t.archivo;
-                    opt.innerText = t.titulo;
+                    opt.value = t.archivo; opt.innerText = t.titulo;
                     repoSelector.appendChild(opt);
                 });
-            } catch (e) {
-                console.log("No se pudo cargar el índice (uso local)");
-            }
+            } catch (e) {}
         }
 
         repoSelector.onchange = async (e) => {
-            const ruta = e.target.value;
-            originalFileName = ruta.split('/').pop();
-            try {
-                const response = await fetch(ruta);
-                const data = await response.json();
-                procesarDatos(data);
-            } catch (err) { mostrarMensaje("Error al cargar archivo", "error"); }
+            originalFileName = e.target.value.split('/').pop();
+            const res = await fetch(e.target.value);
+            procesarDatos(await res.json());
         };
 
         document.getElementById('drop-zone').onclick = () => document.getElementById('file-input').click();
@@ -148,7 +199,6 @@
             renderEditor();
         }
 
-        // --- RENDERIZADO Y EDICIÓN ---
         function renderEditor() {
             listaPreguntas.innerHTML = "";
             quizData.forEach((item, index) => {
@@ -158,19 +208,16 @@
                 pCard.innerHTML = `
                     <button class="btn-delete" onclick="borrarPregunta(${index})">Eliminar</button>
                     <label>Pregunta:</label>
-                    <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${modoDios ? item.pregunta : '****************'}</textarea>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${modoDios ? item.pregunta : '***'}</textarea>
                     <label>Opciones:</label>
                     ${[0,1,2,3].map(i => `
                         <div class="opcion-row">
-                            <input type="radio" name="correcta-${index}" class="correcta-radio" 
-                                ${item.respuestaCorrecta === i && modoDios ? 'checked' : ''} 
-                                onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
-                            <input type="text" class="opcion-input" value="${modoDios ? (item.opciones[i] || '') : '********'}" 
-                                oninput="actualizarOpcion(${index}, ${i}, this.value)">
+                            <input type="radio" name="correcta-${index}" class="correcta-radio" ${item.respuestaCorrecta === i && modoDios ? 'checked' : ''} onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
+                            <input type="text" class="opcion-input" value="${modoDios ? (item.opciones[i] || '') : '***'}" oninput="actualizarOpcion(${index}, ${i}, this.value)">
                         </div>
                     `).join('')}
                     <label>Explicación:</label>
-                    <textarea rows="2" oninput="actualizarDato(${index}, 'explicacion', this.value)">${modoDios ? (item.explicacion || '') : '********'}</textarea>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'explicacion', this.value)">${modoDios ? (item.explicacion || '') : '***'}</textarea>
                 `;
                 listaPreguntas.appendChild(pCard);
             });
@@ -178,28 +225,13 @@
 
         function actualizarDato(i, f, v) { if(modoDios) quizData[i][f] = v; }
         function actualizarOpcion(pi, oi, v) { if(modoDios) quizData[pi].opciones[oi] = v; }
-
         function añadirPregunta() {
-            if(!modoDios) return;
             quizData.push({ pregunta: "", opciones: ["","","",""], respuestaCorrecta: 0, explicacion: "" });
             renderEditor();
-            document.getElementById(`pregunta-${quizData.length - 1}`).scrollIntoView({ behavior: 'smooth' });
         }
-
-        function borrarPregunta(i) {
-            if(modoDios && confirm("¿Borrar pregunta?")) {
-                quizData.splice(i, 1);
-                renderEditor();
-            }
-        }
-
-        function mostrarMensaje(m, t) {
-            status.innerText = m; status.className = t; status.style.display = 'block';
-            setTimeout(() => status.style.display = 'none', 3000);
-        }
-
+        function borrarPregunta(i) { if(confirm("¿Borrar?")) { quizData.splice(i, 1); renderEditor(); } }
+        function mostrarMensaje(m, t) { status.innerText = m; status.className = t; status.style.display = 'block'; setTimeout(() => status.style.display = 'none', 3000); }
         function descargarJSON() {
-            if(!modoDios) return;
             const blob = new Blob([JSON.stringify(quizData, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
