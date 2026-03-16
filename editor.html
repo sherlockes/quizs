@@ -8,20 +8,19 @@
         .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; box-sizing: border-box; }
         h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; margin-top: 0; }
         
-        /* Sistema de Protección */
+        /* Protección */
         .blur-content { filter: blur(8px); pointer-events: none; user-select: none; opacity: 0.5; }
         .hidden { display: none !important; }
 
-        /* Carga de Archivos */
+        /* Carga */
         .upload-section { display: flex; gap: 20px; flex-wrap: wrap; }
         .upload-box { flex: 1; min-width: 250px; display: flex; flex-direction: column; }
-        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fafafa; transition: 0.3s; }
-        #drop-zone.hover { background: #e8f5e9; border-color: #2e7d32; }
+        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fafafa; }
         
-        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 10px; background-color: white; }
+        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 10px; background: white; }
         
-        /* Botones Estilo App */
-        .btn-green-app { background: #2e7d32; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; padding: 10px; }
+        /* Botones Verdes App */
+        .btn-green-app { background: #2e7d32; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; padding: 12px; }
         .btn-green-app:hover:not(:disabled) { background: #1b5e20; }
         .btn-green-app:disabled { background: #ccc; cursor: not-allowed; opacity: 0.5; }
 
@@ -33,7 +32,7 @@
         #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; text-align: center; font-weight: bold; }
         .success { background: #dcedc8; color: #33691e; border: 1px solid #a5d6a7; display: block !important; }
         
-        /* Editor de tarjetas */
+        /* Tarjetas Editor */
         .pregunta-edit { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; position: relative; background: #fafafa; }
         .delete-abs { position: absolute; top: 15px; right: 15px; }
         label { display: block; font-weight: bold; margin-top: 15px; font-size: 0.85rem; color: #444; text-transform: uppercase; }
@@ -45,7 +44,6 @@
         /* Modal Importador */
         #modal-import { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); display:none; justify-content:center; align-items:center; z-index:100; }
         .modal-content { background:white; padding:25px; border-radius:12px; width:90%; max-width:700px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-        
         .help-list { background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #673ab7; margin: 15px 0; font-size: 0.9rem; line-height: 1.6; color: #333; }
         .help-list b { color: #673ab7; }
     </style>
@@ -88,15 +86,15 @@
         <div class="modal-content">
             <div style="display:flex; justify-content: space-between; align-items: center;">
                 <h3 style="margin:0">📥 Importar desde Texto Plano</h3>
-                <button onclick="cargarEjemploEnArea()" style="cursor:pointer; font-size:0.75rem; background:#eee; border:1px solid #ccc; border-radius:4px; padding:3px 8px;">Cargar ejemplo</button>
+                <button onclick="cargarEjemploEnArea()" style="cursor:pointer; font-size:0.75rem; background:#eee; border:1px solid #ccc; border-radius:4px; padding:4px 10px;">Cargar ejemplo</button>
             </div>
             
             <div class="help-list">
-                1. <b>Primera línea:</b> El enunciado de la pregunta.<br>
-                2. <b>Opciones:</b> Empieza cada una con un guion (ej: <b>- Opción</b>).<br>
-                3. <b>Respuesta:</b> Escribe <b>R:</b> y el número de la correcta (0 es la primera).<br>
-                4. <b>Explicación:</b> Escribe <b>Exp:</b> seguido del texto informativo.<br>
-                5. <b>Separación:</b> Deja <u>una línea vacía</u> entre cada bloque de pregunta.
+                1. <b>Línea 1:</b> El enunciado de la pregunta.<br>
+                2. <b>Líneas 2-5:</b> Las <u>4 opciones</u> empezando con guion (ej: <b>- Opción</b>).<br>
+                3. <b>Respuesta:</b> Escribe <b>R:</b> y el número de la correcta (0 a 3).<br>
+                4. <b>Explicación:</b> Escribe <b>Exp:</b> con la descripción para el alumno.<br>
+                5. <b>Separación:</b> Deja <u>una línea vacía</u> entre cada pregunta.
             </div>
 
             <textarea id="import-area" rows="10" placeholder="Pega aquí tus bloques de texto..." style="width:100%; margin-bottom:15px; border:1px solid #ddd; border-radius:8px; padding:12px; font-family:monospace; font-size:0.9rem;"></textarea>
@@ -122,7 +120,7 @@
         let originalFileName = "nuevo_test.json";
         let modoDios = false;
 
-        // --- SEGURIDAD ---
+        // --- SEGURIDAD (F2 + CLAVE) ---
         document.addEventListener('keydown', (e) => {
             if (e.key === "F2") { 
                 const clave = prompt("Introduce clave maestra:");
@@ -143,8 +141,23 @@
         // --- IMPORTADOR ---
         function abrirImportador() { modalImport.style.display = 'flex'; importArea.focus(); }
         function cerrarImportador() { modalImport.style.display = 'none'; importArea.value = ''; }
+        
         function cargarEjemploEnArea() {
-            importArea.value = `¿Cuál es el planeta más grande?\n- Tierra\n- Marte\n- Júpiter\nR: 2\nExp: Júpiter es un gigante gaseoso.\n\n2+2 es igual a...\n- 3\n- 4\nR: 1`;
+            importArea.value = `¿Qué planeta es conocido como el Planeta Rojo?
+- Venus
+- Marte
+- Júpiter
+- Saturno
+R: 1
+Exp: Marte tiene este color debido al óxido de hierro en su superficie.
+
+¿Cuál es el resultado de sumar 15 + 25?
+- 30
+- 35
+- 40
+- 45
+R: 2
+Exp: 15 más 25 es igual a 40.`;
         }
 
         function procesarTextoPlano() {
@@ -166,13 +179,17 @@
                         explicacion = linea.replace(/EXP:/i, '').trim();
                     }
                 });
-                if(pregunta && opciones.length > 0) quizData.push({ pregunta, opciones, respuestaCorrecta, explicacion });
+                if(pregunta && opciones.length > 0) {
+                    // Aseguramos que siempre haya 4 opciones aunque el texto tenga menos
+                    while(opciones.length < 4) opciones.push("");
+                    quizData.push({ pregunta, opciones: opciones.slice(0,4), respuestaCorrecta, explicacion });
+                }
             });
             renderEditor();
             cerrarImportador();
         }
 
-        // --- LOGICA DE ARCHIVOS ---
+        // --- LOGICA ARCHIVOS ---
         function crearNuevoVacio() {
             const nombre = prompt("Nombre del archivo:", "nuevo_test.json");
             if (nombre) {
