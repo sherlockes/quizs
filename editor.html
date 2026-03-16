@@ -2,51 +2,53 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Editor de Cuestionarios Pro</title>
+    <title>Editor de Cuestionarios - Acceso Restringido</title>
     <style>
         body { font-family: sans-serif; background: #f0f2f5; padding: 20px; display: flex; flex-direction: column; align-items: center; }
         .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; box-sizing: border-box; }
         h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; margin-top: 0; }
         
+        /* Estilos de camuflaje */
+        .blur-content { filter: blur(8px); pointer-events: none; user-select: none; opacity: 0.5; }
+        .hidden { display: none !important; }
+
         /* Zona de carga */
         .upload-section { display: flex; gap: 20px; flex-wrap: wrap; }
         .upload-box { flex: 1; min-width: 250px; }
-        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; transition: 0.3s; height: 100px; display: flex; align-items: center; justify-content: center; }
+        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; transition: 0.3s; height: 80px; display: flex; align-items: center; justify-content: center; }
         #drop-zone.hover { background: #e8f5e9; border-color: #2e7d32; }
         
-        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #a5d6a7; background: white; font-size: 1rem; cursor: pointer; }
+        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
         
-        #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; box-sizing: border-box; }
+        #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; }
         .success { background: #dcedc8; color: #33691e; border: 1px solid #a5d6a7; display: block !important; }
         .error { background: #ffcdd2; color: #b71c1c; border: 1px solid #ef9a9a; display: block !important; }
         
-        #nombre-archivo-display { font-weight: bold; color: #2e7d32; background: #e8f5e9; padding: 5px 10px; border-radius: 4px; display: inline-block; }
-        
         .pregunta-edit { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; position: relative; background: #fafafa; }
         label { display: block; font-weight: bold; margin-top: 15px; font-size: 0.85rem; color: #444; text-transform: uppercase; }
-        textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; font-family: inherit; resize: vertical; }
+        textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; font-family: inherit; }
         
         .opcion-row { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
         .opcion-input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
         
-        .btn-delete { position: absolute; top: 15px; right: 15px; background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 12px; font-size: 0.8rem; }
-        .btn-add { background: #1976d2; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; width: 100%; margin-bottom: 15px; font-weight: bold; }
-        .btn-download { background: #2e7d32; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; font-weight: bold; width: 100%; transition: 0.3s; }
+        .btn-delete { position: absolute; top: 15px; right: 15px; background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 12px; }
+        .btn-add { background: #1976d2; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 15px; font-weight: bold; }
+        .btn-download { background: #2e7d32; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; width: 100%; }
         .correcta-radio { cursor: pointer; width: 20px; height: 20px; accent-color: #2e7d32; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>🛠 Editor de Cuestionarios</h1>
+        <h1 id="main-title">🔒 Editor Protegido</h1>
         <div class="upload-section">
             <div class="upload-box">
-                <label>Desde tu PC:</label>
+                <label>Archivo Local:</label>
                 <div id="drop-zone">Arrastra un JSON o haz clic</div>
                 <input type="file" id="file-input" style="display: none" accept=".json">
             </div>
             <div class="upload-box" id="repo-load-box">
-                <label>Desde el Repositorio:</label>
+                <label>Archivo del Servidor:</label>
                 <select id="repo-selector">
                     <option value="" disabled selected>Cargando índice...</option>
                 </select>
@@ -56,39 +58,57 @@
 
     <div id="status"></div>
 
-    <div id="editor-container" style="width: 100%; max-width: 800px; display: none;">
+    <div id="editor-container" class="blur-content" style="width: 100%; max-width: 800px; display: none;">
         <div class="card" style="text-align: center; padding: 1rem;">
-            <span>Editando: </span><span id="nombre-archivo-display"></span>
+            <span>Archivo: </span><span id="nombre-archivo-display" style="font-weight:bold"></span>
         </div>
         
         <div id="lista-preguntas"></div>
         
-        <div class="card">
+        <div id="admin-controls" class="card hidden">
             <button class="btn-add" onclick="añadirPregunta()">➕ Añadir Nueva Pregunta</button>
             <button class="btn-download" onclick="descargarJSON()">📥 Guardar y Descargar JSON</button>
         </div>
     </div>
 
     <script>
-        const fileInput = document.getElementById('file-input');
         const repoSelector = document.getElementById('repo-selector');
         const status = document.getElementById('status');
         const editorContainer = document.getElementById('editor-container');
         const listaPreguntas = document.getElementById('lista-preguntas');
-        const nombreArchivoDisplay = document.getElementById('nombre-archivo-display');
+        const adminControls = document.getElementById('admin-controls');
         
         let quizData = [];
-        let originalFileName = "nuevo_cuestionario.json";
+        let originalFileName = "cuestionario.json";
+        let modoDios = false;
 
-        // 1. Cargar el índice al iniciar
+        // --- SISTEMA DE SEGURIDAD (MODO DIOS) ---
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "F2") { 
+                const clave = prompt("Introduce clave maestra:");
+                if(clave === "1234") { // CAMBIA ESTA CLAVE
+                    activarAdmin();
+                } else {
+                    alert("Clave incorrecta");
+                }
+            }
+        });
+
+        function activarAdmin() {
+            modoDios = true;
+            document.getElementById('main-title').innerText = "🛠 Editor de Cuestionarios";
+            editorContainer.classList.remove('blur-content');
+            adminControls.classList.remove('hidden');
+            if(quizData.length > 0) renderEditor(); 
+            mostrarMensaje("Modo administrador activado", "success");
+        }
+
+        // --- CARGA DE DATOS ---
         async function cargarIndice() {
             try {
-                // Intentamos cargar el index.json relativo al validador
                 const response = await fetch('index.json');
-                if (!response.ok) throw new Error();
                 const temas = await response.json();
-                
-                repoSelector.innerHTML = '<option value="" disabled selected>Selecciona un test del repo...</option>';
+                repoSelector.innerHTML = '<option value="" disabled selected>Selecciona un test...</option>';
                 temas.forEach(t => {
                     const opt = document.createElement('option');
                     opt.value = t.archivo;
@@ -96,90 +116,90 @@
                     repoSelector.appendChild(opt);
                 });
             } catch (e) {
-                document.getElementById('repo-load-box').innerHTML = '<p style="color:gray; font-size:0.8rem; margin-top:20px;">Nota: Solo verás los tests del repo si ejecutas este archivo desde el servidor de la web.</p>';
+                console.log("No se pudo cargar el índice (uso local)");
             }
         }
 
-        // 2. Cargar test desde el repositorio
         repoSelector.onchange = async (e) => {
             const ruta = e.target.value;
-            originalFileName = ruta.split('/').pop(); // Extrae el nombre del archivo de la ruta
+            originalFileName = ruta.split('/').pop();
             try {
                 const response = await fetch(ruta);
                 const data = await response.json();
                 procesarDatos(data);
-                mostrarMensaje(`✅ "${originalFileName}" cargado desde el servidor.`, "success");
-            } catch (err) {
-                mostrarMensaje("❌ Error al descargar el archivo del servidor.", "error");
-            }
+            } catch (err) { mostrarMensaje("Error al cargar archivo", "error"); }
         };
 
-        // 3. Procesar archivo local
-        document.getElementById('drop-zone').onclick = () => fileInput.click();
-        fileInput.onchange = (e) => {
+        document.getElementById('drop-zone').onclick = () => document.getElementById('file-input').click();
+        document.getElementById('file-input').onchange = (e) => {
             const file = e.target.files[0];
             if (file) {
                 originalFileName = file.name;
                 const reader = new FileReader();
-                reader.onload = (ev) => {
-                    try {
-                        procesarDatos(JSON.parse(ev.target.result));
-                        mostrarMensaje("✅ Archivo local cargado.", "success");
-                    } catch(e) { mostrarMensaje("💥 Error en el JSON local.", "error"); }
-                };
+                reader.onload = (ev) => procesarDatos(JSON.parse(ev.target.result));
                 reader.readAsText(file);
             }
         };
 
         function procesarDatos(data) {
             quizData = data.map(({id, ...rest}) => rest);
-            nombreArchivoDisplay.innerText = originalFileName;
+            document.getElementById('nombre-archivo-display').innerText = originalFileName;
+            editorContainer.style.display = 'block';
             renderEditor();
         }
 
+        // --- RENDERIZADO Y EDICIÓN ---
         function renderEditor() {
-            editorContainer.style.display = 'block';
             listaPreguntas.innerHTML = "";
-            quizData.forEach((item, index) => crearTarjetaPregunta(item, index));
+            quizData.forEach((item, index) => {
+                const pCard = document.createElement('div');
+                pCard.className = 'pregunta-edit card';
+                pCard.id = `pregunta-${index}`;
+                pCard.innerHTML = `
+                    <button class="btn-delete" onclick="borrarPregunta(${index})">Eliminar</button>
+                    <label>Pregunta:</label>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${modoDios ? item.pregunta : '****************'}</textarea>
+                    <label>Opciones:</label>
+                    ${[0,1,2,3].map(i => `
+                        <div class="opcion-row">
+                            <input type="radio" name="correcta-${index}" class="correcta-radio" 
+                                ${item.respuestaCorrecta === i && modoDios ? 'checked' : ''} 
+                                onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
+                            <input type="text" class="opcion-input" value="${modoDios ? (item.opciones[i] || '') : '********'}" 
+                                oninput="actualizarOpcion(${index}, ${i}, this.value)">
+                        </div>
+                    `).join('')}
+                    <label>Explicación:</label>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'explicacion', this.value)">${modoDios ? (item.explicacion || '') : '********'}</textarea>
+                `;
+                listaPreguntas.appendChild(pCard);
+            });
         }
 
-        function crearTarjetaPregunta(item, index) {
-            const pCard = document.createElement('div');
-            pCard.className = 'pregunta-edit card';
-            pCard.id = `pregunta-${index}`;
-            pCard.innerHTML = `
-                <button class="btn-delete" onclick="borrarPregunta(${index})">Eliminar</button>
-                <label>Pregunta:</label>
-                <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${item.pregunta || ''}</textarea>
-                <label>Opciones:</label>
-                ${[0,1,2,3].map(i => `
-                    <div class="opcion-row">
-                        <input type="radio" name="correcta-${index}" class="correcta-radio" ${item.respuestaCorrecta === i ? 'checked' : ''} onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
-                        <input type="text" class="opcion-input" value="${item.opciones[i] || ''}" oninput="actualizarOpcion(${index}, ${i}, this.value)">
-                    </div>
-                `).join('')}
-                <label>Explicación:</label>
-                <textarea rows="2" oninput="actualizarDato(${index}, 'explicacion', this.value)">${item.explicacion || ''}</textarea>
-            `;
-            listaPreguntas.appendChild(pCard);
-        }
+        function actualizarDato(i, f, v) { if(modoDios) quizData[i][f] = v; }
+        function actualizarOpcion(pi, oi, v) { if(modoDios) quizData[pi].opciones[oi] = v; }
 
         function añadirPregunta() {
-            const nuevaP = { pregunta: "", opciones: ["","","",""], respuestaCorrecta: 0, explicacion: "" };
-            quizData.push(nuevaP);
-            crearTarjetaPregunta(nuevaP, quizData.length - 1);
+            if(!modoDios) return;
+            quizData.push({ pregunta: "", opciones: ["","","",""], respuestaCorrecta: 0, explicacion: "" });
+            renderEditor();
             document.getElementById(`pregunta-${quizData.length - 1}`).scrollIntoView({ behavior: 'smooth' });
         }
 
-        function actualizarDato(i, f, v) { quizData[i][f] = v; }
-        function actualizarOpcion(pi, oi, v) { quizData[pi].opciones[oi] = v; }
-        function borrarPregunta(i) { if(confirm("¿Eliminar?")) { quizData.splice(i, 1); renderEditor(); } }
-        
+        function borrarPregunta(i) {
+            if(modoDios && confirm("¿Borrar pregunta?")) {
+                quizData.splice(i, 1);
+                renderEditor();
+            }
+        }
+
         function mostrarMensaje(m, t) {
             status.innerText = m; status.className = t; status.style.display = 'block';
+            setTimeout(() => status.style.display = 'none', 3000);
         }
 
         function descargarJSON() {
+            if(!modoDios) return;
             const blob = new Blob([JSON.stringify(quizData, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
