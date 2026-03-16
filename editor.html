@@ -8,18 +8,15 @@
         .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; box-sizing: border-box; }
         h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; margin-top: 0; }
         
-        /* Protección */
         .blur-content { filter: blur(8px); pointer-events: none; user-select: none; opacity: 0.5; }
         .hidden { display: none !important; }
 
-        /* Carga */
         .upload-section { display: flex; gap: 20px; flex-wrap: wrap; }
         .upload-box { flex: 1; min-width: 250px; display: flex; flex-direction: column; }
         #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fafafa; }
         
         select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 10px; background: white; }
         
-        /* Botones Verdes App */
         .btn-green-app { background: #2e7d32; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; padding: 12px; }
         .btn-green-app:hover:not(:disabled) { background: #1b5e20; }
         .btn-green-app:disabled { background: #ccc; cursor: not-allowed; opacity: 0.5; }
@@ -32,7 +29,6 @@
         #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; text-align: center; font-weight: bold; }
         .success { background: #dcedc8; color: #33691e; border: 1px solid #a5d6a7; display: block !important; }
         
-        /* Tarjetas Editor */
         .pregunta-edit { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; position: relative; background: #fafafa; }
         .delete-abs { position: absolute; top: 15px; right: 15px; }
         label { display: block; font-weight: bold; margin-top: 15px; font-size: 0.85rem; color: #444; text-transform: uppercase; }
@@ -41,7 +37,6 @@
         .opcion-input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
         .correcta-radio { cursor: pointer; width: 20px; height: 20px; accent-color: #2e7d32; }
 
-        /* Modal Importador */
         #modal-import { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); display:none; justify-content:center; align-items:center; z-index:100; }
         .modal-content { background:white; padding:25px; border-radius:12px; width:90%; max-width:700px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
         .help-list { background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #673ab7; margin: 15px 0; font-size: 0.9rem; line-height: 1.6; color: #333; }
@@ -91,10 +86,10 @@
             
             <div class="help-list">
                 1. <b>Línea 1:</b> El enunciado de la pregunta.<br>
-                2. <b>Líneas 2-5:</b> Las <u>4 opciones</u> empezando con guion (ej: <b>- Opción</b>).<br>
-                3. <b>Respuesta:</b> Escribe <b>R:</b> y el número de la correcta (0 a 3).<br>
-                4. <b>Explicación:</b> Escribe <b>Exp:</b> con la descripción para el alumno.<br>
-                5. <b>Separación:</b> Deja <u>una línea vacía</u> entre cada pregunta.
+                2. <b>Opciones:</b> Es necesario incluir <u>4 opciones</u> empezando con guion (ej: <b>- Opción</b>).<br>
+                3. <b>Respuesta:</b> Escribe <b>R:</b> seguido del número de la correcta (0 a 3).<br>
+                4. <b>Explicación:</b> Escribe <b>Exp:</b> seguido del texto de la explicación.<br>
+                5. <b>Separación:</b> Deja <u>una línea vacía</u> entre cada bloque de pregunta.
             </div>
 
             <textarea id="import-area" rows="10" placeholder="Pega aquí tus bloques de texto..." style="width:100%; margin-bottom:15px; border:1px solid #ddd; border-radius:8px; padding:12px; font-family:monospace; font-size:0.9rem;"></textarea>
@@ -120,7 +115,6 @@
         let originalFileName = "nuevo_test.json";
         let modoDios = false;
 
-        // --- SEGURIDAD (F2 + CLAVE) ---
         document.addEventListener('keydown', (e) => {
             if (e.key === "F2") { 
                 const clave = prompt("Introduce clave maestra:");
@@ -138,58 +132,56 @@
             mostrarMensaje("Modo edición desbloqueado", "success");
         }
 
-        // --- IMPORTADOR ---
         function abrirImportador() { modalImport.style.display = 'flex'; importArea.focus(); }
         function cerrarImportador() { modalImport.style.display = 'none'; importArea.value = ''; }
         
         function cargarEjemploEnArea() {
-            importArea.value = `¿Qué planeta es conocido como el Planeta Rojo?
-- Venus
-- Marte
-- Júpiter
-- Saturno
-R: 1
-Exp: Marte tiene este color debido al óxido de hierro en su superficie.
-
-¿Cuál es el resultado de sumar 15 + 25?
-- 30
-- 35
-- 40
-- 45
-R: 2
-Exp: 15 más 25 es igual a 40.`;
+            importArea.value = `¿Qué planeta es conocido como el Planeta Rojo?\n- Venus\n- Marte\n- Júpiter\n- Saturno\nR: 1\nExp: Marte tiene este color debido al óxido de hierro en su superficie.\n\n¿Cuál es el resultado de sumar 15 + 25?\n- 30\n- 35\n- 40\n- 45\nR: 2\nExp: 15 más 25 es igual a 40.`;
         }
 
         function procesarTextoPlano() {
             const texto = importArea.value.trim();
             if(!texto) return;
+            
+            // Separamos por bloques (líneas vacías)
             const bloques = texto.split(/\n\s*\n/);
+            
             bloques.forEach(bloque => {
                 const lineas = bloque.split('\n').map(l => l.trim());
+                if (lineas.length < 2) return;
+
                 let pregunta = lineas[0];
                 let opciones = [];
                 let respuestaCorrecta = 0;
                 let explicacion = "";
+
                 lineas.slice(1).forEach(linea => {
-                    if (linea.startsWith('-') || linea.match(/^\d[\.\)]/)) {
-                        opciones.push(linea.replace(/^[- \d\.\)]+/, '').trim());
+                    // Detecta guiones (cortos, largos, viñetas) o números al inicio
+                    if (linea.match(/^[-–—•*]|^[a-zA-Z0-9][\.\)]/)) {
+                        const textoOpcion = linea.replace(/^[-–—•*]|^[a-zA-Z0-9][\.\)]/, '').trim();
+                        opciones.push(textoOpcion);
                     } else if (linea.toUpperCase().startsWith('R:')) {
                         respuestaCorrecta = parseInt(linea.replace(/R:/i, '').trim()) || 0;
                     } else if (linea.toUpperCase().startsWith('EXP:')) {
                         explicacion = linea.replace(/EXP:/i, '').trim();
                     }
                 });
+
                 if(pregunta && opciones.length > 0) {
-                    // Aseguramos que siempre haya 4 opciones aunque el texto tenga menos
-                    while(opciones.length < 4) opciones.push("");
-                    quizData.push({ pregunta, opciones: opciones.slice(0,4), respuestaCorrecta, explicacion });
+                    // Forzamos 4 opciones para mantener la estructura
+                    while(opciones.length < 4) opciones.push("Opción vacía");
+                    quizData.push({ 
+                        pregunta, 
+                        opciones: opciones.slice(0, 4), 
+                        respuestaCorrecta: Math.min(respuestaCorrecta, 3), 
+                        explicacion 
+                    });
                 }
             });
             renderEditor();
             cerrarImportador();
         }
 
-        // --- LOGICA ARCHIVOS ---
         function crearNuevoVacio() {
             const nombre = prompt("Nombre del archivo:", "nuevo_test.json");
             if (nombre) {
