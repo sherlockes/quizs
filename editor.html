@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validador y Editor de Cuestionarios</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; }
+        h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; }
+        #drop-zone { border: 2px dashed #a5d6a7; padding: 40px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; transition: 0.3s; margin-bottom: 20px; }
+        #drop-zone.hover { background: #e8f5e9; border-color: #2e7d32; }
+        #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 770px; }
+        .success { background: #dcedc8; color: #33691e; border: 1px solid #a5d6a7; display: block !important; }
+        .error { background: #ffcdd2; color: #b71c1c; border: 1px solid #ef9a9a; display: block !important; white-space: pre-wrap; }
+        
+        /* Estilos del Editor */
+        .pregunta-edit { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 15px; position: relative; background: #fafafa; }
+        .pregunta-edit:hover { border-color: #a5d6a7; }
+        label { display: block; font-weight: bold; margin-top: 10px; font-size: 0.9rem; color: #555; }
+        input[type="text"], textarea { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; }
+        .opcion-row { display: flex; align-items: center; gap: 10px; margin-top: 5px; }
+        .btn-delete { position: absolute; top: 10px; right: 10px; background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 10px; }
+        .btn-download { background: #2e7d32; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; margin-top: 20px; width: 100%; }
+        .btn-download:hover { background: #1b5e20; }
+        .correcta-radio { cursor: pointer; width: 18px; height: 18px; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🛠 Validador y Editor de Cuestionarios</h1>
+        <div id="drop-zone">Arrastra aquí tu archivo .json o haz clic para seleccionar</div>
+        <input type="file" id="file-input" style="display: none" accept=".json">
+    </div>
+
+    <div id="status"></div>
+
+    <div id="editor-container" style="width: 100%; max-width: 800px; display: none;">
+        <div id="lista-preguntas"></div>
+        <button class="btn-download" onclick="descargarJSON()">📥 Descargar JSON corregido</button>
+    </div>
+
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('file-input');
+        const status = document.getElementById('status');
+        const editorContainer = document.getElementById('editor-container');
+        const listaPreguntas = document.getElementById('lista-preguntas');
+        
+        let quizData = [];
+
+        // Gestión de archivos
+        dropZone.onclick = () => fileInput.click();
+        fileInput.onchange = (e) => procesarArchivo(e.target.files[0]);
+        dropZone.ondragover = (e) => { e.preventDefault(); dropZone.classList.add('hover'); };
+        dropZone.ondragleave = () => dropZone.classList.remove('hover');
+        dropZone.ondrop = (e) => { e.preventDefault(); dropZone.classList.remove('hover'); procesarArchivo(e.dataTransfer.files[0]); };
+
+        function procesarArchivo(file) {
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    const errores = comprobarEstructura(data);
+                    
+                    if (errores.length === 0) {
+                        quizData = data;
+                        mostrarMensaje("✅ JSON Válido. Ya puedes editar las preguntas abajo.", "success");
+                        renderEditor();
+                    } else {
+                        mostrarMensaje("❌ Errores encontrados:\n" + errores.join("\n"), "error");
+                        editorContainer.style.display = 'none';
+                    }
+                } catch (err) {
+                    mostrarMensaje("💥 Error crítico: El archivo no es un JSON válido.", "error");
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function comprobarEstructura(data) {
+            let errs = [];
+            if (!Array.isArray(data)) return ["El archivo debe ser un array [ ... ]"];
+            data.forEach((item, i) => {
+                if (!item.pregunta) errs.push(`Falta "pregunta" en bloque ${i+1}`);
+                if (!Array.isArray(item.opciones)) errs.push(`Falta "opciones" en bloque ${i+1}`);
+                if (typeof item.respuestaCorrecta !== 'number') errs.push(`"respuestaCorrecta" no es un número en bloque ${i+1}`);
+            });
+            return errs;
+        }
+
+        function mostrarMensaje(msg, tipo) {
+            status.innerText = msg;
+            status.className = tipo;
+        }
+
+        function renderEditor() {
+            editorContainer.style.display = 'block';
+            listaPreguntas.innerHTML = "";
+
+            quizData.forEach((item, index) => {
+                const pCard = document.createElement('div');
+                pCard.className = 'pregunta-edit card';
+                pCard.innerHTML = `
+                    <button class="btn-delete" onclick="borrarPregunta(${index})">Eliminar</button>
+                    <h3>Pregunta ${index + 1}</h3>
+                    
+                    <label>Texto de la pregunta:</label>
+                    <textarea onchange="actualizarDato(${index}, 'pregunta', this.value)">${item.pregunta}</textarea>
+                    
+                    <label>Opciones (marca la correcta):</label>
+                    ${item.opciones.map((op, i) => `
+                        <div class="opcion-row">
+                            <input type="radio" name="correcta-${index}" class="correcta-radio" 
+                                ${item.respuestaCorrecta === i ? 'checked' : ''} 
+                                onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
+                            <input type="text" value="${op}" onchange="actualizarOpcion(${index}, ${i}, this.value)">
+                        </div>
+                    `).join('')}
+                    
+                    <label>Explicación:</label>
+                    <textarea onchange="actualizarDato(${index}, 'explicacion', this.value)">${item.explicacion || ''}</textarea>
+                `;
+                listaPreguntas.appendChild(pCard);
+            });
+        }
+
+        function actualizarDato(index, campo, valor) {
+            quizData[index][campo] = valor;
+        }
+
+        function actualizarOpcion(pIndex, oIndex, valor) {
+            quizData[pIndex].opciones[oIndex] = valor;
+        }
+
+        function borrarPregunta(index) {
+            if(confirm("¿Seguro que quieres borrar esta pregunta?")) {
+                quizData.splice(index, 1);
+                renderEditor();
+            }
+        }
+
+        function descargarJSON() {
+            // Limpiamos posibles IDs antiguos si los hubiera, para seguir tu nueva política sin IDs
+            const dataToExport = quizData.map(({id, ...rest}) => rest);
+            
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataToExport, null, 2));
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", "cuestionario_corregido.json");
+            document.body.appendChild(downloadAnchorNode);
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+        }
+    </script>
+</body>
+</html>
