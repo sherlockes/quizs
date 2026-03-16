@@ -2,42 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Validador y Editor de Cuestionarios</title>
+    <title>Editor de Cuestionarios</title>
     <style>
         body { font-family: sans-serif; background: #f0f2f5; padding: 20px; display: flex; flex-direction: column; align-items: center; }
-        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; }
-        h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; }
-        #drop-zone { border: 2px dashed #a5d6a7; padding: 40px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; transition: 0.3s; margin-bottom: 20px; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; box-sizing: border-box; }
+        h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; margin-top: 0; }
+        #drop-zone { border: 2px dashed #a5d6a7; padding: 40px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; transition: 0.3s; }
         #drop-zone.hover { background: #e8f5e9; border-color: #2e7d32; }
-        #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 770px; }
+        #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; box-sizing: border-box; }
         .success { background: #dcedc8; color: #33691e; border: 1px solid #a5d6a7; display: block !important; }
         .error { background: #ffcdd2; color: #b71c1c; border: 1px solid #ef9a9a; display: block !important; white-space: pre-wrap; }
         
         /* Estilos del Editor */
-        .pregunta-edit { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 15px; position: relative; background: #fafafa; }
-        .pregunta-edit:hover { border-color: #a5d6a7; }
-        label { display: block; font-weight: bold; margin-top: 10px; font-size: 0.9rem; color: #555; }
-        input[type="text"], textarea { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; }
-        .opcion-row { display: flex; align-items: center; gap: 10px; margin-top: 5px; }
-        .btn-delete { position: absolute; top: 10px; right: 10px; background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 10px; }
-        .btn-download { background: #2e7d32; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; margin-top: 20px; width: 100%; }
-        .btn-download:hover { background: #1b5e20; }
-        .correcta-radio { cursor: pointer; width: 18px; height: 18px; }
+        #nombre-archivo-display { font-weight: bold; color: #2e7d32; background: #e8f5e9; padding: 5px 10px; border-radius: 4px; margin-bottom: 15px; display: inline-block; }
+        .pregunta-edit { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; position: relative; background: #fafafa; }
+        label { display: block; font-weight: bold; margin-top: 15px; font-size: 0.85rem; color: #444; text-transform: uppercase; }
+        textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; font-family: inherit; resize: vertical; }
+        .opcion-row { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+        .opcion-input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .btn-delete { position: absolute; top: 15px; right: 15px; background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 12px; font-size: 0.8rem; }
+        .btn-delete:hover { background: #d32f2f; }
+        .btn-download { background: #2e7d32; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; font-weight: bold; width: 100%; transition: 0.3s; }
+        .btn-download:hover { background: #1b5e20; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .correcta-radio { cursor: pointer; width: 20px; height: 20px; accent-color: #2e7d32; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>🛠 Validador y Editor de Cuestionarios</h1>
-        <div id="drop-zone">Arrastra aquí tu archivo .json o haz clic para seleccionar</div>
+        <h1>🛠 Validador y Editor Visual</h1>
+        <div id="drop-zone">Arrastra el JSON aquí o haz clic para buscarlo</div>
         <input type="file" id="file-input" style="display: none" accept=".json">
     </div>
 
     <div id="status"></div>
 
     <div id="editor-container" style="width: 100%; max-width: 800px; display: none;">
+        <div class="card" style="text-align: center; padding: 1rem;">
+            <span>Editando: </span><span id="nombre-archivo-display"></span>
+        </div>
+        
         <div id="lista-preguntas"></div>
-        <button class="btn-download" onclick="descargarJSON()">📥 Descargar JSON corregido</button>
+        
+        <div class="card">
+            <button class="btn-download" onclick="descargarJSON()">📥 Guardar y Descargar JSON</button>
+        </div>
     </div>
 
     <script>
@@ -46,10 +55,11 @@
         const status = document.getElementById('status');
         const editorContainer = document.getElementById('editor-container');
         const listaPreguntas = document.getElementById('lista-preguntas');
+        const nombreArchivoDisplay = document.getElementById('nombre-archivo-display');
         
         let quizData = [];
+        let originalFileName = "cuestionario.json";
 
-        // Gestión de archivos
         dropZone.onclick = () => fileInput.click();
         fileInput.onchange = (e) => procesarArchivo(e.target.files[0]);
         dropZone.ondragover = (e) => { e.preventDefault(); dropZone.classList.add('hover'); };
@@ -58,6 +68,7 @@
 
         function procesarArchivo(file) {
             if (!file) return;
+            originalFileName = file.name;
             const reader = new FileReader();
             reader.onload = (e) => {
                 try {
@@ -65,15 +76,17 @@
                     const errores = comprobarEstructura(data);
                     
                     if (errores.length === 0) {
-                        quizData = data;
-                        mostrarMensaje("✅ JSON Válido. Ya puedes editar las preguntas abajo.", "success");
+                        // Limpiamos los IDs al cargar para trabajar sin ellos
+                        quizData = data.map(({id, ...rest}) => rest);
+                        nombreArchivoDisplay.innerText = originalFileName;
+                        mostrarMensaje("✅ Archivo cargado correctamente.", "success");
                         renderEditor();
                     } else {
-                        mostrarMensaje("❌ Errores encontrados:\n" + errores.join("\n"), "error");
+                        mostrarMensaje("❌ Errores en la estructura:\n" + errores.join("\n"), "error");
                         editorContainer.style.display = 'none';
                     }
                 } catch (err) {
-                    mostrarMensaje("💥 Error crítico: El archivo no es un JSON válido.", "error");
+                    mostrarMensaje("💥 Error: El archivo no es un JSON válido o tiene errores de sintaxis.", "error");
                 }
             };
             reader.readAsText(file);
@@ -81,11 +94,11 @@
 
         function comprobarEstructura(data) {
             let errs = [];
-            if (!Array.isArray(data)) return ["El archivo debe ser un array [ ... ]"];
+            if (!Array.isArray(data)) return ["El archivo debe ser una lista [ ... ]"];
             data.forEach((item, i) => {
-                if (!item.pregunta) errs.push(`Falta "pregunta" en bloque ${i+1}`);
-                if (!Array.isArray(item.opciones)) errs.push(`Falta "opciones" en bloque ${i+1}`);
-                if (typeof item.respuestaCorrecta !== 'number') errs.push(`"respuestaCorrecta" no es un número en bloque ${i+1}`);
+                if (!item.pregunta) errs.push(`Bloque ${i+1}: Falta la pregunta.`);
+                if (!Array.isArray(item.opciones) || item.opciones.length < 2) errs.push(`Bloque ${i+1}: Faltan opciones.`);
+                if (typeof item.respuestaCorrecta !== 'number') errs.push(`Bloque ${i+1}: No hay respuesta correcta definida.`);
             });
             return errs;
         }
@@ -103,24 +116,23 @@
                 const pCard = document.createElement('div');
                 pCard.className = 'pregunta-edit card';
                 pCard.innerHTML = `
-                    <button class="btn-delete" onclick="borrarPregunta(${index})">Eliminar</button>
-                    <h3>Pregunta ${index + 1}</h3>
+                    <button class="btn-delete" onclick="borrarPregunta(${index})">Eliminar Pregunta</button>
                     
-                    <label>Texto de la pregunta:</label>
-                    <textarea onchange="actualizarDato(${index}, 'pregunta', this.value)">${item.pregunta}</textarea>
+                    <label>Pregunta:</label>
+                    <textarea rows="2" onchange="actualizarDato(${index}, 'pregunta', this.value)">${item.pregunta}</textarea>
                     
-                    <label>Opciones (marca la correcta):</label>
+                    <label>Opciones y Respuesta Correcta:</label>
                     ${item.opciones.map((op, i) => `
                         <div class="opcion-row">
                             <input type="radio" name="correcta-${index}" class="correcta-radio" 
                                 ${item.respuestaCorrecta === i ? 'checked' : ''} 
                                 onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
-                            <input type="text" value="${op}" onchange="actualizarOpcion(${index}, ${i}, this.value)">
+                            <input type="text" class="opcion-input" value="${op}" onchange="actualizarOpcion(${index}, ${i}, this.value)">
                         </div>
                     `).join('')}
                     
-                    <label>Explicación:</label>
-                    <textarea onchange="actualizarDato(${index}, 'explicacion', this.value)">${item.explicacion || ''}</textarea>
+                    <label>Explicación (se muestra al fallar):</label>
+                    <textarea rows="2" onchange="actualizarDato(${index}, 'explicacion', this.value)">${item.explicacion || ''}</textarea>
                 `;
                 listaPreguntas.appendChild(pCard);
             });
@@ -135,23 +147,23 @@
         }
 
         function borrarPregunta(index) {
-            if(confirm("¿Seguro que quieres borrar esta pregunta?")) {
+            if(confirm("¿Estás seguro de eliminar esta pregunta?")) {
                 quizData.splice(index, 1);
                 renderEditor();
             }
         }
 
         function descargarJSON() {
-            // Limpiamos posibles IDs antiguos si los hubiera, para seguir tu nueva política sin IDs
-            const dataToExport = quizData.map(({id, ...rest}) => rest);
-            
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataToExport, null, 2));
-            const downloadAnchorNode = document.createElement('a');
-            downloadAnchorNode.setAttribute("href", dataStr);
-            downloadAnchorNode.setAttribute("download", "cuestionario_corregido.json");
-            document.body.appendChild(downloadAnchorNode);
-            downloadAnchorNode.click();
-            downloadAnchorNode.remove();
+            // El JSON se exporta limpio, sin IDs y con el formato original
+            const blob = new Blob([JSON.stringify(quizData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = originalFileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         }
     </script>
 </body>
