@@ -8,42 +8,46 @@
         .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; box-sizing: border-box; }
         h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; margin-top: 0; }
         
-        /* Camuflaje */
+        /* Sistema de Protección */
         .blur-content { filter: blur(8px); pointer-events: none; user-select: none; opacity: 0.5; }
         .hidden { display: none !important; }
 
-        /* Carga */
+        /* Carga de Archivos */
         .upload-section { display: flex; gap: 20px; flex-wrap: wrap; }
         .upload-box { flex: 1; min-width: 250px; display: flex; flex-direction: column; }
-        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fafafa; }
+        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fafafa; transition: 0.3s; }
+        #drop-zone.hover { background: #e8f5e9; border-color: #2e7d32; }
         
-        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 10px; }
+        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 10px; background-color: white; }
         
-        /* Botones con estilo verde de la App */
+        /* Botones Estilo App */
         .btn-green-app { background: #2e7d32; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; padding: 10px; }
         .btn-green-app:hover:not(:disabled) { background: #1b5e20; }
         .btn-green-app:disabled { background: #ccc; cursor: not-allowed; opacity: 0.5; }
 
         .btn-add { background: #1976d2; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 10px; font-weight: bold; }
         .btn-import { background: #673ab7; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 10px; font-weight: bold; }
-        .btn-delete { position: absolute; top: 15px; right: 15px; background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 12px; }
+        .btn-delete { background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 12px; }
         .btn-download { background: #2e7d32; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; width: 100%; font-weight: bold; }
 
         #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; text-align: center; font-weight: bold; }
         .success { background: #dcedc8; color: #33691e; border: 1px solid #a5d6a7; display: block !important; }
         
-        /* Editor tarjetas */
+        /* Editor de tarjetas */
         .pregunta-edit { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; position: relative; background: #fafafa; }
+        .delete-abs { position: absolute; top: 15px; right: 15px; }
         label { display: block; font-weight: bold; margin-top: 15px; font-size: 0.85rem; color: #444; text-transform: uppercase; }
         textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; font-family: inherit; }
         .opcion-row { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
         .opcion-input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
         .correcta-radio { cursor: pointer; width: 20px; height: 20px; accent-color: #2e7d32; }
 
-        /* Modal */
+        /* Modal Importador */
         #modal-import { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); display:none; justify-content:center; align-items:center; z-index:100; }
-        .modal-content { background:white; padding:20px; border-radius:12px; width:90%; max-width:700px; }
-        .help-text { font-size: 0.85rem; color: #444; background: #fdfdfd; padding: 15px; border-radius: 6px; border-left: 5px solid #673ab7; margin-bottom: 15px; line-height: 1.5; }
+        .modal-content { background:white; padding:25px; border-radius:12px; width:90%; max-width:700px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        
+        .help-list { background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #673ab7; margin: 15px 0; font-size: 0.9rem; line-height: 1.6; color: #333; }
+        .help-list b { color: #673ab7; }
     </style>
 </head>
 <body>
@@ -82,17 +86,24 @@
 
     <div id="modal-import">
         <div class="modal-content">
-            <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <h3 style="margin:0">📥 Importador de Texto Plano</h3>
-                <button onclick="cargarEjemploEnArea()" style="cursor:pointer; font-size:0.8rem; background:#eee; border:1px solid #ccc; border-radius:4px; padding:4px 10px;">Ver ejemplo</button>
+            <div style="display:flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin:0">📥 Importar desde Texto Plano</h3>
+                <button onclick="cargarEjemploEnArea()" style="cursor:pointer; font-size:0.75rem; background:#eee; border:1px solid #ccc; border-radius:4px; padding:3px 8px;">Cargar ejemplo</button>
             </div>
-            <div class="help-text">
-                <strong>Instrucciones:</strong> Pregunta (línea 1), Opciones con guion (<b>- Opción</b>), Respuesta (<b>R:</b> índice), Explicación (<b>Exp:</b>). Una línea en blanco entre bloques.
+            
+            <div class="help-list">
+                1. <b>Primera línea:</b> El enunciado de la pregunta.<br>
+                2. <b>Opciones:</b> Empieza cada una con un guion (ej: <b>- Opción</b>).<br>
+                3. <b>Respuesta:</b> Escribe <b>R:</b> y el número de la correcta (0 es la primera).<br>
+                4. <b>Explicación:</b> Escribe <b>Exp:</b> seguido del texto informativo.<br>
+                5. <b>Separación:</b> Deja <u>una línea vacía</u> entre cada bloque de pregunta.
             </div>
-            <textarea id="import-area" rows="12" placeholder="Pega aquí tus bloques de preguntas..." style="width:100%; margin-bottom:15px; border:1px solid #ddd; border-radius:8px; padding:10px; font-family:monospace;"></textarea>
+
+            <textarea id="import-area" rows="10" placeholder="Pega aquí tus bloques de texto..." style="width:100%; margin-bottom:15px; border:1px solid #ddd; border-radius:8px; padding:12px; font-family:monospace; font-size:0.9rem;"></textarea>
+            
             <div style="display:flex; gap:10px">
                 <button class="btn-add" style="margin:0; flex:2" onclick="procesarTextoPlano()">🚀 Procesar e Insertar</button>
-                <button class="btn-delete" style="position:static; flex:1" onclick="cerrarImportador()">Cancelar</button>
+                <button class="btn-delete" style="flex:1" onclick="cerrarImportador()">Cancelar</button>
             </div>
         </div>
     </div>
@@ -111,6 +122,7 @@
         let originalFileName = "nuevo_test.json";
         let modoDios = false;
 
+        // --- SEGURIDAD ---
         document.addEventListener('keydown', (e) => {
             if (e.key === "F2") { 
                 const clave = prompt("Introduce clave maestra:");
@@ -123,27 +135,16 @@
             document.getElementById('main-title').innerText = "🛠 Editor de Cuestionarios";
             editorContainer.classList.remove('blur-content');
             adminControls.classList.remove('hidden');
-            btnCrearNuevo.disabled = false; // SE ACTIVA AL DESBLOQUEAR
+            btnCrearNuevo.disabled = false;
             if(quizData.length > 0) renderEditor();
             mostrarMensaje("Modo edición desbloqueado", "success");
         }
 
-        function crearNuevoVacio() {
-            const nombre = prompt("Nombre del archivo:", "nuevo_test.json");
-            if (nombre) {
-                originalFileName = nombre.endsWith('.json') ? nombre : nombre + '.json';
-                quizData = [];
-                document.getElementById('nombre-archivo-display').innerText = originalFileName;
-                editorContainer.style.display = 'block';
-                renderEditor();
-                abrirImportador();
-            }
-        }
-
+        // --- IMPORTADOR ---
         function abrirImportador() { modalImport.style.display = 'flex'; importArea.focus(); }
         function cerrarImportador() { modalImport.style.display = 'none'; importArea.value = ''; }
         function cargarEjemploEnArea() {
-            importArea.value = `Pregunta de ejemplo\n- Opción A\n- Opción B\nR: 0\nExp: Explicación aquí.`;
+            importArea.value = `¿Cuál es el planeta más grande?\n- Tierra\n- Marte\n- Júpiter\nR: 2\nExp: Júpiter es un gigante gaseoso.\n\n2+2 es igual a...\n- 3\n- 4\nR: 1`;
         }
 
         function procesarTextoPlano() {
@@ -169,6 +170,19 @@
             });
             renderEditor();
             cerrarImportador();
+        }
+
+        // --- LOGICA DE ARCHIVOS ---
+        function crearNuevoVacio() {
+            const nombre = prompt("Nombre del archivo:", "nuevo_test.json");
+            if (nombre) {
+                originalFileName = nombre.endsWith('.json') ? nombre : nombre + '.json';
+                quizData = [];
+                document.getElementById('nombre-archivo-display').innerText = originalFileName;
+                editorContainer.style.display = 'block';
+                renderEditor();
+                abrirImportador();
+            }
         }
 
         async function cargarIndice() {
@@ -214,9 +228,9 @@
                 const pCard = document.createElement('div');
                 pCard.className = 'pregunta-edit card';
                 pCard.innerHTML = `
-                    <button class="btn-delete" onclick="borrarPregunta(${index})">Eliminar</button>
+                    <button class="btn-delete delete-abs" onclick="borrarPregunta(${index})">Eliminar</button>
                     <label>Pregunta:</label>
-                    <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${modoDios ? item.pregunta : '*** PROTEGIDO ***'}</textarea>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${modoDios ? item.pregunta : '***'}</textarea>
                     <label>Opciones:</label>
                     ${[0,1,2,3].map(i => `
                         <div class="opcion-row">
@@ -234,8 +248,9 @@
         function actualizarDato(i, f, v) { if(modoDios) quizData[i][f] = v; }
         function actualizarOpcion(pi, oi, v) { if(modoDios) quizData[pi].opciones[oi] = v; }
         function añadirPregunta() { quizData.push({ pregunta: "", opciones: ["","","",""], respuestaCorrecta: 0, explicacion: "" }); renderEditor(); }
-        function borrarPregunta(i) { if(confirm("¿Borrar?")) { quizData.splice(i, 1); renderEditor(); } }
+        function borrarPregunta(i) { if(confirm("¿Borrar pregunta?")) { quizData.splice(i, 1); renderEditor(); } }
         function mostrarMensaje(m, t) { status.innerText = m; status.className = t; status.style.display = 'block'; setTimeout(() => status.style.display = 'none', 3000); }
+        
         function descargarJSON() {
             const blob = new Blob([JSON.stringify(quizData, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
