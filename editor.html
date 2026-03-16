@@ -8,39 +8,43 @@
         .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; box-sizing: border-box; }
         h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; margin-top: 0; }
         
-        /* Camuflaje */
+        /* Sistema de Camuflaje */
         .blur-content { filter: blur(8px); pointer-events: none; user-select: none; opacity: 0.5; }
         .hidden { display: none !important; }
 
-        /* Carga */
+        /* Sección de Carga */
         .upload-section { display: flex; gap: 20px; flex-wrap: wrap; }
         .upload-box { flex: 1; min-width: 250px; display: flex; flex-direction: column; }
-        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; }
+        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fafafa; transition: 0.3s; }
         #drop-zone.hover { background: #e8f5e9; border-color: #2e7d32; }
         
-        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 10px; }
+        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 10px; appearance: none; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gray"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center white; }
         
-        #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; }
+        #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; text-align: center; font-weight: bold; }
         .success { background: #dcedc8; color: #33691e; border: 1px solid #a5d6a7; display: block !important; }
         .error { background: #ffcdd2; color: #b71c1c; border: 1px solid #ef9a9a; display: block !important; }
         
-        .pregunta-edit { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; position: relative; background: #fafafa; }
+        /* Editor de Preguntas */
+        .pregunta-edit { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; position: relative; background: #fafafa; transition: 0.3s; }
+        .pregunta-edit:hover { border-color: #2e7d32; }
         label { display: block; font-weight: bold; margin-top: 15px; font-size: 0.85rem; color: #444; text-transform: uppercase; }
-        textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; font-family: inherit; }
+        textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; font-family: inherit; resize: vertical; }
         
         .opcion-row { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
         .opcion-input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
         
+        /* Botones */
         .btn-delete { position: absolute; top: 15px; right: 15px; background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 12px; }
         .btn-add { background: #1976d2; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 10px; font-weight: bold; }
         .btn-import { background: #673ab7; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 10px; font-weight: bold; }
         .btn-new { background: #ef6c00; color: white; padding: 10px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 0.9rem; }
-        .btn-download { background: #2e7d32; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; width: 100%; }
+        .btn-download { background: #2e7d32; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; width: 100%; font-weight: bold; }
+        .correcta-radio { cursor: pointer; width: 20px; height: 20px; accent-color: #2e7d32; }
         
-        /* Modal */
+        /* Modal Importador */
         #modal-import { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); display:none; justify-content:center; align-items:center; z-index:100; }
-        .modal-content { background:white; padding:20px; border-radius:12px; width:90%; max-width:600px; }
-        .help-text { font-size: 0.8rem; color: #666; background: #f9f9f9; padding: 10px; border-radius: 4px; margin-bottom: 10px; line-height: 1.4; }
+        .modal-content { background:white; padding:20px; border-radius:12px; width:90%; max-width:700px; }
+        .help-text { font-size: 0.85rem; color: #444; background: #fdfdfd; padding: 15px; border-radius: 6px; border-left: 5px solid #673ab7; margin-bottom: 15px; line-height: 1.5; }
     </style>
 </head>
 <body>
@@ -67,9 +71,11 @@
 
     <div id="editor-container" class="blur-content" style="width: 100%; max-width: 800px; display: none;">
         <div class="card" style="text-align: center; padding: 1rem;">
-            <span>Archivo: </span><span id="nombre-archivo-display" style="font-weight:bold"></span>
+            <span>Editando: </span><span id="nombre-archivo-display" style="font-weight:bold; color: #2e7d32;"></span>
         </div>
+        
         <div id="lista-preguntas"></div>
+        
         <div id="admin-controls" class="card hidden">
             <button class="btn-import" onclick="abrirImportador()">📥 Importar desde Texto Plano</button>
             <button class="btn-add" onclick="añadirPregunta()">➕ Añadir Nueva Pregunta Manual</button>
@@ -79,14 +85,27 @@
 
     <div id="modal-import">
         <div class="modal-content">
-            <h3>Importador de Texto</h3>
-            <div class="help-text">
-                <b>Formato:</b> Pregunta (línea 1), Opciones (con - o número), Respuesta (R: índice), Explicación (Exp: texto). Separa bloques con una línea en blanco.
+            <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <h3 style="margin:0">📥 Importador de Texto Plano</h3>
+                <button onclick="cargarEjemploEnArea()" style="cursor:pointer; font-size:0.8rem; background:#eee; border:1px solid #ccc; border-radius:4px; padding:4px 10px;">Ver ejemplo</button>
             </div>
-            <textarea id="import-area" rows="12" placeholder="Pega aquí tus preguntas..." style="width:100%; margin-bottom:10px;"></textarea>
+            
+            <div class="help-text">
+                <strong>Instrucciones de formato:</strong>
+                <ul style="margin: 5px 0; padding-left: 20px;">
+                    <li><b>Pregunta</b> en la primera línea.</li>
+                    <li>Opciones empezando con guion (<b>- Opción</b>).</li>
+                    <li>Respuesta con <b>R:</b> seguido del número (0 es la primera).</li>
+                    <li>Explicación opcional con <b>Exp:</b></li>
+                    <li>⚠️ Deja <u>una línea en blanco</u> entre cada bloque de pregunta.</li>
+                </ul>
+            </div>
+
+            <textarea id="import-area" rows="12" placeholder="Pega aquí tus bloques de preguntas..." style="width:100%; margin-bottom:15px; border:1px solid #ddd; border-radius:8px; padding:10px; font-family:monospace;"></textarea>
+            
             <div style="display:flex; gap:10px">
-                <button class="btn-add" style="margin:0" onclick="procesarTextoPlano()">Procesar e Insertar</button>
-                <button class="btn-delete" style="position:static" onclick="cerrarImportador()">Cancelar</button>
+                <button class="btn-add" style="margin:0; flex:2" onclick="procesarTextoPlano()">🚀 Procesar e Insertar</button>
+                <button class="btn-delete" style="position:static; flex:1" onclick="cerrarImportador()">Cancelar</button>
             </div>
         </div>
     </div>
@@ -99,16 +118,21 @@
         const adminControls = document.getElementById('admin-controls');
         const modalImport = document.getElementById('modal-import');
         const importArea = document.getElementById('import-area');
+        const nombreArchivoDisplay = document.getElementById('nombre-archivo-display');
         
         let quizData = [];
         let originalFileName = "nuevo_cuestionario.json";
         let modoDios = false;
 
-        // SEGURIDAD
+        // --- SEGURIDAD (F2 + CLAVE) ---
         document.addEventListener('keydown', (e) => {
             if (e.key === "F2") { 
                 const clave = prompt("Introduce clave maestra:");
-                if(clave === "1234") activarAdmin();
+                if(clave === "1234") { 
+                    activarAdmin();
+                } else {
+                    alert("Clave incorrecta");
+                }
             }
         });
 
@@ -118,26 +142,29 @@
             editorContainer.classList.remove('blur-content');
             adminControls.classList.remove('hidden');
             if(quizData.length > 0) renderEditor();
-            mostrarMensaje("Acceso concedido", "success");
+            mostrarMensaje("Acceso concedido. Modo edición activado.", "success");
         }
 
-        // CREAR NUEVO
-        function crearNuevoVacio() {
-            if(!modoDios) { alert("Pulsa F2 para activar el editor primero."); return; }
-            const nombre = prompt("Nombre del nuevo archivo (ej: mates_tema1.json):", "nuevo_test.json");
-            if (nombre) {
-                originalFileName = nombre.endsWith('.json') ? nombre : nombre + '.json';
-                quizData = [];
-                document.getElementById('nombre-archivo-display').innerText = originalFileName;
-                editorContainer.style.display = 'block';
-                listaPreguntas.innerHTML = "";
-                abrirImportador(); // Abrimos el importador directamente para ahorrar tiempo
-            }
-        }
-
-        // IMPORTADOR
-        function abrirImportador() { modalImport.style.display = 'flex'; }
+        // --- GESTIÓN DE IMPORTACIÓN ---
+        function abrirImportador() { modalImport.style.display = 'flex'; importArea.focus(); }
         function cerrarImportador() { modalImport.style.display = 'none'; importArea.value = ''; }
+        
+        function cargarEjemploEnArea() {
+            importArea.value = `¿Cuál es el símbolo del Oro?
+- Ag
+- Au
+- Pt
+- Fe
+R: 1
+Exp: El símbolo Au proviene del latín 'aurum'.
+
+¿Qué cambio es la oxidación de un clavo?
+- Físico
+- Químico
+R: 1
+Exp: Se forma una nueva sustancia (óxido de hierro).`;
+        }
+
         function procesarTextoPlano() {
             const texto = importArea.value.trim();
             if(!texto) return;
@@ -161,26 +188,46 @@
             });
             renderEditor();
             cerrarImportador();
+            mostrarMensaje("Preguntas importadas con éxito", "success");
         }
 
-        // GESTIÓN ARCHIVOS
+        // --- CREACIÓN Y CARGA ---
+        function crearNuevoVacio() {
+            if(!modoDios) { alert("Pulsa F2 para activar el editor primero."); return; }
+            const nombre = prompt("Nombre del nuevo archivo:", "nuevo_test.json");
+            if (nombre) {
+                originalFileName = nombre.endsWith('.json') ? nombre : nombre + '.json';
+                quizData = [];
+                nombreArchivoDisplay.innerText = originalFileName;
+                editorContainer.style.display = 'block';
+                listaPreguntas.innerHTML = "";
+                abrirImportador();
+            }
+        }
+
         async function cargarIndice() {
             try {
                 const res = await fetch('index.json');
                 const temas = await res.json();
-                repoSelector.innerHTML = '<option value="" disabled selected>Selecciona un test...</option>';
+                repoSelector.innerHTML = '<option value="" disabled selected>Selecciona un test del servidor...</option>';
                 temas.forEach(t => {
                     const opt = document.createElement('option');
                     opt.value = t.archivo; opt.innerText = t.titulo;
                     repoSelector.appendChild(opt);
                 });
-            } catch (e) {}
+            } catch (e) {
+                console.log("No se pudo cargar el índice.");
+            }
         }
 
         repoSelector.onchange = async (e) => {
             originalFileName = e.target.value.split('/').pop();
-            const res = await fetch(e.target.value);
-            procesarDatos(await res.json());
+            try {
+                const res = await fetch(e.target.value);
+                const data = await res.json();
+                procesarDatos(data);
+                mostrarMensaje(`✅ "${originalFileName}" cargado.`, "success");
+            } catch (err) { mostrarMensaje("Error al conectar con el servidor.", "error"); }
         };
 
         document.getElementById('drop-zone').onclick = () => document.getElementById('file-input').click();
@@ -189,18 +236,24 @@
             if (file) {
                 originalFileName = file.name;
                 const reader = new FileReader();
-                reader.onload = (ev) => procesarDatos(JSON.parse(ev.target.result));
+                reader.onload = (ev) => {
+                    try {
+                        procesarDatos(JSON.parse(ev.target.result));
+                        mostrarMensaje("✅ Archivo local cargado.", "success");
+                    } catch(e) { mostrarMensaje("Error: El JSON local no es válido.", "error"); }
+                };
                 reader.readAsText(file);
             }
         };
 
         function procesarDatos(data) {
             quizData = data.map(({id, ...rest}) => rest);
-            document.getElementById('nombre-archivo-display').innerText = originalFileName;
+            nombreArchivoDisplay.innerText = originalFileName;
             editorContainer.style.display = 'block';
             renderEditor();
         }
 
+        // --- UI EDITOR ---
         function renderEditor() {
             listaPreguntas.innerHTML = "";
             quizData.forEach((item, index) => {
@@ -210,16 +263,19 @@
                 pCard.innerHTML = `
                     <button class="btn-delete" onclick="borrarPregunta(${index})">Eliminar</button>
                     <label>Pregunta:</label>
-                    <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${modoDios ? item.pregunta : '***'}</textarea>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${modoDios ? item.pregunta : 'CONTENIDO PROTEGIDO'}</textarea>
                     <label>Opciones:</label>
                     ${[0,1,2,3].map(i => `
                         <div class="opcion-row">
-                            <input type="radio" name="correcta-${index}" class="correcta-radio" ${item.respuestaCorrecta === i && modoDios ? 'checked' : ''} onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
-                            <input type="text" class="opcion-input" value="${modoDios ? (item.opciones[i] || '') : '***'}" oninput="actualizarOpcion(${index}, ${i}, this.value)">
+                            <input type="radio" name="correcta-${index}" class="correcta-radio" 
+                                ${item.respuestaCorrecta === i && modoDios ? 'checked' : ''} 
+                                onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
+                            <input type="text" class="opcion-input" value="${modoDios ? (item.opciones[i] || '') : '********'}" 
+                                oninput="actualizarOpcion(${index}, ${i}, this.value)">
                         </div>
                     `).join('')}
                     <label>Explicación:</label>
-                    <textarea rows="2" oninput="actualizarDato(${index}, 'explicacion', this.value)">${modoDios ? (item.explicacion || '') : '***'}</textarea>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'explicacion', this.value)">${modoDios ? (item.explicacion || '') : '********'}</textarea>
                 `;
                 listaPreguntas.appendChild(pCard);
             });
@@ -227,18 +283,40 @@
 
         function actualizarDato(i, f, v) { if(modoDios) quizData[i][f] = v; }
         function actualizarOpcion(pi, oi, v) { if(modoDios) quizData[pi].opciones[oi] = v; }
+        
         function añadirPregunta() {
+            if(!modoDios) return;
             quizData.push({ pregunta: "", opciones: ["","","",""], respuestaCorrecta: 0, explicacion: "" });
             renderEditor();
+            document.getElementById(`pregunta-${quizData.length - 1}`).scrollIntoView({ behavior: 'smooth' });
         }
-        function borrarPregunta(i) { if(confirm("¿Borrar?")) { quizData.splice(i, 1); renderEditor(); } }
-        function mostrarMensaje(m, t) { status.innerText = m; status.className = t; status.style.display = 'block'; setTimeout(() => status.style.display = 'none', 3000); }
+
+        function borrarPregunta(i) {
+            if(modoDios && confirm("¿Eliminar pregunta?")) {
+                quizData.splice(i, 1);
+                renderEditor();
+            }
+        }
+
+        function mostrarMensaje(m, t) {
+            status.innerText = m; status.className = t; status.style.display = 'block';
+            setTimeout(() => status.style.display = 'none', 4000);
+        }
+
         function descargarJSON() {
+            if(!modoDios) return;
             const blob = new Blob([JSON.stringify(quizData, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url; a.download = originalFileName; a.click();
+            URL.revokeObjectURL(url);
         }
+
+        // Drag & Drop
+        const dz = document.getElementById('drop-zone');
+        dz.ondragover = (e) => { e.preventDefault(); dz.classList.add('hover'); };
+        dz.ondragleave = () => dz.classList.remove('hover');
+        dz.ondrop = (e) => { e.preventDefault(); dz.classList.remove('hover'); procesarArchivo(e.dataTransfer.files[0]); };
 
         cargarIndice();
     </script>
