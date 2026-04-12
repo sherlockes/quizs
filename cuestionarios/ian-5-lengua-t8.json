@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿En qué zona de los Estados Unidos se encuentra el Parque Nacional de Yellowstone?",
+    "opciones": ["En el noroeste", "En el sureste", "En la costa este", "En el centro sur"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto informativo sitúa geográficamente el parque en el noroeste del país."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿En qué año se fundó el Parque Nacional de Yellowstone?",
+    "opciones": ["1902", "1872", "1850", "1972"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la fuente, Yellowstone es el más antiguo del mundo y se fundó en 1872."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué altura puede alcanzar la columna de agua caliente del géiser Old Faithful?",
+    "opciones": ["Hasta 112 metros", "30 metros", "Sesenta metros", "Diez metros"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto destaca que la columna de agua de este géiser puede alcanzar los sesenta metros de altura."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál es el diámetro del lago Grand Prismatic Spring?",
+    "opciones": ["50 metros", "200 metros", "60 metros", "112 metros"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La fuente menciona específicamente que este lago termal tiene 112 metros de diámetro."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Para qué edades se ofrece el programa especial de jóvenes guardabosques en Yellowstone?",
+    "opciones": ["Entre 5 y 12 años", "Entre 3 y 10 años", "Mayores de 12 años", "Solo para adolescentes"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto indica que el programa de Junior Rangers está diseñado para visitantes de entre 5 y 12 años."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué animal de los siguientes NO se menciona como habitante de Yellowstone?",
+    "opciones": ["Tigre", "Bisonte", "Oso", "Lince"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto lista bisontes, alces, osos, pumas, linces y lobos, pero no menciona tigres."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué deben completar los niños para obtener la insignia de guardabosques?",
+    "opciones": ["Una carrera de natación", "Un examen de historia", "Una serie de actividades sobre recursos naturales", "Un dibujo del Gran Cañón"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Para obtener la insignia, los niños deben completar actividades educativas bajo supervisión."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cuándo llevan 'h' intercalada las palabras según la primera regla ortográfica de la unidad?",
+    "opciones": ["Cuando terminan en vocal", "Cuando empiezan por vocal", "Cuando el diptongo 'ue' va precedido de una vocal", "Siempre que hay una 'u'"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La regla ortográfica especifica que el diptongo 'ue' precedido de vocal requiere 'h' intercalada."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué otra regla explica el uso de la 'h' intercalada?",
+    "opciones": ["Palabras que terminan en 'h'", "Palabras formadas a partir de otras que empiezan por 'h'", "Palabras que tienen tres sílabas", "Palabras que riman con 'hacer'"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las palabras derivadas de términos con 'h' inicial, como 'rehacer' de 'hacer', mantienen la 'h' de forma intercalada."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Por qué la palabra 'cacahuetes' lleva 'h' intercalada?",
+    "opciones": ["Porque es una palabra prehistórica", "Porque tiene el diptongo 'ue' precedido de vocal", "Porque deriva de 'caca'", "Porque es un nombre de alimento"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Sigue la regla del diptongo 'ue' precedido de la vocal 'a'."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Cuál de estas palabras con 'h' intercalada se asocia con la conservación de alimentos?",
+    "opciones": ["Albahaca", "Ahumado", "Tahona", "Malhumor"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto menciona el salmón ahumado como alimento típico conservado mediante humo."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué es una 'tahona'?",
+    "opciones": ["Un lugar de donde procede olor a pan", "Una planta aromática", "Una herramienta de madera", "Un tipo de cueva"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En los ejercicios de completar, se asocia la tahona con el aroma a pan."
+  },
+  {
+    "id": 13,
+    "pregunta": "Si añadimos el prefijo 'des-' a 'habitar', ¿qué palabra obtenemos?",
+    "opciones": ["Desabitar", "Deshabitar", "Dehabitar", "Des-habitar"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Al unir 'des-' a una palabra con 'h' inicial como 'habitar', se forma una palabra con 'h' intercalada."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué diferencia de significado hay entre 'azar' y 'azahar'?",
+    "opciones": ["No hay diferencia", "Azar es una planta y azahar es suerte", "Ambas significan casualidad", "Azar es casualidad y azahar es una flor"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las definiciones aclaran que 'azar' es suerte o casualidad y 'azahar' es la flor del naranjo."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Cuál es el significado de la palabra 'ahínco'?",
+    "opciones": ["Esfuerzo o empeño", "Lugar deshabitado", "Miedo profundo", "Rapidez excesiva"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En el dictado 'Belleza natural', se usa 'ahínco' para referirse al esfuerzo contra el oleaje."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Qué palabra describe una zona donde no vive nadie?",
+    "opciones": ["Deshabitada", "Ahumada", "Inhumana", "Prohibida"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto usa 'deshabitada' para describir zonas de la costa sin población."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué son los verbos según la gramática de la unidad?",
+    "opciones": ["Palabras que nombran objetos", "Palabras que expresan acciones", "Palabras que describen cualidades", "Palabras que sustituyen nombres"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La definición básica establece que los verbos expresan acciones."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cómo se llama el conjunto de todas las formas de un verbo?",
+    "opciones": ["Sustantivo", "Desinencia", "Conjugación", "Raíz"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La teoría define la conjugación como el conjunto de formas de un verbo."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué es el infinitivo?",
+    "opciones": ["La forma con la que nombramos al verbo", "La forma que indica el pasado", "La raíz del verbo", "Una forma compuesta"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El infinitivo (cuidar, proteger...) es el nombre del verbo."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿De qué constan las formas verbales simples?",
+    "opciones": ["De dos palabras", "De una sola palabra", "Solo de la raíz", "Del verbo haber"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las formas simples, como 'plantaron', se componen de una única palabra."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué llevan siempre las formas verbales compuestas?",
+    "opciones": ["Dos raíces", "Un prefijo de negación", "Una forma del verbo haber", "Un adjetivo calificativo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las formas compuestas constan de más de una palabra, siendo una de ellas del verbo 'haber'."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué parte del verbo aporta el significado básico?",
+    "opciones": ["La desinencia", "El prefijo", "La raíz", "El infinitivo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La raíz es el morfema que contiene el significado léxico principal del verbo."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cómo se obtiene la raíz de un verbo?",
+    "opciones": ["Quitando la terminación del infinitivo", "Añadiendo un prefijo", "Mirando la última letra", "Quitando las vocales"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se obtiene quitando -ar, -er o -ir al infinitivo (ej: de 'partir', la raíz es 'part-')."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué información aportan las desinencias?",
+    "opciones": ["El significado de la acción", "Número, persona, tiempo y modo", "Si la palabra lleva 'h'", "El origen de la palabra"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las desinencias son morfemas flexivos que dan información gramatical."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿A qué conjugación pertenecen los verbos cuyo infinitivo termina en -er?",
+    "opciones": ["Primera", "Segunda", "Tercera", "Cuarta"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La segunda conjugación agrupa a los verbos terminados en -er, como 'beber'."
+  },
+  {
+    "id": 26,
+    "pregunta": "El verbo 'vivir' pertenece a la:",
+    "opciones": ["Primera conjugación", "Segunda conjugación", "Tercera conjugación", "Ninguna de las anteriores"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los verbos terminados en -ir pertenecen a la tercera conjugación."
+  },
+  {
+    "id": 27,
+    "pregunta": "Identifica la raíz de 'cantarán':",
+    "opciones": ["cant-", "-arán", "cantar-", "can-"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Al quitar -ar al infinitivo 'cantar', nos queda la raíz 'cant-'."
+  },
+  {
+    "id": 28,
+    "pregunta": "Identifica la desinencia de 'cocinó':",
+    "opciones": ["cocin-", "-ó", "-nó", "co-"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En 'cocinó', la raíz es 'cocin-' y la terminación o desinencia es '-ó'."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué es una 'carta al director'?",
+    "opciones": ["Un mensaje privado", "Un texto donde los lectores opinan o denuncian algo", "Un examen de lengua", "Una noticia sin firma"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es una sección del periódico donde el público expresa su opinión sobre temas de actualidad."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué tipo de lenguaje se debe emplear en una carta al director?",
+    "opciones": ["Lenguaje coloquial", "Lenguaje inventado", "Lenguaje formal", "Solo dibujos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Al ser un texto dirigido a un medio de comunicación, requiere un tono formal."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cómo debe ser la despedida en una carta al director?",
+    "opciones": ["Con una fórmula de cortesía como 'Atentamente'", "Diciendo 'adiós'", "Sin despedida", "Con un chiste"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El libro recomienda usar fórmulas de cortesía estándar en este tipo de escritos."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué información NO suele aparecer en una carta al director?",
+    "opciones": ["La opinión del autor", "La fecha y el lugar", "El precio del periódico", "La firma"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las cartas incluyen datos del autor, fecha, lugar y opinión, pero no el precio del diario."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cuál de estos textos se considera MENOS fiable?",
+    "opciones": ["Una noticia de un periódico", "Un reportaje de revista digital", "Un mensaje sin firma difundido en un chat", "Un libro de texto"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La sección 'Aplica tus conocimientos' advierte que las noticias sin firma en chats son poco fiables."
+  },
+  {
+    "id": 34,
+    "pregunta": "En la oración 'Iván se ha ido de vacaciones', ¿qué forma verbal hay?",
+    "opciones": ["Simple", "Compuesta", "Infinitivo", "Gerundio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Ha ido' es una forma compuesta del verbo ir."
+  },
+  {
+    "id": 35,
+    "pregunta": "En la oración 'Tus amigos viven cerca', ¿qué forma verbal hay?",
+    "opciones": ["Compuesta", "Raíz", "Desinencia", "Simple"],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Viven' es una sola palabra, por tanto es una forma simple."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es la raíz de 'venderá'?",
+    "opciones": ["ven-", "vend-", "vende-", "-erá"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Del infinitivo 'vender', quitamos '-er' y obtenemos 'vend-'."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué palabra con 'h' intercalada significa 'procedente de una persona'?",
+    "opciones": ["Inhumano", "Sobrehumano", "Humano", "Humildad"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En los ejercicios de ortografía se trabaja el término 'inhumano'."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué significa el término 'biodiversidad'?",
+    "opciones": ["Muchos tipos de plantas y animales", "Un solo tipo de árbol", "Un parque muy pequeño", "El nombre de un río"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El vocabulario inicial asocia biodiversidad con la variedad de seres vivos en un lugar."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Por qué se escribe 'malhumor' con 'h' intercalada?",
+    "opciones": ["Porque empieza por 'm'", "Porque deriva de 'humor' que empieza con 'h'", "Porque es una excepción", "Porque lleva el prefijo 'mal-'"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Al unir 'mal-' a 'humor' (que tiene 'h' inicial), se mantiene la 'h' de forma intercalada."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué prohíbe una señal con un dibujo de un móvil tachado?",
+    "opciones": ["Hablar por teléfono", "Hacer fotos", "Correr", "Llevar mochila"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La señal indica la prohibición de usar dispositivos móviles en ese lugar."
+  },
+  {
+    "id": 41,
+    "pregunta": "Si un cartel muestra un coche tachado, significa que:",
+    "opciones": ["Se permite aparcar", "Está prohibido el paso de vehículos", "Es una zona de descanso", "Hay un taller cerca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La señalización circular con borde rojo y dibujo tachado indica prohibición."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Cómo se escribe correctamente la palabra que falta: 'Espectacular incendio en la bu...rdilla'?",
+    "opciones": ["buardilla", "buhardilla", "bu-hardilla", "bualdilla"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La palabra correcta es 'buhardilla' y lleva 'h' intercalada."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué prefijo se usa para formar 'deshinchas' a partir de 'hinchar'?",
+    "opciones": ["anti-", "re-", "in-", "des-"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El ejercicio 3 de ortografía pide formar verbos añadiendo el prefijo 'des-'."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cuál es la raíz de 'llamará'?",
+    "opciones": ["llam-", "llama-", "-ará", "lla-"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Del infinitivo 'llamar', retiramos '-ar' para hallar la raíz 'llam-'."
+  },
+  {
+    "id": 45,
+    "pregunta": "La forma verbal 'habían plantado' es:",
+    "opciones": ["Simple", "Infinitivo", "Compuesta", "Desinencia"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Consta de dos palabras (auxiliar haber + participio), por lo que es compuesta."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿A qué conjugación pertenece 'vivíamos'?",
+    "opciones": ["Primera", "Segunda", "Tercera", "Ninguna"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Procede del infinitivo 'vivir', que termina en -ir."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué dato personal NO se menciona en la carta de Mateo López García?",
+    "opciones": ["Nombre", "Apellido", "Lugar (Almorote)", "Número de teléfono"],
+    "respuestaCorrecta": 3,
+    "explicacion": "En el modelo de carta aparecen nombre, apellido y lugar, pero no el teléfono."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué pueblo de los siguientes mencionaba una carta al director?",
+    "opciones": ["Almorote", "Madrid", "Yellowstone", "Cremona"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La carta de ejemplo está escrita desde Almorote."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Quiénes habitaban Yellowstone antes de ser parque nacional?",
+    "opciones": ["Piratas", "Indios", "Caballeros medievales", "Astronautas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto menciona un museo que muestra cómo vivían los indios que poblaban la zona."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué adverbio significa 'en este momento' y lleva h?",
+    "opciones": ["Ahora", "Hoy", "Aquí", "Ahí"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El adverbio 'ahora' lleva 'h' intercalada y se refiere al tiempo presente."
+  }
+]
