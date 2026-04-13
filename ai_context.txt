@@ -1,0 +1,4162 @@
+SISTEMA: Actúa como un experto desarrollador Full Stack y arquitecto de software.
+CONTEXTO: A continuación se proporciona la estructura y el código fuente de un proyecto.
+INSTRUCCIONES:
+  1. Analiza la arquitectura y las dependencias.
+  2. No respondas con código todavía, solo confirma que has recibido el contexto.
+  3. Espera a mis instrucciones específicas para realizar cambios, buscar bugs o añadir funciones.
+---
+PROYECTO: quizs
+FECHA: 2026-04-13 10:18
+---
+
+--- ESTRUCTURA COMPLETA (Excluyendo ocultos) ---
+.
+├── ai_context.txt
+├── ctx.sh
+├── cuestionarios
+│   ├── ian-5-lengua-t5.json
+│   ├── ian-5-lengua-t6.json
+│   ├── ian-5-lengua-t7.json
+│   ├── ian-5-lengua-t8.json
+│   ├── ian-5-natu-t3.json
+│   ├── ian-5-natu-t4.json
+│   ├── ian-5-soci-t3.json
+│   └── ian-5-soci-t4.json
+├── editor.html
+├── index.html
+├── index.json
+├── logo.png
+├── script.js
+└── style.css
+
+2 directories, 16 files
+
+--- ARCHIVOS DE MUESTRA ---
+
+--- CÓDIGO FUENTE ---
+
+--- FILE: cuestionarios/ian-5-lengua-t5.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué es una 'urbe' según el vocabulario de la unidad?",
+    "opciones": ["Un pueblo pequeño", "Una ciudad grande", "Un edificio oficial", "Una zona de campo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El vocabulario inicial define urbe como una ciudad grande."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿A qué se refiere el término 'casco urbano'?",
+    "opciones": ["A las afueras de la ciudad", "A un parque infantil", "A una calle peatonal", "A la zona más antigua de la localidad"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El casco urbano se identifica como el centro o la parte histórica de la ciudad."
+  },
+  {
+    "id": 3,
+    "pregunta": "En urbanismo, ¿qué es una 'manzana'?",
+    "opciones": ["Un grupo de casas rodeado por calles", "Una fruta típica de la zona", "Una calle muy estrecha", "Un tipo de árbol de ciudad"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La fuente asocia la manzana con la distribución de bloques de viviendas en una cuadrícula urbana."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué característica define a una 'calle peatonal'?",
+    "opciones": ["Es solo para bicicletas", "Es por donde pasan los autobuses", "Es una calle donde no circulan vehículos", "Es la calle principal de la urbe"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las calles peatonales están reservadas exclusivamente para el tránsito de personas a pie."
+  },
+  {
+    "id": 5,
+    "pregunta": "En el cuento 'El Pasaje de la Oca', ¿cómo se describe inicialmente el pasaje?",
+    "opciones": ["Como una callecita muy angosta", "Como una avenida muy ancha", "Como un parque abandonado", "Como un edificio de oficinas"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto narrativo comienza describiendo el pasaje como una callecita muy angosta."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué significa la palabra 'angosta'?",
+    "opciones": ["Ruidosa", "Larga", "Estrecha", "Oscura"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El vocabulario de apoyo del texto define angosta como sinónimo de estrecha."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuál es el significado de 'demoler' según el contexto de Álvaro Rueda?",
+    "opciones": ["Construir", "Derribar", "Pintar", "Limpiar"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Álvaro Rueda quiere echar abajo las casas, lo cual se define como demoler o derribar."
+  },
+  {
+    "id": 8,
+    "pregunta": "Si algo se está 'bamboleando', ¿qué está haciendo?",
+    "opciones": ["Estando quieto", "Haciendo mucho ruido", "Brillando mucho", "Moviéndose de un lado a otro"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El glosario del cuento explica que bambolearse es balancearse o moverse lateralmente."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Quién es la autora del cuento 'El Pasaje de la Oca'?",
+    "opciones": ["Gianni Rodari", "Ana Merino", "Elsa Bornemann", "Roald Dahl"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto indica que es una adaptación de la obra de Elsa Bornemann."
+  },
+  {
+    "id": 10,
+    "pregunta": "Si el narrador de un cuento cuenta su propia historia, se trata de un:",
+    "opciones": ["Narrador protagonista", "Narrador testigo", "Narrador externo", "Narrador secundario"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La teoría sobre el narrador explica que cuando el narrador es el protagonista usa la primera persona."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿En qué persona suele hablar un narrador externo (ajeno a los hechos)?",
+    "opciones": ["Primera persona", "Tercera persona", "Segunda persona", "Persona neutra"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El libro indica que el narrador ajeno usa formas verbales como 'llegó' o 'marcharon' (3ª persona)."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué solución propone Don Martín para salvar el pasaje?",
+    "opciones": ["Llamar a la policía", "Vender sellos", "Hacer una huelga", "Mudar la calle entera"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Don Martín propone empujar el pasaje para llevarlo a otro terreno libre."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué demostrativo indica cercanía en masculino singular?",
+    "opciones": ["Este", "Ese", "Aquel", "Esto"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Según el cuadro de demostrativos, 'este' corresponde a cercanía y género masculino."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuál es el demostrativo de distancia media en femenino singular?",
+    "opciones": ["Esta", "Esa", "Aquella", "Eso"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cuadro clasifica 'esa' como demostrativo de distancia media femenino."
+  },
+  {
+    "id": 15,
+    "pregunta": "Analiza 'aquellos':",
+    "opciones": ["Cercanía, masc, plur", "Lejanía, masc, plur", "Distancia media, masc, plur", "Lejanía, fem, plur"],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Aquellos' es la forma de lejanía para el género masculino plural."
+  },
+  {
+    "id": 16,
+    "pregunta": "En la frase 'este edificio', ¿qué función tiene el demostrativo?",
+    "opciones": ["Complemento", "Núcleo", "Sujeto", "Determinante"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los demostrativos son determinantes cuando van delante del sustantivo."
+  },
+  {
+    "id": 17,
+    "pregunta": "En la frase 'la casa aquella', ¿qué función tiene 'aquella'?",
+    "opciones": ["Complemento", "Núcleo", "Determinante", "Adjetivo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Cuando el demostrativo va detrás del sustantivo funciona como complemento."
+  },
+  {
+    "id": 18,
+    "pregunta": "En la oración 'Eso es estropeado', ¿qué función cumple 'eso'?",
+    "opciones": ["Determinante", "Complemento", "Núcleo", "Atributo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los demostrativos funcionan como núcleo cuando aparecen en lugar del sustantivo."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cuáles son los demostrativos neutros?",
+    "opciones": ["Este, ese, aquel", "Esto, eso, aquello", "Estos, esos, aquellos", "Esta, esa, aquella"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cuadro especifica que las formas neutras son esto, eso y aquello."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cuál es el posesivo de un solo poseedor, 1ª persona, masc, singular?",
+    "opciones": ["Tu", "Su", "Nuestro", "Mío"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Según la tabla de posesivos, la 1ª persona de un solo poseedor es mío o mi."
+  },
+  {
+    "id": 21,
+    "pregunta": "Analiza 'vuestra':",
+    "opciones": ["Varios poseedores, 2ª persona", "Un solo poseedor, 2ª persona", "Varios poseedores, 1ª persona", "Un solo poseedor, 3ª persona"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Vuestra indica que el objeto pertenece a varias personas que escuchan (2ª pers)."
+  },
+  {
+    "id": 22,
+    "pregunta": "Analiza 'nuestras':",
+    "opciones": ["1ª pers, sing, masc", "1ª pers, plur, masc", "1ª pers, plur, fem", "2ª pers, plur, fem"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Nuestras corresponde a la 1ª persona del plural femenino para varios poseedores."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cuál es el posesivo de varios poseedores, 2ª persona, masc, singular?",
+    "opciones": ["Tuyo", "Vuestro", "Vuestro", "Suyo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cuadro indica que para varios poseedores en 2ª persona masculino es vuestro."
+  },
+  {
+    "id": 24,
+    "pregunta": "En 'mi bicicleta', ¿qué función tiene el posesivo?",
+    "opciones": ["Núcleo", "Complemento", "Adjetivo", "Determinante"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los posesivos son determinantes cuando van delante del sustantivo."
+  },
+  {
+    "id": 25,
+    "pregunta": "En 'la casa suya', ¿qué función tiene 'suya'?",
+    "opciones": ["Complemento", "Núcleo", "Determinante", "Pronombre"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los posesivos son complementos cuando van detrás del sustantivo."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué hacen principalmente los 'booktubers'?",
+    "opciones": ["Escriben libros de texto", "Venden libros en librerías", "Graban vídeos recomendando libros", "Ilustran cuentos infantiles"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tarea literaria define a los booktubers como personas que graban recomendaciones de libros en la red."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cuál es el primer paso para ser un booktuber según el libro?",
+    "opciones": ["Grabar el vídeo", "Elegir el libro que vas a recomendar", "Hacer el guion", "Subirlo a internet"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El proceso comienza obligatoriamente con la elección de un libro leído previamente."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué datos técnicos del libro deben buscar los booktubers?",
+    "opciones": ["Precio y peso", "Color de la portada", "Número de capítulos", "Editorial y fecha de publicación"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El paso 3 de la tarea literaria pide buscar editorial, fecha de publicación y número de páginas."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué debe incluir el guion del vídeo de un booktuber?",
+    "opciones": ["Presentación, resumen y por qué lo recomiendas", "Solo el final del libro", "El precio del libro", "La dirección de la editorial"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El guion debe estructurarse con presentación, resumen del argumento y comentario personal."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cómo se debe colocar la cámara para grabar el vídeo de booktuber?",
+    "opciones": ["En vertical", "En diagonal", "En formato horizontal", "No importa el formato"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las pautas de grabación especifican explícitamente el uso del formato horizontal."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué es una palabra primitiva?",
+    "opciones": ["Una palabra que tiene prefijo", "Una palabra que no deriva de otra", "Una palabra de la prehistoria", "Una palabra con sufijo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La teoría de léxico define palabra primitiva como aquella que no proviene de ninguna otra."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cuál es una palabra derivada de 'flor'?",
+    "opciones": ["Flor", "Flora", "Flores", "Florero"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Florero es una palabra derivada porque se ha formado añadiendo un sufijo a la raíz flor."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué parte se añade al final de una palabra para formar una derivada?",
+    "opciones": ["Sufijo", "Prefijo", "Raíz", "Enlace"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los sufijos son los morfemas que se colocan al final de la palabra primitiva."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué parte se añade al principio de una palabra para formar una derivada?",
+    "opciones": ["Sufijo", "Raíz", "Prefijo", "Acento"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los prefijos se sitúan delante de la palabra primitiva para crear significados nuevos."
+  },
+  {
+    "id": 35,
+    "pregunta": "De estas palabras, ¿cuál es derivada de 'calle'?",
+    "opciones": ["Cállate", "Callejón", "Calor", "Callado"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Callejón deriva de la palabra primitiva calle."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es el sufijo en la palabra 'arboleda'?",
+    "opciones": ["Arbol-", "Arbo-", "-da", "-eda"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El sufijo añadido a la raíz árbol es -eda."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cómo se escriben los sonidos de animales como el del gato según la ortografía de la unidad?",
+    "opciones": ["Maullar (con ll)", "Maullar (con y)", "Maullar (con l)", "Mauyar"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La unidad trabaja la ortografía de la ll con verbos como maullar."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cuál de estos verbos se escribe con 'll'?",
+    "opciones": ["Caminar", "Saltar", "Escabullir", "Correr"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El verbo escabullir termina en -ullir y se escribe con doble ele."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Quién es el personaje que encuentra la solución en el cuento?",
+    "opciones": ["Álvaro Rueda", "Don Martín", "La Oca", "El narrador"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Don Martín es el anciano que propone la idea para salvar la calle."
+  },
+  {
+    "id": 40,
+    "pregunta": "Analiza 'sus':",
+    "opciones": ["Un poseedor, 3ª pers, masc, plur", "Varios poseedores, 1ª pers, masc, plur", "Un poseedor, 2ª pers, fem, plur", "Un solo poseedor o varios, 3ª pers, plur"],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Sus' es el posesivo para la 3ª persona tanto para uno como para varios poseedores."
+  },
+  {
+    "id": 41,
+    "pregunta": "Analiza el demostrativo 'esas':",
+    "opciones": ["Distancia media, fem, plur", "Lejanía, masc, plur", "Cercanía, fem, plur", "Distancia media, neutro"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Esas indica distancia media, género femenino y número plural."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué indica el posesivo 'vuestro'?",
+    "opciones": ["1ª persona del plural", "2ª persona del singular", "2ª persona del plural", "3ª persona del singular"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Vuestro se refiere a la 2ª persona (vosotros/as) de varios poseedores."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué vas a elaborar en la sección 'Pasarás a la acción'?",
+    "opciones": ["Un libro de poemas", "Un folleto turístico de tu localidad", "Un mapa del tesoro", "Una maqueta de una oca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El plan de trabajo de la unidad indica la creación de un folleto turístico."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué nos transmiten a menudo los poemas?",
+    "opciones": ["Solo datos históricos", "Instrucciones de montaje", "Lista de precios", "Emociones"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El taller de literatura explica que los poemas nos transmiten emociones a la vez que sugieren imágenes."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cuál de estas palabras es un verbo terminado en -illar/-ullar?",
+    "opciones": ["Arrodillar", "Caminar", "Patinar", "Hablar"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Arrodillar cumple la norma ortográfica de palabras con ll."
+  },
+  {
+    "id": 46,
+    "pregunta": "Analiza 'nuestros' según el cuadro:",
+    "opciones": ["Un poseedor, 1ª persona", "Varios poseedores, 2ª persona", "Varios poseedores, 1ª persona", "Un poseedor, 3ª persona"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Nuestros indica que somos varios poseedores en 1ª persona."
+  },
+  {
+    "id": 47,
+    "pregunta": "En la frase 'Llegaremos a aquellas montañas', ¿qué función tiene 'aquellas'?",
+    "opciones": ["Núcleo", "Determinante", "Complemento", "Sujeto"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Va delante del sustantivo montañas, por lo que es un determinante."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué lugar de la localidad se menciona en el ejercicio de escucha inicial?",
+    "opciones": ["El zoológico", "El aeropuerto", "La estación", "El auditorio"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las preguntas de escucha mencionan específicamente '¿Dónde está el auditorio?'."
+  },
+  {
+    "id": 49,
+    "pregunta": "Si un narrador usa la forma 'marcharon', ¿qué tipo de narrador es?",
+    "opciones": ["Narrador externo", "Narrador protagonista", "Narrador en 1ª persona", "No hay narrador"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Usa la tercera persona, lo que indica que es ajeno a los hechos (externo)."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cuál es la intención de Álvaro Rueda en el cuento?",
+    "opciones": ["Abrir una tienda de sellos", "Salvar el pasaje", "Construir un edificio para archivar sellos", "Organizar una fiesta nocturna"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto dice que quiere construir un gran edificio para archivar su colección de sellos."
+  }
+]
+
+--- FILE: cuestionarios/ian-5-lengua-t6.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuál es el numeral ordinal que corresponde al número 11?",
+    "opciones": ["Onceavo", "Undécimo", "Decimoprimero", "Onceno"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la lista de ordinales de la unidad 6, el 11 se denomina undécimo."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué indica la regla sobre las palabras que se escriben con 'cc'?",
+    "opciones": ["Que siempre van delante de la vocal 'a'", "Que todas terminan en -ción", "Que suelen tener en su familia una palabra con 'ct'", "Que son siempre palabras primitivas"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La ortografía de la unidad indica que palabras con 'cc' como 'perfección' tienen en su familia palabras con 'ct' como 'perfecto'."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué edad tiene Maya en el retrato de la unidad 6?",
+    "opciones": ["Diez años", "Doce años", "Nueve años", "Once años"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El texto descriptivo de Maya comienza indicando que tiene once años."
+  },
+  {
+    "id": 4,
+    "pregunta": "En la frase 'tres pruebas', ¿qué función realiza el numeral 'tres'?",
+    "opciones": ["Determinante", "Núcleo", "Complemento", "Adjetivo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los numerales funcionan como determinantes cuando van delante del sustantivo."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿En qué años ganó Rafael Nadal sus medallas de oro olímpicas?",
+    "opciones": ["2004 y 2012", "2008 y 2016", "2000 y 2008", "2012 y 2020"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La biografía de Rafael Nadal en la unidad menciona específicamente los años 2008 y 2016."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuál es el ordinal correcto para el número 20?",
+    "opciones": ["Veinteavo", "Veintésimo", "Vigésimo", "Vigesimal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El cuadro de numerales de la unidad identifica el 20º como vigésimo."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué expresan los indefinidos según la gramática de la unidad?",
+    "opciones": ["Una cantidad exacta", "Un orden preciso", "Una emoción fuerte", "Cantidad o existencia de forma imprecisa"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los indefinidos se definen por indicar cantidad de manera no exacta o vaga."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cómo se divide correctamente la palabra 'protección' a final de línea?",
+    "opciones": ["pro-tección", "protec-ción", "prote-cción", "protecc-ión"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las palabras con 'cc' se dividen dejando una 'c' en cada sílaba (protec-ción)."
+  },
+  {
+    "id": 9,
+    "pregunta": "De acuerdo con el retrato de Maya, ¿cómo es su pelo?",
+    "opciones": ["Castaño, largo y liso", "Rubio, corto y rizado", "Negro, media melena y ondulado", "Castaño, corto y liso"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto describe físicamente a Maya mencionando su pelo castaño, largo y liso."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuál es la palabra con 'ct' de la familia de 'lección'?",
+    "opciones": ["Leccionario", "Leccioncita", "Lector", "Lectura"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Lección se escribe con 'cc' porque pertenece a la familia de lector."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿A qué cardinal corresponde el ordinal 'quincuagésimo'?",
+    "opciones": ["Cinco", "Quince", "Cincuenta", "Quinientos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tabla de correspondencias sitúa al quincuagésimo en el número 50."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo funcionan los indefinidos cuando van detrás del sustantivo?",
+    "opciones": ["Como núcleos", "Como determinantes", "Como enlaces", "Como complementos"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La gramática de la unidad indica que funcionan como complementos si se sitúan tras el sustantivo."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué deporte es la gran pasión de Maya?",
+    "opciones": ["Tenis", "Baloncesto", "Natación", "Fútbol"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto del retrato afirma que el baloncesto es su gran pasión."
+  },
+  {
+    "id": 14,
+    "pregunta": "En la oración 'Vi los libros y elegí uno', ¿qué función tiene 'uno'?",
+    "opciones": ["Núcleo", "Determinante", "Complemento", "Sujeto"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Funciona como núcleo porque sustituye al sustantivo en la oración."
+  },
+  {
+    "id": 15,
+    "pregunta": "Si 'constructor' tiene 'ct', ¿qué palabra derivada tiene 'cc'?",
+    "opciones": ["Construir", "Construcción", "Construido", "Construible"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Siguiendo la regla de ortografía, construcción se escribe con 'cc' por la familia de constructor."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuál es el ordinal para el número 13?",
+    "opciones": ["Treceavo", "Treceno", "Decimotercero", "Decimotercio"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El ordinal del número 13 es decimotercero."
+  },
+  {
+    "id": 17,
+    "pregunta": "En el análisis morfológico de 'algunas manzanas', ¿cómo se define 'algunas'?",
+    "opciones": ["Numeral cardinal", "Indefinido, femenino, plural", "Indefinido, masculino, plural", "Numeral ordinal"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se identifica como indefinido que concuerda en femenino y plural con manzanas."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cuál de estos adjetivos sirve para describir el carácter en un retrato?",
+    "opciones": ["Respingona", "Poblada", "Simpática", "Alargada"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Simpática define la personalidad, mientras que los otros definen rasgos físicos."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué significa actuar con 'deportividad'?",
+    "opciones": ["Ganar siempre", "Hacer trampas", "Actuar con respeto y juego limpio", "Llevar mucha ropa deportiva"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El vocabulario de la unidad asocia deportividad con el respeto a las reglas y al rival."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cómo se escribe el número cardinal 16 en letras?",
+    "opciones": ["Diez y seis", "Diecciséis", "Dieciséis", "Diesiséis"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los cardinales del 16 al 29 se escriben en una sola palabra según la norma dada."
+  },
+  {
+    "id": 21,
+    "pregunta": "Analiza 'nadie' en la oración 'Alguien ha llamado a la puerta. No hay nadie'.",
+    "opciones": ["Indefinido", "Numeral cardinal", "Determinante", "Numeral ordinal"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Nadie es un indefinido que expresa inexistencia de forma imprecisa."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿A qué familia de palabras con 'ct' pertenece 'infección'?",
+    "opciones": ["Infecto", "Infectar", "Infectado", "Infec"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Infección lleva 'cc' porque pertenece a la familia de infecto."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cuál es el ordinal del número 12?",
+    "opciones": ["Doceavo", "Duodécimo", "Decimosegundo", "Doceno"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El numeral ordinal correspondiente al 12 es duodécimo."
+  },
+  {
+    "id": 24,
+    "pregunta": "Según la descripción de Maya, ¿cómo suele ir vestida?",
+    "opciones": ["Con uniforme", "Con ropa de fiesta", "Con ropa deportiva", "Con falda larga"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El retrato indica que suele ir siempre vestida con ropa deportiva."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cuál es la palabra con 'cc' relacionada con 'traductor'?",
+    "opciones": ["Traducción", "Traducir", "Traducido", "Traducible"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Traductor (ct) nos indica que traducción se escribe con 'cc'."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿A qué cardinal corresponde el ordinal 'trigésimo'?",
+    "opciones": ["Trece", "Treinta", "Tres", "Trescientos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ordinal trigésimo representa el orden número 30."
+  },
+  {
+    "id": 27,
+    "pregunta": "En 'pocos días', ¿qué tipo de palabra es 'pocos'?",
+    "opciones": ["Numeral cardinal", "Indefinido", "Numeral ordinal", "Adjetivo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Pocos indica una cantidad imprecisa, por lo que es un indefinido."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cuál es la palabra con 'ct' de la familia de 'dirección'?",
+    "opciones": ["Directo", "Dirigir", "Director", "Directiva"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La palabra director contiene 'ct', por lo que dirección lleva 'cc'."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cuál es el ordinal de 15?",
+    "opciones": ["Quinceavo", "Quinceno", "Décimo cinco", "Decimoquinto"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El ordinal de 15 se escribe decimoquinto."
+  },
+  {
+    "id": 30,
+    "pregunta": "En la receta de 'Ensalada de frutas', ¿qué numeral aparece en 'Tres kiwis'?",
+    "opciones": ["Cardinal", "Ordinal", "Indefinido", "Partitivo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Tres indica cantidad exacta, es un numeral cardinal."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué rasgo físico de Maya se describe como 'algo achatada'?",
+    "opciones": ["Su boca", "Su frente", "Su nariz", "Su barbilla"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto dice que su nariz es pequeña y un poco achatada."
+  },
+  {
+    "id": 32,
+    "pregunta": "De estas palabras, ¿cuál deriva de 'calificar' y lleva una sola 'c'?",
+    "opciones": ["Calificación", "Calificativo", "Calificado", "Cualificación"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Calificación lleva una sola 'c' porque deriva de calificar, que no tiene 'ct'."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cuál es el ordinal para el número 40?",
+    "opciones": ["Cuarentésimo", "Cuarentavo", "Cuadragésimo", "Cuadrado"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El numeral ordinal de 40 es cuadragésimo."
+  },
+  {
+    "id": 34,
+    "pregunta": "Analiza 'demasiada' en 'comió demasiada fruta'.",
+    "opciones": ["Indefinido, femenino, singular", "Indefinido, masculino, singular", "Numeral cardinal", "Numeral ordinal"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Demasiada es un indefinido en forma femenina singular."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Cómo se llama el oponente en una competición deportiva?",
+    "opciones": ["Compañero", "Árbitro", "Adversario", "Socio"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La unidad define adversario como el oponente en el deporte."
+  },
+  {
+    "id": 36,
+    "pregunta": "La palabra 'succión' se escribe con 'cc' porque viene de:",
+    "opciones": ["Succionar", "Suctor", "Succionado", "Suctar"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Proviene de la familia de suctor, que contiene 'ct'."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cuál es el cardinal de 'vigesimoprimero'?",
+    "opciones": ["Diecinueve", "Veinte", "Veintiuno", "Veintidós"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El ordinal vigesimoprimero corresponde al número 21."
+  },
+  {
+    "id": 38,
+    "pregunta": "En 'muchos recuerdos', ¿qué función tiene 'muchos'?",
+    "opciones": ["Complemento", "Núcleo", "Sujeto", "Determinante"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Va delante del sustantivo, por lo que es un determinante."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Qué tipo de ojos tiene Maya?",
+    "opciones": ["Pequeños y claros", "Grandes y de color oscuro", "Rasgados y verdes", "Redondos y azules"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El retrato menciona que tiene los ojos grandes y de color oscuro."
+  },
+  {
+    "id": 40,
+    "pregunta": "De estas palabras, ¿cuál tiene 'cc' por la familia de 'proyectar'?",
+    "opciones": ["Proyección", "Proyectado", "Proyectil", "Proyecto"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Proyección lleva 'cc' porque proyecto/proyectar contienen 'ct'."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cuál es el ordinal de 14?",
+    "opciones": ["Catorceavo", "Decimocuarto", "Décimo cuatro", "Decimocuarto con cc"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ordinal del número 14 es decimocuarto."
+  },
+  {
+    "id": 42,
+    "pregunta": "En 'una manzana' de la receta, 'una' es un numeral:",
+    "opciones": ["Ordinal", "Indefinido", "Cardinal", "Multiplicativo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Una indica cantidad exacta (1), es un cardinal."
+  },
+  {
+    "id": 43,
+    "pregunta": "Maya es descrita como una chica...",
+    "opciones": ["Tímida y seria", "Simpática y amable", "Enfadada y solitaria", "Callada y perezosa"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Sus rasgos de carácter se definen como simpática y amable."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué palabra con 'cc' se relaciona con 'recolecta'?",
+    "opciones": ["Recogida", "Recoger", "Recolección", "Recogedor"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Recolecta (ct) nos indica que recolección se escribe con 'cc'."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cómo se escribe el ordinal 22º?",
+    "opciones": ["Veintidosavo", "Vigésimo segundo", "Veinte y dos", "Vigesimodos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ordinal de 22 es vigésimo segundo."
+  },
+  {
+    "id": 46,
+    "pregunta": "En 'algunos jugadores', 'algunos' es un:",
+    "opciones": ["Determinante indefinido", "Núcleo indefinido", "Complemento indefinido", "Determinante cardinal"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Al ir delante del sustantivo jugadores, actúa como determinante."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cómo se describe la estatura de Maya?",
+    "opciones": ["Baja para su edad", "De estatura media", "Muy alta para su edad", "No se menciona"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto afirma que Maya es muy alta para su edad."
+  },
+  {
+    "id": 48,
+    "pregunta": "Si 'inyectar' tiene 'ct' en su familia (inyector), 'inyección' lleva:",
+    "opciones": ["Una c", "Dos c", "Una x", "Una z"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Por la regla de la familia 'ct', inyección se escribe con 'cc'."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Cuál es el ordinal de 50?",
+    "opciones": ["Cincuentésimo", "Pentagésimo", "Cincuentavo", "Quincuagésimo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El ordinal de 50 es quincuagésimo."
+  },
+  {
+    "id": 50,
+    "pregunta": "En 'estará en plena forma', ¿qué tipo de palabra es 'plena'?",
+    "opciones": ["Indefinido", "Adjetivo", "Numeral", "Sustantivo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Plena funciona como un adjetivo calificativo en ese contexto."
+  }
+]
+
+--- FILE: cuestionarios/ian-5-lengua-t7.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿En qué región de Italia se encuentra la ciudad de Cremona?",
+    "opciones": ["Lombardía", "Toscana", "Sicilia", "Piamonte"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto narrativo sitúa específicamente a Cremona en la región de Lombardía, al norte de Italia."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿A qué se dedican los 'lutieres'?",
+    "opciones": ["A tocar el violín en palacios", "A construir o reparar instrumentos de cuerda", "A escribir partituras musicales", "A financiar a los artistas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El vocabulario del texto define a los lutieres como personas que fabrican o arreglan instrumentos de cuerda."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué prefijo indica 'situación'?",
+    "opciones": ["in-", "anti-", "sub-", "super-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tabla de prefijos clasifica 'sub-' como un prefijo de situación, al igual que 'ante-' o 'sobre-'."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cómo se escribe la palabra que empieza por hie- y nombra una planta?",
+    "opciones": ["Yedra", "Iedra", "Hiedra con ll", "Hiedra"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las reglas de ortografía indican que las palabras que empiezan por hie- o hue- se escriben con 'h'."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuál de estos pronombres personales es de primera persona del plural y tónico?",
+    "opciones": ["Nosotros", "Nos", "Os", "Vosotros"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cuadro de pronombres sitúa a 'nosotros' en la primera persona, plural y forma tónica."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué significa la palabra 'toscos' aplicada a los violines en la lectura?",
+    "opciones": ["Muy caros", "Poco trabajados o sin refinar", "De colores brillantes", "Que suenan muy fuerte"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En el vocabulario de la lectura, 'toscos' se refiere a objetos rudimentarios o poco elaborados."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué nombre recibe la unión de la vocal final de una palabra con la inicial de la siguiente en un verso?",
+    "opciones": ["Rima", "Métrica", "Sinalefa", "Arte mayor"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La sinalefa es una norma fundamental para medir los versos en poesía."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cuál es el prefijo de intensidad en la palabra 'archiconocida'?",
+    "opciones": ["con-", "ida-", "archi-", "archi-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El prefijo 'archi-' indica intensidad o grado superior, según la clasificación de prefijos."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué río fluye cerca de la ciudad de Cremona?",
+    "opciones": ["El río Po", "El río Tíber", "El río Arno", "El río Ebro"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La descripción geográfica de la historia menciona que Cremona se alza a orillas del río Po."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuál de estos verbos debe escribirse siempre con 'h'?",
+    "opciones": ["Andar", "Habitar", "Escuchar", "Mirar"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las formas de los verbos haber, hacer, habitar, hablar, hallar, helar, herir, hinchar y hundir llevan 'h'."
+  },
+  {
+    "id": 11,
+    "pregunta": "En la oración 'Le regalaron una guitarra', ¿qué tipo de pronombre es 'le'?",
+    "opciones": ["Tónico", "Posesivo", "Átono", "Demostrativo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los pronombres átonos son los que siempre acompañan a un verbo, como 'le'."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo se llama a las personas que apoyan actividades artísticas con dinero?",
+    "opciones": ["Lutieres", "Músicos", "Pintores", "Mecenas"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El texto define a los mecenas como personas que promueven el arte con sus aportaciones económicas."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Cuál de estos prefijos indica 'oposición'?",
+    "opciones": ["contra-", "sub-", "extra-", "pre-"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El prefijo 'contra-' (como en contraataque) indica oposición a algo."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué tipo de rima ocurre cuando solo coinciden las vocales a partir de la última sílaba tónica?",
+    "opciones": ["Consonante", "Asonante", "Libre", "Blanca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La rima asonante es aquella donde solo las vocales son iguales al final del verso."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué herramienta usaba Stradivari para trabajar la madera?",
+    "opciones": ["Martillo", "Taladro", "Gubias", "Sierra eléctrica"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto menciona herramientas manuales de luthier como gubias, formones y cepillos."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cómo se escribe la palabra que designa a quien no tiene padres?",
+    "opciones": ["Uerfano", "Huerfano", "Yerfano", "Huérfano"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las palabras que comienzan por el diptongo hue- se escriben con h inicial."
+  },
+  {
+    "id": 17,
+    "pregunta": "En la frase 'Ella toca el ukelele', ¿a qué persona corresponde el pronombre?",
+    "opciones": ["Tercera persona del singular", "Segunda persona del singular", "Primera persona del plural", "Tercera persona del plural"],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Ella' es el pronombre tónico de la tercera persona del singular femenino."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué prefijo añadirías a 'decir' para indicar que haces lo contrario de lo que se afirma?",
+    "opciones": ["pre-", "contra-", "re-", "in-"],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Contradecir' utiliza el prefijo de oposición para indicar la acción contraria."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿A qué se refiere el anuncio de la página 123?",
+    "opciones": ["A un concierto de rock", "A una tienda de violines", "A una academia de música", "A un concurso de talentos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El cartel publicitario es de la escuela de música 'Armonía'."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cómo se llaman las palabras que sirven para nombrar seres sin usar sustantivos?",
+    "opciones": ["Adjetivos", "Determinantes", "Preposiciones", "Pronombres personales"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los pronombres personales sustituyen al nombre para referirse a personas, animales u objetos."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuál era el apellido del maestro luthier que buscaba que de la madera surgiera música?",
+    "opciones": ["Stradivari", "Amati", "Guarneri", "Beethoven"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Stradivari es descrito como el maestro que trabajaba la madera con cuidado para infundirle un alma."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué prefijo de negación se usa en la palabra 'imposible'?",
+    "opciones": ["in-", "im-", "des-", "anti-"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El prefijo 'in-' se convierte en 'im-' antes de la letra 'p'."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cuál de estas palabras empieza por 'hum-' seguido de vocal y lleva 'h'?",
+    "opciones": ["Umbral", "Unión", "Húmedo", "Único"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las palabras que empiezan por hum- seguido de vocal se escriben con 'h'."
+  },
+  {
+    "id": 24,
+    "pregunta": "Si sustituimos 'Andrés perdió el autobús' por un pronombre, ¿cuál es correcto?",
+    "opciones": ["Él lo perdió", "Él le perdió", "Él la perdió", "Andrés lo perdió"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El pronombre átono 'lo' sustituye al objeto directo 'el autobús'."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Quién escribió el poema 'Alas quisiera tener...'?",
+    "opciones": ["Concha Méndez", "Antonio Machado", "Federico García Lorca", "Gloria Fuertes"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La autoría del poema sobre el deseo de volar y recorrer espacios es de Concha Méndez."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué indica el prefijo 'pre-'?",
+    "opciones": ["Intensidad", "Anterioridad", "Negación", "Situación debajo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El prefijo 'pre-' indica que algo ocurre antes, como en 'preselección'."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cuál es la forma correcta del verbo 'hacer' en la segunda persona del plural?",
+    "opciones": ["Hacemos", "Haces", "Hacéis", "Hacen"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La conjugación correcta para 'vosotros' requiere la h inicial y la terminación -éis."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué pronombre tónico acompaña a la preposición 'con' en primera persona del singular?",
+    "opciones": ["Con yo", "Con mi", "Con me", "Conmigo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El pronombre 'mí' se transforma en la forma especial 'conmigo' al unirse a la preposición 'con'."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿En qué ciudad transcurre la historia de los mejores violines?",
+    "opciones": ["Cremona", "Roma", "Milán", "Venecia"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Toda la trama sobre los luthiers Amati, Guarneri y Stradivari sucede en Cremona."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuál de estas palabras lleva un prefijo de situación que significa 'debajo de'?",
+    "opciones": ["Sobrevuela", "Subterráneo", "Anteayer", "Extraplano"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El prefijo 'sub-' aporta el significado de 'bajo' o 'debajo de'."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cuál es el antónimo de 'legal' usando un prefijo?",
+    "opciones": ["Deslegal", "Antilegal", "Ilegal", "Sublegal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El prefijo de negación 'in-' se convierte en 'i-' delante de la letra 'l'."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué palabras empiezan por 'horr-' y llevan 'h'?",
+    "opciones": ["Ornamento", "Oro", "Hormiga", "Horrible"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las palabras que empiezan por herm-, histo-, horr- y hosp- se escriben con 'h'."
+  },
+  {
+    "id": 33,
+    "pregunta": "Analiza 'nosotras' en la frase 'A nosotras nos encanta':",
+    "opciones": ["1ª pers, plural, tónico", "1ª pers, plural, átono", "2ª pers, plural, tónico", "3ª pers, singular, tónico"],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Nosotras' es el pronombre de primera persona plural femenino tónico."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cómo se llama el cartel que pone Stradivari al final de la historia?",
+    "opciones": ["Aquí se hacen violines", "Aquí se hacen los mejores violines de esta manzana", "Aquí no se hacen violines", "Aquí se venden violines baratos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Stradivari usa el ingenio para ganar la contienda con un cartel muy específico sobre su ubicación."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué prefijo indica 'exceso' o 'muy'?",
+    "opciones": ["in-", "sub-", "super-", "ante-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los prefijos ultra-, super- y archi- se utilizan para indicar intensidad o exceso."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es la forma correcta de 'hallar' en pasado para 'unos arqueólogos'?",
+    "opciones": ["Allaron", "Hayaron", "Ayaron", "Hallaron"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El verbo hallar se escribe con h y con ll, y concuerda en plural con el sujeto."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué pronombre átono de segunda persona del plural se usa en España?",
+    "opciones": ["Os", "Nos", "Les", "Los"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cuadro especifica que 'os' es el pronombre átono para la segunda persona del plural."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué tipo de rima tiene el poema de Antonio Machado 'Para tu ventana...'?",
+    "opciones": ["Consonante", "Asonante", "No tiene rima", "Rima blanca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los versos pares riman en asonante (mañana, reja, ventana)."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cuál es el prefijo de 'antebrazo'?",
+    "opciones": ["anti-", "an-", "ante-", "brazo-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Ante-' es un prefijo de situación que significa 'delante de'."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué palabras empiezan por 'herm-' y llevan 'h'?",
+    "opciones": ["Ermita", "Ermitaño", "Hermano", "Hermano"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La regla ortográfica incluye las palabras que empiezan por herm-, como hermano o hermético."
+  },
+  {
+    "id": 41,
+    "pregunta": "En la frase '¿Te importa si los invito?', ¿cuáles son los pronombres átonos?",
+    "opciones": ["Te, los", "Si, los", "Te, invito", "Yo, ellos"],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Te' (2ª pers) y 'los' (3ª pers) son formas átonas que acompañan a los verbos."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué instrumento toca la tía Hortensia en el dictado?",
+    "opciones": ["Violín", "Ukelele", "Piano", "Guitarra"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto del dictado se titula 'El ukelele de Hortensia'."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué prefijo le pondrías a 'histórico' para decir que es anterior a la historia?",
+    "opciones": ["in-", "ante-", "pre-", "super-"],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Prehistórico' usa el prefijo pre- para indicar anterioridad en el tiempo."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué significa el prefijo 'des-' en 'deshacer'?",
+    "opciones": ["Intensidad", "Situación", "Anterioridad", "Negación o inversión de la acción"],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Des-' es un prefijo de negación que indica lo contrario de la palabra primitiva."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cómo se llama el luthier ambicioso que hablaba solo en su taller?",
+    "opciones": ["Guarneri", "Amati", "Stradivari", "Nicolo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto describe a Guarneri como un hombre ambicioso envuelto en el olor del barniz."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué pronombre personal tónico de tercera persona del plural es masculino?",
+    "opciones": ["Ellas", "Ellos", "Vosotros", "Nosotros"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según el cuadro, 'ellos' es la forma tónica para la 3ª persona plural masculina."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué debe incluirse en el anuncio de una academia de música?",
+    "opciones": ["Solo dibujos", "Solo el nombre", "Cursos, localización y contacto", "El precio de los instrumentos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tarea pide listar información clave como cursos, horarios y formas de contacto."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Cuál de estas palabras se escribe con 'h' por empezar con 'hue-'?",
+    "opciones": ["Huevo", "Oeste", "Huida", "Huevo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Huevo es el ejemplo clásico de palabra que empieza por hue- y lleva h."
+  },
+  {
+    "id": 49,
+    "pregunta": "En la frase 'Tú leíste aquellos poemas', ¿qué palabra es el pronombre?",
+    "opciones": ["Tú", "Leíste", "Aquellos", "Poemas"],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Tú' es el pronombre personal tónico de la segunda persona del singular."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué tipo de rima tiene el poema 'Alas quisiera tener...' si riman 'espacios/pájaros'?",
+    "opciones": ["Consonante", "Asonante", "No tiene rima", "Rima perfecta"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es asonante porque solo coinciden las vocales (a-o) al final de las palabras."
+  }
+]
+
+--- FILE: cuestionarios/ian-5-lengua-t8.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿En qué zona de los Estados Unidos se encuentra el Parque Nacional de Yellowstone?",
+    "opciones": ["En el noroeste", "En el sureste", "En la costa este", "En el centro sur"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto informativo sitúa geográficamente el parque en el noroeste del país."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿En qué año se fundó el Parque Nacional de Yellowstone?",
+    "opciones": ["1902", "1872", "1850", "1972"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la fuente, Yellowstone es el más antiguo del mundo y se fundó en 1872."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué altura puede alcanzar la columna de agua caliente del géiser Old Faithful?",
+    "opciones": ["Hasta 112 metros", "30 metros", "Sesenta metros", "Diez metros"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto destaca que la columna de agua de este géiser puede alcanzar los sesenta metros de altura."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál es el diámetro del lago Grand Prismatic Spring?",
+    "opciones": ["50 metros", "200 metros", "60 metros", "112 metros"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La fuente menciona específicamente que este lago termal tiene 112 metros de diámetro."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Para qué edades se ofrece el programa especial de jóvenes guardabosques en Yellowstone?",
+    "opciones": ["Entre 5 y 12 años", "Entre 3 y 10 años", "Mayores de 12 años", "Solo para adolescentes"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto indica que el programa de Junior Rangers está diseñado para visitantes de entre 5 y 12 años."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué animal de los siguientes NO se menciona como habitante de Yellowstone?",
+    "opciones": ["Tigre", "Bisonte", "Oso", "Lince"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto lista bisontes, alces, osos, pumas, linces y lobos, pero no menciona tigres."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué deben completar los niños para obtener la insignia de guardabosques?",
+    "opciones": ["Una carrera de natación", "Un examen de historia", "Una serie de actividades sobre recursos naturales", "Un dibujo del Gran Cañón"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Para obtener la insignia, los niños deben completar actividades educativas bajo supervisión."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cuándo llevan 'h' intercalada las palabras según la primera regla ortográfica de la unidad?",
+    "opciones": ["Cuando terminan en vocal", "Cuando empiezan por vocal", "Cuando el diptongo 'ue' va precedido de una vocal", "Siempre que hay una 'u'"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La regla ortográfica especifica que el diptongo 'ue' precedido de vocal requiere 'h' intercalada."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué otra regla explica el uso de la 'h' intercalada?",
+    "opciones": ["Palabras que terminan en 'h'", "Palabras formadas a partir de otras que empiezan por 'h'", "Palabras que tienen tres sílabas", "Palabras que riman con 'hacer'"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las palabras derivadas de términos con 'h' inicial, como 'rehacer' de 'hacer', mantienen la 'h' de forma intercalada."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Por qué la palabra 'cacahuetes' lleva 'h' intercalada?",
+    "opciones": ["Porque es una palabra prehistórica", "Porque tiene el diptongo 'ue' precedido de vocal", "Porque deriva de 'caca'", "Porque es un nombre de alimento"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Sigue la regla del diptongo 'ue' precedido de la vocal 'a'."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Cuál de estas palabras con 'h' intercalada se asocia con la conservación de alimentos?",
+    "opciones": ["Albahaca", "Ahumado", "Tahona", "Malhumor"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto menciona el salmón ahumado como alimento típico conservado mediante humo."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué es una 'tahona'?",
+    "opciones": ["Un lugar de donde procede olor a pan", "Una planta aromática", "Una herramienta de madera", "Un tipo de cueva"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En los ejercicios de completar, se asocia la tahona con el aroma a pan."
+  },
+  {
+    "id": 13,
+    "pregunta": "Si añadimos el prefijo 'des-' a 'habitar', ¿qué palabra obtenemos?",
+    "opciones": ["Desabitar", "Deshabitar", "Dehabitar", "Des-habitar"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Al unir 'des-' a una palabra con 'h' inicial como 'habitar', se forma una palabra con 'h' intercalada."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué diferencia de significado hay entre 'azar' y 'azahar'?",
+    "opciones": ["No hay diferencia", "Azar es una planta y azahar es suerte", "Ambas significan casualidad", "Azar es casualidad y azahar es una flor"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las definiciones aclaran que 'azar' es suerte o casualidad y 'azahar' es la flor del naranjo."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Cuál es el significado de la palabra 'ahínco'?",
+    "opciones": ["Esfuerzo o empeño", "Lugar deshabitado", "Miedo profundo", "Rapidez excesiva"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En el dictado 'Belleza natural', se usa 'ahínco' para referirse al esfuerzo contra el oleaje."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Qué palabra describe una zona donde no vive nadie?",
+    "opciones": ["Deshabitada", "Ahumada", "Inhumana", "Prohibida"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto usa 'deshabitada' para describir zonas de la costa sin población."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué son los verbos según la gramática de la unidad?",
+    "opciones": ["Palabras que nombran objetos", "Palabras que expresan acciones", "Palabras que describen cualidades", "Palabras que sustituyen nombres"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La definición básica establece que los verbos expresan acciones."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cómo se llama el conjunto de todas las formas de un verbo?",
+    "opciones": ["Sustantivo", "Desinencia", "Conjugación", "Raíz"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La teoría define la conjugación como el conjunto de formas de un verbo."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué es el infinitivo?",
+    "opciones": ["La forma con la que nombramos al verbo", "La forma que indica el pasado", "La raíz del verbo", "Una forma compuesta"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El infinitivo (cuidar, proteger...) es el nombre del verbo."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿De qué constan las formas verbales simples?",
+    "opciones": ["De dos palabras", "De una sola palabra", "Solo de la raíz", "Del verbo haber"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las formas simples, como 'plantaron', se componen de una única palabra."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué llevan siempre las formas verbales compuestas?",
+    "opciones": ["Dos raíces", "Un prefijo de negación", "Una forma del verbo haber", "Un adjetivo calificativo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las formas compuestas constan de más de una palabra, siendo una de ellas del verbo 'haber'."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué parte del verbo aporta el significado básico?",
+    "opciones": ["La desinencia", "El prefijo", "La raíz", "El infinitivo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La raíz es el morfema que contiene el significado léxico principal del verbo."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cómo se obtiene la raíz de un verbo?",
+    "opciones": ["Quitando la terminación del infinitivo", "Añadiendo un prefijo", "Mirando la última letra", "Quitando las vocales"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se obtiene quitando -ar, -er o -ir al infinitivo (ej: de 'partir', la raíz es 'part-')."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué información aportan las desinencias?",
+    "opciones": ["El significado de la acción", "Número, persona, tiempo y modo", "Si la palabra lleva 'h'", "El origen de la palabra"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las desinencias son morfemas flexivos que dan información gramatical."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿A qué conjugación pertenecen los verbos cuyo infinitivo termina en -er?",
+    "opciones": ["Primera", "Segunda", "Tercera", "Cuarta"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La segunda conjugación agrupa a los verbos terminados en -er, como 'beber'."
+  },
+  {
+    "id": 26,
+    "pregunta": "El verbo 'vivir' pertenece a la:",
+    "opciones": ["Primera conjugación", "Segunda conjugación", "Tercera conjugación", "Ninguna de las anteriores"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los verbos terminados en -ir pertenecen a la tercera conjugación."
+  },
+  {
+    "id": 27,
+    "pregunta": "Identifica la raíz de 'cantarán':",
+    "opciones": ["cant-", "-arán", "cantar-", "can-"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Al quitar -ar al infinitivo 'cantar', nos queda la raíz 'cant-'."
+  },
+  {
+    "id": 28,
+    "pregunta": "Identifica la desinencia de 'cocinó':",
+    "opciones": ["cocin-", "-ó", "-nó", "co-"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En 'cocinó', la raíz es 'cocin-' y la terminación o desinencia es '-ó'."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué es una 'carta al director'?",
+    "opciones": ["Un mensaje privado", "Un texto donde los lectores opinan o denuncian algo", "Un examen de lengua", "Una noticia sin firma"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es una sección del periódico donde el público expresa su opinión sobre temas de actualidad."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué tipo de lenguaje se debe emplear en una carta al director?",
+    "opciones": ["Lenguaje coloquial", "Lenguaje inventado", "Lenguaje formal", "Solo dibujos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Al ser un texto dirigido a un medio de comunicación, requiere un tono formal."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cómo debe ser la despedida en una carta al director?",
+    "opciones": ["Con una fórmula de cortesía como 'Atentamente'", "Diciendo 'adiós'", "Sin despedida", "Con un chiste"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El libro recomienda usar fórmulas de cortesía estándar en este tipo de escritos."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué información NO suele aparecer en una carta al director?",
+    "opciones": ["La opinión del autor", "La fecha y el lugar", "El precio del periódico", "La firma"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las cartas incluyen datos del autor, fecha, lugar y opinión, pero no el precio del diario."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cuál de estos textos se considera MENOS fiable?",
+    "opciones": ["Una noticia de un periódico", "Un reportaje de revista digital", "Un mensaje sin firma difundido en un chat", "Un libro de texto"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La sección 'Aplica tus conocimientos' advierte que las noticias sin firma en chats son poco fiables."
+  },
+  {
+    "id": 34,
+    "pregunta": "En la oración 'Iván se ha ido de vacaciones', ¿qué forma verbal hay?",
+    "opciones": ["Simple", "Compuesta", "Infinitivo", "Gerundio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Ha ido' es una forma compuesta del verbo ir."
+  },
+  {
+    "id": 35,
+    "pregunta": "En la oración 'Tus amigos viven cerca', ¿qué forma verbal hay?",
+    "opciones": ["Compuesta", "Raíz", "Desinencia", "Simple"],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Viven' es una sola palabra, por tanto es una forma simple."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es la raíz de 'venderá'?",
+    "opciones": ["ven-", "vend-", "vende-", "-erá"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Del infinitivo 'vender', quitamos '-er' y obtenemos 'vend-'."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué palabra con 'h' intercalada significa 'procedente de una persona'?",
+    "opciones": ["Inhumano", "Sobrehumano", "Humano", "Humildad"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En los ejercicios de ortografía se trabaja el término 'inhumano'."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué significa el término 'biodiversidad'?",
+    "opciones": ["Muchos tipos de plantas y animales", "Un solo tipo de árbol", "Un parque muy pequeño", "El nombre de un río"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El vocabulario inicial asocia biodiversidad con la variedad de seres vivos en un lugar."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Por qué se escribe 'malhumor' con 'h' intercalada?",
+    "opciones": ["Porque empieza por 'm'", "Porque deriva de 'humor' que empieza con 'h'", "Porque es una excepción", "Porque lleva el prefijo 'mal-'"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Al unir 'mal-' a 'humor' (que tiene 'h' inicial), se mantiene la 'h' de forma intercalada."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué prohíbe una señal con un dibujo de un móvil tachado?",
+    "opciones": ["Hablar por teléfono", "Hacer fotos", "Correr", "Llevar mochila"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La señal indica la prohibición de usar dispositivos móviles en ese lugar."
+  },
+  {
+    "id": 41,
+    "pregunta": "Si un cartel muestra un coche tachado, significa que:",
+    "opciones": ["Se permite aparcar", "Está prohibido el paso de vehículos", "Es una zona de descanso", "Hay un taller cerca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La señalización circular con borde rojo y dibujo tachado indica prohibición."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Cómo se escribe correctamente la palabra que falta: 'Espectacular incendio en la bu...rdilla'?",
+    "opciones": ["buardilla", "buhardilla", "bu-hardilla", "bualdilla"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La palabra correcta es 'buhardilla' y lleva 'h' intercalada."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué prefijo se usa para formar 'deshinchas' a partir de 'hinchar'?",
+    "opciones": ["anti-", "re-", "in-", "des-"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El ejercicio 3 de ortografía pide formar verbos añadiendo el prefijo 'des-'."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cuál es la raíz de 'llamará'?",
+    "opciones": ["llam-", "llama-", "-ará", "lla-"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Del infinitivo 'llamar', retiramos '-ar' para hallar la raíz 'llam-'."
+  },
+  {
+    "id": 45,
+    "pregunta": "La forma verbal 'habían plantado' es:",
+    "opciones": ["Simple", "Infinitivo", "Compuesta", "Desinencia"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Consta de dos palabras (auxiliar haber + participio), por lo que es compuesta."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿A qué conjugación pertenece 'vivíamos'?",
+    "opciones": ["Primera", "Segunda", "Tercera", "Ninguna"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Procede del infinitivo 'vivir', que termina en -ir."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué dato personal NO se menciona en la carta de Mateo López García?",
+    "opciones": ["Nombre", "Apellido", "Lugar (Almorote)", "Número de teléfono"],
+    "respuestaCorrecta": 3,
+    "explicacion": "En el modelo de carta aparecen nombre, apellido y lugar, pero no el teléfono."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué pueblo de los siguientes mencionaba una carta al director?",
+    "opciones": ["Almorote", "Madrid", "Yellowstone", "Cremona"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La carta de ejemplo está escrita desde Almorote."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Quiénes habitaban Yellowstone antes de ser parque nacional?",
+    "opciones": ["Piratas", "Indios", "Caballeros medievales", "Astronautas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto menciona un museo que muestra cómo vivían los indios que poblaban la zona."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué adverbio significa 'en este momento' y lleva h?",
+    "opciones": ["Ahora", "Hoy", "Aquí", "Ahí"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El adverbio 'ahora' lleva 'h' intercalada y se refiere al tiempo presente."
+  }
+]
+
+--- FILE: cuestionarios/ian-5-natu-t3.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué dos procesos principales forman parte de la función de nutrición de las plantas?",
+    "opciones": [
+      "La fotosíntesis y la respiración celular",
+      "La polinización y la germinación",
+      "La absorción de agua y la floración",
+      "La poda y el riego por goteo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La nutrición vegetal se basa en fabricar alimento mediante la fotosíntesis y obtener energía mediante la respiración celular."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál es la función principal de la raíz que se encuentra bajo tierra?",
+    "opciones": [
+      "Captar la luz del sol para las hojas",
+      "Absorber agua y sales minerales del suelo",
+      "Producir las semillas de la planta",
+      "Atraer insectos con sus colores"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La raíz se encarga de fijar la planta al suelo y de absorber los nutrientes necesarios para vivir."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cómo se llaman los tallos rígidos y gruesos que conocemos comúnmente como troncos?",
+    "opciones": [
+      "Tallos herbáceos",
+      "Tallos flexibles",
+      "Tallos leñosos",
+      "Tallos acuáticos"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los tallos leñosos son rígidos y gruesos, típicos de árboles y arbustos."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿En qué órgano de la planta se elabora principalmente el alimento?",
+    "opciones": [
+      "En la raíz",
+      "En el tronco",
+      "En los pétalos",
+      "En las hojas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las hojas son los órganos donde se produce la materia orgánica que nutre a toda la planta."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Qué nombre recibe el pigmento verde encargado de captar la luz solar?",
+    "opciones": [
+      "Clorofila",
+      "Savia bruta",
+      "Polen",
+      "Estoma"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La clorofila es el pigmento que da color verde a las plantas y permite captar la energía lumínica."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cómo se llama la cara superior de la hoja que suele ser de color más intenso?",
+    "opciones": [
+      "Envés",
+      "Haz",
+      "Limbo",
+      "Pecíolo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El haz es la parte superior del limbo de la hoja, mientras que la inferior es el envés."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué gas absorben las plantas del aire para realizar la fotosíntesis?",
+    "opciones": [
+      "Oxígeno",
+      "Nitrógeno",
+      "Dióxido de carbono",
+      "Argón"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Para fabricar su alimento, las plantas toman dióxido de carbono a través de los estomas de las hojas."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué es la 'savia bruta'?",
+    "opciones": [
+      "El alimento ya fabricado en las hojas",
+      "El polen que viaja por el aire",
+      "La energía que desprende la planta",
+      "El agua y las sales minerales absorbidas por la raíz"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La mezcla de agua y sales minerales que sube desde la raíz se denomina savia bruta."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué conductos transportan la savia elaborada desde las hojas al resto de la planta?",
+    "opciones": [
+      "Vasos liberianos",
+      "Vasos leñosos",
+      "Raíces secundarias",
+      "Vasos de cristal"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La savia elaborada (alimento) se reparte por la planta a través de los vasos liberianos."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué gas liberan las plantas a la atmósfera durante la fotosíntesis?",
+    "opciones": [
+      "Hidrógeno",
+      "Oxígeno",
+      "Dióxido de carbono",
+      "Vapor de agua"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Como producto del proceso de fotosíntesis, las plantas desprenden oxígeno al medio."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Cuándo realizan las plantas la respiración celular?",
+    "opciones": [
+      "Solo cuando hay luz solar",
+      "Solo durante el invierno",
+      "Tanto de día como de noche",
+      "Únicamente por la noche"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "A diferencia de la fotosíntesis, la respiración es un proceso continuo que ocurre día y noche."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿A través de qué poros de las hojas entran y salen los gases?",
+    "opciones": [
+      "Nervios",
+      "Raíces",
+      "Pecíolos",
+      "Estomas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los estomas son poros microscópicos que permiten el intercambio de gases en la hoja."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué obtienen las plantas mediante la respiración celular?",
+    "opciones": [
+      "Energía",
+      "Materia orgánica nueva",
+      "Luz solar",
+      "Agua del suelo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las plantas respiran para obtener la energía necesaria para vivir a partir de la materia orgánica."
+  },
+  {
+    "id": 14,
+    "pregunta": "En la reproducción asexual, ¿cuántos individuos se necesitan para producir descendientes?",
+    "opciones": [
+      "Dos organismos de distinto sexo",
+      "Un solo individuo",
+      "Tres plantas diferentes",
+      "Ninguno, se crean solas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Un solo individuo es capaz de producir descendientes idénticos en la reproducción asexual."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué grupo de plantas se reproduce mediante esporas?",
+    "opciones": [
+      "Manzanos y rosales",
+      "Pinos y abetos",
+      "Musgos y helechos",
+      "Patatas y cebollas"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los musgos y los helechos utilizan esporas para su reproducción."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Dónde se localizan los esporangios en los helechos?",
+    "opciones": [
+      "En la raíz principal",
+      "En el extremo de un filamento largo",
+      "Dentro de una piña dura",
+      "En el envés de las hojas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En los helechos, los esporangios se agrupan en el envés de las hojas en granos amarillentos."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué es un 'esqueje'?",
+    "opciones": [
+      "Un trozo de tallo u hoja que genera una nueva planta",
+      "Un tallo subterráneo que almacena alimento",
+      "La flor de un pino piñonero",
+      "El polen que viaja con el viento"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los esquejes son fragmentos de la planta que, al plantarse, desarrollan raíces y crecen."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cuál de estos es un ejemplo de tubérculo?",
+    "opciones": [
+      "La cebolla",
+      "La patata",
+      "El lirio",
+      "La fresa"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La patata es un tubérculo, que es el extremo de un tallo subterráneo cargado de alimento."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué nombre reciben los tallos rastreros que crecen sobre el suelo, como los de la fresa?",
+    "opciones": [
+      "Rizomas",
+      "Bulbos",
+      "Estolones",
+      "Troncos"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los estolones son tallos que crecen horizontalmente sobre el suelo y forman nuevas raíces."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué caracteriza a las flores de las plantas gimnospermas, como el pino?",
+    "opciones": [
+      "Son muy grandes y de colores brillantes",
+      "Tienen pétalos perfumados",
+      "Se convierten en frutos dulces",
+      "Son flores incompletas sin pétalos ni sépalos"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las gimnospermas tienen flores sencillas y sus semillas no están encerradas en frutos, sino en piñas."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué tipo de plantas producen flores completas y frutos con semillas?",
+    "opciones": [
+      "Angiospermas",
+      "Musgos",
+      "Gimnospermas",
+      "Helechos"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las angiospermas, como el manzano, tienen flores completas que dan lugar a frutos."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Cuáles son los órganos reproductores masculinos de la flor?",
+    "opciones": [
+      "El pistilo",
+      "Los estambres",
+      "Los sépalos",
+      "Los pétalos"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los estambres producen los granos de polen, que contienen las células masculinas."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cómo se llama el órgano reproductor femenino de la flor con forma de botella?",
+    "opciones": [
+      "Cáliz",
+      "Corola",
+      "Pistilo",
+      "Filamento"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El pistilo es el órgano femenino y contiene el estigma, el estilo y el ovario."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué parte de la flor suele ser de colores vivos para atraer a los animales?",
+    "opciones": [
+      "El cáliz",
+      "Los sépalos",
+      "El ovario",
+      "La corola"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La corola es el conjunto de pétalos, cuyas formas y colores atraen polinizadores."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué es la polinización?",
+    "opciones": [
+      "El viaje del polen desde el estambre al pistilo",
+      "La unión de dos células sexuales",
+      "La salida de la raíz de la semilla",
+      "La fabricación de alimento en la hoja"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La polinización consiste en el desplazamiento de los granos de polen hacia el pistilo."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿De qué dos formas principales puede trasladarse el polen?",
+    "opciones": [
+      "Por el fuego o por la lluvia",
+      "Por el viento o por animales (insectos)",
+      "Por las raíces o por los frutos",
+      "Por el sol o por la luna"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El polen puede ser transportado por el viento o por animales como abejas o colibríes."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué ocurre durante la fecundación en las plantas?",
+    "opciones": [
+      "La planta absorbe agua por primera vez",
+      "Los pétalos crecen mucho",
+      "Se unen la célula masculina y la femenina",
+      "La semilla cae al suelo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fecundación es la unión de las células sexuales dentro del ovario."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué estructura crece desde el grano de polen para llegar al óvulo?",
+    "opciones": [
+      "Una raíz secundaria",
+      "Un vaso leñoso",
+      "Un estolón rastrero",
+      "Un tubo polínico"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El polen origina el tubo polínico para que las células masculinas lleguen al óvulo."
+  },
+  {
+    "id": 29,
+    "pregunta": "Después de la fecundación, ¿en qué se transforma el óvulo?",
+    "opciones": [
+      "En una semilla",
+      "En un fruto",
+      "En un pétalo",
+      "En una raíz"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Como resultado de la fecundación, el óvulo se transforma en semilla."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿En qué se transforma el ovario de la flor tras la fecundación?",
+    "opciones": [
+      "En polen",
+      "En un fruto",
+      "En una hoja",
+      "En un estambre"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las paredes del ovario se engrosan para formar el fruto que protegerá a las semillas."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué contiene la semilla que dará origen a una nueva planta?",
+    "opciones": [
+      "Solo agua salada",
+      "Dióxido de carbono sólido",
+      "El embrión",
+      "Clorofila pura"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La semilla contiene el embrión y sustancias de reserva para que este crezca."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cómo se llama el proceso en el que la semilla da lugar a una nueva planta?",
+    "opciones": [
+      "Fotosíntesis",
+      "Respiración",
+      "Polinización",
+      "Germinación"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La germinación es la transformación de la semilla para originar una nueva planta."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué condiciones necesita una semilla para germinar?",
+    "opciones": [
+      "Humedad y temperatura adecuadas",
+      "Mucha oscuridad y frío extremo",
+      "Estar sumergida en aceite",
+      "Fuego y cenizas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La germinación ocurre cuando la semilla encuentra la humedad y el calor propicios."
+  },
+  {
+    "id": 34,
+    "pregunta": "Desde un punto de vista científico, ¿qué son las nueces y almendras?",
+    "opciones": [
+      "Flores secas",
+      "Semillas comestibles con cubierta dura",
+      "Raíces deshidratadas",
+      "Hojas modificadas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los frutos secos son realmente semillas con una cubierta protectora muy resistente."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué instrumento se usa para observar detalles en relieve sin preparar el material?",
+    "opciones": [
+      "El telescopio",
+      "El termómetro",
+      "La lupa binocular",
+      "El microscopio electrónico"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lupa binocular permite ver objetos en relieve y con un gran campo de visión."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cómo se llaman las lentes por donde se mira en una lupa binocular?",
+    "opciones": [
+      "Platinas",
+      "Tornillos",
+      "Objetivos",
+      "Oculares"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los oculares son las lentes donde el observador sitúa los ojos."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cuál es el primer paso para estudiar los órganos internos de una flor hermafrodita?",
+    "opciones": [
+      "Arrancar los pétalos y contarlos",
+      "Cortar la raíz principal",
+      "Lavar la flor con jabón",
+      "Plantar la flor en el suelo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Para acceder a los órganos internos, primero se retiran los pétalos de la corola."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué partes de la planta producen oxígeno según el experimento de Ingenhousz?",
+    "opciones": [
+      "Las raíces y troncos",
+      "Las partes verdes expuestas a la luz",
+      "Todas las partes de la planta sin excepción",
+      "Solo las flores al mediodía"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El experimento demostró que solo las partes verdes producen oxígeno en presencia de luz."
+  },
+  {
+    "id": 39,
+    "pregunta": "En la respiración de la hoja, ¿qué gas se libera al exterior?",
+    "opciones": [
+      "Oxígeno",
+      "Nitrógeno",
+      "Dióxido de carbono",
+      "Hidrógeno"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Durante la respiración, las plantas consumen oxígeno y expulsan dióxido de carbono."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Cómo se llaman las flores que tienen estambres y pistilo a la vez?",
+    "opciones": [
+      "Flores masculinas",
+      "Flores femeninas",
+      "Flores estériles",
+      "Flores hermafroditas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las flores hermafroditas poseen ambos órganos reproductores en el mismo individuo."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿De qué está formado el cáliz de la flor?",
+    "opciones": [
+      "De sépalos",
+      "De pétalos",
+      "De granos de polen",
+      "De óvulos"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cáliz es el conjunto de sépalos, que suelen ser hojas pequeñas y verdes."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Para qué sirven las sustancias de reserva dentro de la semilla?",
+    "opciones": [
+      "Para alimentar al embrión hasta que crezca",
+      "Para atraer a los insectos",
+      "Para que la semilla pese más",
+      "Para fabricar perfume"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El embrión utiliza estas reservas para desarrollarse hasta que la nueva planta pueda alimentarse sola."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué ocurre con las plantas de hoja caduca durante el invierno?",
+    "opciones": [
+      "Mueren definitivamente",
+      "Crecen muy rápido",
+      "Entran en letargo y pierden las hojas",
+      "Producen gran cantidad de frutos"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Estas plantas entran en una fase de falta de crecimiento y pierden su follaje en invierno."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿A qué velocidad pueden los helechos lanzar sus esporas?",
+    "opciones": [
+      "A 1 metro por hora",
+      "A la velocidad del sonido",
+      "No se mueven, caen solas",
+      "A unos 10 metros por segundo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Células especializadas rodean los esporangios y lanzan las esporas a gran velocidad."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Por qué las plantas cierran sus estomas cuando hace un calor extremo?",
+    "opciones": [
+      "Para evitar perder demasiada agua",
+      "Para que no entre el aire caliente",
+      "Para descansar de la fotosíntesis",
+      "Para cambiar de color"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los estomas se cierran para evitar la desecación de la planta por evaporación excesiva."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Dónde se encuentran las células sexuales femeninas u óvulos?",
+    "opciones": [
+      "En el estambre",
+      "En el ovario",
+      "En el cáliz",
+      "En el pecíolo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los óvulos se localizan en la zona inferior del pistilo, llamada ovario."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cuál de estos es un ejemplo de bulbo?",
+    "opciones": [
+      "La patata",
+      "La fresa",
+      "La cebolla",
+      "El helecho"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La cebolla es un bulbo, un tallo subterráneo envuelto en hojas carnosas."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué nombre reciben los conductos rígidos que suben la savia bruta por el tallo?",
+    "opciones": [
+      "Vasos liberianos",
+      "Vasos de plástico",
+      "Estolones",
+      "Vasos leñosos"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los vasos leñosos transportan el agua y las sales minerales hasta las hojas."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué parte de la hoja une el limbo al tallo?",
+    "opciones": [
+      "El pecíolo",
+      "El estoma",
+      "La raíz",
+      "El estambre"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El pecíolo es la prolongación que sostiene la lámina de la hoja."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cuál es la principal diferencia entre la reproducción sexual y la asexual?",
+    "opciones": [
+      "La asexual siempre requiere flores",
+      "En la sexual intervienen dos organismos",
+      "La asexual es solo para animales",
+      "En la sexual solo se usan esquejes"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La reproducción sexual requiere dos individuos, mientras que la asexual solo uno."
+  }
+]
+
+--- FILE: cuestionarios/ian-5-natu-t4.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué componentes integran un ecosistema según las fuentes?",
+    "opciones": [
+      "Solo el medio biológico y el clima.",
+      "El medio físico, el medio biológico y las relaciones entre ellos.",
+      "Únicamente los animales y las rocas del entorno.",
+      "Los seres vivos y el aire exclusivamente."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Un ecosistema se define como el conjunto formado por los seres vivos, el entorno donde habitan y las relaciones que se dan entre ellos."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cómo se define a una población dentro de un ecosistema?",
+    "opciones": [
+      "Un grupo de individuos de la misma especie que viven en un lugar.",
+      "El conjunto de todos los animales de un bosque.",
+      "Un organismo aislado que busca alimento.",
+      "La unión de diferentes comunidades biológicas."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Una población es el conjunto de individuos de la misma especie que conviven en un área determinada."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué es una comunidad biológica?",
+    "opciones": [
+      "Un grupo de rocas y agua en movimiento.",
+      "Un solo individuo de una especie protegida.",
+      "El conjunto de poblaciones que viven en un espacio determinado.",
+      "La suma de los factores climáticos de una región."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La comunidad está formada por las diversas poblaciones de seres vivos que habitan e interactúan en un mismo espacio."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuándo se considera que dos organismos son de la misma especie?",
+    "opciones": [
+      "Si comen el mismo tipo de alimento.",
+      "Si viven en el mismo árbol o madriguera.",
+      "Si son físicamente idénticos en color y tamaño.",
+      "Si pueden reproducirse entre ellos y tener descendencia fértil."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los individuos de una misma especie comparten características semejantes y son capaces de generar hijos que también puedan reproducirse."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuál es la función del aire en el medio físico para los seres vivos?",
+    "opciones": [
+      "Solo sirve para que las aves puedan volar.",
+      "Contiene el oxígeno para respirar y el dióxido de carbono para la fotosíntesis.",
+      "Proporciona sales minerales a las raíces.",
+      "Mantiene el suelo húmedo durante el verano."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El aire es indispensable porque suministra el oxígeno necesario para la respiración y el dióxido de carbono que las plantas usan para fabricar alimento."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Por qué el suelo es vital para las plantas terrestres?",
+    "opciones": [
+      "Porque les proporciona sombra a las raíces.",
+      "Porque evita que la luz solar queme la planta.",
+      "Sirve de sujeción y suministra agua y sales minerales.",
+      "Porque es donde se realiza la fotosíntesis."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El suelo permite que las plantas se fijen al terreno y absorban los nutrientes y el agua necesarios para su desarrollo."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué adaptación presentan las plantas tropicales ante la luz?",
+    "opciones": [
+      "Tienen hojas grandes para captar la mayor cantidad de luz posible.",
+      "Sus hojas son muy pequeñas para no quemarse.",
+      "No necesitan realizar la fotosíntesis.",
+      "Crecen solo durante la noche para evitar el sol."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Debido a la competencia por la luz en zonas densas, las plantas tropicales suelen desarrollar hojas de gran tamaño para maximizar la absorción lumínica."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cómo se adaptan los animales a las temperaturas extremadamente frías?",
+    "opciones": [
+      "Desarrollan orejas muy grandes para soltar calor.",
+      "Tienen una piel muy fina para transpirar mejor.",
+      "Poseen capas de grasa y abundante pelaje para retener el calor.",
+      "Cambian su alimentación a una dieta basada en rocas."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Animales como el oso polar cuentan con grasa subcutánea y pelo denso para protegerse del frío intenso de su hábitat [4]."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué es la salinidad en los ecosistemas acuáticos?",
+    "opciones": [
+      "La velocidad a la que fluye el agua de un río.",
+      "La cantidad de sales disueltas que se encuentran en el agua.",
+      "La temperatura media del océano en verano.",
+      "La profundidad máxima a la que llega la luz solar."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La salinidad mide la concentración de sales en el agua, siendo un factor clave que diferencia los medios marinos de los de agua dulce [4]."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿En qué consiste la relación de mutualismo?",
+    "opciones": [
+      "Un organismo vive a costa de otro perjudicándolo.",
+      "Dos organismos luchan por el mismo alimento.",
+      "Una asociación donde ambos organismos obtienen beneficios.",
+      "Un ser vivo ignora por completo al otro."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En el mutualismo, los individuos asociados se ayudan mutuamente, como ocurre con la polinización por insectos [5]."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué ejemplo representa una relación de comensalismo?",
+    "opciones": [
+      "Un león cazando a una cebra en la sabana.",
+      "Las rémoras que se alimentan de los restos de comida de un tiburón.",
+      "Los piojos que habitan en la cabeza de los mamíferos.",
+      "Dos plantas que crecen juntas para darse sombra."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El comensalismo es una relación donde una especie se beneficia sin que la otra resulte perjudicada ni beneficiada [5]."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué caracteriza al parasitismo como relación perjudicial?",
+    "opciones": [
+      "Ambas especies mueren al poco tiempo.",
+      "Las dos especies obtienen comida extra del entorno.",
+      "Una especie se beneficia y la otra resulta perjudicada.",
+      "Es una lucha por el territorio entre dos machos."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En el parasitismo, un parásito obtiene beneficio a expensas de la salud del hospedador, como las lombrices intestinales [5]."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué sucede en una relación de competencia?",
+    "opciones": [
+      "Los animales cooperan para construir un refugio.",
+      "Dos o más seres vivos tratan de obtener un mismo recurso limitado.",
+      "Un productor fabrica alimento para un consumidor.",
+      "Es una relación siempre beneficiosa para la biodiversidad."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La competencia ocurre cuando los individuos luchan por recursos como la luz, el agua, la comida o la pareja [5]."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Quiénes ocupan el primer nivel de una cadena alimentaria?",
+    "opciones": [
+      "Los consumidores primarios.",
+      "Los descomponedores.",
+      "Los carnívoros finales.",
+      "Los productores (plantas y algas)."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los productores son seres autótrofos que fabrican su propio alimento y sirven de base para el resto de los niveles [6]."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿De qué se alimentan los consumidores primarios?",
+    "opciones": [
+      "De animales muertos en descomposición.",
+      "De los productores.",
+      "De otros consumidores secundarios.",
+      "Únicamente de bacterias del suelo."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los consumidores primarios son animales herbívoros que obtienen su energía directamente de las plantas o algas [6]."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuál es la función principal de los descomponedores?",
+    "opciones": [
+      "Cazar a los grandes depredadores del ecosistema.",
+      "Transformar restos orgánicos en sales minerales para los productores.",
+      "Producir oxígeno mediante la fotosíntesis marina.",
+      "Evitar que la lluvia ácida caiga sobre los bosques."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Bacterias y hongos degradan la materia orgánica muerta, devolviendo minerales al suelo que son aprovechados por las plantas [6]."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué diferencia hay entre una cadena y una red alimentaria?",
+    "opciones": [
+      "La red es un conjunto de cadenas que se entrecruzan.",
+      "La cadena es más importante para los océanos.",
+      "La red solo incluye a los animales descomponedores.",
+      "Son términos iguales y se pueden usar indistintamente."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Una red alimentaria es una representación más compleja que muestra cómo varias cadenas se conectan en un ecosistema [5]."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué es el plancton y dónde se encuentra?",
+    "opciones": [
+      "Un mineral que se extrae de las minas terrestres.",
+      "Seres microscópicos que flotan en el agua.",
+      "Un tipo de árbol que crece en las praderas.",
+      "La capa de aire que rodea a las montañas."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El plancton está compuesto por organismos microscópicos acuáticos que son esenciales en las redes alimentarias marinas [7]."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cómo se define la biosfera?",
+    "opciones": [
+      "La parte de la Tierra donde habitan los seres vivos.",
+      "La capa más alta de la atmósfera donde no hay vida.",
+      "Un ecosistema artificial creado en laboratorios.",
+      "El núcleo interno del planeta Tierra."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La biosfera abarca desde las profundidades del mar hasta las cumbres más altas donde reside la vida [8]."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué es un bioma?",
+    "opciones": [
+      "Un ecosistema muy pequeño, como una gota de agua.",
+      "Un animal que ha evolucionado en cautividad.",
+      "Ecosistemas que ocupan extensiones muy amplias de la Tierra.",
+      "El nombre técnico que reciben los descomponedores."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los biomas son grandes regiones ecológicas que comparten climas y comunidades similares a gran escala [8]."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué caracteriza al hábitat de una especie?",
+    "opciones": [
+      "Es el conjunto de todas sus cadenas alimentarias.",
+      "Es el lugar que reúne las condiciones para que una especie viva.",
+      "Es el nombre científico que se le da a la población.",
+      "Representa la suma de todos los Parques Nacionales."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El hábitat es el espacio físico concreto donde un organismo encuentra alimento, clima y refugio adecuados [8]."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué son los ecosistemas de agua dulce?",
+    "opciones": [
+      "Océanos y mares con alta salinidad.",
+      "Cualquier ecosistema creado por el hombre.",
+      "Ríos, lagunas y charcas con baja concentración de sales.",
+      "Ecosistemas terrestres que reciben mucha lluvia."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Estos ecosistemas se caracterizan por tener aguas con muy poca sal, como sucede en los ríos y lagos [8]."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Dónde se localizan los bosques de ribera?",
+    "opciones": [
+      "En los picos más altos de las montañas nevadas.",
+      "En el centro de los grandes desiertos arenosos.",
+      "En las orillas de los ríos, donde el agua es abundante.",
+      "Exclusivamente dentro de las ciudades modernas."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los bosques de ribera crecen junto a los ríos aprovechando la humedad constante del suelo [8]."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué diferencia principal hay entre un bosque y una pradera?",
+    "opciones": [
+      "En el bosque predominan los árboles y en la pradera la hierba.",
+      "En la pradera no viven animales de ningún tipo.",
+      "El bosque es siempre un ecosistema artificial.",
+      "La pradera tiene mayor salinidad que el bosque."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los bosques se definen por sus masas arbóreas, mientras que las praderas están dominadas por vegetación herbácea [9]."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Por qué las ciudades se clasifican como ecosistemas artificiales?",
+    "opciones": [
+      "Porque no hay ningún ser vivo en ellas.",
+      "Porque han sido creadas por el ser humano.",
+      "Porque tienen un clima natural perfecto.",
+      "Porque no consumen energía del exterior."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se consideran artificiales porque su estructura y funcionamiento dependen de la intervención y construcción humana [8, 9]."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Cuál es la causa principal de la contaminación atmosférica?",
+    "opciones": [
+      "La respiración de los animales salvajes.",
+      "La liberación de gases por coches y fábricas.",
+      "El crecimiento excesivo de las plantas verdes.",
+      "La evaporación natural del agua del mar."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La quema de combustibles fósiles en vehículos e industrias libera gases nocivos a la atmósfera [10]."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué efecto produce el incremento del efecto invernadero?",
+    "opciones": [
+      "Un enfriamiento global de los océanos.",
+      "Un aumento de la biodiversidad en los polos.",
+      "El calentamiento global del planeta.",
+      "La eliminación de toda la lluvia ácida."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El exceso de gases impide que el calor escape de la atmósfera, provocando que la temperatura media de la Tierra suba [10]."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cómo se origina la lluvia ácida?",
+    "opciones": [
+      "Por la mezcla de contaminantes con el vapor de agua del aire.",
+      "Al caer agua dulce sobre los suelos salinos.",
+      "Por el deshielo de los glaciares en las cumbres.",
+      "Es un proceso natural necesario para el suelo."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los gases contaminantes reaccionan con la humedad de la atmósfera y forman ácidos que caen con la precipitación [10]."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿De dónde proceden los contaminantes del agua más comunes?",
+    "opciones": [
+      "De las hojas que caen de los árboles.",
+      "De las rocas que se deshacen en el fondo.",
+      "De vertidos industriales, aguas residuales y petróleo.",
+      "Únicamente de la lluvia ácida de los bosques."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La contaminación hídrica suele deberse a residuos de ciudades, fábricas y vertidos accidentales de barcos [10]."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué significa que una especie esté en peligro de extinción?",
+    "opciones": [
+      "Que su población es muy numerosa y fuerte.",
+      "Que está a punto de desaparecer de la Tierra.",
+      "Que vive en un ecosistema artificial.",
+      "Que ha sido trasladada a un Parque Nacional."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Significa que quedan tan pocos individuos que la especie corre el riesgo de dejar de existir definitivamente [11]."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cuál es la principal amenaza para el lince ibérico?",
+    "opciones": [
+      "La falta de luz solar en Doñana.",
+      "La caza furtiva y la alteración de su hábitat.",
+      "El exceso de competidores carnívoros.",
+      "La salinidad de los ríos cercanos."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La acción humana, a través de la caza y la destrucción de su entorno, ha llevado al lince al peligro de extinción [11]."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué es la biodiversidad?",
+    "opciones": [
+      "La variedad de seres vivos que existen en el planeta.",
+      "El estudio de los ecosistemas artificiales solamente.",
+      "El número de habitantes de una ciudad.",
+      "La cantidad de basura reciclada en un año."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La biodiversidad abarca toda la inmensa variedad de especies vegetales, animales y microorganismos [12]."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué objetivo tienen los Parques Nacionales?",
+    "opciones": [
+      "Fomentar la construcción de hoteles de lujo.",
+      "Proteger ecosistemas y asegurar la biodiversidad.",
+      "Facilitar la caza de especies exóticas.",
+      "Proporcionar madera ilimitada a las industrias."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Son espacios protegidos por ley para conservar la naturaleza y evitar la desaparición de especies amenazadas [12]."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué recurso vital obtenemos de las plantas según las fuentes?",
+    "opciones": [
+      "Combustibles fósiles como el petróleo.",
+      "Materias primas y medicamentos (como la aspirina).",
+      "Gases nocivos para el efecto invernadero.",
+      "Sales minerales que limpian el aire."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La biodiversidad vegetal es fuente de alimentos, fibras para tejidos y sustancias para fabricar medicinas [12]."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿En qué contenedor se reciclan los envases de plástico y latas?",
+    "opciones": [
+      "Contenedor azul.",
+      "Contenedor verde.",
+      "Contenedor amarillo.",
+      "Contenedor gris."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Siguiendo las normas de reciclaje, el contenedor amarillo es el destinado a plásticos y latas [13]."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es un ave emblemática española en peligro de extinción?",
+    "opciones": [
+      "El águila imperial ibérica.",
+      "El gorrión común.",
+      "La paloma mensajera.",
+      "El avestruz."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El águila imperial ibérica es una de las especies protegidas más amenazadas en nuestro territorio [11]."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué sucede si desaparece una especie de una red alimentaria?",
+    "opciones": [
+      "Se rompe el equilibrio y afecta a todas las demás.",
+      "El ecosistema se vuelve más saludable de inmediato.",
+      "Las plantas crecen más rápido sin depredadores.",
+      "No ocurre nada porque los animales cambian de dieta."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La desaparición de un solo eslabón repercute negativamente en todo el sistema, pudiendo causar extinciones en cadena [14]."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué animal acuático valenciano está en peligro crítico?",
+    "opciones": [
+      "El delfín mular.",
+      "El samaruc.",
+      "El tiburón blanco.",
+      "La ballena azul."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El samaruc es un pequeño pez endémico de la Comunidad Valenciana que se encuentra muy amenazado [11]."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Qué acción ayuda a conservar el medio ambiente?",
+    "opciones": [
+      "Usar siempre el transporte privado individual.",
+      "No separar los residuos en casa.",
+      "Ahorrar agua y utilizar transporte público.",
+      "Comprar productos con muchos envoltorios de plástico."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El ahorro de recursos y la movilidad sostenible reducen el impacto negativo del ser humano en los ecosistemas [13, 14]."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Cuándo se celebra el Día Mundial del Medio Ambiente?",
+    "opciones": [
+      "El 1 de enero.",
+      "El 5 de junio.",
+      "El 25 de diciembre.",
+      "El 12 de octubre."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La ONU estableció el 5 de junio como fecha clave para concienciar sobre la protección del entorno [15]."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Qué caracteriza a un consumidor secundario?",
+    "opciones": [
+      "Se alimenta solo de plantas terrestres.",
+      "Es un animal carnívoro que come herbívoros.",
+      "Fabrica su propia materia orgánica.",
+      "Es el encargado de reciclar los minerales del suelo."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los consumidores secundarios son depredadores que se sitúan por encima de los consumidores primarios en la cadena [6]."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Cómo influye la temperatura en el zorro del desierto?",
+    "opciones": [
+      "Le obliga a invernar durante seis meses.",
+      "Tiene orejas grandes para disipar el calor corporal.",
+      "Su pelaje es extremadamente grueso para sudar.",
+      "Le impide salir a buscar comida durante la noche."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las orejas grandes de los zorros del desierto son una adaptación para liberar calor en ambientes muy cálidos [4]."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué ecosistema es Doñana?",
+    "opciones": [
+      "Un desierto de dunas sin vida.",
+      "Un Parque Nacional con gran biodiversidad.",
+      "Un ecosistema artificial de regadío.",
+      "Una cordillera montañosa de gran altura."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Doñana es un Parque Nacional vital para la protección de especies como el lince ibérico [16]."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Por qué es importante reciclar pilas en puntos específicos?",
+    "opciones": [
+      "Porque son muy pesadas para los camiones normales.",
+      "Porque contienen sustancias muy tóxicas y contaminantes.",
+      "Porque se pueden usar para fabricar plástico amarillo.",
+      "Porque no ocupan espacio en el contenedor gris."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las pilas tienen componentes químicos peligrosos que pueden dañar gravemente el suelo y el agua si no se gestionan bien [13]."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿A qué grupo pertenecen las bacterias que limpian el ecosistema?",
+    "opciones": [
+      "Productores primarios.",
+      "Consumidores finales.",
+      "Descomponedores.",
+      "Depredadores acuáticos."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las bacterias y hongos cierran el ciclo de la materia al descomponer restos orgánicos [6]."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué factor limita la vegetación en el fondo del mar?",
+    "opciones": [
+      "La falta de agua líquida.",
+      "La ausencia de luz solar para la fotosíntesis.",
+      "El exceso de peces herbívoros.",
+      "La temperatura demasiado cálida del agua."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Sin luz, los productores no pueden realizar la fotosíntesis, por lo que la vegetación es escasa en zonas profundas [4]."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué contaminante del suelo procede de la agricultura?",
+    "opciones": [
+      "Dióxido de carbono.",
+      "Aguas residuales domésticas.",
+      "Pesticidas y herbicidas.",
+      "Gases de combustión de tractores."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El uso de químicos para controlar plagas y malezas es una fuente principal de contaminación del suelo agrícola [10]."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué es la penicilina en relación con la biodiversidad?",
+    "opciones": [
+      "Un hongo que nos proporciona medicina.",
+      "Un animal carnívoro del bosque mediterráneo.",
+      "Un contaminante del aire muy peligroso.",
+      "Un tipo de roca que se encuentra en los ríos."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La penicilina es un ejemplo de cómo la biodiversidad (en este caso un hongo) beneficia la salud humana [12]."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué acción humana es perjudicial para la fauna?",
+    "opciones": [
+      "El uso de luces LED en las calles.",
+      "El reciclaje de residuos orgánicos.",
+      "La caza furtiva y el comercio ilegal de especies.",
+      "La creación de Parques Nacionales."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Estas actividades reducen drásticamente las poblaciones de animales y amenazan el equilibrio natural [2, 11]."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cómo se llaman los ecosistemas que cubren grandes regiones terrestres?",
+    "opciones": [
+      "Hábitats locales.",
+      "Biomas.",
+      "Microecosistemas.",
+      "Ciudades sostenibles."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los biomas son unidades ecológicas a gran escala definidas por su clima y vegetación dominante [8]."
+  }
+]
+
+--- FILE: cuestionarios/ian-5-soci-t3.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué extensión aproximada tiene el continente europeo?",
+    "opciones": ["20,5 millones de km²", "5,8 millones de km²", "10,2 millones de km²", "15,4 millones de km²"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Según la fuente 1, Europa tiene una extensión de unos 10,2 millones de km², siendo el segundo continente más pequeño."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál es el límite natural de Europa por el Este?",
+    "opciones": ["El océano Atlántico", "Asia, el mar Caspio y los Montes Urales", "El océano Glacial Ártico", "El mar Mediterráneo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 1 indica que Europa limita al Este con Asia, el mar Caspio y los Montes Urales."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cómo se clasifican los Montes Escandinavos según su antigüedad?",
+    "opciones": ["Cordilleras jóvenes", "Macizos antiguos", "Llanuras centrales", "Volcanes activos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los Montes Escandinavos se mencionan en la fuente 1 como parte de los macizos antiguos, formados por montañas de poca altitud."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál es el pico más alto de todo el continente europeo?",
+    "opciones": ["Mont Blanc", "Mulhacén", "Elbrus", "Aneto"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 2 identifica al Elbrus, con 5.642 metros en la cordillera del Cáucaso, como el pico más alto de Europa."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿En qué zona de Europa se localizan principalmente las cordilleras jóvenes?",
+    "opciones": ["En el Norte", "En el Centro", "En el Sur", "En las islas británicas"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 1 explica que las cordilleras jóvenes son relieves elevados que se localizan en el sur del continente."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué es la Gran Llanura Europea?",
+    "opciones": ["Una cadena montañosa en el Este", "Una amplia planicie en el centro y este de Europa", "Una península en el Mediterráneo", "Un conjunto de islas atlánticas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Tal como describe la fuente 1 y 2, es la llanura más extensa de Europa situada en su zona central y oriental."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuál es la cumbre más elevada de los Alpes?",
+    "opciones": ["Elbrus", "Mont Blanc", "Pirineos", "Apeninos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 2 especifica que el Mont Blanc, con 4.810 m, es la cumbre más elevada de los Alpes."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Por qué las costas europeas son muy recortadas?",
+    "opciones": ["Por la falta de mareas", "Debido a la erosión del mar", "Por la construcción de puertos", "Debido a la ausencia de ríos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 1 afirma que las costas son muy recortadas debido a la erosión del mar sobre el terreno."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué elemento representa el eje vertical en un perfil del relieve?",
+    "opciones": ["La distancia en kilómetros", "La temperatura media", "La altitud en metros", "El tiempo de recorrido"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Según la fuente 3, para representar un perfil se utiliza un eje vertical con la altitud de cada punto."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué es lo primero que se debe elegir al planificar una ruta de excursión?",
+    "opciones": ["La comida que se va a llevar", "Los puntos de salida y de destino", "La marca de las botas", "El color de la mochila"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 4 indica que para planificar una ruta se deben elegir primero los puntos de salida y destino."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Para qué sirve elaborar un perfil del relieve en una excursión?",
+    "opciones": ["Para saber qué ropa llevar", "Para identificar zonas donde se caminará más lento o rápido", "Para conocer el nombre de los pájaros", "Para medir la profundidad de los ríos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 4 explica que el perfil sirve para identificar la dificultad y velocidad de la caminata según el terreno."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo son, en general, los ríos españoles comparados con los de Europa?",
+    "opciones": ["Más largos y caudalosos", "Más profundos y navegables", "Cortos, de poco caudal e irregulares", "Constantes durante todo el año"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 5 señala que los ríos españoles son cortos, tienen poco caudal y son muy irregulares en comparación con los europeos."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué factor hace que los ríos de la vertiente cantábrica sean cortos?",
+    "opciones": ["El clima seco", "Que las montañas donde nacen están muy cerca del mar", "La falta de lluvias", "La gran cantidad de embalses"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 5 explica que son cortos porque las montañas donde nacen están muy cerca del mar Cantábrico."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuál es el río más largo de la península ibérica?",
+    "opciones": ["Ebro", "Duero", "Guadalquivir", "Tajo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La fuente 5 y 15 confirman que el Tajo es el río más largo de la Península."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué río de la vertiente mediterránea española no es corto ni irregular?",
+    "opciones": ["Júcar", "Segura", "Ebro", "Turia"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 5 y 6 destacan que el Ebro es la excepción en la vertiente mediterránea por su longitud y caudal."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Qué sufren los ríos mediterráneos durante el verano?",
+    "opciones": ["Crecidas torrenciales", "Estiaje (disminución del caudal)", "Congelación total", "Desbordamientos constantes"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 6 indica que estos ríos sufren estiaje o disminución de caudal en verano por la falta de lluvias."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cuál es el lago más grande de España situado en Castilla y León?",
+    "opciones": ["Albufera", "Gallocanta", "Sanabria", "Banyoles"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 5 menciona que el lago de Sanabria es el más grande de España."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué se ha construido en el curso de muchos ríos españoles para aprovechar el agua?",
+    "opciones": ["Puentes de madera", "Extensa red de embalses", "Molinos de viento", "Parques acuáticos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 5 explica que se han construido embalses para el aprovechamiento de las aguas de los ríos."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué característica tienen muchos ríos europeos que los hace útiles para el transporte?",
+    "opciones": ["Son muy estrechos", "Son navegables", "Están siempre congelados", "Tienen muchas cascadas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 7 señala que gran cantidad de ríos europeos son navegables y sirven como vías de comunicación."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cuál es el río más largo de toda Europa?",
+    "opciones": ["Danubio", "Rin", "Volga", "Vístula"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 7 y 8 indican que el Volga es el río más largo de Europa con 3.530 km."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿En qué mar desemboca el río Danubio?",
+    "opciones": ["Mar Caspio", "Mar Negro", "Océano Atlántico", "Mar Mediterráneo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la fuente 7 y 8, el Danubio pertenece a la vertiente del mar Negro, donde desemboca."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Dónde se localizan los lagos europeos de mayor tamaño?",
+    "opciones": ["En el sur, cerca de Italia", "En el norte, en torno al mar Báltico", "En el centro, en Hungría", "En las islas del Atlántico"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 7 especifica que los lagos de mayor tamaño, como el Ladoga, se localizan en el Norte de Europa."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Qué río europeo permanece helado durante el invierno?",
+    "opciones": ["Sena", "Tajo", "Dvina Septentrional", "Po"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 7 y 8 mencionan que ríos de la vertiente ártica, como el Dvina Septentrional, permanecen helados en invierno."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué son los espacios naturales protegidos?",
+    "opciones": ["Zonas donde no puede entrar nadie", "Lugares con medidas de protección por su interés paisajístico o fauna", "Zonas exclusivas para la caza", "Lugares para construir hoteles sostenibles"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 9 los define como lugares que gozan de protección especial por su valor natural, vegetal o animal."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cuál es la categoría más importante de espacios protegidos en España?",
+    "opciones": ["Paisajes protegidos", "Monumentos naturales", "Parques (nacionales, naturales y regionales)", "Reservas de la biosfera"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 9 indica que los parques son la categoría más importante de espacios protegidos."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué Parque Nacional se encuentra en la isla de Tenerife?",
+    "opciones": ["Doñana", "Monfragüe", "Teide", "Cabañeros"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 9 identifica al Parque Nacional del Teide en Tenerife como el más visitado de España."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué norma de comportamiento es fundamental al salir de excursión?",
+    "opciones": ["Recoger la basura que hayamos generado", "Gritar fuerte para avisar de nuestra presencia", "Arrancar flores para estudiarlas en casa", "Hacer fuego para cocinar"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La fuente 10 destaca la importancia de recoger la basura, especialmente los plásticos, para no dejar huella."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué está prohibido hacer en cualquier terreno forestal para evitar incendios?",
+    "opciones": ["Caminar rápido", "Hacer fotos", "Hacer fuego", "Usar prismáticos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 10 muestra claramente una señal de prohibición de hacer fuego en terreno forestal."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué significa el término 'Desarrollo Sostenible'?",
+    "opciones": ["Gastar todos los recursos ahora", "Mejorar la vida hoy sin arriesgar los recursos de las futuras generaciones", "Construir muchas carreteras en el campo", "Proteger solo a los animales peligrosos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 11 define el desarrollo sostenible como aquel que satisface las necesidades presentes sin comprometer el futuro."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuántos Objetivos de Desarrollo Sostenible (ODS) se establecieron en la Agenda 2030?",
+    "opciones": ["10", "17", "25", "5"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 11 menciona que se han establecido 17 objetivos para conseguir un mundo mejor."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿De qué trata el ODS número 13?",
+    "opciones": ["Vida submarina", "Acción por el clima", "Fin de la pobreza", "Educación de calidad"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 11 identifica el ODS 13 como la acción para reducir el cambio climático y sus efectos."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cuál de estos es un 'eco-reto' para mejorar el planeta?",
+    "opciones": ["Usar pilas desechables", "Dejar las luces encendidas", "Usar bombillas de bajo consumo", "Bañarse todos los días"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 12 lista el uso de bombillas de bajo consumo como un gesto cotidiano para ayudar al planeta."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué debemos hacer con los aparatos electrónicos cuando no los usamos?",
+    "opciones": ["Dejarlos en modo espera", "Desconectarlos", "Mantenerlos siempre cargando", "Regalarlos inmediatamente"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 12 recomienda desconectar los aparatos electrónicos cuando no se usen para ahorrar energía."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué es el ecoturismo?",
+    "opciones": ["Viajar solo en avión privado", "Turismo que respeta el entorno natural y las tradiciones locales", "Visitar solo ciudades grandes", "Ir de vacaciones a centros comerciales"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 13 define el ecoturismo como una alternativa saludable y ecológica que respeta ecosistemas y costumbres."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué porcentaje de las emisiones de gases nocivos proviene aproximadamente de los viajes?",
+    "opciones": ["1%", "20%", "5%", "50%"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 13 indica que el turismo representa el 5% de las emisiones de gases nocivos."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué territorio ocupa más de la mitad de la península ibérica?",
+    "opciones": ["Los Pirineos", "La Meseta", "La Cordillera Cantábrica", "El valle del Ebro"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 15 confirma que la Meseta ocupa más de la mitad del territorio de la Península."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué se puede hacer con la basura orgánica cuando vamos de excursión?",
+    "opciones": ["Tirarla al río", "Enterrarla en el suelo", "Dejarla sobre una piedra", "Llevársela a casa siempre"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 15 sugiere enterrarla en el suelo para acelerar su proceso de descomposición natural."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué cordillera forma el límite natural entre Europa y Asia?",
+    "opciones": ["Alpes", "Cáucaso", "Montes Urales", "Balcanes"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 2 explica que los Montes Urales forman el límite natural entre los dos continentes."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cómo se llama la distancia en vertical desde un punto del relieve hasta el nivel del mar?",
+    "opciones": ["Latitud", "Altitud", "Longitud", "Profundidad"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 17 define la altitud como la distancia vertical medida desde el nivel del mar."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué río español forma un delta muy importante en su desembocadura?",
+    "opciones": ["Duero", "Tajo", "Ebro", "Guadiana"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 15 y 17 mencionan el Delta del Ebro como una característica destacada de este río."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿A qué vertiente pertenece el río Rin?",
+    "opciones": ["Mediterránea", "Atlántica", "Caspio", "Mar Negro"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 8 muestra que el río Rin desemboca en el mar del Norte, que forma parte de la vertiente atlántica."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué característica define a los parques nacionales?",
+    "opciones": ["Son áreas muy pequeñas", "Son espacios naturales de gran extensión poco modificados por el hombre", "Son parques de atracciones en la naturaleza", "Solo existen en las islas Canarias"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 9 describe los parques nacionales como espacios de gran extensión que deben preservarse en su estado natural."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué acción ayuda a conservar los ecosistemas terrestres (ODS 15)?",
+    "opciones": ["Aumentar la deforestación", "Frenar la desertización y la deforestación", "Introducir especies extrañas", "Cazar animales protegidos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 11 indica que para el ODS 15 es necesario frenar la deforestación y la desertización."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cuál es una ventaja de usar bolsas de tela para la compra?",
+    "opciones": ["Son más feas", "Reducen el uso de plásticos de un solo uso", "Son más caras de fabricar", "Ocupan mucho sitio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 12 incluye el uso de bolsas de tela como un eco-reto para mejorar el medioambiente."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué significa 'no dejar huella' al visitar la naturaleza?",
+    "opciones": ["Caminar de puntillas", "No llevar calzado", "Comportarse de forma responsable sin alterar el entorno", "Borrar los pasos con una rama"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 10 usa este eslogan para promover un comportamiento responsable que respete la fauna, flora y limpieza."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué cordillera separa la península ibérica del resto de Europa?",
+    "opciones": ["Sierra Morena", "Pirineos", "Sistema Bético", "Sistema Central"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 1 y 17 sitúan a los Pirineos como la frontera natural en el istmo de la Península."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cuál es el pico más alto de los Pirineos?",
+    "opciones": ["Aneto", "Mulhacén", "Teide", "Pico del Moro"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Aunque la fuente 17 deja el hueco para completar, la información general del tema en las fuentes asocia las altitudes máximas a sus cordilleras respectivas (Aneto en Pirineos)."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué tipo de turismo busca ofrecer opciones más saludables y ecológicas?",
+    "opciones": ["Turismo de masas", "Ecoturismo", "Turismo espacial", "Turismo de compras"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 13 define el ecoturismo como la alternativa al turismo tradicional con esos fines."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué elemento geográfico es el Peloponeso (mencionado en el mapa como península Balcánica)?",
+    "opciones": ["Una isla", "Un cabo", "Una península", "Un fiordo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fuente 1 y 2 incluyen a la Balcánica dentro de las peninsulas más importantes de Europa."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué debemos hacer con los grifos para cumplir con el ahorro de agua?",
+    "opciones": ["Dejarlos abiertos mientras nos cepillamos", "Cerrarlos bien y reducir el tiempo de ducha", "Usar solo agua caliente", "No lavarse nunca"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La fuente 12 propone reducir el tiempo de ducha como un eco-reto fundamental."
+  }
+]
+
+--- FILE: cuestionarios/ian-5-soci-t4.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿En qué año se estableció la democracia en España con la aprobación de su actual ley fundamental?",
+    "opciones": ["1975", "1978", "1982", "1986"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Constitución de 1978 es la norma suprema que marca el inicio del sistema democrático español."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cómo se define la Constitución española dentro del ordenamiento jurídico?",
+    "opciones": ["Como la ley fundamental del Estado", "Como un reglamento de convivencia", "Como un código de comercio", "Como un decreto real"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La Constitución es la ley de mayor rango que establece el sistema de gobierno y garantiza derechos."
+  },
+  {
+    "id": 3,
+    "pregunta": "España se organiza políticamente como una:",
+    "opciones": ["República unitaria", "Monarquía absoluta", "Monarquía parlamentaria", "Dictadura democrática"],
+    "respuestaCorrecta": 2,
+    "explicacion": "En este sistema, el Rey es el Jefe del Estado pero no ejerce labores de gobierno."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál es el papel del Rey en el sistema democrático español?",
+    "opciones": ["Dictar las sentencias judiciales", "Aprobar los presupuestos del Estado", "Escribir las leyes en el Parlamento", "Reinar pero no gobernar"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El Rey asume la jefatura del Estado de forma simbólica, estando obligado a respetar las decisiones de las Cortes."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Sobre quién recae la soberanía o el poder en la democracia española?",
+    "opciones": ["Sobre los ministros", "Sobre los ciudadanos y ciudadanas", "Sobre el Tribunal Supremo", "Sobre la Guardia Civil"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En democracia, el poder emana del pueblo, que elige libremente a sus representantes mediante el voto."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué institución tiene la misión de garantizar que los poderes públicos respeten la Constitución?",
+    "opciones": ["La Comisión Europea", "La Mesa Electoral", "El Tribunal Constitucional", "El Ayuntamiento"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Este tribunal supervisa que ninguna ley o acción del Estado contradiga la norma fundamental."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿En cuántos poderes se divide el Estado español para garantizar el equilibrio?",
+    "opciones": ["Tres: legislativo, ejecutivo y judicial", "Dos: monárquico y parlamentario", "Cuatro: nacional, regional, provincial y local", "Uno: el poder central"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La división de poderes evita la concentración de autoridad en una sola persona o institución."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué nombre recibe el Parlamento en España?",
+    "opciones": ["Gobierno de la Nación", "Cortes Generales", "Asamblea de Ministros", "Consejo de Estado"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las Cortes Generales representan al pueblo y ejercen la potestad legislativa."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué dos cámaras componen las Cortes Generales?",
+    "opciones": ["El Ayuntamiento y la Diputación", "El Tribunal Supremo y el Constitucional", "El Congreso de los Diputados y el Senado", "La Comisión y el Consejo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es un sistema bicameral donde ambas cámaras participan en el proceso de elaboración de leyes."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cada cuántos años se eligen normalmente a los miembros de las Cortes Generales?",
+    "opciones": ["Cada dos años", "Cada cinco años", "Cada diez años", "Cada cuatro años"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es el periodo de tiempo estándar establecido para renovar la representación legislativa nacional."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Quién es el encargado de ejercer el poder ejecutivo en España?",
+    "opciones": ["El Gobierno", "Los Jueces", "El Rey", "El Presidente del Senado"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El Gobierno aplica las leyes, dirige la política interior y exterior y la administración civil."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué institución tiene la responsabilidad de elegir al Presidente del Gobierno?",
+    "opciones": ["El Senado", "El Congreso de los Diputados", "El Tribunal de Cuentas", "Los ciudadanos directamente"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Tras las elecciones, los diputados votan para otorgar su confianza al candidato a la presidencia."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Quiénes ejercen el poder judicial en el Estado?",
+    "opciones": ["Los Diputados y Senadores", "Los Ministros y Secretarios", "Los Jueces y Magistrados", "Los Alcaldes y Concejales"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los jueces son los únicos autorizados para juzgar y hacer ejecutar lo juzgado."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué característica es indispensable en los jueces para garantizar un sistema justo?",
+    "opciones": ["Que sean elegidos por los ciudadanos", "Que pertenezcan a un partido político", "Que dependan directamente del Gobierno", "Que sean independientes de los otros poderes"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La independencia judicial asegura que las sentencias se basen únicamente en la ley, sin presiones externas."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué significa que las elecciones en una democracia deben ser 'periódicas'?",
+    "opciones": ["Que deben celebrarse cada cierto tiempo establecido", "Que se publican en los periódicos", "Que solo votan los periodistas", "Que se celebran una vez en la vida"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La periodicidad garantiza que el pueblo pueda renovar o cambiar a sus representantes regularmente."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿A partir de qué edad se tiene derecho a voto en España?",
+    "opciones": ["16 años", "18 años", "21 años", "14 años"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La mayoría de edad legal a efectos electorales se alcanza a los 18 años."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cómo se llama el derecho de todos los ciudadanos adultos a votar?",
+    "opciones": ["Sufragio restringido", "Sufragio censitario", "Sufragio universal", "Sufragio calificado"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El sufragio universal es un pilar democrático que no discrimina por riqueza o nivel de estudios."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué documento elaboran los partidos para explicar cómo gobernarán si ganan?",
+    "opciones": ["La Constitución", "El Código Penal", "El Estatuto de Autonomía", "El programa electoral"],
+    "respuestaCorrecta": 3,
+    "explicacion": "En el programa se detallan las propuestas y objetivos que el partido se compromete a cumplir."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cómo se llama el periodo previo a las elecciones donde los candidatos presentan sus ideas?",
+    "opciones": ["Campaña electoral", "Asamblea general", "Mesa de votación", "Recuento de votos"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La campaña permite a los ciudadanos conocer las diferentes opciones políticas antes de votar."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué característica debe tener el recuento de votos para ser democrático?",
+    "opciones": ["Debe ser secreto", "Debe ser transparente", "Debe ser privado", "Debe ser rápido"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La transparencia asegura que los resultados sean fiables y verificables por cualquier ciudadano."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cada cuántos años se celebran las elecciones municipales para elegir los Ayuntamientos?",
+    "opciones": ["Cada cinco años", "Cada tres años", "Cada cuatro años", "Cada seis años"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las elecciones locales en España tienen un mandato fijado en cuatro años."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿A quiénes eligen los ciudadanos en las elecciones municipales?",
+    "opciones": ["Al Alcalde directamente", "A los Ministros", "A los Senadores", "A los Concejales"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los ciudadanos eligen concejales, y estos posteriormente eligen al alcalde."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Qué periodicidad tienen las elecciones al Parlamento Europeo?",
+    "opciones": ["Cada cinco años", "Cada cuatro años", "Cada ocho años", "Cada dos años"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los representantes europeos tienen un mandato más largo que los nacionales o locales."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cuántos eurodiputados corresponden a España actualmente en el Parlamento Europeo?",
+    "opciones": ["27 eurodiputados", "59 eurodiputados", "705 eurodiputados", "100 eurodiputados"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es el número de representantes asignado a España en función de su población dentro de la UE."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué tipo de derechos limitan el poder del Estado y protegen la libertad personal?",
+    "opciones": ["Derechos sociales", "Derechos colectivos", "Derechos individuales", "Derechos económicos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los derechos individuales aseguran que el Estado no interfiera arbitrariamente en la vida privada."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué derechos obligan al Estado a intervenir para garantizar bienestar (salud, educación)?",
+    "opciones": ["Derechos de defensa", "Derechos de propiedad", "Derechos políticos", "Derechos sociales"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los derechos sociales buscan la igualdad real mediante la prestación de servicios públicos."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cuál es el deber constitucional que permite financiar los gastos públicos?",
+    "opciones": ["Contribuir mediante el pago de impuestos", "Trabajar obligatoriamente", "Ser miembro de una mesa electoral", "Votar en todas las elecciones"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El pago de impuestos es un deber fundamental para sostener servicios como hospitales y escuelas."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿En cuántas Comunidades Autónomas se organiza el territorio español?",
+    "opciones": ["En 50", "En 17", "En 15", "En 19"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Constitución establece 17 comunidades con autonomía para gestionar sus propios asuntos."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué estatus territorial tienen Ceuta y Melilla?",
+    "opciones": ["Son provincias de Andalucía", "Son colonias españolas", "Son Ciudades Autónomas", "Son Estados libres asociados"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Ceuta y Melilla tienen un régimen de autonomía similar pero con algunas diferencias respecto a las Comunidades."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuál es la norma institucional básica de una Comunidad Autónoma?",
+    "opciones": ["El Reglamento Municipal", "La Ley de Presupuestos", "La Constitución Regional", "El Estatuto de Autonomía"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El Estatuto define la organización, competencias y símbolos de la comunidad."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Quién es la máxima autoridad que dirige el Gobierno de una Comunidad Autónoma?",
+    "opciones": ["El Presidente de la Comunidad", "El Delegado del Gobierno", "El Rey de España", "El Alcalde de la capital"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El Presidente autonómico lidera el poder ejecutivo a nivel regional."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿En qué año se fundó la CEE, antecedente de la Unión Europea?",
+    "opciones": ["1945", "1957", "1978", "1992"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Comunidad Económica Europea nació con el Tratado de Roma en 1957."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cuántos países forman actualmente la Unión Europea?",
+    "opciones": ["12 países", "17 países", "27 países", "50 países"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La Unión ha crecido desde sus 6 fundadores hasta los 27 estados miembros actuales."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué día se celebra anualmente el Día de Europa?",
+    "opciones": ["El 1 de enero", "El 6 de diciembre", "El 12 de octubre", "El 9 de mayo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Esta fecha conmemora la histórica declaración de Schuman que inició la cooperación europea."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué institución de la UE propone políticas y vigila que se cumplan los acuerdos?",
+    "opciones": ["La Comisión Europea", "El Tribunal de Cuentas", "El Defensor del Pueblo", "La Agencia Espacial"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La Comisión actúa como el motor ejecutivo y guardián de los tratados europeos."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué institución europea está formada por los ministros de los estados miembros?",
+    "opciones": ["El Parlamento Europeo", "El Consejo de la Unión Europea", "El Banco Central", "La Corte de Justicia"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El Consejo representa los intereses de los gobiernos de cada país integrante."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué ventaja permite el mercado único europeo a sus ciudadanos?",
+    "opciones": ["Tener todos el mismo sueldo", "Hablar todos el mismo idioma", "Circular libremente (personas, mercancías, capitales)", "No tener que pagar nunca impuestos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El mercado único elimina las fronteras interiores para facilitar la economía y los viajes."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cómo se llama la moneda única de la mayoría de los países de la UE?",
+    "opciones": ["La Libra", "El Dólar", "El Franco", "El Euro"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El euro simplifica el comercio y los desplazamientos entre los países de la eurozona."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Qué programa europeo fomenta el intercambio de estudiantes entre países?",
+    "opciones": ["Programa Erasmus", "Programa Schengen", "Programa Galileo", "Programa Horizon"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Erasmus es un programa clave para la formación y convivencia de los jóvenes europeos."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿En qué consiste la igualdad de género?",
+    "opciones": ["En que todos seamos iguales físicamente", "En tener mismos derechos, responsabilidades y oportunidades", "En que las niñas saquen mejores notas", "En eliminar los nombres de hombre y mujer"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Busca que el sexo no sea una barrera para el desarrollo personal o profesional."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Qué es la 'brecha salarial' entre hombres y mujeres?",
+    "opciones": ["Una diferencia en el tipo de trabajo", "Una diferencia en las horas de sueño", "La diferencia de sueldo por realizar el mismo trabajo", "Una ley que prohíbe trabajar a las mujeres"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es una forma de desigualdad económica que la sociedad busca corregir."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué son los estereotipos de género?",
+    "opciones": ["Normas de tráfico europeas", "Premios a la mejor película", "Leyes del Parlamento", "Ideas tradicionales sobre roles de 'niños' y 'niñas'"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Son prejuicios que limitan las actividades de las personas según su sexo."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Cuál es la forma más común de practicar la democracia en la escuela?",
+    "opciones": ["Elegir al delegado o delegada de curso", "Hacer siempre lo que dice el más fuerte", "No opinar nunca en clase", "Copiar en los exámenes"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las elecciones de delegado permiten aprender el proceso electoral y la representación."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué se hace en una asamblea de clase?",
+    "opciones": ["Solo gritar", "Debatir propuestas y votar normas de convivencia", "Hacer los deberes en silencio", "Repartir caramelos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La asamblea es un órgano de participación directa para resolver conflictos y mejorar el aula."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué significa que España es un 'Estado social' según la Constitución?",
+    "opciones": ["Que obliga a ir a fiestas", "Que prohíbe estar solo", "Que garantiza el bienestar y servicios básicos", "Que todos deben usar redes sociales"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El Estado tiene la obligación de asegurar que todos tengan una vida digna."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cuál es la función del poder legislativo?",
+    "opciones": ["Gobernar el país a diario", "Nombrar a los directores de hospital", "Vigilar las fronteras", "Elaborar, debatir y aprobar las leyes"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es la función central del Parlamento o Cortes Generales."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué función tiene el poder judicial?",
+    "opciones": ["Resolver conflictos aplicando el derecho", "Hacer los mapas de España", "Organizar las olimpiadas", "Cobrar las multas de aparcamiento"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los jueces aseguran que se haga justicia basándose en las leyes aprobadas."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué símbolos suelen tener las Comunidades Autónomas?",
+    "opciones": ["Un coche oficial", "Bandera, escudo e himno", "Un canal de televisión propio", "Una moneda diferente"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Estos símbolos representan la identidad histórica y cultural de cada región."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué institución recoge las quejas de los ciudadanos sobre la administración en las CC.AA.?",
+    "opciones": ["La Policía Local", "El Tribunal de Cuentas", "El Defensor del Pueblo", "El Consejo Escolar"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Esta figura protege los derechos de los ciudadanos ante posibles errores del Gobierno."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué documento asegura asistencia médica gratuita en viajes por la UE?",
+    "opciones": ["El pasaporte", "El carné de biblioteca", "El DNI electrónico", "La Tarjeta Sanitaria Europea"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es un beneficio de la ciudadanía europea para garantizar la salud en desplazamientos."
+  }
+]
+
+--- FILE: editor.html ---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editor de Cuestionarios Pro</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; width: 100%; margin-bottom: 20px; box-sizing: border-box; }
+        h1 { color: #1b5e20; font-size: 1.5rem; text-align: center; margin-top: 0; }
+        
+        .blur-content { filter: blur(8px); pointer-events: none; user-select: none; opacity: 0.5; }
+        .hidden { display: none !important; }
+
+        .upload-section { display: flex; gap: 20px; flex-wrap: wrap; }
+        .upload-box { flex: 1; min-width: 250px; display: flex; flex-direction: column; }
+        #drop-zone { border: 2px dashed #a5d6a7; padding: 20px; text-align: center; color: #666; cursor: pointer; border-radius: 8px; height: 80px; display: flex; align-items: center; justify-content: center; background: #fafafa; }
+        
+        select { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 10px; background: white; }
+        
+        .btn-green-app { background: #2e7d32; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; padding: 12px; }
+        .btn-green-app:hover:not(:disabled) { background: #1b5e20; }
+        .btn-green-app:disabled { background: #ccc; cursor: not-allowed; opacity: 0.5; }
+
+        .btn-add { background: #1976d2; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 10px; font-weight: bold; }
+        .btn-import { background: #673ab7; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; margin-bottom: 10px; font-weight: bold; }
+        .btn-delete { background: #ff5252; color: white; border: none; border-radius: 4px; cursor: pointer; padding: 5px 12px; }
+        .btn-download { background: #2e7d32; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; width: 100%; font-weight: bold; }
+
+        #status { padding: 15px; border-radius: 6px; display: none; margin-bottom: 20px; width: 100%; max-width: 800px; text-align: center; font-weight: bold; }
+        .success { background: #dcedc8; color: #33691e; border: 1px solid #a5d6a7; display: block !important; }
+        
+        .pregunta-edit { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; position: relative; background: #fafafa; }
+        .delete-abs { position: absolute; top: 15px; right: 15px; }
+        label { display: block; font-weight: bold; margin-top: 15px; font-size: 0.85rem; color: #444; text-transform: uppercase; }
+        textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; margin-top: 5px; font-family: inherit; }
+        .opcion-row { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+        .opcion-input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .correcta-radio { cursor: pointer; width: 20px; height: 20px; accent-color: #2e7d32; }
+
+        #modal-import { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); display:none; justify-content:center; align-items:center; z-index:100; }
+        .modal-content { background:white; padding:25px; border-radius:12px; width:90%; max-width:700px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .help-list { background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #673ab7; margin: 15px 0; font-size: 0.9rem; line-height: 1.6; color: #333; }
+        .help-list b { color: #673ab7; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="main-title">🔒 Editor Protegido</h1>
+        <div class="upload-section">
+            <div class="upload-box">
+                <label>Archivo Local:</label>
+                <div id="drop-zone">Arrastra un JSON o haz clic</div>
+                <input type="file" id="file-input" style="display: none" accept=".json">
+            </div>
+            <div class="upload-box">
+                <label>Archivo del Servidor:</label>
+                <select id="repo-selector">
+                    <option value="" disabled selected>Cargando índice...</option>
+                </select>
+                <button class="btn-green-app" id="btn-crear-nuevo" onclick="crearNuevoVacio()" disabled>✨ Crear Nuevo Cuestionario</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="status"></div>
+
+    <div id="editor-container" class="blur-content" style="width: 100%; max-width: 800px; display: none;">
+        <div class="card" style="text-align: center; padding: 1rem;">
+            <span>Editando: </span><span id="nombre-archivo-display" style="font-weight:bold; color: #2e7d32;"></span>
+        </div>
+        <div id="lista-preguntas"></div>
+        <div id="admin-controls" class="card hidden">
+            <button class="btn-import" onclick="abrirImportador()">📥 Importar desde Texto Plano</button>
+            <button class="btn-add" onclick="añadirPregunta()">➕ Añadir Nueva Pregunta Manual</button>
+            <button class="btn-download" onclick="descargarJSON()">📥 Guardar y Descargar JSON</button>
+        </div>
+    </div>
+
+    <div id="modal-import">
+        <div class="modal-content">
+            <div style="display:flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin:0">📥 Importar desde Texto Plano</h3>
+                <button onclick="cargarEjemploEnArea()" style="cursor:pointer; font-size:0.75rem; background:#eee; border:1px solid #ccc; border-radius:4px; padding:4px 10px;">Cargar ejemplo</button>
+            </div>
+            
+            <div class="help-list">
+                1. <b>Línea 1:</b> El enunciado de la pregunta.<br>
+                2. <b>Opciones:</b> Es necesario incluir <u>4 opciones</u> empezando con guion (ej: <b>- Opción</b>).<br>
+                3. <b>Respuesta:</b> Escribe <b>R:</b> seguido del número de la correcta (0 a 3).<br>
+                4. <b>Explicación:</b> Escribe <b>Exp:</b> seguido del texto de la explicación.<br>
+                5. <b>Separación:</b> Deja <u>una línea vacía</u> entre cada bloque de pregunta.
+            </div>
+
+            <textarea id="import-area" rows="10" placeholder="Pega aquí tus bloques de texto..." style="width:100%; margin-bottom:15px; border:1px solid #ddd; border-radius:8px; padding:12px; font-family:monospace; font-size:0.9rem;"></textarea>
+            
+            <div style="display:flex; gap:10px">
+                <button class="btn-add" style="margin:0; flex:2" onclick="procesarTextoPlano()">🚀 Procesar e Insertar</button>
+                <button class="btn-delete" style="flex:1" onclick="cerrarImportador()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const repoSelector = document.getElementById('repo-selector');
+        const status = document.getElementById('status');
+        const editorContainer = document.getElementById('editor-container');
+        const listaPreguntas = document.getElementById('lista-preguntas');
+        const adminControls = document.getElementById('admin-controls');
+        const modalImport = document.getElementById('modal-import');
+        const importArea = document.getElementById('import-area');
+        const btnCrearNuevo = document.getElementById('btn-crear-nuevo');
+        
+        let quizData = [];
+        let originalFileName = "nuevo_test.json";
+        let modoDios = false;
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "F2") { 
+                const clave = prompt("Introduce clave maestra:");
+                if(clave === "1234") activarAdmin();
+            }
+        });
+
+        function activarAdmin() {
+            modoDios = true;
+            document.getElementById('main-title').innerText = "🛠 Editor de Cuestionarios";
+            editorContainer.classList.remove('blur-content');
+            adminControls.classList.remove('hidden');
+            btnCrearNuevo.disabled = false;
+            if(quizData.length > 0) renderEditor();
+            mostrarMensaje("Modo edición desbloqueado", "success");
+        }
+
+        function abrirImportador() { modalImport.style.display = 'flex'; importArea.focus(); }
+        function cerrarImportador() { modalImport.style.display = 'none'; importArea.value = ''; }
+        
+        function cargarEjemploEnArea() {
+            importArea.value = `¿Qué planeta es conocido como el Planeta Rojo?\n- Venus\n- Marte\n- Júpiter\n- Saturno\nR: 1\nExp: Marte tiene este color debido al óxido de hierro en su superficie.\n\n¿Cuál es el resultado de sumar 15 + 25?\n- 30\n- 35\n- 40\n- 45\nR: 2\nExp: 15 más 25 es igual a 40.`;
+        }
+
+        function procesarTextoPlano() {
+            const texto = importArea.value.trim();
+            if(!texto) return;
+            
+            // Separamos por bloques (líneas vacías)
+            const bloques = texto.split(/\n\s*\n/);
+            
+            bloques.forEach(bloque => {
+                const lineas = bloque.split('\n').map(l => l.trim());
+                if (lineas.length < 2) return;
+
+                let pregunta = lineas[0];
+                let opciones = [];
+                let respuestaCorrecta = 0;
+                let explicacion = "";
+
+                lineas.slice(1).forEach(linea => {
+                    // Detecta guiones (cortos, largos, viñetas) o números al inicio
+                    if (linea.match(/^[-–—•*]|^[a-zA-Z0-9][\.\)]/)) {
+                        const textoOpcion = linea.replace(/^[-–—•*]|^[a-zA-Z0-9][\.\)]/, '').trim();
+                        opciones.push(textoOpcion);
+                    } else if (linea.toUpperCase().startsWith('R:')) {
+                        respuestaCorrecta = parseInt(linea.replace(/R:/i, '').trim()) || 0;
+                    } else if (linea.toUpperCase().startsWith('EXP:')) {
+                        explicacion = linea.replace(/EXP:/i, '').trim();
+                    }
+                });
+
+                if(pregunta && opciones.length > 0) {
+                    // Forzamos 4 opciones para mantener la estructura
+                    while(opciones.length < 4) opciones.push("Opción vacía");
+                    quizData.push({ 
+                        pregunta, 
+                        opciones: opciones.slice(0, 4), 
+                        respuestaCorrecta: Math.min(respuestaCorrecta, 3), 
+                        explicacion 
+                    });
+                }
+            });
+            renderEditor();
+            cerrarImportador();
+        }
+
+        function crearNuevoVacio() {
+            const nombre = prompt("Nombre del archivo:", "nuevo_test.json");
+            if (nombre) {
+                originalFileName = nombre.endsWith('.json') ? nombre : nombre + '.json';
+                quizData = [];
+                document.getElementById('nombre-archivo-display').innerText = originalFileName;
+                editorContainer.style.display = 'block';
+                renderEditor();
+                abrirImportador();
+            }
+        }
+
+        async function cargarIndice() {
+            try {
+                const res = await fetch('index.json');
+                const temas = await res.json();
+                repoSelector.innerHTML = '<option value="" disabled selected>Selecciona un test...</option>';
+                temas.forEach(t => {
+                    const opt = document.createElement('option');
+                    opt.value = t.archivo; opt.innerText = t.titulo;
+                    repoSelector.appendChild(opt);
+                });
+            } catch (e) {}
+        }
+
+        repoSelector.onchange = async (e) => {
+            originalFileName = e.target.value.split('/').pop();
+            const res = await fetch(e.target.value);
+            procesarDatos(await res.json());
+        };
+
+        document.getElementById('drop-zone').onclick = () => document.getElementById('file-input').click();
+        document.getElementById('file-input').onchange = (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                originalFileName = file.name;
+                const reader = new FileReader();
+                reader.onload = (ev) => procesarDatos(JSON.parse(ev.target.result));
+                reader.readAsText(file);
+            }
+        };
+
+        function procesarDatos(data) {
+            quizData = data.map(({id, ...rest}) => rest);
+            document.getElementById('nombre-archivo-display').innerText = originalFileName;
+            editorContainer.style.display = 'block';
+            renderEditor();
+        }
+
+        function renderEditor() {
+            listaPreguntas.innerHTML = "";
+            quizData.forEach((item, index) => {
+                const pCard = document.createElement('div');
+                pCard.className = 'pregunta-edit card';
+                pCard.innerHTML = `
+                    <button class="btn-delete delete-abs" onclick="borrarPregunta(${index})">Eliminar</button>
+                    <label>Pregunta:</label>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'pregunta', this.value)">${modoDios ? item.pregunta : '***'}</textarea>
+                    <label>Opciones:</label>
+                    ${[0,1,2,3].map(i => `
+                        <div class="opcion-row">
+                            <input type="radio" name="correcta-${index}" class="correcta-radio" ${item.respuestaCorrecta === i && modoDios ? 'checked' : ''} onclick="actualizarDato(${index}, 'respuestaCorrecta', ${i})">
+                            <input type="text" class="opcion-input" value="${modoDios ? (item.opciones[i] || '') : '****'}" oninput="actualizarOpcion(${index}, ${i}, this.value)">
+                        </div>
+                    `).join('')}
+                    <label>Explicación:</label>
+                    <textarea rows="2" oninput="actualizarDato(${index}, 'explicacion', this.value)">${modoDios ? (item.explicacion || '') : '****'}</textarea>
+                `;
+                listaPreguntas.appendChild(pCard);
+            });
+        }
+
+        function actualizarDato(i, f, v) { if(modoDios) quizData[i][f] = v; }
+        function actualizarOpcion(pi, oi, v) { if(modoDios) quizData[pi].opciones[oi] = v; }
+        function añadirPregunta() { quizData.push({ pregunta: "", opciones: ["","","",""], respuestaCorrecta: 0, explicacion: "" }); renderEditor(); }
+        function borrarPregunta(i) { if(confirm("¿Borrar pregunta?")) { quizData.splice(i, 1); renderEditor(); } }
+        function mostrarMensaje(m, t) { status.innerText = m; status.className = t; status.style.display = 'block'; setTimeout(() => status.style.display = 'none', 3000); }
+        
+        function descargarJSON() {
+            const blob = new Blob([JSON.stringify(quizData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = originalFileName; a.click();
+        }
+
+        cargarIndice();
+    </script>
+</body>
+</html>
+
+--- FILE: index.html ---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Cuestionarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <h1 style="text-align:center">Cargando aplicación...</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+--- FILE: index.json ---
+[
+  {
+    "titulo": "5º Lengua - Tema 5 (Tu localidad)",
+    "archivo": "cuestionarios/ian-5-lengua-t5.json"
+  },
+  {
+    "titulo": "5º Lengua - Tema 6 (Deporte)",
+    "archivo": "cuestionarios/ian-5-lengua-t6.json"
+  },
+  {
+    "titulo": "5º Lengua - Tema 7 (Música)",
+    "archivo": "cuestionarios/ian-5-lengua-t7.json"
+  },
+  {
+    "titulo": "5º Lengua - Tema 8 (Naturaleza)",
+    "archivo": "cuestionarios/ian-5-lengua-t8.json"
+  },
+  {
+    "titulo": "5º Naturaleza - Tema 3 (Las plantas)",
+    "archivo": "cuestionarios/ian-5-natu-t4.json"
+  },
+  {
+    "titulo": "5º Naturaleza - Tema 4 (Ecosistemas)",
+    "archivo": "cuestionarios/ian-5-natu-t4.json"
+  },
+  {
+    "titulo": "5º Sociales - Tema 3 (Relieve de Europa)",
+    "archivo": "cuestionarios/ian-5-soci-t3.json"
+  },
+  {
+    "titulo": "5º Sociales - Tema 4 (Democracia)",
+    "archivo": "cuestionarios/ian-5-soci-t4.json"
+  }
+]
+
+--- FILE: script.js ---
+const quizContainer = document.getElementById('quiz');
+let quizData = [];
+let currentQuiz = 0;
+let score = 0;
+let currentTitle = ""; // Variable para guardar el título del test actual
+
+async function initApp() {
+    try {
+        const response = await fetch('index.json');
+        const indexData = await response.json();
+        renderSelector(indexData);
+    } catch (e) {
+        quizContainer.innerHTML = "<h2>Error cargando index.json</h2>";
+    }
+}
+
+// Función para la pantalla inicial de selección
+function renderSelector(temas) {
+    quizContainer.innerHTML = `
+        <div class="logo-wrapper">
+            <img src="logo.png" alt="Logo" class="quiz-logo">
+        </div>
+        <h1>Selecciona un Cuestionario</h1>
+        <div class="selector-box">
+            <select id="quiz-selector">
+                <option value="" disabled selected>Escoge un tema para empezar...</option>
+                ${temas.map(t => `<option value="${t.archivo}" data-titulo="${t.titulo}">${t.titulo}</option>`).join('')}
+            </select>
+        </div>
+    `;
+    
+    document.getElementById('quiz-selector').addEventListener('change', (e) => {
+        const archivo = e.target.value;
+        currentTitle = e.target.options[e.target.selectedIndex].getAttribute('data-titulo');
+        loadQuiz(archivo);
+    });
+}   
+
+async function loadQuiz(archivo) {
+    try {
+        const response = await fetch(archivo);
+        const data = await response.json();
+        
+        score = 0;
+        currentQuiz = 0;
+        quizData = shuffle(data);
+        
+        quizData.forEach(p => {
+            const correctaStr = p.opciones[p.respuestaCorrecta];
+            shuffle(p.opciones);
+            p.respuestaCorrecta = p.opciones.indexOf(correctaStr);
+        });
+
+        showQuestion();
+    } catch (e) {
+        quizContainer.innerHTML = "<h2>Error cargando el archivo de preguntas</h2>";
+    }
+}
+
+// Función para mostrar las preguntas
+function showQuestion() {
+    const data = quizData[currentQuiz];
+    const progress = ((currentQuiz / quizData.length) * 100).toFixed(0);
+    const notaActual = currentQuiz > 0 ? ((score / currentQuiz) * 10).toFixed(1) : "0.0";
+
+    quizContainer.innerHTML = `
+        <div class="logo-wrapper">
+            <img src="logo.png" alt="Logo" class="quiz-logo">
+        </div>
+        <div class="quiz-header-row">
+            <div class="quiz-badge">${currentTitle}</div>
+            <div class="live-score">Nota: <span>${notaActual}</span></div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-fill" style="width: ${progress}%"></div>
+        </div>
+        <div class="header">
+            <small>Pregunta ${currentQuiz + 1} de ${quizData.length}</small>
+            <h2>${data.pregunta}</h2>
+        </div>
+        <div class="options">
+            ${data.opciones.map((op, i) => `<button class="btn-opcion" onclick="checkAnswer(${i})">${op}</button>`).join('')}
+        </div>
+        <div id="feedback-container" class="hidden">
+            <div id="feedback-text"></div>
+            <button id="next-btn" onclick="nextQuestion()">Siguiente →</button>
+        </div>
+    `;
+}
+
+// Las funciones checkAnswer, nextQuestion, showResults y shuffle se mantienen IGUAL
+window.checkAnswer = (idx) => {
+    const data = quizData[currentQuiz];
+    const correct = data.respuestaCorrecta;
+    const buttons = document.querySelectorAll('.btn-opcion');
+    const fContainer = document.getElementById('feedback-container');
+    const fText = document.getElementById('feedback-text');
+
+    buttons.forEach(b => b.disabled = true);
+
+    if (idx === correct) {
+        buttons[idx].classList.add('correct');
+        score++;
+        setTimeout(() => nextQuestion(), 600);
+    } else {
+        buttons[idx].classList.add('wrong');
+        buttons[correct].classList.add('correct');
+        fText.innerHTML = `
+            <p class="msg-wrong">Incorrecto</p>
+            <div class="explicacion-box"><strong>Explicación:</strong><br>${data.explicacion}</div>
+        `;
+        fContainer.classList.remove('hidden');
+    }
+};
+
+window.nextQuestion = () => {
+    currentQuiz++;
+    if (currentQuiz < quizData.length) showQuestion();
+    else showResults();
+};
+
+// Sustituye la URL por la que copiaste de Google
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwmsKQfb-s3gUB0bJtFbsa6zq2fnlANjviF_uozk7pHWjTPIzxVYGjZ-XvCe36Rux-H/exec";
+
+function showResults() {
+    const nota = ((score / quizData.length) * 10).toFixed(1);
+    
+    quizContainer.innerHTML = `
+        <div class="results">
+            <h1>¡Test completado!</h1>
+            <div class="score-circle">${nota}</div>
+            <p>Has acertado ${score} de ${quizData.length}</p>
+            
+            <div id="ranking-input">
+                <input type="text" id="player-name" placeholder="Tu nombre para el ranking" maxlength="15" style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+                <button onclick="enviarPuntuacion(${nota})" class="btn-restart" style="margin-left:10px;">Enviar al Ranking</button>
+            </div>
+            
+            <div id="tabla-ranking" style="margin-top:20px;"></div>
+            
+            <hr>
+            <button onclick="location.reload()" class="btn-restart">Volver al inicio</button>
+        </div>
+    `;
+    // Cargamos el ranking actual nada más terminar
+    cargarRanking();
+}
+
+async function enviarPuntuacion(puntos) {
+    const nombre = document.getElementById('player-name').value;
+    if (!nombre) return alert("Escribe tu nombre");
+
+    const btn = document.querySelector('#ranking-input button');
+    btn.disabled = true;
+
+    // En lugar de JSON, enviamos parámetros de URL (FormData)
+    const urlConParametros = `${GOOGLE_SCRIPT_URL}?nombre=${encodeURIComponent(nombre)}&puntuacion=${puntos}&examen=${encodeURIComponent(currentTitle)}`;
+
+    try {
+        // Usamos el método GET que es más sencillo para Google Scripts
+        await fetch(urlConParametros, { method: 'GET', mode: 'no-cors' });
+        
+        document.getElementById('ranking-input').innerHTML = "<p>¡Puntuación enviada! 🏆</p>";
+        setTimeout(cargarRanking, 1500);
+    } catch (e) {
+        console.error("Error:", e);
+    }
+}
+
+async function cargarRanking() {
+    try {
+        const res = await fetch(GOOGLE_SCRIPT_URL);
+        const registros = await res.json();
+        
+        let html = `
+            <h3 style="color: #2e7d32; margin-top: 20px;">🏆 Top 10 Global</h3>
+            <table style="width:100%; border-collapse: collapse; margin-top: 10px; font-size: 0.95rem;">
+        `;
+        
+        registros.forEach((reg, i) => {
+            // reg[0] es la fecha (la ignoramos)
+            // reg[1] es el nombre
+            // reg[2] es la puntuación
+            // reg[3] es el nombre del examen
+            
+            html += `
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 8px 0; color: #666; width: 30px;">${i + 1}.</td>
+                    <td style="padding: 8px 0; font-weight: 500;">${reg[1]}</td>
+                    <td style="padding: 8px 0; text-align: right; color: #2e7d32; font-weight: bold;">${reg[2]} pts</td>
+                </tr>
+            `;
+        });
+        
+        html += "</table>";
+        document.getElementById('tabla-ranking').innerHTML = html;
+    } catch (e) {
+        document.getElementById('tabla-ranking').innerHTML = "<p style='color:gray; font-size:0.8rem;'>El ranking se actualizará en unos instantes...</p>";
+    }
+}
+
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+initApp();
+
+// Bloquear el menú contextual del botón derecho
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+}, false);
+
+// Opcional: Bloquear atajos de teclado comunes para inspeccionar (F12, Ctrl+Shift+I)
+document.addEventListener('keydown', function(e) {
+    if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) {
+        e.preventDefault();
+        return false;
+    }
+}, false);
+
+--- FILE: style.css ---
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #e8f5e9; /* Verde muy clarito de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 95%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #2e7d32;
+}
+
+h2 {
+    color: #2e7d32;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+/* --- LOGO (OPCIÓN 1: Fondo circular para logo blanco) --- */
+.logo-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.quiz-logo {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background-color: #1b5e20; /* Verde oscuro para resaltar el logo blanco */
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* --- SELECTOR DE TEST --- */
+.selector-box {
+    margin: 30px 0;
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #2e7d32;
+    border-radius: 10px;
+    background: #f1f8e9;
+    font-size: 1.1rem;
+    color: #1b5e20;
+    outline: none;
+    cursor: pointer;
+}
+
+/* --- ENCABEZADO DEL TEST (TÍTULO Y NOTA) --- */
+.quiz-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quiz-badge {
+    background-color: #f1f8e9;
+    color: #2e7d32;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #c8e6c9;
+    text-transform: uppercase;
+}
+
+.live-score {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.live-score span {
+    color: #2e7d32;
+    font-size: 1.1rem;
+    background: #e8f5e9;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* --- PROGRESO --- */
+.progress-bar-container {
+    background: #eee;
+    height: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-fill {
+    background: #2e7d32;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* --- OPCIONES DE RESPUESTA --- */
+.options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.btn-opcion {
+    background-color: #f1f8e9;
+    color: #1b5e20;
+    border: 2px solid #a5d6a7;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: left;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.btn-opcion:hover:not(:disabled) {
+    background-color: #c8e6c9;
+    border-color: #4caf50;
+    transform: translateY(-2px);
+}
+
+.btn-opcion:disabled {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.correct {
+    background-color: #4caf50 !important;
+    color: white !important;
+    border-color: #2e7d32 !important;
+}
+
+.wrong {
+    background-color: #ef5350 !important;
+    color: white !important;
+    border-color: #c62828 !important;
+}
+
+/* --- FEEDBACK Y EXPLICACIÓN --- */
+.hidden { display: none; }
+
+#feedback-container {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #e8f5e9;
+    animation: fadeIn 0.5s ease;
+}
+
+.explicacion-box {
+    background-color: #fff9c4;
+    padding: 15px;
+    border-left: 5px solid #fbc02d;
+    border-radius: 5px;
+    margin: 15px 0;
+    color: #5d4037;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.msg-wrong { color: #c62828; font-weight: bold; margin: 0; }
+
+#next-btn {
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 0 #1b5e20;
+}
+
+#next-btn:active { transform: translateY(2px); box-shadow: none; }
+
+/* --- RESULTADOS FINALES --- */
+.results { text-align: center; }
+
+.results h1 { color: #2e7d32; }
+
+.results small {
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.score-circle {
+    width: 100px;
+    height: 100px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.btn-restart {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
