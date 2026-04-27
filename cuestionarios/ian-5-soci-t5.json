@@ -156,4 +156,197 @@
   {
     "id": 23,
     "pregunta": "¿Qué tipo de arco es típico de la arquitectura gótica?",
-    "opciones": ["Arco de herradura", "Arco de
+    "opciones": ["Arco de herradura", "Arco de medio punto", "Arco apuntado", "Arco de medio cañón"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El arco apuntado u ojival es fundamental para elevar la altura de las naves góticas."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cómo se llama el lugar donde los cristianos, musulmanes y judíos colaboraron traduciendo libros?",
+    "opciones": ["Universidad de Salamanca", "Escuela de Traductores de Toledo", "Monasterio de Silos", "Alhambra de Granada"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Toledo fue un centro cultural único donde sabios de las tres religiones compartieron conocimientos."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué religión profesaban los judíos en la España medieval?",
+    "opciones": ["Judaísmo", "Cristianismo", "Islam", "Budismo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los judíos eran una de las tres grandes culturas que convivieron en la Península durante siglos."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Cuál es el libro sagrado de la religión islámica?",
+    "opciones": ["La Biblia", "El Corán", "La Torá", "El Talmud"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El Corán recoge las enseñanzas reveladas al profeta Mahoma."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué nombre reciben los barrios donde vivían los cristianos en las ciudades de Al-Andalus?",
+    "opciones": ["Barrio judío", "Barrio mozárabe", "Barrio burgués", "Arrabal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los mozárabes eran los cristianos que mantenían su religión viviendo en territorio musulmán."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué material introdujeron los andalusíes en Europa que permitió escribir numerosos libros?",
+    "opciones": ["El pergamino", "El papiro", "La madera", "El papel"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La introducción del papel fue una gran aportación cultural de los andalusíes a Europa."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cómo llamamos a la zona de la ciudad medieval situada fuera de las murallas?",
+    "opciones": ["Arrabal", "Alcazaba", "Medina", "Judería"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los arrabales eran barrios que crecían fuera del recinto amurallado principal."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué juego de origen asiático era el pasatiempo preferido de las personas cultas en Al-Andalus?",
+    "opciones": ["Las damas", "El ajedrez", "El parchís", "Los dados"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ajedrez llegó a Europa a través de la cultura andalusí."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué tipo de bóveda es característica de las iglesias románicas?",
+    "opciones": ["Bóveda de crucería", "Bóveda plana", "Bóveda de cañón", "Bóveda de cristal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La bóveda de cañón es una estructura semicircular típica de la arquitectura románica."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cómo se llama el patio de la mezquita donde los fieles se lavan antes de rezar?",
+    "opciones": ["Patio de los Leones", "Patio de armas", "Patio de los Naranjos", "Patio de entrada"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El patio de entrada cuenta con una fuente para que los musulmanes realicen sus abluciones."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué lengua era la base de los reinos cristianos y se mezcló con palabras árabes?",
+    "opciones": ["Castellano", "Inglés", "Alemán", "Francés"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El castellano actual conserva miles de palabras de origen árabe como 'alcalde' o 'azúcar'."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cómo se llama la casa de campo andalusí donde se cultivaban frutas y hortalizas?",
+    "opciones": ["Feudo", "Alquería", "Castillo", "Monasterio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las alquerías eran pequeñas explotaciones rurales típicas del paisaje andalusí."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué planta de la iglesia medieval tiene forma de cruz?",
+    "opciones": ["Planta circular", "Planta cuadrada", "Planta de cruz latina", "Planta octogonal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Tanto el románico como el gótico utilizaban la planta de cruz latina para sus templos."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cómo se llama el rosetón en una catedral gótica?",
+    "opciones": ["Una torre de vigilancia", "Un tipo de arco apuntado", "Un foso de defensa", "Una vidriera circular de colores"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El rosetón es el gran ventanal circular decorado con vidrieras sobre las fachadas góticas."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué estamento se encontraba en la cima de la pirámide feudal y era considerado elegido por Dios?",
+    "opciones": ["El Rey", "El Duque", "El Papa", "El Emperador"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El rey era la máxima autoridad, aunque a menudo dependía del apoyo de los nobles."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cuál era la principal fuente de riqueza en la sociedad feudal?",
+    "opciones": ["La industria", "La tierra", "El oro de América", "El turismo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La agricultura era la base económica, por lo que poseer tierras (feudos) daba poder."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cómo se llamaban los artistas que recorrían castillos cantando poemas amorosos?",
+    "opciones": ["Juglares", "Siervos", "Trovadores", "Escribas"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los trovadores componían poemas e interpretaban música sobre el amor cortés."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué edificio medieval servía para defender el territorio y ofrecía refugio a los campesinos?",
+    "opciones": ["La catedral", "La mezquita", "El ayuntamiento", "El castillo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El castillo era la fortaleza principal y centro administrativo de un feudo."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿En qué zona de la Península se refugiaron los cristianos tras la invasión musulmana?",
+    "opciones": ["En el Norte", "En el Sur", "En las Islas Baleares", "En la costa mediterránea"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En las montañas del Norte surgieron los primeros núcleos de resistencia cristiana."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué gran conjunto palaciego fue la residencia de los monarcas nazaríes en Granada?",
+    "opciones": ["La Giralda", "La Alhambra", "La Mezquita de Córdoba", "El Alcázar de Toledo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Alhambra es una de las joyas de la arquitectura andalusí más famosas del mundo."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Cómo eran las calles en una ciudad medieval?",
+    "opciones": ["Anchas y rectas", "Llenas de parques modernos", "Estrechas y oscuras", "Pavimentadas con asfalto"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las ciudades medievales tenían un trazado irregular con calles angostas y a menudo sucias."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué lengua hablaban los judíos y andalusíes que vivían en los reinos cristianos?",
+    "opciones": ["Francés", "Alemán", "Italiano", "Árabe o Hebreo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La diversidad lingüística era común en la España medieval debido a la mezcla de culturas."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué parte del castillo servía para impedir el paso a los enemigos rodeando las murallas?",
+    "opciones": ["El foso", "La capilla", "El establo", "El pozo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Muchos castillos estaban rodeados por un foso con agua para dificultar el ataque."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cómo se llamaba el palacio de los gobernantes en una ciudad andalusí?",
+    "opciones": ["Mezquita", "Alcázar", "Baño público", "Hammam"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El alcázar era el palacio fortificado donde vivía el gobernante de la ciudad."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué elementos decoraban las paredes de las iglesias románicas para enseñar la Biblia?",
+    "opciones": ["Fotografías", "Tapices de seda", "Pinturas murales", "Esculturas de metal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Como la mayoría de la gente no sabía leer, las pinturas servían para contar historias bíblicas."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Cuál era la función principal del clero en el sistema feudal?",
+    "opciones": ["Guerrear contra enemigos", "Vender productos en el mercado", "Trabajar en el huerto del rey", "Rezar por la salvación de las almas"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se decía que la sociedad se dividía en los que guerrean, los que trabajan y los que rezan."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué material decorativo muy usado en Al-Andalus consiste en dibujos geométricos de barro cocido?",
+    "opciones": ["Azulejo", "Vidrio", "Plata", "Cemento"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los azulejos con formas geométricas son una característica decorativa esencial del arte andalusí."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué sentimiento define el código de conducta de los caballeros medievales?",
+    "opciones": ["Egoísmo", "Cobardía", "Lealtad", "Desprecio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los caballeros debían jurar lealtad a su señor y defender los valores de justicia y generosidad."
+  }
+]
