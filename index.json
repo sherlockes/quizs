@@ -30,5 +30,13 @@
   {
     "titulo": "5º Sociales - Tema 4 (Democracia)",
     "archivo": "cuestionarios/ian-5-soci-t4.json"
+  },
+  {
+    "titulo": "5º Sociales - Tema 5 (Castillos)",
+    "archivo": "cuestionarios/ian-5-soci-t5.json"
+  },
+  {
+    "titulo": "5º Ingles - Tema 5",
+    "archivo": "cuestionarios/ian-5-ingles-t5.json"
   }
 ]

@@ -1,0 +1,159 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿En qué año se sitúa el inicio de la Edad Media tras la caída del Imperio romano?",
+    "opciones": ["En el año 476", "En el año 711", "En el año 1492", "En el año 507"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El fin del Imperio romano en el año 476 marca el comienzo de esta nueva etapa histórica."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué pueblo germánico se estableció en la Península Ibérica y creó un reino con capital en Toledo?",
+    "opciones": ["Los francos", "Los visigodos", "Los bizantinos", "Los vándalos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los visigodos fundaron un reino independiente en la Península en el siglo VI estableciendo su sede en Toledo."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cómo se llamó el territorio de la Península bajo dominio musulmán a partir del año 711?",
+    "opciones": ["Imperio Bizantino", "Reino de Asturias", "Al-Andalus", "Califato de Damasco"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Tras la conquista musulmana, casi toda la Península recibió el nombre de Al-Andalus."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál fue el periodo de mayor esplendor cultural y comercial de Al-Andalus?",
+    "opciones": ["El Reino de Granada", "Los Reinos de Taifas", "El Emirato de Córdoba", "El Califato de Córdoba"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El Califato (929-1031) fue la época de máximo desarrollo artístico, científico y económico."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Qué nombre recibían los pequeños reinos en los que se dividió Al-Andalus tras la caída del Califato?",
+    "opciones": ["Reinos de Taifas", "Condados catalanes", "Feudos", "Zocos"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La fragmentación del Califato dio lugar a numerosos reinos independientes llamados Taifas."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿En qué año terminó la Edad Media en la Península con la conquista del Reino de Granada?",
+    "opciones": ["1031", "1492", "711", "1230"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La caída de Granada y el descubrimiento de América en 1492 marcan el final de este periodo."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cómo llamaban los musulmanes al mercado, que era el centro de la actividad comercial?",
+    "opciones": ["Medina", "Alcazaba", "Zoco", "Alquería"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El zoco era el lugar donde se compraban y vendían mercancías en las ciudades andalusíes."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué técnica introdujeron los andalusíes para elevar el agua de los pozos y regar los cultivos?",
+    "opciones": ["El arado de hierro", "La bóveda de crucería", "El molino de viento", "La noria"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La noria fue una innovación técnica fundamental para mejorar la producción agrícola en Al-Andalus."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuál era la parte central de la ciudad musulmana, rodeada de murallas?",
+    "opciones": ["La medina", "El arrabal", "La judería", "La alquería"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La medina constituía el núcleo principal de la ciudad donde se situaban los edificios más importantes."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cómo se llamaba la fortaleza militar situada en la parte más alta de las ciudades de Al-Andalus?",
+    "opciones": ["Mezquita", "Alcazaba", "Hammam", "Palacio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La alcazaba servía como torre de defensa y residencia para las autoridades militares."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué edificio andalusí servía como lugar de culto para los musulmanes?",
+    "opciones": ["La Catedral", "La Sinagoga", "La Mezquita", "El Monasterio"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La mezquita es el edificio sagrado donde los fieles musulmanes acuden a rezar."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo se llama la torre de la mezquita desde la que se llama a los fieles a la oración?",
+    "opciones": ["Cimborrio", "Ábside", "Campanario", "Minarete"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El minarete o alminar es la torre característica que forma parte de las mezquitas."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué sistema social se basaba en la entrega de tierras a cambio de fidelidad y apoyo militar?",
+    "opciones": ["Feudalismo", "Democracia", "Capitalismo", "Esclavismo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El feudalismo organizaba la sociedad medieval mediante vínculos entre señores y vasallos."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Quiénes formaban parte del estamento privilegiado encargado de la defensa del territorio?",
+    "opciones": ["Los campesinos", "Los nobles", "Los artesanos", "Los burgueses"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La nobleza era el grupo guerrero que recibía tierras (feudos) a cambio de proteger el reino."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué grupo social se ocupaba del culto a Dios y de la vida espiritual de la población?",
+    "opciones": ["Los siervos", "Los caballeros", "El clero", "Los trovadores"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El clero (monjes y sacerdotes) formaba el estamento dedicado a la religión y la cultura."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cómo se llamaban los campesinos que estaban ligados a la tierra de un señor y no eran libres?",
+    "opciones": ["Hidalgos", "Vasallos", "Escuderos", "Siervos"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los siervos pertenecían al feudo del señor y debían trabajar sus tierras sin poder abandonarlas."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cuál era la parte del castillo donde residían el señor y su familia?",
+    "opciones": ["La torre del homenaje", "El patio de armas", "La barbacana", "El foso"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La torre del homenaje era la zona más protegida y el centro de poder dentro del castillo."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué nombre recibía la ceremonia en la que un noble era nombrado caballero?",
+    "opciones": ["Investidura", "Homenaje", "Coronación", "Bautismo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Tras un largo entrenamiento, el joven noble era armado caballero en una ceremonia de gran importancia."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué grupo social apareció en las ciudades formado por artesanos y comerciantes?",
+    "opciones": ["El clero", "La nobleza", "La burguesía", "Los siervos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La burguesía surgió con el crecimiento de las ciudades y no dependía del poder de los señores feudales."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cómo se organizaban los trabajadores de un mismo oficio para controlar la calidad y los precios?",
+    "opciones": ["En sindicatos", "En taifas", "En feudos", "En gremios"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los gremios eran asociaciones de artesanos (zapateros, tejedores, etc.) que regulaban su profesión."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué estilo artístico se caracteriza por muros gruesos, pocas ventanas y arcos de medio punto?",
+    "opciones": ["Románico", "Gótico", "Andalusí", "Renacentista"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El románico es un estilo rural y religioso que buscaba la solidez de las edificaciones."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Cuál es la principal característica de las catedrales góticas?",
+    "opciones": ["La ausencia de decoración", "La gran luminosidad gracias a vidrieras", "Los muros de adobe", "Las naves sin ventanas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El gótico buscaba la altura y la luz mediante grandes ventanales con cristales de colores."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Qué tipo de arco es típico de la arquitectura gótica?",
+    "opciones": ["Arco de herradura", "Arco de
