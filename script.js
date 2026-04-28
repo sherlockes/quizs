@@ -191,13 +191,21 @@ async function cargarRanking() {
             html += `<tr><td style="color:gray; padding:10px;">Aún no hay puntuaciones para este test.</td></tr>`;
         } else {
             top10.forEach((reg, i) => {
-                // Ajustamos índices según el orden de envío: 
-                // [0] Fecha, [1] Nombre, [2] Puntuación, [3] Examen
+                // Vamos a "limpiar" y asegurar los índices.
+                // Si reg[2] te da una fecha, intenta cambiarlo por reg[1] o reg[3] 
+                // hasta que veas el número de la nota.
+                
+                const nombreJugador = reg[1]; 
+                const puntosJugador = reg[2]; // <--- CAMBIA ESTE ÍNDICE si sigue saliendo la fecha
+                const nombreExamen = reg[3];
+
                 html += `
                     <tr style="border-bottom: 1px solid #eee;">
                         <td style="padding: 8px 0; color: #666; width: 30px;">${i + 1}.</td>
-                        <td style="padding: 8px 0; font-weight: 500;">${reg[1]}</td>
-                        <td style="padding: 8px 0; text-align: right; color: #2e7d32; font-weight: bold;">${reg[2]} pts</td>
+                        <td style="padding: 8px 0; font-weight: 500;">${nombreJugador}</td>
+                        <td style="padding: 8px 0; text-align: right; color: #2e7d32; font-weight: bold;">
+                            ${puntosJugador} pts
+                        </td>
                     </tr>
                 `;
             });
