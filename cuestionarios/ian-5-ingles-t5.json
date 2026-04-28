@@ -1,352 +1,354 @@
+```json
 [
   {
     "id": 1,
-    "pregunta": "¿Cuál es la forma correcta del pasado simple del verbo 'go' en una frase afirmativa?",
-    "opciones": ["goes", "went", "going", "goed"],
-    "respuestaCorrecta": 1,
-    "explicacion": "Según la tabla de verbos irregulares, el pasado de 'go' es 'went'."
+    "pregunta": "¿Qué animal es más alto ('taller') que un elefante según la canción?",
+    "opciones": ["A giraffe", "A cheetah", "A meerkat", "A crocodile"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La letra de la canción en la lección 3 establece que la jirafa es más alta que el elefante."
   },
   {
     "id": 2,
-    "pregunta": "¿Cómo se forma el negativo de 'went shopping'?",
-    "opciones": ["didn't go shopping", "no went shopping", "not go shopping", "don't went shopping"],
-    "respuestaCorrecta": 0,
-    "explicacion": "En el pasado simple negativo se utiliza 'didn't' seguido del verbo en infinitivo, por ejemplo: 'didn't go'."
+    "pregunta": "Completa la comparación: 'A cheetah is _____ than a lion'.",
+    "opciones": ["colourful", "faster", "larger", "scarier"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la estructura de comparativos de la unidad, se asocia al guepardo con la velocidad (faster)."
   },
   {
     "id": 3,
-    "pregunta": "¿Cuál es el pasado del verbo 'see' (ver)?",
-    "opciones": ["seed", "seen", "saw", "sees"],
+    "pregunta": "¿Cuál es el superlativo de la palabra 'bad'?",
+    "opciones": ["the baddest", "the badder", "the worst", "the most bad"],
     "respuestaCorrecta": 2,
-    "explicacion": "La tabla gramatical indica que el pasado irregular de 'see' es 'saw'."
+    "explicacion": "El recuadro 'Look!' de la lección 6 indica que 'bad' tiene un superlativo irregular: 'the worst'."
   },
   {
     "id": 4,
-    "pregunta": "Para decir 'hice una tarta' en inglés, usamos:",
-    "opciones": ["I make a cake", "I did a cake", "I maked a cake", "I made a cake"],
+    "pregunta": "¿Cómo se describe a Baboon al principio de la historia?",
+    "opciones": ["He is very kind", "He is very frightened", "He is very small", "He is unfriendly and selfish"],
     "respuestaCorrecta": 3,
-    "explicacion": "El pasado simple del verbo 'make' es 'made', como se muestra en los ejemplos de gramática."
+    "explicacion": "La historia describe el comportamiento de Baboon como poco amigable y egoísta al no querer compartir el estanque."
   },
   {
     "id": 5,
-    "pregunta": "¿Cuál es el negativo correcto de 'made a cake'?",
-    "opciones": ["not made a cake", "didn't make a cake", "didn't made a cake", "no make a cake"],
-    "respuestaCorrecta": 1,
-    "explicacion": "Al usar 'didn't', el verbo principal vuelve a su forma base 'make'."
+    "pregunta": "¿Qué animal es 'more colourful' que un flamenco en la canción?",
+    "opciones": ["Nothing (A flamingo is more colourful than a...)", "A zebra", "A hyena", "An elephant"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La canción utiliza al flamenco como el estándar de animal colorido en sus comparaciones."
   },
   {
     "id": 6,
-    "pregunta": "¿Qué expresión de tiempo se usa para referirse al día anterior a hoy?",
-    "opciones": ["yesterday", "tomorrow", "today", "next week"],
-    "respuestaCorrecta": 0,
-    "explicacion": "El recuadro 'Look!' explica que podemos usar 'yesterday' para indicar cuándo ocurrió algo en el pasado."
+    "pregunta": "¿Qué letra suele seguir al sonido /dʒ/ en palabras como 'giraffe' o 'orange'?",
+    "opciones": ["a, o, u", "e, i, y", "b, c, d", "l, m, n"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La sección de fonética explica que el sonido /dʒ/ aparece antes de las letras e, i, o y."
   },
   {
     "id": 7,
-    "pregunta": "¿Cuál es el pasado del verbo 'buy' (comprar)?",
-    "opciones": ["buyed", "buys", "boughted", "bought"],
-    "respuestaCorrecta": 3,
-    "explicacion": "El pasado irregular de 'buy' es 'bought', tal como aparece en los ejercicios de la unidad."
+    "pregunta": "Según la historia, ¿por qué Giraffe bebe agua nerviosamente?",
+    "opciones": ["Because the water is hot", "Because she is not thirsty", "Because she is frightened of Baboon", "Because she is aggressive"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto de la viñeta 3 dice explícitamente: 'I’m frightened of Baboon, but I’m thirsty!'."
   },
   {
     "id": 8,
-    "pregunta": "¿Cuál es el pasado del verbo 'write' (escribir)?",
-    "opciones": ["writed", "writing", "wrote", "writes"],
-    "respuestaCorrecta": 2,
-    "explicacion": "La lista de verbos irregulares confirma que el pasado de 'write' es 'wrote'."
+    "pregunta": "¿Cuál es el superlativo correcto de 'angry'?",
+    "opciones": ["the most angry", "the angrier", "the angryest", "the angriest"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Siguiendo las reglas de gramática de la lección 6, para adjetivos que terminan en 'y' se cambia por 'i' y se añade '-est'."
   },
   {
     "id": 9,
-    "pregunta": "¿Cómo dirías 'tuve una clase de piano'?",
-    "opciones": ["I have a piano lesson", "I had a piano lesson", "I haved a piano lesson", "I didn't have a piano lesson"],
-    "respuestaCorrecta": 1,
-    "explicacion": "El pasado del verbo 'have' es 'had'."
+    "pregunta": "En la sección de repaso, ¿qué animales se mencionan como en peligro de extinción ('endangered')?",
+    "opciones": ["Koalas and elephants", "Zebas and giraffes", "Lions and tigers", "Crocodiles and hyenas"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lección 8 menciona específicamente que los koalas y elefantes están en peligro de extinción."
   },
   {
     "id": 10,
-    "pregunta": "¿Cuál es el negativo de 'wrote a story'?",
-    "opciones": ["didn't write a story", "didn't wrote a story", "not write a story", "no wrote a story"],
-    "respuestaCorrecta": 0,
-    "explicacion": "La estructura negativa requiere 'didn't' y el infinitivo 'write'."
+    "pregunta": "¿Qué sonido tiene la palabra 'garden' al principio?",
+    "opciones": ["/dʒ/ sound", "/g/ sound", "/j/ sound", "/s/ sound"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tabla de pronunciación clasifica 'garden' bajo el sonido /g/ porque va antes de la letra 'a'."
   },
   {
     "id": 11,
-    "pregunta": "En la canción, ¿qué hizo el protagonista el sábado?",
-    "opciones": ["I went for a run", "I went to the library", "I went shopping", "I went to the park"],
+    "pregunta": "¿Qué animal tiene 'the most amazing stripes'?",
+    "opciones": ["The cheetah", "The giraffe", "The zebra", "The hyena"],
     "respuestaCorrecta": 2,
-    "explicacion": "La letra de la canción comienza diciendo: 'On Saturday, I went shopping'."
+    "explicacion": "La lección 6 confirma que la cebra consiguió las rayas más increíbles."
   },
   {
     "id": 12,
-    "pregunta": "Completa la frase de la canción: 'I wrote a _____ and read my book'.",
-    "opciones": ["letter", "poem", "email", "story"],
+    "pregunta": "¿Qué hace Zebra cuando se enfada con Baboon?",
+    "opciones": ["He cries", "He goes away", "He sleeps", "He stamps his foot and makes a noise"],
     "respuestaCorrecta": 3,
-    "explicacion": "Según la letra de la canción, el autor escribió una historia ('story')."
+    "explicacion": "En la viñeta 5 de la historia, Zebra patea el suelo y hace ruido al enfadarse."
   },
   {
     "id": 13,
-    "pregunta": "¿Qué palabra tiene el sonido /dʒ/ como en 'jacket'?",
-    "opciones": ["yesterday", "job", "yes", "you"],
-    "respuestaCorrecta": 1,
-    "explicacion": "La sección de pronunciación incluye 'job' como ejemplo del sonido /dʒ/."
+    "pregunta": "¿Cuál es la forma correcta de decir 'el mejor' en inglés?",
+    "opciones": ["the best", "the goodest", "the better", "the most good"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El adjetivo 'good' es irregular y su forma superlativa es 'the best'."
   },
   {
     "id": 14,
-    "pregunta": "¿Qué palabra tiene el sonido /j/ como en 'yellow'?",
-    "opciones": ["yesterday", "jump", "jacket", "job"],
-    "respuestaCorrecta": 0,
-    "explicacion": "La sección de pronunciación muestra 'yesterday' como ejemplo del sonido /j/."
+    "pregunta": "¿Qué adjetivo significa tener miedo en inglés?",
+    "opciones": ["Amazing", "Frightened", "Aggressive", "Important"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la historia de la cebra, los animales usan 'frightened' para expresar que tienen miedo de Baboon."
   },
   {
     "id": 15,
-    "pregunta": "Completa: 'I _______ my piano lesson' (en pasado).",
-    "opciones": ["have", "has", "had", "haved"],
+    "pregunta": "¿Qué animal es 'the most colourful' en el dibujo de la página 54?",
+    "opciones": ["The lion", "The zebra", "The butterfly", "The meerkat"],
     "respuestaCorrecta": 2,
-    "explicacion": "En la canción se utiliza 'had' para referirse a la clase de piano terminada."
+    "explicacion": "En el ejercicio de 'Ask and answer', se identifica a la mariposa como el animal más colorido."
   },
   {
     "id": 16,
-    "pregunta": "Según el vocabulario de la página 40, ¿qué significa 'had a lie-in'?",
-    "opciones": ["ir a correr", "hacer una tarta", "comprar un snack", "quedarse un rato más en la cama"],
+    "pregunta": "¿Qué sonido tiene la palabra 'gym'?",
+    "opciones": ["/g/ sound", "/s/ sound", "/i/ sound", "/dʒ/ sound"],
     "respuestaCorrecta": 3,
-    "explicacion": "Es una expresión que se refiere a levantarse tarde o descansar más tiempo en la cama."
+    "explicacion": "Según la regla fonética de la lección 3, 'gym' lleva el sonido /dʒ/ porque empieza por 'g' seguida de 'y'."
   },
   {
     "id": 17,
-    "pregunta": "¿Qué hizo Mary en la historia?",
-    "opciones": ["She went for a run", "She went to the library", "She bought a present", "She made a cake"],
-    "respuestaCorrecta": 1,
-    "explicacion": "En el cómic, Mary dice: 'I had a lie-in, then I went to the library'."
+    "pregunta": "¿Qué adjetivo describe a alguien que no quiere compartir y solo piensa en sí mismo?",
+    "opciones": ["Selfish", "Friendly", "Amazing", "Difficult"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En la lección 5, se usa 'selfish' para describir la actitud de Baboon con el estanque."
   },
   {
     "id": 18,
-    "pregunta": "¿En qué año sucede la historia de Bobbi Gibb?",
-    "opciones": ["1966", "1972", "1960", "2024"],
-    "respuestaCorrecta": 0,
-    "explicacion": "El texto indica explícitamente: 'It was 1966'."
+    "pregunta": "Completa la frase gramatical: 'Zebra is the _____ aggressive animal of all'.",
+    "opciones": ["more", "most", "best", "worst"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Para adjetivos largos como 'aggressive', el superlativo se forma con 'the most'."
   },
   {
     "id": 19,
-    "pregunta": "¿Por qué Bobbi Gibb se escondió al principio de la carrera?",
-    "opciones": ["She was cold", "She was scared", "She wanted to surprise her friends", "Women weren't allowed to run"],
-    "respuestaCorrecta": 3,
-    "explicacion": "En 1966 decían que la carrera era solo para hombres, por lo que ella se escondió para empezar."
+    "pregunta": "¿En qué países podrías vivir para ver koalas o elefantes según el repaso?",
+    "opciones": ["Spain or France", "USA or Canada", "Sri Lanka or Australia", "Egypt or Morocco"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lección 8 pregunta al alumno si le gustaría vivir en Sri Lanka o Australia, países vinculados a estos animales."
   },
   {
     "id": 20,
-    "pregunta": "¿Qué significa 'took some photos'?",
-    "opciones": ["compró fotos", "hizo dibujos", "sacó unas fotos", "miró unas fotos"],
-    "respuestaCorrecta": 2,
-    "explicacion": "Es la expresión correcta para 'hacer fotos' usando el pasado del verbo 'take'."
+    "pregunta": "En la canción, ¿qué se dice sobre todos los animales del mundo?",
+    "opciones": ["Some are bad", "They are all big", "They are all scary", "Every animal has a place on this Earth"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La canción de la lección 3 enseña que cada animal, grande o pequeño, tiene su lugar en la Tierra."
   },
   {
     "id": 21,
-    "pregunta": "¿Qué compró Fran en la maratón?",
-    "opciones": ["a present", "a snack", "a book", "a drink"],
-    "respuestaCorrecta": 1,
-    "explicacion": "Fran dice: 'I bought a snack for you, too'."
+    "pregunta": "¿Qué animal de la canción es 'scarier than a baboon'?",
+    "opciones": ["A lion", "A meerkat", "A giraffe", "A goat"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La letra indica: 'A lion is more dangerous than a...', y asocia la peligrosidad/miedo con los grandes depredadores."
   },
   {
     "id": 22,
-    "pregunta": "¿Qué recibió Bobbi Gibb?",
-    "opciones": ["got a letter", "got a medal", "got a present", "got a photo"],
-    "respuestaCorrecta": 0,
-    "explicacion": "El texto menciona que Bobbi 'got a letter' de la Maratón de Boston."
+    "pregunta": "Si un adjetivo termina en 'y' como 'friendly', ¿cómo se forma su superlativo?",
+    "opciones": ["most friendly", "unfriendliest", "friendlyest", "more friendly"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tabla gramatical muestra 'unfriendliest' como ejemplo de transformación de la 'y' en 'i' más '-est'."
   },
   {
     "id": 23,
-    "pregunta": "¿En qué posición terminó Bobbi Gibb la carrera?",
-    "opciones": ["1st", "540th", "23rd", "125th"],
-    "respuestaCorrecta": 3,
-    "explicacion": "El texto dice: 'Bobbi was the 125th person to finish'."
+    "pregunta": "¿Qué animal se menciona que puede trepar a los árboles ('climb a tree')?",
+    "opciones": ["Elephant", "Crocodile", "Leopard", "Hippo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "En la lección 8, se pide identificar animales que trepan árboles; el leopardo es el ejemplo típico en estos contextos."
   },
   {
     "id": 24,
-    "pregunta": "¿Cuántos corredores había en total en la maratón de 1966?",
-    "opciones": ["125", "1966", "540", "1972"],
-    "respuestaCorrecta": 2,
-    "explicacion": "El texto informa: 'There were 540 runners'."
+    "pregunta": "¿Qué significa 'stripy'?",
+    "opciones": ["Con manchas", "Con flores", "Liso", "Con rayas"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El vocabulario de la lección 6 utiliza 'stripy' para describir las rayas de las cebras."
   },
   {
     "id": 25,
-    "pregunta": "¿En qué año se permitió oficialmente a las mujeres correr maratones?",
-    "opciones": ["1966", "1972", "1980", "1950"],
-    "respuestaCorrecta": 1,
-    "explicacion": "El texto indica: 'Six years later, in 1972, women were allowed to run in marathons for the first time'."
+    "pregunta": "¿Qué sonido tiene la palabra 'guitar'?",
+    "opciones": ["/g/ sound", "/dʒ/ sound", "/j/ sound", "/h/ sound"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se clasifica como sonido /g/ porque la 'g' no va seguida de e, i o y."
   },
   {
     "id": 26,
-    "pregunta": "¿Qué mensaje transmite la sección 'Take part'?",
-    "opciones": ["Be brave when things are difficult", "Don't run marathons", "Only men can run", "Shopping is fun"],
-    "respuestaCorrecta": 0,
-    "explicacion": "El lema del libro es animar a ser valientes cuando las cosas son difíciles."
+    "pregunta": "En la historia, ¿qué piensa Baboon sobre el estanque ('the pond')?",
+    "opciones": ["He thinks it's for everyone", "He thinks that the pond is his", "He thinks the pond is dirty", "He thinks the pond is small"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La viñeta 2 dice: 'He thinks that the pond is his', mostrando su actitud egoísta."
   },
   {
     "id": 27,
-    "pregunta": "¿Qué le pasó al niño del ejemplo de valentía?",
-    "opciones": ["He lost his phone", "He made a mistake", "He missed his lesson", "He broke his leg"],
-    "respuestaCorrecta": 3,
-    "explicacion": "El niño explica: 'I was on my skateboard and I broke my leg'."
+    "pregunta": "¿Qué animal de estos es 'the unfriendliest' en la gramática de la página 54?",
+    "opciones": ["Giraffe", "Zebra", "Baboon", "Meerkat"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tabla de gramática utiliza a Baboon como ejemplo del animal más antipático (unfriendliest)."
   },
   {
     "id": 28,
-    "pregunta": "¿Por qué fue valiente la niña en su actuación de danza?",
-    "opciones": ["Because she won a prize", "Because she didn't dance", "Because she did her dance again after a mistake", "Because she bought a snack"],
-    "respuestaCorrecta": 2,
-    "explicacion": "Ella dice: 'I was brave because I did my dance again and that time it was good'."
+    "pregunta": "¿Qué adjetivo describe algo que tiene manchas como un leopardo?",
+    "opciones": ["Stripy", "Colourful", "Amazing", "Spotty"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El vocabulario de la lección 6 incluye 'spotty' para referirse a animales con manchas (moteados)."
   },
   {
     "id": 29,
-    "pregunta": "¿Cómo se pregunta '¿Hiciste una tarta?' en pasado?",
-    "opciones": ["You made a cake?", "Did you make a cake?", "Do you make a cake?", "Did you made a cake?"],
-    "respuestaCorrecta": 1,
-    "explicacion": "Las preguntas en pasado simple empiezan con 'Did' seguido del sujeto y el verbo en infinitivo."
+    "pregunta": "Completa la frase de la historia: 'Go away! I’m the most _____ animal here!'.",
+    "opciones": ["important", "frightened", "difficult", "unfriendly"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Baboon se autodenomina el animal más importante en la viñeta 2."
   },
   {
     "id": 30,
-    "pregunta": "¿Cuál es la respuesta corta afirmativa para 'Did he go for a run?'?",
-    "opciones": ["Yes, he did.", "Yes, he does.", "Yes, he went.", "Yes, did he."],
-    "respuestaCorrecta": 0,
-    "explicacion": "Las respuestas cortas afirmativas usan 'Yes' + sujeto + 'did'."
+    "pregunta": "¿Qué animal suele estar a menudo en el agua según el repaso?",
+    "opciones": ["Cheetah", "Crocodile", "Giraffe", "Lion"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cocodrilo es el animal acuático por excelencia mencionado en la lección 1 y el repaso."
   },
   {
     "id": 31,
-    "pregunta": "¿Cuál es la respuesta corta negativa para 'Did they buy a snack?'?",
-    "opciones": ["No, they don't.", "No, they didn't.", "No, they not buy.", "No, didn't they."],
-    "respuestaCorrecta": 1,
-    "explicacion": "Las respuestas cortas negativas usan 'No' + sujeto + 'didn't'."
+    "pregunta": "¿Qué sonido tiene la palabra 'flamingo'?",
+    "opciones": ["/dʒ/ sound", "/f/ sound", "/g/ sound", "/j/ sound"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La palabra 'flamingo' empieza por /f/ pero en la lección se estudia su 'g' interna como sonido /g/."
   },
   {
     "id": 32,
-    "pregunta": "¿Qué actividad corresponde a la imagen de un libro?",
-    "opciones": ["wrote a story", "read a book", "went to the library", "made a cake"],
-    "respuestaCorrecta": 1,
-    "explicacion": "En las actividades de repaso, el icono de un libro abierto se asocia con 'read a book'."
+    "pregunta": "¿Cuál es el antónimo (opuesto) de 'friendly' según el vocabulario?",
+    "opciones": ["Important", "Amazing", "Difficult", "Unfriendly"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La unidad presenta 'unfriendly' (antipático) como el opuesto de 'friendly'."
   },
   {
     "id": 33,
-    "pregunta": "Si alguien te pregunta 'Did you have a nice weekend?' y no fue así, respondes:",
-    "opciones": ["No, I don't.", "No, I didn't.", "Yes, I did.", "No, I not had."],
-    "respuestaCorrecta": 1,
-    "explicacion": "Es la forma gramatical correcta de la respuesta corta negativa en pasado."
+    "pregunta": "¿Qué animal es 'larger than a zebra' en la canción?",
+    "opciones": ["An elephant", "A meerkat", "A hyena", "A baboon"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La canción afirma: 'An elephant is larger than a zebra'."
   },
   {
     "id": 34,
-    "pregunta": "¿Qué actividad significa 'ver a los amigos'?",
-    "opciones": ["see friends", "saw friends", "did friends", "went friends"],
-    "respuestaCorrecta": 0,
-    "explicacion": "La expresión que aparece en el vocabulario es 'see friends'."
+    "pregunta": "¿Qué le pasó a Baboon al final de la historia?",
+    "opciones": ["He stayed in the water", "He flies up high", "He makes a fire", "He gets stripes"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La viñeta 6 dice que Baboon vuela alto tras el enfrentamiento con Zebra."
   },
   {
     "id": 35,
-    "pregunta": "Completa: 'Did she _____ some photos?'",
-    "opciones": ["took", "takes", "taking", "take"],
-    "respuestaCorrecta": 3,
-    "explicacion": "En las preguntas con 'Did', el verbo debe ir en su forma base (infinitivo sin to)."
+    "pregunta": "¿Cómo se dice 'el más asustado' en inglés?",
+    "opciones": ["the frightenedest", "the more frightened", "the most frightened", "the best frightened"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Al ser un adjetivo largo, 'frightened' forma el superlativo con 'the most'."
   },
   {
     "id": 36,
-    "pregunta": "¿Cómo se dice 'clase de piano' en inglés?",
-    "opciones": ["piano class", "piano lesson", "piano school", "piano teacher"],
-    "respuestaCorrecta": 1,
-    "explicacion": "El texto utiliza repetidamente el término 'piano lesson'."
+    "pregunta": "¿Qué animal aparece en la foto de la lección 7 sobre parques de vida salvaje?",
+    "opciones": ["A koala", "A tiger", "A polar bear", "A red panda"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La imagen de la lección 7 muestra a un panda rojo (red panda)."
   },
   {
     "id": 37,
-    "pregunta": "¿Qué palabra rima con 'blue' y tiene sonido /j/ o /dʒ/ en el poema de Jack?",
-    "opciones": ["yoghurt", "you", "jelly", "juggles"],
-    "respuestaCorrecta": 1,
-    "explicacion": "En el poema de Young Jack, 'blue' rima con el sonido final de 'too' o se asocia con el contexto de 'you'."
+    "pregunta": "En la fonética, ¿qué palabra rima con 'goat'?",
+    "opciones": ["boat", "giraffe", "orange", "gym"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El poema de la página 50 hace rimar 'goat' con 'boat' y 'coat'."
   },
   {
     "id": 38,
-    "pregunta": "¿Qué prenda de vestir azul lleva Young Jack?",
-    "opciones": ["jacket", "jeans", "jumper", "jersey"],
-    "respuestaCorrecta": 0,
-    "explicacion": "El poema dice: 'He wears a jacket that's blue'."
+    "pregunta": "¿Qué adjetivo describe algo que es 'increíble'?",
+    "opciones": ["Aggressive", "Amazing", "Difficult", "Important"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El vocabulario de la lección 5 incluye 'amazing' para describir cosas asombrosas."
   },
   {
     "id": 39,
-    "pregunta": "¿Qué comida sirve Jack?",
-    "opciones": ["chocolate cake", "yoghurt and jelly", "a snack", "a present"],
-    "respuestaCorrecta": 1,
-    "explicacion": "El poema indica: 'He serves you yoghurt and jelly'."
+    "pregunta": "Completa con el superlativo: 'Giraffe is the most _____ animal at the pond'.",
+    "opciones": ["aggressive", "stripy", "nervous", "selfish"],
+    "respuestaCorrecta": 2,
+    "explicacion": "En la página 54 se menciona que la jirafa es el animal más nervioso en el estanque."
   },
   {
     "id": 40,
-    "pregunta": "¿Cuál es el infinitivo del verbo 'saw'?",
-    "opciones": ["seen", "sow", "see", "sight"],
-    "respuestaCorrecta": 2,
-    "explicacion": "La tabla de verbos muestra 'see' como la forma base de 'saw'."
+    "pregunta": "¿Qué sonido tiene la palabra 'orange'?",
+    "opciones": ["/g/ sound", "/o/ sound", "/r/ sound", "/dʒ/ sound"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La 'g' en 'orange' suena /dʒ/ porque está antes de la letra 'e'."
   },
   {
     "id": 41,
-    "pregunta": "¿Cuál es el infinitivo del verbo 'had'?",
-    "opciones": ["has", "have", "having", "haves"],
-    "respuestaCorrecta": 1,
-    "explicacion": "La tabla de verbos muestra 'have' como la forma base de 'had'."
+    "pregunta": "¿Qué hace Zebra para detener a Baboon?",
+    "opciones": ["He runs at Baboon", "He gives him a snack", "He calls a lion", "He goes to sleep"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La viñeta 6 dice: 'Zebra runs at Baboon' para enfrentarse a él."
   },
   {
     "id": 42,
-    "pregunta": "¿Cuál es el infinitivo del verbo 'bought'?",
-    "opciones": ["buy", "bring", "boughten", "buys"],
-    "respuestaCorrecta": 0,
-    "explicacion": "La tabla de verbos muestra 'buy' como la forma base de 'bought'."
+    "pregunta": "¿Cómo se pregunta '¿Cuál es el animal más peligroso?'?",
+    "opciones": ["Which is the more dangerous animal?", "What is the most dangerous animal?", "What animal is dangerouser?", "Who is the dangerous animal?"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las preguntas sobre superlativos usan 'What is the most...' para adjetivos largos."
   },
   {
     "id": 43,
-    "pregunta": "¿Cómo dirías 'Nosotros no compramos un regalo'?",
-    "opciones": ["We no buy a present", "We didn't bought a present", "We not buy a present", "We didn't buy a present"],
-    "respuestaCorrecta": 3,
-    "explicacion": "Se utiliza 'didn't' más el infinitivo 'buy'."
+    "pregunta": "¿Qué animal es 'faster than a lion'?",
+    "opciones": ["A crocodile", "A hyena", "A cheetah", "A meerkat"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La canción de la unidad afirma que el guepardo (cheetah) es más rápido que el león."
   },
   {
     "id": 44,
-    "pregunta": "¿Qué hizo Lucy según los dibujos de la página 37?",
-    "opciones": ["She made a cake", "She read a book", "She saw her friends", "She wrote a story"],
-    "respuestaCorrecta": 1,
-    "explicacion": "El ejemplo de mediación dice: 'She read a book' refiriéndose a Lucy."
+    "pregunta": "¿Cuál es un adjetivo de personalidad mencionado en la unidad?",
+    "opciones": ["Tall", "Blue", "Large", "Aggressive"],
+    "respuestaCorrecta": 3,
+    "explicacion": "A diferencia de los físicos, 'aggressive' describe el comportamiento o personalidad de Zebra en la historia."
   },
   {
     "id": 45,
-    "pregunta": "En el juego 'Guess who?', si alguien pregunta 'Did he go to the library?' y la respuesta es afirmativa, se dice:",
-    "opciones": ["Yes, he does.", "Yes, he did.", "Yes, he goes.", "Yes, he is."],
-    "respuestaCorrecta": 1,
-    "explicacion": "Es la respuesta corta afirmativa estándar en pasado simple para el pronombre 'he'."
+    "pregunta": "¿Qué objeto usa Baboon en la historia que causa problemas?",
+    "opciones": ["A fire", "A book", "A hat", "A ball"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En la viñeta 4, Baboon está junto a un fuego (fire) impidiendo que otros beban."
   },
   {
     "id": 46,
-    "pregunta": "¿Qué actividad no se puede hacer en casa según la lección 1?",
-    "opciones": ["go shopping", "read a book", "make a cake", "write a story"],
-    "respuestaCorrecta": 0,
-    "explicacion": "Ir de compras ('go shopping') requiere salir de casa."
+    "pregunta": "¿Qué animal es 'more dangerous' que una hiena en la canción?",
+    "opciones": ["A meerkat", "A lion", "A flamingo", "A zebra"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La canción indica: 'A lion is more dangerous than a hyena'."
   },
   {
     "id": 47,
-    "pregunta": "¿Qué hizo Harry el fin de semana?",
-    "opciones": ["He had a piano lesson", "He made a cake", "He went for a run", "He went shopping"],
-    "respuestaCorrecta": 3,
-    "explicacion": "Harry dice en el diálogo: 'Oh, and I went shopping yesterday'."
+    "pregunta": "¿Cómo se siente Zebra en la viñeta 6?",
+    "opciones": ["Frightened", "Happy", "Angry", "Thirsty"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto dice: 'When Zebra is angry he’s also aggressive'."
   },
   {
     "id": 48,
-    "pregunta": "¿Qué compró Harry para el cumpleaños de Layla?",
-    "opciones": ["a book", "a cake", "a T-shirt", "a snack"],
-    "respuestaCorrecta": 2,
-    "explicacion": "Harry dice: 'It's the T-shirt she saw last weekend'."
+    "pregunta": "¿Qué sonido tiene la palabra 'giraffe'?",
+    "opciones": ["/g/ sound", "/j/ sound", "/s/ sound", "/dʒ/ sound"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La 'g' de 'giraffe' suena /dʒ/ porque va antes de la letra 'i'."
   },
   {
     "id": 49,
-    "pregunta": "¿Por qué Harry no tuvo clase de piano?",
-    "opciones": ["He was on holiday", "His teacher was on holiday", "He went shopping", "He was ill"],
-    "respuestaCorrecta": 1,
-    "explicacion": "Harry explica: 'I didn't have a piano lesson because my teacher was on holiday'."
+    "pregunta": "¿Cuál es la forma correcta del superlativo para 'important'?",
+    "opciones": ["the most important", "the importantest", "the more important", "the best important"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Al ser un adjetivo de tres sílabas, requiere 'the most' para el superlativo."
   },
   {
     "id": 50,
-    "pregunta": "Completa el negativo: 'I _____ see my friends'.",
-    "opciones": ["didn't", "don't", "no", "not"],
-    "respuestaCorrecta": 0,
-    "explicacion": "La tabla de gramática muestra 'didn't' como la partícula negativa para el pasado."
+    "pregunta": "¿Qué significa 'frightened'?",
+    "opciones": ["Valiente", "Asustado", "Enfadado", "Cansado"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es el vocabulario clave de la unidad para expresar miedo, como siente la jirafa por el babuino."
   }
 ]
+```
