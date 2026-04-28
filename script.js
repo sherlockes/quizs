@@ -171,6 +171,8 @@ async function cargarRanking() {
     try {
         const res = await fetch(GOOGLE_SCRIPT_URL);
         const registros = await res.json();
+
+        console.log("Estructura del primer registro:", registros[0]);
         
         // 1. FILTRAR: Solo los registros que coincidan con el examen actual
         // reg[3] es donde guardamos el nombre del examen según tu función enviarPuntuacion
