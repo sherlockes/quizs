@@ -172,6 +172,50 @@ async function cargarRanking() {
         const res = await fetch(GOOGLE_SCRIPT_URL);
         const registros = await res.json();
         
+        // 1. FILTRAR: Solo los registros que coincidan con el examen actual
+        // reg[3] es donde guardamos el nombre del examen según tu función enviarPuntuacion
+        const registrosFiltrados = registros.filter(reg => reg[3] === currentTitle);
+
+        // 2. ORDENAR: De mayor a menor puntuación (reg[2])
+        registrosFiltrados.sort((a, b) => parseFloat(b[2]) - parseFloat(a[2]));
+
+        // 3. LIMITAR: Top 10
+        const top10 = registrosFiltrados.slice(0, 10);
+
+        let html = `
+            <h3 style="color: #2e7d32; margin-top: 20px;">🏆 Top 10: ${currentTitle}</h3>
+            <table style="width:100%; border-collapse: collapse; margin-top: 10px; font-size: 0.95rem;">
+        `;
+        
+        if (top10.length === 0) {
+            html += `<tr><td style="color:gray; padding:10px;">Aún no hay puntuaciones para este test.</td></tr>`;
+        } else {
+            top10.forEach((reg, i) => {
+                // Ajustamos índices según el orden de envío: 
+                // [0] Fecha, [1] Nombre, [2] Puntuación, [3] Examen
+                html += `
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 8px 0; color: #666; width: 30px;">${i + 1}.</td>
+                        <td style="padding: 8px 0; font-weight: 500;">${reg[1]}</td>
+                        <td style="padding: 8px 0; text-align: right; color: #2e7d32; font-weight: bold;">${reg[2]} pts</td>
+                    </tr>
+                `;
+            });
+        }
+        
+        html += "</table>";
+        document.getElementById('tabla-ranking').innerHTML = html;
+    } catch (e) {
+        console.error("Error cargando ranking:", e);
+        document.getElementById('tabla-ranking').innerHTML = "<p style='color:gray; font-size:0.8rem;'>Error al cargar el ranking.</p>";
+    }
+}
+
+async function cargarRanking_bak() {
+    try {
+        const res = await fetch(GOOGLE_SCRIPT_URL);
+        const registros = await res.json();
+        
         let html = `
             <h3 style="color: #2e7d32; margin-top: 20px;">🏆 Top 10 Global</h3>
             <table style="width:100%; border-collapse: collapse; margin-top: 10px; font-size: 0.95rem;">

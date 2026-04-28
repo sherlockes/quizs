@@ -6,34 +6,389 @@ INSTRUCCIONES:
   3. Espera a mis instrucciones específicas para realizar cambios, buscar bugs o añadir funciones.
 ---
 PROYECTO: quizs
-FECHA: 2026-04-13 10:18
+FECHA: 2026-04-28 19:57
 ---
 
 --- ESTRUCTURA COMPLETA (Excluyendo ocultos) ---
 .
-├── ai_context.txt
-├── ctx.sh
-├── cuestionarios
-│   ├── ian-5-lengua-t5.json
-│   ├── ian-5-lengua-t6.json
-│   ├── ian-5-lengua-t7.json
-│   ├── ian-5-lengua-t8.json
-│   ├── ian-5-natu-t3.json
-│   ├── ian-5-natu-t4.json
-│   ├── ian-5-soci-t3.json
-│   └── ian-5-soci-t4.json
-├── editor.html
-├── index.html
-├── index.json
-├── logo.png
-├── script.js
-└── style.css
-
-2 directories, 16 files
+./logo.png
+./index.html
+./script.js
+./editor.html
+./ctx.sh
+./readme.md
+./index.json
+./ai_context.txt
+./style.css
+./cuestionarios
+./cuestionarios/ian-5-lengua-t5.json
+./cuestionarios/ian-5-ingles-t5.json
+./cuestionarios/ian-5-natu-t3.json
+./cuestionarios/ian-5-lengua-t6.json
+./cuestionarios/ian-5-lengua-t7.json
+./cuestionarios/ian-5-lengua-t8.json
+./cuestionarios/ian-5-natu-t4.json
+./cuestionarios/ian-5-soci-t5.json
+./cuestionarios/ian-5-soci-t4.json
+./cuestionarios/ian-5-soci-t3.json
 
 --- ARCHIVOS DE MUESTRA ---
 
 --- CÓDIGO FUENTE ---
+
+--- FILE: cuestionarios/ian-5-ingles-t5.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué animal es más alto ('taller') que un elefante según la canción?",
+    "opciones": ["A giraffe", "A cheetah", "A meerkat", "A crocodile"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La letra de la canción en la lección 3 establece que la jirafa es más alta que el elefante."
+  },
+  {
+    "id": 2,
+    "pregunta": "Completa la comparación: 'A cheetah is _____ than a lion'.",
+    "opciones": ["colourful", "faster", "larger", "scarier"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la estructura de comparativos de la unidad, se asocia al guepardo con la velocidad (faster)."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cuál es el superlativo de la palabra 'bad'?",
+    "opciones": ["the baddest", "the badder", "the worst", "the most bad"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El recuadro 'Look!' de la lección 6 indica que 'bad' tiene un superlativo irregular: 'the worst'."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cómo se describe a Baboon al principio de la historia?",
+    "opciones": ["He is very kind", "He is very frightened", "He is very small", "He is unfriendly and selfish"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La historia describe el comportamiento de Baboon como poco amigable y egoísta al no querer compartir el estanque."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Qué animal es 'more colourful' que un flamenco en la canción?",
+    "opciones": ["Nothing (A flamingo is more colourful than a...)", "A zebra", "A hyena", "An elephant"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La canción utiliza al flamenco como el estándar de animal colorido en sus comparaciones."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué letra suele seguir al sonido /dʒ/ en palabras como 'giraffe' o 'orange'?",
+    "opciones": ["a, o, u", "e, i, y", "b, c, d", "l, m, n"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La sección de fonética explica que el sonido /dʒ/ aparece antes de las letras e, i, o y."
+  },
+  {
+    "id": 7,
+    "pregunta": "Según la historia, ¿por qué Giraffe bebe agua nerviosamente?",
+    "opciones": ["Because the water is hot", "Because she is not thirsty", "Because she is frightened of Baboon", "Because she is aggressive"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto de la viñeta 3 dice explícitamente: 'I’m frightened of Baboon, but I’m thirsty!'."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cuál es el superlativo correcto de 'angry'?",
+    "opciones": ["the most angry", "the angrier", "the angryest", "the angriest"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Siguiendo las reglas de gramática de la lección 6, para adjetivos que terminan en 'y' se cambia por 'i' y se añade '-est'."
+  },
+  {
+    "id": 9,
+    "pregunta": "En la sección de repaso, ¿qué animales se mencionan como en peligro de extinción ('endangered')?",
+    "opciones": ["Koalas and elephants", "Zebas and giraffes", "Lions and tigers", "Crocodiles and hyenas"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lección 8 menciona específicamente que los koalas y elefantes están en peligro de extinción."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué sonido tiene la palabra 'garden' al principio?",
+    "opciones": ["/dʒ/ sound", "/g/ sound", "/j/ sound", "/s/ sound"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tabla de pronunciación clasifica 'garden' bajo el sonido /g/ porque va antes de la letra 'a'."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué animal tiene 'the most amazing stripes'?",
+    "opciones": ["The cheetah", "The giraffe", "The zebra", "The hyena"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lección 6 confirma que la cebra consiguió las rayas más increíbles."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué hace Zebra cuando se enfada con Baboon?",
+    "opciones": ["He cries", "He goes away", "He sleeps", "He stamps his foot and makes a noise"],
+    "respuestaCorrecta": 3,
+    "explicacion": "En la viñeta 5 de la historia, Zebra patea el suelo y hace ruido al enfadarse."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Cuál es la forma correcta de decir 'el mejor' en inglés?",
+    "opciones": ["the best", "the goodest", "the better", "the most good"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El adjetivo 'good' es irregular y su forma superlativa es 'the best'."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué adjetivo significa tener miedo en inglés?",
+    "opciones": ["Amazing", "Frightened", "Aggressive", "Important"],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la historia de la cebra, los animales usan 'frightened' para expresar que tienen miedo de Baboon."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué animal es 'the most colourful' en el dibujo de la página 54?",
+    "opciones": ["The lion", "The zebra", "The butterfly", "The meerkat"],
+    "respuestaCorrecta": 2,
+    "explicacion": "En el ejercicio de 'Ask and answer', se identifica a la mariposa como el animal más colorido."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Qué sonido tiene la palabra 'gym'?",
+    "opciones": ["/g/ sound", "/s/ sound", "/i/ sound", "/dʒ/ sound"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Según la regla fonética de la lección 3, 'gym' lleva el sonido /dʒ/ porque empieza por 'g' seguida de 'y'."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué adjetivo describe a alguien que no quiere compartir y solo piensa en sí mismo?",
+    "opciones": ["Selfish", "Friendly", "Amazing", "Difficult"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En la lección 5, se usa 'selfish' para describir la actitud de Baboon con el estanque."
+  },
+  {
+    "id": 18,
+    "pregunta": "Completa la frase gramatical: 'Zebra is the _____ aggressive animal of all'.",
+    "opciones": ["more", "most", "best", "worst"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Para adjetivos largos como 'aggressive', el superlativo se forma con 'the most'."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿En qué países podrías vivir para ver koalas o elefantes según el repaso?",
+    "opciones": ["Spain or France", "USA or Canada", "Sri Lanka or Australia", "Egypt or Morocco"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lección 8 pregunta al alumno si le gustaría vivir en Sri Lanka o Australia, países vinculados a estos animales."
+  },
+  {
+    "id": 20,
+    "pregunta": "En la canción, ¿qué se dice sobre todos los animales del mundo?",
+    "opciones": ["Some are bad", "They are all big", "They are all scary", "Every animal has a place on this Earth"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La canción de la lección 3 enseña que cada animal, grande o pequeño, tiene su lugar en la Tierra."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué animal de la canción es 'scarier than a baboon'?",
+    "opciones": ["A lion", "A meerkat", "A giraffe", "A goat"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La letra indica: 'A lion is more dangerous than a...', y asocia la peligrosidad/miedo con los grandes depredadores."
+  },
+  {
+    "id": 22,
+    "pregunta": "Si un adjetivo termina en 'y' como 'friendly', ¿cómo se forma su superlativo?",
+    "opciones": ["most friendly", "unfriendliest", "friendlyest", "more friendly"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tabla gramatical muestra 'unfriendliest' como ejemplo de transformación de la 'y' en 'i' más '-est'."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Qué animal se menciona que puede trepar a los árboles ('climb a tree')?",
+    "opciones": ["Elephant", "Crocodile", "Leopard", "Hippo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "En la lección 8, se pide identificar animales que trepan árboles; el leopardo es el ejemplo típico en estos contextos."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué significa 'stripy'?",
+    "opciones": ["Con manchas", "Con flores", "Liso", "Con rayas"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El vocabulario de la lección 6 utiliza 'stripy' para describir las rayas de las cebras."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué sonido tiene la palabra 'guitar'?",
+    "opciones": ["/g/ sound", "/dʒ/ sound", "/j/ sound", "/h/ sound"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se clasifica como sonido /g/ porque la 'g' no va seguida de e, i o y."
+  },
+  {
+    "id": 26,
+    "pregunta": "En la historia, ¿qué piensa Baboon sobre el estanque ('the pond')?",
+    "opciones": ["He thinks it's for everyone", "He thinks that the pond is his", "He thinks the pond is dirty", "He thinks the pond is small"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La viñeta 2 dice: 'He thinks that the pond is his', mostrando su actitud egoísta."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué animal de estos es 'the unfriendliest' en la gramática de la página 54?",
+    "opciones": ["Giraffe", "Zebra", "Baboon", "Meerkat"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tabla de gramática utiliza a Baboon como ejemplo del animal más antipático (unfriendliest)."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué adjetivo describe algo que tiene manchas como un leopardo?",
+    "opciones": ["Stripy", "Colourful", "Amazing", "Spotty"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El vocabulario de la lección 6 incluye 'spotty' para referirse a animales con manchas (moteados)."
+  },
+  {
+    "id": 29,
+    "pregunta": "Completa la frase de la historia: 'Go away! I’m the most _____ animal here!'.",
+    "opciones": ["important", "frightened", "difficult", "unfriendly"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Baboon se autodenomina el animal más importante en la viñeta 2."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué animal suele estar a menudo en el agua según el repaso?",
+    "opciones": ["Cheetah", "Crocodile", "Giraffe", "Lion"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cocodrilo es el animal acuático por excelencia mencionado en la lección 1 y el repaso."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué sonido tiene la palabra 'flamingo'?",
+    "opciones": ["/dʒ/ sound", "/f/ sound", "/g/ sound", "/j/ sound"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La palabra 'flamingo' empieza por /f/ pero en la lección se estudia su 'g' interna como sonido /g/."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cuál es el antónimo (opuesto) de 'friendly' según el vocabulario?",
+    "opciones": ["Important", "Amazing", "Difficult", "Unfriendly"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La unidad presenta 'unfriendly' (antipático) como el opuesto de 'friendly'."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué animal es 'larger than a zebra' en la canción?",
+    "opciones": ["An elephant", "A meerkat", "A hyena", "A baboon"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La canción afirma: 'An elephant is larger than a zebra'."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué le pasó a Baboon al final de la historia?",
+    "opciones": ["He stayed in the water", "He flies up high", "He makes a fire", "He gets stripes"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La viñeta 6 dice que Baboon vuela alto tras el enfrentamiento con Zebra."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Cómo se dice 'el más asustado' en inglés?",
+    "opciones": ["the frightenedest", "the more frightened", "the most frightened", "the best frightened"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Al ser un adjetivo largo, 'frightened' forma el superlativo con 'the most'."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué animal aparece en la foto de la lección 7 sobre parques de vida salvaje?",
+    "opciones": ["A koala", "A tiger", "A polar bear", "A red panda"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La imagen de la lección 7 muestra a un panda rojo (red panda)."
+  },
+  {
+    "id": 37,
+    "pregunta": "En la fonética, ¿qué palabra rima con 'goat'?",
+    "opciones": ["boat", "giraffe", "orange", "gym"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El poema de la página 50 hace rimar 'goat' con 'boat' y 'coat'."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué adjetivo describe algo que es 'increíble'?",
+    "opciones": ["Aggressive", "Amazing", "Difficult", "Important"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El vocabulario de la lección 5 incluye 'amazing' para describir cosas asombrosas."
+  },
+  {
+    "id": 39,
+    "pregunta": "Completa con el superlativo: 'Giraffe is the most _____ animal at the pond'.",
+    "opciones": ["aggressive", "stripy", "nervous", "selfish"],
+    "respuestaCorrecta": 2,
+    "explicacion": "En la página 54 se menciona que la jirafa es el animal más nervioso en el estanque."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué sonido tiene la palabra 'orange'?",
+    "opciones": ["/g/ sound", "/o/ sound", "/r/ sound", "/dʒ/ sound"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La 'g' en 'orange' suena /dʒ/ porque está antes de la letra 'e'."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Qué hace Zebra para detener a Baboon?",
+    "opciones": ["He runs at Baboon", "He gives him a snack", "He calls a lion", "He goes to sleep"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La viñeta 6 dice: 'Zebra runs at Baboon' para enfrentarse a él."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Cómo se pregunta '¿Cuál es el animal más peligroso?'?",
+    "opciones": ["Which is the more dangerous animal?", "What is the most dangerous animal?", "What animal is dangerouser?", "Who is the dangerous animal?"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las preguntas sobre superlativos usan 'What is the most...' para adjetivos largos."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué animal es 'faster than a lion'?",
+    "opciones": ["A crocodile", "A hyena", "A cheetah", "A meerkat"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La canción de la unidad afirma que el guepardo (cheetah) es más rápido que el león."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cuál es un adjetivo de personalidad mencionado en la unidad?",
+    "opciones": ["Tall", "Blue", "Large", "Aggressive"],
+    "respuestaCorrecta": 3,
+    "explicacion": "A diferencia de los físicos, 'aggressive' describe el comportamiento o personalidad de Zebra en la historia."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué objeto usa Baboon en la historia que causa problemas?",
+    "opciones": ["A fire", "A book", "A hat", "A ball"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En la viñeta 4, Baboon está junto a un fuego (fire) impidiendo que otros beban."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué animal es 'more dangerous' que una hiena en la canción?",
+    "opciones": ["A meerkat", "A lion", "A flamingo", "A zebra"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La canción indica: 'A lion is more dangerous than a hyena'."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cómo se siente Zebra en la viñeta 6?",
+    "opciones": ["Frightened", "Happy", "Angry", "Thirsty"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto dice: 'When Zebra is angry he’s also aggressive'."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué sonido tiene la palabra 'giraffe'?",
+    "opciones": ["/g/ sound", "/j/ sound", "/s/ sound", "/dʒ/ sound"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La 'g' de 'giraffe' suena /dʒ/ porque va antes de la letra 'i'."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Cuál es la forma correcta del superlativo para 'important'?",
+    "opciones": ["the most important", "the importantest", "the more important", "the best important"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Al ser un adjetivo de tres sílabas, requiere 'the most' para el superlativo."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué significa 'frightened'?",
+    "opciones": ["Valiente", "Asustado", "Enfadado", "Cansado"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es el vocabulario clave de la unidad para expresar miedo, como siente la jirafa por el babuino."
+  }
+]
 
 --- FILE: cuestionarios/ian-5-lengua-t5.json ---
 [
@@ -3367,6 +3722,360 @@ FECHA: 2026-04-13 10:18
   }
 ]
 
+--- FILE: cuestionarios/ian-5-soci-t5.json ---
+[
+  {
+    "id": 1,
+    "pregunta": "¿En qué año se sitúa el inicio de la Edad Media tras la caída del Imperio romano?",
+    "opciones": ["En el año 476", "En el año 711", "En el año 1492", "En el año 507"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El fin del Imperio romano en el año 476 marca el comienzo de esta nueva etapa histórica."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué pueblo germánico se estableció en la Península Ibérica y creó un reino con capital en Toledo?",
+    "opciones": ["Los francos", "Los visigodos", "Los bizantinos", "Los vándalos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los visigodos fundaron un reino independiente en la Península en el siglo VI estableciendo su sede en Toledo."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cómo se llamó el territorio de la Península bajo dominio musulmán a partir del año 711?",
+    "opciones": ["Imperio Bizantino", "Reino de Asturias", "Al-Andalus", "Califato de Damasco"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Tras la conquista musulmana, casi toda la Península recibió el nombre de Al-Andalus."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál fue el periodo de mayor esplendor cultural y comercial de Al-Andalus?",
+    "opciones": ["El Reino de Granada", "Los Reinos de Taifas", "El Emirato de Córdoba", "El Califato de Córdoba"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El Califato (929-1031) fue la época de máximo desarrollo artístico, científico y económico."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Qué nombre recibían los pequeños reinos en los que se dividió Al-Andalus tras la caída del Califato?",
+    "opciones": ["Reinos de Taifas", "Condados catalanes", "Feudos", "Zocos"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La fragmentación del Califato dio lugar a numerosos reinos independientes llamados Taifas."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿En qué año terminó la Edad Media en la Península con la conquista del Reino de Granada?",
+    "opciones": ["1031", "1492", "711", "1230"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La caída de Granada y el descubrimiento de América en 1492 marcan el final de este periodo."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cómo llamaban los musulmanes al mercado, que era el centro de la actividad comercial?",
+    "opciones": ["Medina", "Alcazaba", "Zoco", "Alquería"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El zoco era el lugar donde se compraban y vendían mercancías en las ciudades andalusíes."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué técnica introdujeron los andalusíes para elevar el agua de los pozos y regar los cultivos?",
+    "opciones": ["El arado de hierro", "La bóveda de crucería", "El molino de viento", "La noria"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La noria fue una innovación técnica fundamental para mejorar la producción agrícola en Al-Andalus."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuál era la parte central de la ciudad musulmana, rodeada de murallas?",
+    "opciones": ["La medina", "El arrabal", "La judería", "La alquería"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La medina constituía el núcleo principal de la ciudad donde se situaban los edificios más importantes."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cómo se llamaba la fortaleza militar situada en la parte más alta de las ciudades de Al-Andalus?",
+    "opciones": ["Mezquita", "Alcazaba", "Hammam", "Palacio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La alcazaba servía como torre de defensa y residencia para las autoridades militares."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué edificio andalusí servía como lugar de culto para los musulmanes?",
+    "opciones": ["La Catedral", "La Sinagoga", "La Mezquita", "El Monasterio"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La mezquita es el edificio sagrado donde los fieles musulmanes acuden a rezar."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo se llama la torre de la mezquita desde la que se llama a los fieles a la oración?",
+    "opciones": ["Cimborrio", "Ábside", "Campanario", "Minarete"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El minarete o alminar es la torre característica que forma parte de las mezquitas."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué sistema social se basaba en la entrega de tierras a cambio de fidelidad y apoyo militar?",
+    "opciones": ["Feudalismo", "Democracia", "Capitalismo", "Esclavismo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El feudalismo organizaba la sociedad medieval mediante vínculos entre señores y vasallos."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Quiénes formaban parte del estamento privilegiado encargado de la defensa del territorio?",
+    "opciones": ["Los campesinos", "Los nobles", "Los artesanos", "Los burgueses"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La nobleza era el grupo guerrero que recibía tierras (feudos) a cambio de proteger el reino."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué grupo social se ocupaba del culto a Dios y de la vida espiritual de la población?",
+    "opciones": ["Los siervos", "Los caballeros", "El clero", "Los trovadores"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El clero (monjes y sacerdotes) formaba el estamento dedicado a la religión y la cultura."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cómo se llamaban los campesinos que estaban ligados a la tierra de un señor y no eran libres?",
+    "opciones": ["Hidalgos", "Vasallos", "Escuderos", "Siervos"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los siervos pertenecían al feudo del señor y debían trabajar sus tierras sin poder abandonarlas."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cuál era la parte del castillo donde residían el señor y su familia?",
+    "opciones": ["La torre del homenaje", "El patio de armas", "La barbacana", "El foso"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La torre del homenaje era la zona más protegida y el centro de poder dentro del castillo."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué nombre recibía la ceremonia en la que un noble era nombrado caballero?",
+    "opciones": ["Investidura", "Homenaje", "Coronación", "Bautismo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Tras un largo entrenamiento, el joven noble era armado caballero en una ceremonia de gran importancia."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué grupo social apareció en las ciudades formado por artesanos y comerciantes?",
+    "opciones": ["El clero", "La nobleza", "La burguesía", "Los siervos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La burguesía surgió con el crecimiento de las ciudades y no dependía del poder de los señores feudales."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cómo se organizaban los trabajadores de un mismo oficio para controlar la calidad y los precios?",
+    "opciones": ["En sindicatos", "En taifas", "En feudos", "En gremios"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los gremios eran asociaciones de artesanos (zapateros, tejedores, etc.) que regulaban su profesión."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué estilo artístico se caracteriza por muros gruesos, pocas ventanas y arcos de medio punto?",
+    "opciones": ["Románico", "Gótico", "Andalusí", "Renacentista"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El románico es un estilo rural y religioso que buscaba la solidez de las edificaciones."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Cuál es la principal característica de las catedrales góticas?",
+    "opciones": ["La ausencia de decoración", "La gran luminosidad gracias a vidrieras", "Los muros de adobe", "Las naves sin ventanas"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El gótico buscaba la altura y la luz mediante grandes ventanales con cristales de colores."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Qué tipo de arco es típico de la arquitectura gótica?",
+    "opciones": ["Arco de herradura", "Arco de medio punto", "Arco apuntado", "Arco de medio cañón"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El arco apuntado u ojival es fundamental para elevar la altura de las naves góticas."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cómo se llama el lugar donde los cristianos, musulmanes y judíos colaboraron traduciendo libros?",
+    "opciones": ["Universidad de Salamanca", "Escuela de Traductores de Toledo", "Monasterio de Silos", "Alhambra de Granada"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Toledo fue un centro cultural único donde sabios de las tres religiones compartieron conocimientos."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué religión profesaban los judíos en la España medieval?",
+    "opciones": ["Judaísmo", "Cristianismo", "Islam", "Budismo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los judíos eran una de las tres grandes culturas que convivieron en la Península durante siglos."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Cuál es el libro sagrado de la religión islámica?",
+    "opciones": ["La Biblia", "El Corán", "La Torá", "El Talmud"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El Corán recoge las enseñanzas reveladas al profeta Mahoma."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué nombre reciben los barrios donde vivían los cristianos en las ciudades de Al-Andalus?",
+    "opciones": ["Barrio judío", "Barrio mozárabe", "Barrio burgués", "Arrabal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los mozárabes eran los cristianos que mantenían su religión viviendo en territorio musulmán."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué material introdujeron los andalusíes en Europa que permitió escribir numerosos libros?",
+    "opciones": ["El pergamino", "El papiro", "La madera", "El papel"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La introducción del papel fue una gran aportación cultural de los andalusíes a Europa."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cómo llamamos a la zona de la ciudad medieval situada fuera de las murallas?",
+    "opciones": ["Arrabal", "Alcazaba", "Medina", "Judería"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los arrabales eran barrios que crecían fuera del recinto amurallado principal."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué juego de origen asiático era el pasatiempo preferido de las personas cultas en Al-Andalus?",
+    "opciones": ["Las damas", "El ajedrez", "El parchís", "Los dados"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ajedrez llegó a Europa a través de la cultura andalusí."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué tipo de bóveda es característica de las iglesias románicas?",
+    "opciones": ["Bóveda de crucería", "Bóveda plana", "Bóveda de cañón", "Bóveda de cristal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La bóveda de cañón es una estructura semicircular típica de la arquitectura románica."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cómo se llama el patio de la mezquita donde los fieles se lavan antes de rezar?",
+    "opciones": ["Patio de los Leones", "Patio de armas", "Patio de los Naranjos", "Patio de entrada"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El patio de entrada cuenta con una fuente para que los musulmanes realicen sus abluciones."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué lengua era la base de los reinos cristianos y se mezcló con palabras árabes?",
+    "opciones": ["Castellano", "Inglés", "Alemán", "Francés"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El castellano actual conserva miles de palabras de origen árabe como 'alcalde' o 'azúcar'."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cómo se llama la casa de campo andalusí donde se cultivaban frutas y hortalizas?",
+    "opciones": ["Feudo", "Alquería", "Castillo", "Monasterio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las alquerías eran pequeñas explotaciones rurales típicas del paisaje andalusí."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué planta de la iglesia medieval tiene forma de cruz?",
+    "opciones": ["Planta circular", "Planta cuadrada", "Planta de cruz latina", "Planta octogonal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Tanto el románico como el gótico utilizaban la planta de cruz latina para sus templos."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cómo se llama el rosetón en una catedral gótica?",
+    "opciones": ["Una torre de vigilancia", "Un tipo de arco apuntado", "Un foso de defensa", "Una vidriera circular de colores"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El rosetón es el gran ventanal circular decorado con vidrieras sobre las fachadas góticas."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué estamento se encontraba en la cima de la pirámide feudal y era considerado elegido por Dios?",
+    "opciones": ["El Rey", "El Duque", "El Papa", "El Emperador"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El rey era la máxima autoridad, aunque a menudo dependía del apoyo de los nobles."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cuál era la principal fuente de riqueza en la sociedad feudal?",
+    "opciones": ["La industria", "La tierra", "El oro de América", "El turismo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La agricultura era la base económica, por lo que poseer tierras (feudos) daba poder."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cómo se llamaban los artistas que recorrían castillos cantando poemas amorosos?",
+    "opciones": ["Juglares", "Siervos", "Trovadores", "Escribas"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los trovadores componían poemas e interpretaban música sobre el amor cortés."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué edificio medieval servía para defender el territorio y ofrecía refugio a los campesinos?",
+    "opciones": ["La catedral", "La mezquita", "El ayuntamiento", "El castillo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El castillo era la fortaleza principal y centro administrativo de un feudo."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿En qué zona de la Península se refugiaron los cristianos tras la invasión musulmana?",
+    "opciones": ["En el Norte", "En el Sur", "En las Islas Baleares", "En la costa mediterránea"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En las montañas del Norte surgieron los primeros núcleos de resistencia cristiana."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué gran conjunto palaciego fue la residencia de los monarcas nazaríes en Granada?",
+    "opciones": ["La Giralda", "La Alhambra", "La Mezquita de Córdoba", "El Alcázar de Toledo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Alhambra es una de las joyas de la arquitectura andalusí más famosas del mundo."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Cómo eran las calles en una ciudad medieval?",
+    "opciones": ["Anchas y rectas", "Llenas de parques modernos", "Estrechas y oscuras", "Pavimentadas con asfalto"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las ciudades medievales tenían un trazado irregular con calles angostas y a menudo sucias."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué lengua hablaban los judíos y andalusíes que vivían en los reinos cristianos?",
+    "opciones": ["Francés", "Alemán", "Italiano", "Árabe o Hebreo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La diversidad lingüística era común en la España medieval debido a la mezcla de culturas."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué parte del castillo servía para impedir el paso a los enemigos rodeando las murallas?",
+    "opciones": ["El foso", "La capilla", "El establo", "El pozo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Muchos castillos estaban rodeados por un foso con agua para dificultar el ataque."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cómo se llamaba el palacio de los gobernantes en una ciudad andalusí?",
+    "opciones": ["Mezquita", "Alcázar", "Baño público", "Hammam"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El alcázar era el palacio fortificado donde vivía el gobernante de la ciudad."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué elementos decoraban las paredes de las iglesias románicas para enseñar la Biblia?",
+    "opciones": ["Fotografías", "Tapices de seda", "Pinturas murales", "Esculturas de metal"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Como la mayoría de la gente no sabía leer, las pinturas servían para contar historias bíblicas."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Cuál era la función principal del clero en el sistema feudal?",
+    "opciones": ["Guerrear contra enemigos", "Vender productos en el mercado", "Trabajar en el huerto del rey", "Rezar por la salvación de las almas"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se decía que la sociedad se dividía en los que guerrean, los que trabajan y los que rezan."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué material decorativo muy usado en Al-Andalus consiste en dibujos geométricos de barro cocido?",
+    "opciones": ["Azulejo", "Vidrio", "Plata", "Cemento"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los azulejos con formas geométricas son una característica decorativa esencial del arte andalusí."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué sentimiento define el código de conducta de los caballeros medievales?",
+    "opciones": ["Egoísmo", "Cobardía", "Lealtad", "Desprecio"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los caballeros debían jurar lealtad a su señor y defender los valores de justicia y generosidad."
+  }
+]
+
 --- FILE: editor.html ---
 <!DOCTYPE html>
 <html lang="es">
@@ -3692,8 +4401,95 @@ FECHA: 2026-04-13 10:18
   {
     "titulo": "5º Sociales - Tema 4 (Democracia)",
     "archivo": "cuestionarios/ian-5-soci-t4.json"
+  },
+  {
+    "titulo": "5º Sociales - Tema 5 (Castillos)",
+    "archivo": "cuestionarios/ian-5-ingles-t5.json"
+  },
+  {
+    "titulo": "5º Ingles - Tema 5",
+    "archivo": "cuestionarios/ian-5-ingles-t5.json"
   }
 ]
+
+--- FILE: readme.md ---
+# 🎓 Quizs - Plataforma de Aprendizaje Primaria
+
+![Versión](https://img.shields.io/badge/version-1.0.0-blue)
+![Stack](https://img.shields.io/badge/Stack-JS%20|%20HTML%20|%20CSS-green)
+![Educational](https://img.shields.io/badge/Target-Primaria-orange)
+
+**Quizs** es una aplicación web interactiva diseñada para que estudiantes de primaria refuercen sus conocimientos en asignaturas clave como Lengua, Ciencias Naturales y Ciencias Sociales. La plataforma utiliza un motor de cuestionarios dinámico basado en archivos JSON, priorizando la ligereza y el feedback pedagógico inmediato.
+
+---
+
+## 🛠️ Stack Tecnológico
+
+- **Frontend:** Vanilla JavaScript (ES6+), HTML5, CSS3.
+- **Arquitectura de Datos:** Almacenamiento desacoplado en archivos **JSON**.
+- **Estilos:** Sistema de diseño personalizado con animaciones interactivas (`style.css`).
+- **Automatización:** Script `ctx.sh` para la gestión de contexto y documentación técnica.
+
+---
+
+## 📁 Estructura del Proyecto
+
+```text
+.
+├── cuestionarios/          # Banco de preguntas por asignatura y tema
+│   ├── ian-5-lengua-t*.json  # Unidades de Lengua
+│   ├── ian-5-natu-t*.json    # Unidades de Ciencias Naturales
+│   └── ian-5-soci-t*.json    # Unidades de Ciencias Sociales
+├── index.html              # Aplicación principal (Interfaz del Alumno)
+├── editor.html             # Herramienta de visualización de cuestionarios
+├── index.json              # Manifiesto central de contenidos disponibles
+├── script.js               # Motor lógico (Carga, validación y feedback)
+├── style.css               # Definiciones visuales y UI adaptativa
+└── ctx.sh                  # Herramienta de mantenimiento del proyecto
+```
+
+## ⚙️ Instalación y Ejecución
+Al ser una aplicación estática (SPA), no requiere de un proceso de compilación complejo.
+
+ 1. Clonar el repositorio:
+
+```Bash
+git clone [https://github.com/tu-usuario/quizs.git](https://github.com/tu-usuario/quizs.git)
+cd quizs
+```
+ 2. Ejecutar en local:
+Debido a las políticas de seguridad del navegador (CORS) al realizar peticiones fetch a archivos JSON locales, se recomienda utilizar un servidor local:
+
+ - VS Code: Instala la extensión Live Server y haz clic en "Go Live".
+
+ - Python: Ejecuta `python -m http.server 8000` en la raíz del proyecto.
+
+## 📊 Formato de los Cuestionarios
+El motor de la aplicación está diseñado para interpretar una estructura JSON específica que incluye retroalimentación didáctica:
+
+``` JSON
+{
+  "titulo": "Nombre del Tema",
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Ejemplo de pregunta?",
+      "opciones": ["Opción 0", "Opción 1", "Opción 2", "Opción 3"],
+      "respuestaCorrecta": 0,
+      "explicacion": "Información adicional para reforzar el aprendizaje tras responder."
+    }
+  ]
+}
+```
+
+## 🚀 Funcionalidades Críticas
+ - Motor de Ingesta: Carga asíncrona de temas mediante la lectura del manifiesto index.json.
+ - Feedback en Tiempo Real: Validación de respuestas con despliegue automático de la .explicacion-box.
+ - Interfaz Adaptativa: Diseño optimizado para dispositivos utilizados en entornos escolares.
+
+
+# ✒️ Autor
+Sherlockes - Proyecto Quizs - 2026. Herramienta de apoyo escolar.
 
 --- FILE: script.js ---
 const quizContainer = document.getElementById('quiz');
