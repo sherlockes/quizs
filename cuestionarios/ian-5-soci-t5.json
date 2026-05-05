@@ -342,11 +342,11 @@
     "respuestaCorrecta": 0,
     "explicacion": "Los azulejos con formas geométricas son una característica decorativa esencial del arte andalusí."
   },
-  {
-    "id": 50,
-    "pregunta": "¿Qué sentimiento define el código de conducta de los caballeros medievales?",
-    "opciones": ["Egoísmo", "Cobardía", "Lealtad", "Desprecio"],
-    "respuestaCorrecta": 1,
-    "explicacion": "Los caballeros debían jurar lealtad a su señor y defender los valores de justicia y generosidad."
-  }
+{
+  "id": 50,
+  "pregunta": "¿Cuál de los siguientes es uno de los valores de la caballería que un noble debía comprometerse a respetar?",
+  "opciones": ["Egoísmo", "Cobardía", "Lealtad", "Desprecio"],
+  "respuestaCorrecta": 2,
+  "explicacion": "Para poder ser armado caballero, el noble debía jurar respeto a los valores de la caballería: valor, humildad, justicia, generosidad y lealtad."
+}
 ]
