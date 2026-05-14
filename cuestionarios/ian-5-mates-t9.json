@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "pregunta": "Para pasar de hectómetros (hm) a metros (m), ¿qué operación matemática debemos realizar?",
+    "pregunta": "Para pasar de hectómetros (hm) a metros (m), se debe:",
     "opciones": [
       "Multiplicar por 100",
       "Dividir entre 100",
@@ -9,35 +9,35 @@
       "Dividir entre 10"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "En la escala del sistema métrico decimal, para pasar de una unidad a otra menor se multiplica. De hm a m bajamos dos posiciones, por lo que multiplicamos por 100 (10 x 10)."
+    "explicacion": "Al bajar dos peldaños en la escala de longitud (de hm a dam, y de dam a m), se multiplica por 10 en cada paso, es decir, 10 x 10 = 100."
   },
   {
     "id": 2,
-    "pregunta": "¿Cómo se expresa la medida 7,2 decámetros (dam) en centímetros (cm)?",
+    "pregunta": "¿Cuántos centímetros son 7,2 decámetros (dam)?",
     "opciones": [
       "72 cm",
       "7.200 cm",
-      "72.000 cm",
+      "720 cm",
       "0,72 cm"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Para convertir de dam a cm se dan tres saltos hacia unidades menores, por lo que se multiplica por 1.000. Así, 7,2 x 1.000 = 7.200 cm, afianzando la conversión de medidas."
+    "explicacion": "Se deben dar tres saltos en la escala hacia unidades menores, lo que implica multiplicar por 1.000. Así, 7,2 x 1.000 = 7.200 cm."
   },
   {
     "id": 3,
-    "pregunta": "Según la información de la unidad, ¿cuál es el tamaño aproximado de una bacteria?",
+    "pregunta": "Si una bacteria mide 0,002 en una unidad muy pequeña, ¿qué unidad métrica le corresponde según los ejemplos dados?",
     "opciones": [
-      "0,02 mm",
-      "0,2 mm",
-      "0,002 mm",
-      "2 mm"
+      "Metros (m)",
+      "Centímetros (cm)",
+      "Milímetros (mm)",
+      "Decímetros (dm)"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "Las bacterias son microscópicas. El texto indica que miden 0,002 mm, lo que sirve para enseñar a los alumnos a aplicar unidades muy pequeñas a la vida real."
+    "explicacion": "Los ejemplos sobre medidas microscópicas indican que una bacteria mide 0,002 mm, contextualizando los milímetros."
   },
   {
     "id": 4,
-    "pregunta": "¿Cuál es la unidad principal que utilizamos para medir la capacidad?",
+    "pregunta": "¿Cuál es la unidad principal que utilizamos como referencia para medir la capacidad?",
     "opciones": [
       "El metro",
       "El gramo",
@@ -45,23 +45,23 @@
       "El litro"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "Se enseña que el litro es la unidad de referencia principal para medir capacidades de líquidos en nuestro sistema, situándose en el centro de la escala."
+    "explicacion": "El litro es la unidad central en el sistema de medidas de capacidad, a partir de la cual se derivan los múltiplos y submúltiplos."
   },
   {
     "id": 5,
-    "pregunta": "¿Qué cantidad de litros representa un kilolitro (kl)?",
+    "pregunta": "Para pasar de kilolitros (kl) a litros (l) hay que:",
     "opciones": [
-      "1.000 litros",
-      "100 litros",
-      "10 litros",
-      "10.000 litros"
+      "Multiplicar por 1.000",
+      "Dividir entre 1.000",
+      "Multiplicar por 100",
+      "Dividir entre 100"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "El prefijo 'kilo' indica mil. Para pasar de kilolitros a litros bajamos tres posiciones en la escala multiplicando por 1.000."
+    "explicacion": "El prefijo kilo significa mil. Bajar tres posiciones en la escala requiere multiplicar por 1.000."
   },
   {
     "id": 6,
-    "pregunta": "En la dieta mediterránea de 2020, ¿cuál fue el consumo medio anual de fruta por persona?",
+    "pregunta": "Según los datos de la dieta mediterránea de 2020, el consumo medio anual de fruta por persona fue:",
     "opciones": [
       "47,0 kg",
       "54,4 kg",
@@ -69,23 +69,23 @@
       "36,6 kg"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "El consumo medio anual de fruta fue de 54,4 kg, dato que permite a los estudiantes interpretar tablas y estadísticas reales sobre alimentación."
+    "explicacion": "Los gráficos estadísticos reales indican que se consumieron 54,4 kg de fruta, trabajando la lectura de decimales en contexto."
   },
   {
     "id": 7,
-    "pregunta": "¿Qué cantidad de leche se considera adecuada para una ración normal de consumo?",
+    "pregunta": "El consumo medio anual de verduras por persona en 2020 fue:",
     "opciones": [
-      "100/150 ml",
-      "500/600 ml",
-      "200/250 ml",
-      "50/100 ml"
+      "36,6 kg",
+      "68,1 kg",
+      "47,0 kg",
+      "54,4 kg"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "El peso o volumen de una ración sirve para entender proporciones. En el caso de la leche, una ración se cuantifica entre 200 y 250 ml."
+    "explicacion": "El gráfico muestra 47,0 kg para las verduras, afianzando la interpretación de datos numéricos y nutrición."
   },
   {
     "id": 8,
-    "pregunta": "En unidades de superficie, ¿a cuántos decímetros cuadrados (dm²) equivale 1 metro cuadrado (m²)?",
+    "pregunta": "En las unidades de superficie, un metro cuadrado (m²) equivale a:",
     "opciones": [
       "10 dm²",
       "1.000 dm²",
@@ -93,11 +93,11 @@
       "100 dm²"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "En las unidades de superficie, al ser bidimensionales, cada salto en la escala equivale a multiplicar o dividir por 100. Así, 1 m² = 100 dm²."
+    "explicacion": "Como las unidades de superficie son bidimensionales, cada salto de la escala implica un factor de 100. 1 m² = 100 dm²."
   },
   {
     "id": 9,
-    "pregunta": "Para transformar decímetros cuadrados (dm²) en centímetros cuadrados (cm²), debemos:",
+    "pregunta": "Para transformar decímetros cuadrados (dm²) a centímetros cuadrados (cm²), debemos:",
     "opciones": [
       "Multiplicar por 100",
       "Dividir entre 100",
@@ -105,23 +105,23 @@
       "Dividir entre 10.000"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "Bajar un escalón en medidas de superficie implica multiplicar por 100, ya que el área crece al cuadrado (10x10). Por ello, 1 dm² = 100 cm²."
+    "explicacion": "Al bajar un nivel en la escala de superficies, se multiplica el valor por 100."
   },
   {
     "id": 10,
-    "pregunta": "¿Cuánto pesa una moneda de 2 euros?",
+    "pregunta": "¿Cuál es el peso aproximado recomendado para una ración normal de fruta?",
     "opciones": [
-      "7,8 g",
-      "8,5 g",
-      "3,92 g",
-      "2,3 g"
+      "50 a 80 g",
+      "120 a 200 g",
+      "20 a 30 g",
+      "300 a 400 g"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Identificar el peso de objetos cotidianos afianza la intuición sobre la masa. La moneda de 2 euros pesa 8,5 g."
+    "explicacion": "En el esquema de porciones se establece que una ración estándar de fruta se encuentra entre 120 y 200 gramos."
   },
   {
     "id": 11,
-    "pregunta": "Si utilizamos una taza para medir repostería, ¿cuántos gramos de harina caben aproximadamente en una taza?",
+    "pregunta": "En las equivalencias de repostería, una taza de harina pesa aproximadamente:",
     "opciones": [
       "225 g",
       "135 g",
@@ -129,11 +129,11 @@
       "210 g"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "En la tabla de equivalencias prácticas se establece que 1 taza de harina pesa 120 g, útil para resolver problemas domésticos de matemáticas."
+    "explicacion": "La tabla de tazas a gramos indica que la harina tiene una masa de 120 g por taza."
   },
   {
     "id": 12,
-    "pregunta": "De un jamón de 8 kg, la parte aprovechable es el 60%. ¿Cuántos kilos de lonchas obtenemos?",
+    "pregunta": "Un jamón pesa 8 kg y la parte aprovechable para lonchas es el 60%. ¿Cuántos kilos se pueden aprovechar?",
     "opciones": [
       "3,2 kg",
       "4,0 kg",
@@ -141,11 +141,11 @@
       "4,8 kg"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "Cálculo de porcentajes aplicado: el 60% de 8 kg se halla multiplicando 8 por 0,60 o (8 x 60)/100, resultando en 4,8 kg."
+    "explicacion": "El cálculo del porcentaje se realiza multiplicando 8 por 0,60, obteniendo 4,8 kg de parte aprovechable."
   },
   {
     "id": 13,
-    "pregunta": "En el hogar, ¿cuántos litros de agua se gastan aproximadamente al darse un baño?",
+    "pregunta": "En el cálculo del coste del agua, darse un baño gasta aproximadamente:",
     "opciones": [
       "150 litros",
       "45 litros",
@@ -153,11 +153,11 @@
       "100 litros"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "Problema de concienciación sobre recursos: darse un baño gasta unos 150 litros de agua, en contraste con otras acciones como la ducha."
+    "explicacion": "La tabla comparativa muestra que llenar una bañera requiere unos 150 litros de agua."
   },
   {
     "id": 14,
-    "pregunta": "Si lavas los platos a mano, ¿cuánta agua se estima que consumes?",
+    "pregunta": "Si lavas los platos a mano en lugar de usar el lavavajillas, ¿cuántos litros de agua consumes?",
     "opciones": [
       "30 litros",
       "45 litros",
@@ -165,11 +165,11 @@
       "60 litros"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Lavar los platos a mano requiere un consumo estimado de 45 litros, un dato empleado para comparar el ahorro frente a lavar a máquina."
+    "explicacion": "El lavado manual consume 45 litros, lo cual permite comparar y resolver problemas de ahorro frente a los 30 litros de la máquina."
   },
   {
     "id": 15,
-    "pregunta": "Para hacer gazpacho para 8 personas se necesitan 1,750 kg de tomate. ¿Cuánto tomate haría falta para 4 personas?",
+    "pregunta": "La receta del gazpacho para 8 personas requiere 1,750 kg de tomate. ¿Cuánto se necesita para 4 personas?",
     "opciones": [
       "1,000 kg",
       "3,500 kg",
@@ -177,11 +177,11 @@
       "0,500 kg"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "Uso de proporcionalidad directa: si para 8 personas es 1,750 kg, para la mitad (4 personas) se divide la cantidad entre 2, obteniendo 0,875 kg."
+    "explicacion": "Por proporcionalidad, al ser la mitad de comensales, se divide la cantidad entre dos, dando 0,875 kg."
   },
   {
     "id": 16,
-    "pregunta": "En una cooperativa, el 70% comenzó a las 5, el 15% a las 7 y el resto a las 9. ¿Qué porcentaje empezó a las 9?",
+    "pregunta": "En una cooperativa, el 70% entró a las 5, el 15% a las 7 y el resto a las 9. ¿Qué porcentaje entró a las 9?",
     "opciones": [
       "25%",
       "5%",
@@ -189,11 +189,11 @@
       "15%"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "Suma de porcentajes hasta el total (100%): 70% + 15% = 85%. Faltaría un 15% para completar el grupo de personas."
+    "explicacion": "La suma total debe ser 100%. Restamos a 100 la suma de 70 y 15 (85), resultando un 15%."
   },
   {
     "id": 17,
-    "pregunta": "Un terreno mide 30.000 m². Se quieren cosechar dos quintos (2/5) del terreno. ¿Cuántos metros cuadrados son?",
+    "pregunta": "Cosechar dos quintos (2/5) de un terreno de 30.000 m² equivale a:",
     "opciones": [
       "12.000 m²",
       "6.000 m²",
@@ -201,11 +201,11 @@
       "24.000 m²"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "Fracción de un número: se divide la cantidad total (30.000) por el denominador (5) y se multiplica por el numerador (2). El resultado es 12.000 m²."
+    "explicacion": "Se calcula la fracción de un número dividiendo el total entre 5 y multiplicando por 2, lo que da 12.000 m²."
   },
   {
     "id": 18,
-    "pregunta": "¿Cómo se aproxima el número decimal 4,7 a las unidades?",
+    "pregunta": "Al aproximar el número decimal 4,7 a las unidades, el resultado correcto es:",
     "opciones": [
       "4",
       "5",
@@ -213,11 +213,11 @@
       "10"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Regla del redondeo: como la cifra de las décimas (7) es igual o mayor a 5, se suma 1 a la cifra de las unidades, resultando en 5."
+    "explicacion": "Las décimas son 7, un número mayor o igual a 5, por lo que las unidades se redondean al siguiente entero (5)."
   },
   {
     "id": 19,
-    "pregunta": "¿Cómo se expresa la fracción decimal 19/10 en forma de número decimal?",
+    "pregunta": "La fracción decimal 19/10 escrita como número decimal es:",
     "opciones": [
       "0,19",
       "19,0",
@@ -225,11 +225,11 @@
       "1,09"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "Al dividir entre 10 se corre la coma un lugar hacia la izquierda, por lo que la fracción 19/10 es el número decimal 1,9."
+    "explicacion": "Al tener un cero en el denominador (10), la coma se desplaza una posición a la izquierda: 1,9."
   },
   {
     "id": 20,
-    "pregunta": "Convierte 800 decímetros (dm) a hectómetros (hm).",
+    "pregunta": "Transformar 800 decímetros (dm) a hectómetros (hm) da como resultado:",
     "opciones": [
       "8 hm",
       "0,08 hm",
@@ -237,11 +237,11 @@
       "0,8 hm"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "Para pasar de dm a hm hay que subir tres escalones, es decir, dividir entre 1.000. Por lo tanto, 800 / 1.000 = 0,8 hm."
+    "explicacion": "Se suben tres posiciones en la escala (dm -> m -> dam -> hm), lo que requiere dividir entre 1.000."
   },
   {
     "id": 21,
-    "pregunta": "¿Cómo se escribe 5/100 como número decimal?",
+    "pregunta": "La fracción 5/100 se expresa en forma decimal como:",
     "opciones": [
       "0,05",
       "0,5",
@@ -249,11 +249,11 @@
       "0,005"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "Toda fracción con base 100 equivale a las centésimas. Se corre la coma dos lugares a la izquierda: 5 / 100 = 0,05."
+    "explicacion": "El divisor 100 indica centésimas, desplazando la coma dos posiciones a la izquierda."
   },
   {
     "id": 22,
-    "pregunta": "¿Cómo se escribe 37/1000 como número decimal?",
+    "pregunta": "La fracción 37/1000 se expresa en forma decimal como:",
     "opciones": [
       "0,37",
       "0,037",
@@ -261,11 +261,11 @@
       "0,0037"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Una fracción partida por mil representa las milésimas. Se desplaza la coma tres cifras a la izquierda, resultando en 0,037."
+    "explicacion": "El divisor 1000 marca milésimas, requiriendo tres decimales tras desplazar la coma."
   },
   {
     "id": 23,
-    "pregunta": "Según la dieta mediterránea de 2020, ¿cuál fue el consumo medio anual de pan por persona?",
+    "pregunta": "En las estadísticas de 2020, el consumo medio anual de pan por persona fue de:",
     "opciones": [
       "47,0 kg",
       "68,1 kg",
@@ -273,23 +273,23 @@
       "8,2 kg"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "El gráfico muestra que el consumo medio anual de pan es de 36,6 kg, ayudando a contextualizar cifras decimales en la vida real."
+    "explicacion": "Los datos sobre alimentación indican que el pan tuvo un consumo promedio de 36,6 kg."
   },
   {
     "id": 24,
-    "pregunta": "Según los datos de 2020, ¿cuál es el consumo medio anual de aceite de oliva?",
+    "pregunta": "El consumo medio anual de aceite de oliva por persona en 2020 fue:",
     "opciones": [
-      "54,4 l",
-      "1,4 l",
-      "37,1 l",
-      "8,2 l"
+      "54,4 litros",
+      "1,4 litros",
+      "37,1 litros",
+      "8,2 litros"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "El consumo medio de aceite de oliva se indica como 8,2 litros, ejemplo de uso de unidades de capacidad en la nutrición."
+    "explicacion": "El esquema estadístico del tema marca un consumo de 8,2 litros de aceite de oliva."
   },
   {
     "id": 25,
-    "pregunta": "Convierte 9 decámetros (dam) a milímetros (mm).",
+    "pregunta": "¿Cuántos milímetros (mm) son 9 decámetros (dam)?",
     "opciones": [
       "90.000 mm",
       "9.000 mm",
@@ -297,11 +297,11 @@
       "900 mm"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "De dam a mm bajamos cuatro posiciones, por lo que multiplicamos por 10.000. El resultado es 90.000 mm."
+    "explicacion": "De dam a mm bajamos cuatro escalones, multiplicando por 10.000. Así, 9 x 10.000 = 90.000."
   },
   {
     "id": 26,
-    "pregunta": "Transforma la superficie 45 cm² a decímetros cuadrados (dm²).",
+    "pregunta": "Para convertir 45 cm² a decímetros cuadrados (dm²), el cálculo correcto es:",
     "opciones": [
       "4.500 dm²",
       "0,45 dm²",
@@ -309,23 +309,23 @@
       "0,045 dm²"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Subir un escalón en medidas de superficie (de cm² a dm²) requiere dividir por 100. Así, 45 / 100 = 0,45 dm²."
+    "explicacion": "Al subir un nivel en medidas de superficie bidimensionales, se divide entre 100, resultando en 0,45 dm²."
   },
   {
     "id": 27,
-    "pregunta": "¿Cuánto cuesta una garrafa de 5 litros de leche según el folleto de precios?",
+    "pregunta": "Según la receta de gazpacho para 8 personas, ¿cuánta cebolla se necesita?",
     "opciones": [
-      "1,27 €",
-      "0,45 €",
-      "5,90 €",
-      "5,00 €"
+      "100 g",
+      "150 g",
+      "200 g",
+      "250 g"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "El ejercicio compara formatos de ahorro. La garrafa de 5 l tiene un precio de 5,90 €."
+    "explicacion": "La receta proporciona directamente que se requieren 200 gramos de cebolla para el gazpacho estándar."
   },
   {
     "id": 28,
-    "pregunta": "Usando una taza medidora, ¿cuántos gramos son una taza de azúcar?",
+    "pregunta": "En medidas de cocina, una taza de azúcar pesa aproximadamente:",
     "opciones": [
       "120 g",
       "135 g",
@@ -333,11 +333,11 @@
       "225 g"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "Para familiarizar con equivalencias en la cocina, la tabla indica que una taza de azúcar corresponde a 225 g."
+    "explicacion": "La tabla de equivalencias de masa especifica que una taza de azúcar corresponde a 225 g."
   },
   {
     "id": 29,
-    "pregunta": "Usando una taza medidora, ¿a cuántos gramos equivale una taza de mantequilla?",
+    "pregunta": "Una taza de mantequilla tiene un peso equivalente a:",
     "opciones": [
       "210 g",
       "120 g",
@@ -345,47 +345,47 @@
       "135 g"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "Según la tabla de equivalencias de masa, 1 taza de mantequilla equivale a 210 g."
+    "explicacion": "Según la tabla para resolver problemas, 1 taza de mantequilla pesa 210 g."
   },
   {
     "id": 30,
-    "pregunta": "¿Qué unidad de masa sería la más apropiada para medir el peso de un grano de arena?",
+    "pregunta": "Calcula mentalmente: el doble del número 241 es:",
     "opciones": [
-      "gramos (g)",
-      "miligramos (mg)",
-      "decigramos (dg)",
-      "kilogramos (kg)"
+      "442",
+      "482",
+      "241",
+      "421"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Para objetos extremadamente ligeros, la unidad más apropiada es el miligramo (mg), fomentando la lógica al elegir magnitudes."
+    "explicacion": "Duplicar mentalmente centenas, decenas y unidades (400 + 80 + 2) resulta en 482."
   },
   {
     "id": 31,
-    "pregunta": "¿Qué unidad usarías para expresar la capacidad del depósito de gasolina de un coche?",
+    "pregunta": "¿Cuántas raciones diarias de leche o lácteos se recomiendan en la dieta mediterránea?",
     "opciones": [
-      "kilolitros (kl)",
-      "mililitros (ml)",
-      "litros (l)",
-      "decilitros (dl)"
+      "1 ración",
+      "3 raciones",
+      "2 raciones",
+      "4 raciones"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "Las capacidades de tamaño medio en objetos cotidianos, como un depósito de coche, se miden estandarizadamente en litros (l)."
+    "explicacion": "El gráfico en forma de rueda indica que lo ideal son 2 raciones diarias."
   },
   {
     "id": 32,
-    "pregunta": "¿Cuál es la unidad más adecuada para medir la altura de un edificio de 20 pisos?",
+    "pregunta": "Cálculo mental: ¿cuánto le falta al número 46 para llegar a 100?",
     "opciones": [
-      "kilómetros (km)",
-      "milímetros (mm)",
-      "centímetros (cm)",
-      "metros (m)"
+      "64",
+      "44",
+      "56",
+      "54"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "La estimación lógica de distancias cotidianas como la de un edificio se hace convencionalmente en metros (m)."
+    "explicacion": "Se buscan los complementos a 100: de 46 a 50 van 4, y de 50 a 100 van 50. Total 54."
   },
   {
     "id": 33,
-    "pregunta": "En una piscina se echan 15 ml de alguicida por cada 1.000 litros. Si la piscina tiene 22 kilolitros, ¿cuánto alguicida necesita?",
+    "pregunta": "Si en una piscina se echan 15 ml de alguicida por cada 1.000 l, para 22.000 l (22 kl) se precisan:",
     "opciones": [
       "330 ml",
       "150 ml",
@@ -393,191 +393,95 @@
       "450 ml"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "22 kl son 22.000 litros. Por proporcionalidad, se multiplica la cantidad base por 22: 15 x 22 = 330 ml de alguicida."
+    "explicacion": "Regla de proporcionalidad directa: 15 ml x 22 = 330 ml."
   },
   {
     "id": 34,
-    "pregunta": "Calcula mentalmente: ¿cuánto le falta al número 46 para llegar a 100?",
+    "pregunta": "Un hectolitro de agua cuesta 15 céntimos. Poner el lavavajillas gasta 30 litros (0,3 hl). ¿Cuál es su coste?",
     "opciones": [
-      "64",
-      "54",
-      "44",
-      "56"
+      "15 céntimos",
+      "4,5 céntimos",
+      "10 céntimos",
+      "6,75 céntimos"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Técnica de cálculo mental complementario a la centena: a 46 se le suma 4 para llegar a 50, y 50 más para llegar a 100, resultando 54."
+    "explicacion": "Al multiplicar el consumo en hectolitros por el precio (0,3 x 15), se obtiene un coste de 4,5 céntimos."
   },
   {
     "id": 35,
-    "pregunta": "Calcula mentalmente: ¿cuánto le falta al número 75 para llegar a 100?",
+    "pregunta": "El resultado de sumar las fracciones 9/10 + 4/10 + 5/10 es:",
     "opciones": [
-      "15",
-      "35",
-      "25",
-      "20"
+      "18/30",
+      "9/30",
+      "18/10",
+      "18/100"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "El complemento de 75 a 100 es un cálculo fundamental con cuartos de centena, resultando 25."
+    "explicacion": "Al tener el mismo denominador, solo se suman los numeradores y se mantiene la base (18/10)."
   },
   {
     "id": 36,
-    "pregunta": "Calcula el doble del número 241.",
+    "pregunta": "Para el arroz o la pasta, el peso de una ración normal se estima en:",
     "opciones": [
-      "442",
-      "421",
-      "241",
-      "482"
+      "20 a 30 g",
+      "40 a 60 g",
+      "120 a 200 g",
+      "60 a 80 g"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "El doble de un número requiere multiplicar por dos mentalmente cada cifra de su descomposición: 200x2=400, 40x2=80, 1x2=2. Total 482."
+    "explicacion": "La infografía de porciones señala que una ración de arroz o pasta pesa entre 60 y 80 gramos."
   },
   {
     "id": 37,
-    "pregunta": "Si sumamos las fracciones 9/10 + 4/10 + 5/10, ¿cuál es el resultado?",
+    "pregunta": "Un metro cuadrado (m²) equivale en centímetros cuadrados (cm²) a:",
     "opciones": [
-      "18/10",
-      "18/30",
-      "9/30",
-      "18/100"
+      "10.000 cm²",
+      "1.000 cm²",
+      "100.000 cm²",
+      "10 cm²"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "En la suma de fracciones con el mismo denominador, se suman solo los numeradores (9+4+5=18) dejando el denominador intacto: 18/10."
+    "explicacion": "Dos saltos en superficie implican multiplicar por 10.000 (100 x 100), por lo que 1 m² = 10.000 cm²."
   },
   {
     "id": 38,
-    "pregunta": "¿Qué unidad usarías para medir la distancia entre dos pueblos?",
-    "opciones": [
-      "Metros (m)",
-      "Kilómetros (km)",
-      "Hectómetros (hm)",
-      "Decámetros (dam)"
-    ],
-    "respuestaCorrecta": 1,
-    "explicacion": "Las grandes distancias en itinerarios terrestres se asocian lógicamente a los kilómetros (km)."
-  },
-  {
-    "id": 39,
-    "pregunta": "En un plano, el salón mide 20 m². Si lo dividimos a la mitad, ¿cuánto mediría esa mitad?",
-    "opciones": [
-      "5 m²",
-      "2 m²",
-      "10 m²",
-      "15 m²"
-    ],
-    "respuestaCorrecta": 2,
-    "explicacion": "Las superficies se fraccionan igual que las unidades lineales. La mitad de 20 m² son 10 m²."
-  },
-  {
-    "id": 40,
-    "pregunta": "Un hectolitro de agua cuesta 15 céntimos. Si te das una ducha que gasta 45 litros, ¿cuál será el coste en céntimos aproximadamente?",
-    "opciones": [
-      "15 céntimos",
-      "10 céntimos",
-      "1 céntimo",
-      "6,75 céntimos"
-    ],
-    "respuestaCorrecta": 3,
-    "explicacion": "1 hl = 100 l. Si 100 l cuestan 15 cts, un litro cuesta 0,15 cts. Para 45 litros multiplicamos 45 x 0,15 = 6,75 céntimos, integrando medidas y dinero."
-  },
-  {
-    "id": 41,
-    "pregunta": "Calcula mentalmente: ¿cuánto le falta al número 23 para llegar a 100?",
-    "opciones": [
-      "77",
-      "87",
-      "67",
-      "73"
-    ],
-    "respuestaCorrecta": 0,
-    "explicacion": "Se suman las unidades hasta la decena más próxima (23+7=30) y luego las decenas hasta cien (30+70=100), total 77."
-  },
-  {
-    "id": 42,
-    "pregunta": "Si multiplicamos 8 x 0,753, ¿cuál es el resultado estimado?",
-    "opciones": [
-      "60",
-      "6,024",
-      "60,24",
-      "0,6024"
-    ],
-    "respuestaCorrecta": 1,
-    "explicacion": "El algoritmo de multiplicación con decimales se resuelve multiplicando normalmente y colocando luego 3 cifras decimales: 6,024."
-  },
-  {
-    "id": 43,
-    "pregunta": "La cantidad recomendada de verdura al día en una dieta mediterránea es de:",
-    "opciones": [
-      "1 ración",
-      "3 o más raciones",
-      "2 o más raciones",
-      "Ninguna"
-    ],
-    "respuestaCorrecta": 2,
-    "explicacion": "El esquema de la dieta mediterránea muestra que las verduras deben consumirse en 2 o más raciones diarias, vinculando matemáticas y salud."
-  },
-  {
-    "id": 44,
-    "pregunta": "Las raciones diarias recomendadas de aceite de oliva en una dieta mediterránea son:",
+    "pregunta": "En la rueda de la dieta mediterránea, ¿cuántas raciones diarias de pan se recomiendan?",
     "opciones": [
       "1 ración",
       "2 raciones",
-      "4 raciones",
-      "3 raciones"
-    ],
-    "respuestaCorrecta": 3,
-    "explicacion": "En el círculo de la dieta mediterránea se indica que el aceite de oliva requiere 3 raciones diarias."
-  },
-  {
-    "id": 45,
-    "pregunta": "Convierte 0,003 kilómetros (km) a decímetros (dm).",
-    "opciones": [
-      "30 dm",
-      "3 dm",
-      "300 dm",
-      "0,3 dm"
-    ],
-    "respuestaCorrecta": 0,
-    "explicacion": "De km a dm hay 4 saltos a la derecha en la escala, implicando multiplicar por 10.000. 0,003 x 10.000 = 30 dm."
-  },
-  {
-    "id": 46,
-    "pregunta": "Si tenemos la operación 25/11 - 2, ¿cuál es el resultado correcto?",
-    "opciones": [
-      "23/11",
-      "3/11",
-      "25/9",
-      "3/9"
+      "3 raciones",
+      "4 raciones"
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "El número entero 2 equivale a la fracción 22/11. Al restar 25/11 menos 22/11 quedan 3/11."
+    "explicacion": "La recomendación diaria ilustrada para el pan es de 2 raciones."
   },
   {
-    "id": 47,
-    "pregunta": "¿Cuál es el doble del número 42?",
+    "id": 39,
+    "pregunta": "Al restar el entero 2 de la fracción 25/11, el resultado es:",
     "opciones": [
-      "82",
-      "80",
-      "84",
-      "44"
+      "23/11",
+      "25/9",
+      "3/11",
+      "3/9"
     ],
     "respuestaCorrecta": 2,
-    "explicacion": "Cálculo mental sencillo: al multiplicar las decenas y unidades de 42 por dos (40x2=80, 2x2=4), obtenemos 84."
+    "explicacion": "El entero 2 es equivalente a 22/11. La resta 25/11 menos 22/11 da 3/11."
   },
   {
-    "id": 48,
-    "pregunta": "Según la tabla, si pones el lavavajillas, ¿cuántos litros de agua consumes?",
+    "id": 40,
+    "pregunta": "Si calculamos mentalmente el doble del número 34, el resultado es:",
     "opciones": [
-      "150 litros",
-      "45 litros",
-      "15 litros",
-      "30 litros"
+      "64",
+      "78",
+      "34",
+      "68"
     ],
     "respuestaCorrecta": 3,
-    "explicacion": "Comparando consumos de agua, poner el lavavajillas gasta unos 30 litros de agua, lo que demuestra su eficiencia frente al lavado a mano."
+    "explicacion": "Al duplicar el 30 se obtiene 60 y al duplicar el 4 se obtiene 8, resultando en 68."
   },
   {
-    "id": 49,
-    "pregunta": "Expresa 0,38 m² en cm².",
+    "id": 41,
+    "pregunta": "Para expresar 0,38 m² en centímetros cuadrados (cm²), el valor es:",
     "opciones": [
       "3.800 cm²",
       "38 cm²",
@@ -585,18 +489,114 @@
       "38.000 cm²"
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "Para pasar de m² a cm² hay dos saltos en la escala de superficie (x100 y x100), multiplicando por 10.000 en total: 0,38 x 10.000 = 3.800 cm²."
+    "explicacion": "El cambio de m² a cm² implica multiplicar por 10.000. Así, 0,38 x 10.000 = 3.800 cm²."
+  },
+  {
+    "id": 42,
+    "pregunta": "Al aproximar el número 3,42 a las décimas, obtenemos:",
+    "opciones": [
+      "3,5",
+      "3,4",
+      "3,0",
+      "3,42"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Como la cifra de las centésimas es 2 (menor que 5), la décima se queda igual (3,4)."
+  },
+  {
+    "id": 43,
+    "pregunta": "En la tabla de equivalencias de alimentos, una ración de queso pesa:",
+    "opciones": [
+      "10 a 20 g",
+      "80 a 100 g",
+      "40 a 60 g",
+      "120 a 150 g"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Se especifica que la porción adecuada de queso oscila entre los 40 y 60 gramos."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cuántas raciones diarias de aceite de oliva se deben consumir según el esquema de la unidad?",
+    "opciones": [
+      "1 ración",
+      "2 raciones",
+      "4 raciones",
+      "3 raciones"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La rueda de la dieta mediterránea establece 3 raciones diarias para el aceite de oliva."
+  },
+  {
+    "id": 45,
+    "pregunta": "En la receta del gazpacho se utiliza 'un cuarto de kilo' de miga de pan. Esto equivale en gramos a:",
+    "opciones": [
+      "250 g",
+      "100 g",
+      "500 g",
+      "750 g"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Un kilogramo son 1.000 gramos; al dividirlo entre cuatro, la cantidad es 250 g."
+  },
+  {
+    "id": 46,
+    "pregunta": "Si multiplicamos 8 x 0,753, el resultado será:",
+    "opciones": [
+      "60,24",
+      "6,024",
+      "0,6024",
+      "600,24"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Aplicando el algoritmo de la multiplicación y ubicando las tres posiciones decimales, resulta 6,024."
+  },
+  {
+    "id": 47,
+    "pregunta": "Si sustituyes un baño (150 l) por una ducha rápida (45 l), ¿cuántos litros de agua ahorras?",
+    "opciones": [
+      "50 litros",
+      "95 litros",
+      "105 litros",
+      "115 litros"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Al calcular la diferencia (150 - 45) obtenemos un ahorro de 105 litros."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué superficie tiene un cuadrado cuyo lado mide exactamente 1 metro?",
+    "opciones": [
+      "10 m²",
+      "100 m²",
+      "10.000 m²",
+      "1 m²"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Por definición base, un cuadrado de 1 metro de lado constituye 1 metro cuadrado de superficie."
+  },
+  {
+    "id": 49,
+    "pregunta": "Para pasar de litros (l) a mililitros (ml) en la escala de capacidad, debes:",
+    "opciones": [
+      "Dividir entre 1.000",
+      "Multiplicar por 1.000",
+      "Dividir entre 10",
+      "Multiplicar por 10"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Al bajar tres posiciones (dl, cl, ml), hay que multiplicar tres veces por 10 (1.000)."
   },
   {
     "id": 50,
-    "pregunta": "Un decímetro cuadrado (dm²) es la superficie de un cuadrado que tiene de lado:",
+    "pregunta": "Calcula mentalmente: ¿cuánto le falta al número 75 para llegar a 100?",
     "opciones": [
-      "1 m",
-      "1 dm",
-      "1 cm",
-      "10 dm"
+      "15",
+      "35",
+      "20",
+      "25"
     ],
-    "respuestaCorrecta": 1,
-    "explicacion": "Definición base de la unidad: la superficie cubierta por un cuadrado de 1 dm de lado constituye un decímetro cuadrado."
+    "respuestaCorrecta": 3,
+    "explicacion": "Los complementos a 100 de los cuartos resultan útiles; de 75 a 100 van exactamente 25."
   }
 ]

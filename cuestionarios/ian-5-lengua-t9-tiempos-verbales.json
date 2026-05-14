@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuál es el verbo modelo utilizado para mostrar la primera conjugación?",
+    "opciones": ["Bailar", "Cantar", "Saltar", "Jugar"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cuadro de la primera conjugación utiliza el verbo 'bailar' como modelo para todas sus formas verbales."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál es el verbo modelo utilizado para la segunda conjugación?",
+    "opciones": ["Comer", "Vender", "Beber", "Correr"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tabla gramatical presenta el verbo 'vender' como ejemplo representativo de la segunda conjugación."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cuál es el verbo modelo utilizado para la tercera conjugación?",
+    "opciones": ["Vivir", "Salir", "Partir", "Escribir"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El documento muestra detalladamente la conjugación del verbo 'partir' para enseñar la tercera conjugación."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál es el gerundio simple del verbo modelo de la primera conjugación?",
+    "opciones": ["Bailado", "Haber bailado", "Bailar", "Bailando"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Dentro de las formas no personales simples de la primera conjugación, el gerundio indicado es 'bailando'."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cómo se forma el gerundio compuesto del verbo 'vender'?",
+    "opciones": ["Habiendo vendido", "Haber vendido", "Vendido", "Vendiendo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las formas no personales compuestas establecen que el gerundio compuesto de vender es 'habiendo vendido'."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuál es el participio del verbo 'partir'?",
+    "opciones": ["Partiendo", "Partido", "Haber partido", "Partir"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El esquema de las formas no personales señala 'partido' como el participio de este verbo."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuál es la forma del infinitivo compuesto del verbo 'bailar'?",
+    "opciones": ["Bailando", "Habiendo bailado", "Haber bailado", "Bailado"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El cuadro clasifica 'haber bailado' como el infinitivo dentro de las formas no personales compuestas."
+  },
+  {
+    "id": 8,
+    "pregunta": "En el presente de indicativo, ¿cuál es la primera persona del plural (nosotros/as) del verbo 'bailar'?",
+    "opciones": ["Bailan", "Bailáis", "Bailaremos", "Bailamos"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La conjugación del presente de indicativo lista 'Nosotros bailamos' para la primera persona del plural."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuál es la forma de la segunda persona del singular (tú) en el pretérito imperfecto de indicativo del verbo 'vender'?",
+    "opciones": ["Vendías", "Vendiste", "Venderás", "Vendías o vendieses"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En la tabla de formas simples del indicativo, al pronombre 'tú' le corresponde 'vendías' en este tiempo."
+  },
+  {
+    "id": 10,
+    "pregunta": "En el pretérito perfecto simple de indicativo, ¿cómo se conjuga la tercera persona del singular (él/ella) del verbo 'partir'?",
+    "opciones": ["Partía", "Partió", "Partirá", "Ha partido"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Para el pretérito perfecto simple, el verbo 'partir' toma la forma 'partió' en la tercera persona del singular."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Cuál es la primera persona del singular (yo) en el futuro imperfecto de indicativo de 'bailar'?",
+    "opciones": ["Bailaba", "Bailé", "Bailaré", "Bailaría"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El futuro imperfecto de indicativo indica 'Yo bailaré' como la forma correcta para la primera persona."
+  },
+  {
+    "id": 12,
+    "pregunta": "En el condicional simple de indicativo, ¿cuál es la segunda persona del plural (vosotros/as) del verbo 'vender'?",
+    "opciones": ["Venderéis", "Vendíais", "Vendisteis", "Venderíais"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Siguiendo la conjugación de las formas simples, la forma condicional para 'vosotros' es 'venderíais'."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Cómo se dice la tercera persona del plural (ellos/ellas) en el presente de indicativo del verbo 'partir'?",
+    "opciones": ["Parten", "Partían", "Partirán", "Partieron"],
+    "respuestaCorrecta": 0,
+    "explicacion": "En el cuadro del presente de indicativo, la tercera persona del plural corresponde a 'Ellos parten'."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuál es la primera persona del plural (nosotros/as) en el pretérito imperfecto de indicativo de 'bailar'?",
+    "opciones": ["Bailamos", "Bailábamos", "Bailaremos", "Bailaríamos"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El esquema de conjugación muestra 'Nosotros bailábamos' para este tiempo verbal del pasado."
+  },
+  {
+    "id": 15,
+    "pregunta": "En el pretérito perfecto simple de indicativo, ¿cuál es la forma para vosotros/as del verbo 'vender'?",
+    "opciones": ["Vendéis", "Vendíais", "Vendisteis", "Venderéis"],
+    "respuestaCorrecta": 2,
+    "explicacion": "La tabla específica de tiempos simples del indicativo señala 'Vosotros vendisteis' en el pretérito perfecto simple."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuál es la primera persona del singular (yo) del pretérito perfecto compuesto de indicativo del verbo 'partir'?",
+    "opciones": ["Había partido", "Hube partido", "Habré partido", "He partido"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Dentro de las formas compuestas, el pretérito perfecto compuesto se forma con 'he' y el participio 'partido'."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cómo es la tercera persona del singular (él/ella) del pretérito pluscuamperfecto de indicativo de 'bailar'?",
+    "opciones": ["Había bailado", "Hubo bailado", "Habrá bailado", "Habría bailado"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Para el pretérito pluscuamperfecto, la tercera persona utiliza el auxiliar en imperfecto, resultando en 'había bailado'."
+  },
+  {
+    "id": 18,
+    "pregunta": "En el pretérito anterior de indicativo, ¿cuál es la primera persona del plural (nosotros/as) del verbo 'vender'?",
+    "opciones": ["Habíamos vendido", "Hubimos vendido", "Habremos vendido", "Habríamos vendido"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El pretérito anterior compuesto conjuga el auxiliar como 'hubimos', formando 'hubimos vendido'."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cuál es la segunda persona del singular (tú) en el futuro perfecto de indicativo del verbo 'partir'?",
+    "opciones": ["Habías partido", "Habrías partido", "Habrás partido", "Hubiste partido"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El futuro perfecto se forma con el auxiliar en futuro ('habrás') más el participio ('partido')."
+  },
+  {
+    "id": 20,
+    "pregunta": "En el condicional compuesto de indicativo, ¿cuál es la tercera persona del plural (ellos/ellas) de 'bailar'?",
+    "opciones": ["Habían bailado", "Hubieron bailado", "Habrán bailado", "Habrían bailado"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La tabla de formas compuestas indica 'habrían bailado' para la tercera persona del plural del condicional compuesto."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuál es la segunda persona del plural (vosotros/as) del pretérito perfecto compuesto de indicativo de 'vender'?",
+    "opciones": ["Habéis vendido", "Habíais vendido", "Habréis vendido", "Hubisteis vendido"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cuadro muestra que se utiliza la forma 'habéis' seguida del participio 'vendido'."
+  },
+  {
+    "id": 22,
+    "pregunta": "En el pretérito pluscuamperfecto de indicativo, ¿cuál es la primera persona del singular (yo) de 'partir'?",
+    "opciones": ["He partido", "Había partido", "Hube partido", "Habré partido"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se forma con el auxiliar 'había' correspondiente a la primera persona y el participio 'partido'."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cómo es la tercera persona del singular (él/ella) en el pretérito anterior de indicativo de 'bailar'?",
+    "opciones": ["Había bailado", "Ha bailado", "Hubo bailado", "Habrá bailado"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El pretérito anterior utiliza la forma auxiliar 'hubo' junto con el participio 'bailado'."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cuál es la primera persona del singular (yo) en el presente de subjuntivo del verbo 'vender'?",
+    "opciones": ["Vende", "Vendía", "Venderé", "Venda"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El bloque dedicado al modo subjuntivo muestra que la primera persona del presente es 'venda'."
+  },
+  {
+    "id": 25,
+    "pregunta": "En el presente de subjuntivo, ¿cómo se conjuga la segunda persona del plural (vosotros/as) del verbo 'partir'?",
+    "opciones": ["Partáis", "Partíais", "Partierais", "Partís"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La tabla de subjuntivo especifica 'partáis' para el pronombre vosotros."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Cómo es la tercera persona del singular (él/ella) en el pretérito imperfecto de subjuntivo del verbo 'bailar'?",
+    "opciones": ["Bailaría", "Bailara o bailase", "Bailaba", "Bailare"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El imperfecto de subjuntivo admite dos terminaciones válidas, presentadas como 'bailara o bailase'."
+  },
+  {
+    "id": 27,
+    "pregunta": "En el pretérito imperfecto de subjuntivo, ¿cuál es la primera persona del plural (nosotros/as) de 'vender'?",
+    "opciones": ["Vendíamos", "Venderíamos", "Vendiéramos o vendiésemos", "Vendamos"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El modelo presenta las dos formas aceptadas para este tiempo y persona: 'vendiéramos o vendiésemos'."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cuál es la tercera persona del plural (ellos/ellas) en el presente de subjuntivo de 'bailar'?",
+    "opciones": ["Bailan", "Bailaron", "Bailarán", "Bailen"],
+    "respuestaCorrecta": 3,
+    "explicacion": "En el apartado de formas simples de subjuntivo, la tercera persona plural es 'bailen'."
+  },
+  {
+    "id": 29,
+    "pregunta": "En el pretérito imperfecto de subjuntivo, ¿cómo es la segunda persona del singular (tú) de 'partir'?",
+    "opciones": ["Partieras o partieses", "Partirías", "Partías", "Partas"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las terminaciones -ieras o -ieses se aplican al verbo de la tercera conjugación, dando 'partieras o partieses'."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cuál es la primera persona del singular (yo) del pretérito perfecto compuesto de subjuntivo del verbo 'bailar'?",
+    "opciones": ["Había bailado", "Haya bailado", "Hubiera bailado", "Hube bailado"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se construye con el auxiliar en presente de subjuntivo ('haya') más el participio ('bailado')."
+  },
+  {
+    "id": 31,
+    "pregunta": "En el pretérito pluscuamperfecto de subjuntivo, ¿cuál es la tercera persona del singular (él/ella) de 'vender'?",
+    "opciones": ["Había vendido", "Habría vendido", "Hubiera o hubiese vendido", "Haya vendido"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las formas compuestas del subjuntivo incluyen ambas opciones del auxiliar: 'hubiera o hubiese vendido'."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cómo se forma la primera persona del plural (nosotros/as) en el pretérito perfecto compuesto de subjuntivo de 'partir'?",
+    "opciones": ["Habíamos partido", "Hubiéramos partido", "Habremos partido", "Hayamos partido"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El auxiliar corresponde al presente de subjuntivo 'hayamos', formando 'hayamos partido'."
+  },
+  {
+    "id": 33,
+    "pregunta": "En el pretérito pluscuamperfecto de subjuntivo, ¿cuál es la segunda persona del plural (vosotros/as) de 'bailar'?",
+    "opciones": ["Hubierais o hubieseis bailado", "Hayáis bailado", "Habíais bailado", "Habríais bailado"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La tabla expone las dos variantes del auxiliar para vosotros en imperfecto de subjuntivo acompañando al participio."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cuál es la tercera persona del plural (ellos/ellas) del pretérito perfecto compuesto de subjuntivo de 'vender'?",
+    "opciones": ["Hubieran vendido", "Hayan vendido", "Habían vendido", "Hubieron vendido"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se utiliza la forma auxiliar 'hayan' junto al participio para construir el pretérito perfecto compuesto."
+  },
+  {
+    "id": 35,
+    "pregunta": "En el pretérito pluscuamperfecto de subjuntivo, ¿cuál es la primera persona del singular (yo) del verbo 'partir'?",
+    "opciones": ["Haya partido", "Hubiese partido", "Hubiera o hubiese partido", "Habría partido"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El modelo presenta conjuntamente 'hubiera o hubiese partido' en el apartado correspondiente."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es la forma de la segunda persona del singular (tú) en el imperativo del verbo 'bailar'?",
+    "opciones": ["Bailas", "Bailes", "Bailarás", "Baila"],
+    "respuestaCorrecta": 3,
+    "explicacion": "En la sección de imperativo, la orden directa dirigida a 'tú' se expresa como 'baila'."
+  },
+  {
+    "id": 37,
+    "pregunta": "En el modo imperativo, ¿cómo es la segunda persona del plural (vosotros/as) del verbo 'vender'?",
+    "opciones": ["Vended", "Vendéis", "Vendáis", "Vender"],
+    "respuestaCorrecta": 0,
+    "explicacion": "El imperativo presenta terminaciones específicas; para vosotros en la segunda conjugación es 'vended'."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cuál es la forma de la segunda persona del singular (tú) en el imperativo del verbo 'partir'?",
+    "opciones": ["Partes", "Parte", "Partas", "Partí"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El bloque de imperativo indica 'parte' para la orden dirigida a la segunda persona del singular."
+  },
+  {
+    "id": 39,
+    "pregunta": "En el modo imperativo, ¿cómo es la segunda persona del plural (vosotros/as) del verbo 'bailar'?",
+    "opciones": ["Bailáis", "Bailen", "Bailad", "Bailar"],
+    "respuestaCorrecta": 2,
+    "explicacion": "El cuadro establece que la forma correcta del imperativo para vosotros en la primera conjugación es 'bailad'."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿A qué tiempo verbal pertenece la forma 'bailaremos'?",
+    "opciones": ["Presente de indicativo", "Pretérito imperfecto de indicativo", "Condicional simple", "Futuro imperfecto de indicativo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se encuentra en la columna de formas simples del indicativo bajo el título 'Futuro imperfecto'."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿A qué tiempo pertenece la forma 'habría vendido'?",
+    "opciones": ["Condicional compuesto de indicativo", "Pretérito pluscuamperfecto de indicativo", "Futuro perfecto de indicativo", "Pretérito anterior de indicativo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Aparece clasificada explícitamente en la tabla como parte del condicional compuesto."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué tiempo verbal es 'hubiste partido'?",
+    "opciones": ["Pretérito perfecto compuesto de indicativo", "Pretérito anterior de indicativo", "Pretérito pluscuamperfecto de subjuntivo", "Pretérito perfecto simple"],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es la segunda persona del singular del pretérito anterior, según la organización de formas compuestas."
+  },
+  {
+    "id": 43,
+    "pregunta": "La forma 'vender' corresponde a:",
+    "opciones": ["El gerundio simple", "El participio", "El infinitivo simple", "El imperativo"],
+    "respuestaCorrecta": 2,
+    "explicacion": "En el bloque de formas no personales, 'vender' encabeza la columna de formas simples como el infinitivo."
+  },
+  {
+    "id": 44,
+    "pregunta": "La palabra 'bailamos' puede ser presente de indicativo. ¿Qué otro tiempo de indicativo comparte esta misma forma en la primera persona del plural?",
+    "opciones": ["El pretérito imperfecto", "El futuro imperfecto", "El condicional simple", "El pretérito perfecto simple"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El cuadro muestra que 'Nosotros bailamos' aparece tanto en el presente como en el pretérito perfecto simple."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿A qué tiempo pertenece la forma 'habéis partido'?",
+    "opciones": ["Pretérito perfecto compuesto de indicativo", "Pretérito pluscuamperfecto de indicativo", "Pretérito anterior de indicativo", "Futuro perfecto de indicativo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Es la segunda persona plural del pretérito perfecto compuesto, listada en las formas compuestas del indicativo."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué tiempo verbal es 'vendan'?",
+    "opciones": ["Presente de indicativo", "Presente de subjuntivo", "Pretérito imperfecto de subjuntivo", "Imperativo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La forma 'vendan' se sitúa bajo el título 'Presente' en la tabla de formas simples del modo subjuntivo."
+  },
+  {
+    "id": 47,
+    "pregunta": "La forma 'habiendo bailado' es un:",
+    "opciones": ["Infinitivo compuesto", "Participio", "Gerundio compuesto", "Gerundio simple"],
+    "respuestaCorrecta": 2,
+    "explicacion": "Pertenece al recuadro de formas no personales y se clasifica directamente como el gerundio compuesto."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿A qué persona y modo corresponde la forma 'partid'?",
+    "opciones": ["Tercera persona singular, indicativo", "Segunda persona singular, imperativo", "Primera persona plural, subjuntivo", "Segunda persona plural, imperativo"],
+    "respuestaCorrecta": 3,
+    "explicacion": "El único apartado que contiene esta forma es el imperativo dirigido a 'vosotros', que es la segunda persona plural."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué tiempo es 'habían vendido'?",
+    "opciones": ["Pretérito pluscuamperfecto de indicativo", "Pretérito anterior de indicativo", "Pretérito perfecto compuesto de indicativo", "Pretérito pluscuamperfecto de subjuntivo"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Corresponde a la tercera persona del plural del pretérito pluscuamperfecto en el modo indicativo."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿A qué tiempo verbal pertenece 'bailéis'?",
+    "opciones": ["Presente de indicativo", "Presente de subjuntivo", "Futuro imperfecto de indicativo", "Pretérito imperfecto de subjuntivo"],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tabla de subjuntivo clasifica 'bailéis' como la segunda persona del plural del presente de este modo."
+  }
+]
