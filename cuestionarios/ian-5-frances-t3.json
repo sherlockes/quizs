@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cómo se dice 'lunes' en francés según los días de la semana?",
+    "opciones": [
+      "mardi",
+      "jeudi",
+      "lundi",
+      "dimanche"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Lundi' se enseña en el vocabulario de la unidad como el término correspondiente al primer día de la semana, lunes."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué pregunta se usa para saber qué día es hoy?",
+    "opciones": [
+      "Quel jour on est aujourd'hui ?",
+      "C'est quelle saison ?",
+      "C'est quand ton anniversaire ?",
+      "Qu'est-ce que tu aimes ?"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La estructura comunicativa 'Quel jour on est aujourd'hui ?' se emplea específicamente para preguntar la fecha actual."
+  },
+  {
+    "id": 3,
+    "pregunta": "Si hoy es 4 de diciembre, ¿cómo lo dices en francés?",
+    "opciones": [
+      "Aujourd'hui, on est le 4 avril.",
+      "Aujourd'hui, on est le 4 décembre.",
+      "C'est le 4 novembre.",
+      "Il fait beau le 4."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las fechas se forman indicando el día exacto con el artículo 'le' seguido del número y el mes, como en 'le 4 décembre'."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cómo preguntas '¿Cuándo es tu cumpleaños?' en francés?",
+    "opciones": [
+      "Où est la balle ?",
+      "Qu'est-ce que tu aimes ?",
+      "C'est quelle saison ?",
+      "C'est quand, ton anniversaire ?"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La frase 'C'est quand, ton anniversaire ?' es la interrogación enseñada para preguntar por la fecha de nacimiento."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuál es el mes de 'enero' en francés?",
+    "opciones": [
+      "février",
+      "juin",
+      "juillet",
+      "janvier"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Janvier' es el primer mes listado en el vocabulario del calendario."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué día de la semana es 'mercredi'?",
+    "opciones": [
+      "martes",
+      "jueves",
+      "viernes",
+      "miércoles"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Mercredi' corresponde al miércoles en la secuencia del vocabulario de los días de la semana."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué preposición se usa antes del mes para decir 'en abril'?",
+    "opciones": [
+      "le",
+      "à",
+      "au",
+      "en"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Para indicar el mes en el que ocurre un evento, como un cumpleaños, se utiliza la preposición 'en', por ejemplo, 'en avril'."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cómo se dice 'domingo' en francés?",
+    "opciones": [
+      "lundi",
+      "samedi",
+      "mardi",
+      "dimanche"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Dimanche' es la palabra de vocabulario que designa al día domingo."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué día es 'jeudi'?",
+    "opciones": [
+      "lunes",
+      "jueves",
+      "viernes",
+      "martes"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Jeudi' se enseña como el sustantivo para referirse al jueves."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cómo se escribe 'el 5 de abril' al indicar una fecha específica?",
+    "opciones": [
+      "en 5 avril",
+      "un 5 avril",
+      "le 5 avril",
+      "à 5 avril"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Al hablar de una fecha con un día numérico específico, es necesario usar el artículo definido 'le', formando 'le 5 avril'."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué pregunta se usa para decir '¿Qué estación es?'?",
+    "opciones": [
+      "Où tu es ?",
+      "Quel temps il fait ?",
+      "C'est quelle saison ?",
+      "Qui c'est ?"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La estructura interrogativa 'C'est quelle saison ?' es la fórmula empleada para preguntar por la estación del año."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo se dice 'la primavera' en francés?",
+    "opciones": [
+      "l'hiver",
+      "l'automne",
+      "l'été",
+      "le printemps"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Le printemps' es el término de vocabulario introducido para nombrar a la primavera."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Cuál de estas palabras corresponde a 'el verano'?",
+    "opciones": [
+      "l'été",
+      "le printemps",
+      "l'hiver",
+      "l'automne"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El sustantivo con apóstrofo 'l'été' designa a la estación del verano."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Qué estación del año es 'l'automne'?",
+    "opciones": [
+      "el invierno",
+      "la primavera",
+      "el verano",
+      "el otoño"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'L'automne' se refiere directamente a la estación de otoño o caída de la hoja."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Cómo se dice 'el invierno' en francés?",
+    "opciones": [
+      "l'hiver",
+      "l'été",
+      "le printemps",
+      "l'automne"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La estación más fría del año, el invierno, se denomina 'l'hiver' en el libro."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Qué interrogación utilizas para preguntar '¿Qué te gusta?'?",
+    "opciones": [
+      "C'est quand ?",
+      "Qu'est-ce que tu n'aimes pas ?",
+      "Qu'est-ce que tu aimes ?",
+      "Quel jour on est ?"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La fórmula comunicativa para explorar los gustos de otra persona es 'Qu'est-ce que tu aimes ?'."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cómo se conjuga el verbo aimer para afirmar 'Me gusta'?",
+    "opciones": [
+      "Tu aimes",
+      "J'aime",
+      "Il aime",
+      "Elle aime"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Para la primera persona del singular, el pronombre elide la vocal formando 'J'aime'."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cuál es la forma negativa correcta para decir 'No me gusta'?",
+    "opciones": [
+      "Je n'aime pas",
+      "Je ne aime pas",
+      "N'aime pas je",
+      "J'aime non"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La negación en francés rodea al verbo conjugado con 'n'' (ante vocal) y 'pas', resultando en 'Je n'aime pas'."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cómo se dice 'A ti te gusta' en francés?",
+    "opciones": [
+      "Je n'aime pas",
+      "Il aime",
+      "Tu aimes",
+      "J'aime"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La segunda persona del singular del verbo amar o gustar se conjuga como 'Tu aimes'."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cómo se escribe 'A él le gusta'?",
+    "opciones": [
+      "Elle aime",
+      "Il aime",
+      "Tu aimes",
+      "J'aime"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Para el pronombre masculino de tercera persona, el verbo toma la forma 'Il aime'."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué artículo definido acompaña a la palabra 'danse' (danza)?",
+    "opciones": [
+      "le",
+      "l'",
+      "les",
+      "la"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Como 'danse' es un sustantivo femenino, requiere el artículo definido 'la', formando 'la danse'."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué artículo definido se usa para el deporte 'judo'?",
+    "opciones": [
+      "la",
+      "l'",
+      "le",
+      "les"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El término 'judo' es masculino, por lo que lleva el artículo definido masculino 'le'."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cómo se dice 'el baloncesto' dentro del vocabulario de ocio?",
+    "opciones": [
+      "le vélo",
+      "le tennis",
+      "le judo",
+      "le basket"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El deporte de canasta se enseña bajo la denominación abreviada de 'le basket'."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cuál es la frase correcta para afirmar 'A él no le gusta'?",
+    "opciones": [
+      "Il n'aime pas",
+      "Je n'aime pas",
+      "Tu n'aimes pas",
+      "Elle n'aime pas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Para expresar negación de gustos en tercera persona masculina, la estructura adecuada es 'Il n'aime pas'."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cómo expresas 'No me gustan los caramelos'?",
+    "opciones": [
+      "J'aime les bonbons",
+      "Je n'aime pas les bonbons",
+      "Il aime les bonbons",
+      "Tu n'aimes pas les bonbons"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La primera persona en forma negativa 'Je n'aime pas' seguida del objeto plural 'les bonbons' expresa el disgusto por los caramelos."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué animal es 'la grenouille'?",
+    "opciones": [
+      "la rana",
+      "el perro",
+      "el caballo",
+      "el zorro"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En el glosario de animales de la unidad, 'la grenouille' se traduce como rana."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cómo se dice 'el águila' en francés?",
+    "opciones": [
+      "le saumon",
+      "la salamandre",
+      "l'aigle",
+      "le perroquet"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El ave rapaz aparece nombrada con el artículo elidido 'l'aigle'."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cuál es la palabra francesa para 'el caballo'?",
+    "opciones": [
+      "le tigre",
+      "le cheval",
+      "le renard",
+      "le requin"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El animal de granja o campo enseñado en las ilustraciones es el caballo, denominado 'le cheval'."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué animal marino es 'le requin'?",
+    "opciones": [
+      "el tiburón",
+      "el salmón",
+      "el cocodrilo",
+      "el pez"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Dentro del vocabulario de animales relacionados con el mar, 'le requin' significa tiburón."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cómo se dice 'el zorro' según el vocabulario de la unidad?",
+    "opciones": [
+      "le renard",
+      "le chien",
+      "le chat",
+      "l'aigle"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El sustantivo 'le renard' corresponde al zorro en la lista de especies salvajes."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué animal es 'le tigre'?",
+    "opciones": [
+      "el león",
+      "la salamandra",
+      "el tigre",
+      "el caballo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Como palabra transparente, 'le tigre' designa al gran felino conocido como tigre en español."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cómo se denomina al 'salmón' en francés?",
+    "opciones": [
+      "le saumon",
+      "le crocodile",
+      "le requin",
+      "la grenouille"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El pez migratorio que aparece en la lección sobre ríos se denomina 'le saumon'."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué ave colorida se conoce como 'le perroquet'?",
+    "opciones": [
+      "el águila",
+      "el loro",
+      "el pato",
+      "el búho"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La palabra francesa 'le perroquet' hace referencia al loro, ilustrado por sus colores característicos."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué animal es 'le crocodile'?",
+    "opciones": [
+      "la rana",
+      "el cocodrilo",
+      "el caballo",
+      "el zorro"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El gran reptil semiacuático se nombra 'le crocodile', otra palabra casi idéntica a su traducción española."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Cómo se dice 'el perro' en francés?",
+    "opciones": [
+      "le chat",
+      "le renard",
+      "le cheval",
+      "le chien"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Le chien' figura en el bloque de vocabulario de mascotas o animales comunes, significando perro."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es la palabra para 'el gato'?",
+    "opciones": [
+      "le chat",
+      "le chien",
+      "le tigre",
+      "le panda"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Entre los animales de compañía habituales se enseña el término 'le chat' para designar al gato."
+  },
+  {
+    "id": 37,
+    "pregunta": "Según la lección de la vida salvaje, ¿qué animal come bambú?",
+    "opciones": [
+      "le lion",
+      "le requin",
+      "le panda",
+      "l'aigle"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En el ejercicio escolar, una de las oraciones destacadas es que al panda le gusta alimentarse de bambú ('Le panda aime le bambou')."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué animal tiene colores 'Noir et jaune' (negro y amarillo) en la lección 'La petite fabrique'?",
+    "opciones": [
+      "le tigre",
+      "la salamandre",
+      "le perroquet",
+      "la grenouille"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La ficha del animal preferido describe a 'la salamandre' con la característica visual de sus colores negro y amarillo."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cuántas patas (pattes) tiene la salamandra de la ficha 'Mon animal préféré'?",
+    "opciones": [
+      "2",
+      "6",
+      "8",
+      "4"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En el apartado 'Nombre de pattes' de la tarjeta descriptiva de la salamandra, se especifica el número 4."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué medio natural es 'la mer'?",
+    "opciones": [
+      "la montaña",
+      "el campo",
+      "el mar",
+      "el bosque"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Dentro de la categoría 'milieux naturels', la extensión de agua salada se denomina 'la mer'."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cómo se dice 'el río' en francés?",
+    "opciones": [
+      "la rivière",
+      "la montagne",
+      "la mer",
+      "la forêt"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El entorno acuático de agua dulce se enseña con el sustantivo 'la rivière'."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué entorno natural es 'la campagne'?",
+    "opciones": [
+      "el mar",
+      "el campo",
+      "la ciudad",
+      "la montaña"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El área rural, opuesta a la urbana, se identifica en la unidad como 'la campagne'."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Cómo se dice 'la montaña' en francés?",
+    "opciones": [
+      "la forêt",
+      "la rivière",
+      "la mer",
+      "la montagne"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El entorno de gran elevación topográfica recibe el nombre de 'la montagne'."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué entorno natural corresponde a 'la forêt'?",
+    "opciones": [
+      "la montaña",
+      "el río",
+      "el bosque",
+      "el campo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La zona cubierta por una densa vegetación y árboles altos es enseñada bajo el concepto 'la forêt'."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué concepto explica que la salud humana, animal y del medio ambiente están conectadas?",
+    "opciones": [
+      "La vie sauvage",
+      "Une seule santé",
+      "Le réchauffement climatique",
+      "L'adoption responsable"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El principio de 'Une seule santé' (Una sola salud) establece la interconexión entre la salud de personas, animales y ecosistemas."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cómo se llaman los animales que viven en casa con nosotros, según el documento?",
+    "opciones": [
+      "animaux sauvages",
+      "animaux de ferme",
+      "animaux de compagnie",
+      "animaux marins"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los animales domésticos adoptados por familias son denominados 'animaux de compagnie' en la sección de cultura."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué aspecto positivo favorecen los animales de compañía según el texto?",
+    "opciones": [
+      "la santé physique et mentale",
+      "la météo",
+      "la pollution",
+      "le réchauffement"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El material educativo destaca que la convivencia con mascotas es beneficiosa para la 'santé physique et mentale' (salud física y mental)."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Cómo se llama el médico especialista en animales mencionado en el documento?",
+    "opciones": [
+      "le climatologue",
+      "le vétérinaire",
+      "le professeur",
+      "le magicien"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En el contexto de la adopción y el cuidado animal, el texto recuerda las visitas necesarias al especialista médico, 'le vétérinaire'."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué organización recomienda la adopción responsable ('adoption responsable')?",
+    "opciones": [
+      "la SPA",
+      "la FAO",
+      "l'OMS",
+      "l'OMSA"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto señala a la SPA (Société Protectrice des Animaux) como la entidad que aconseja realizar adopciones responsables."
+  },
+  {
+    "id": 50,
+    "pregunta": "En la sección de fonética de esta unidad, ¿qué sonido se practica con la palabra 'bonjour'?",
+    "opciones": [
+      "el sonido [R]",
+      "el sonido [ɛ]",
+      "el sonido [ʒ]",
+      "el sonido [s]"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La meta fonética de la unidad es aprender a articular correctamente el sonido consonántico [ʒ] presente en la palabra 'bonjour'."
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cómo se dice 'el abuelo' en francés?",
+    "opciones": [
+      "le père",
+      "le grand-père",
+      "le frère",
+      "le fils"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Le grand-père' es el sustantivo que designa al abuelo en francés, siendo una palabra clave en el vocabulario familiar."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál es la palabra correcta para referirse a 'la hermana'?",
+    "opciones": [
+      "la tante",
+      "la mère",
+      "la fille",
+      "la sœur"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'La sœur' es el término preciso en lengua francesa para identificar a la hermana dentro de un núcleo familiar."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué adjetivo posesivo se usa para decir 'mi hermano'?",
+    "opciones": [
+      "mon",
+      "ma",
+      "ton",
+      "ta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El adjetivo posesivo masculino singular de primera persona es 'mon', necesario para acompañar al sustantivo masculino 'frère'."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cómo se dice 'su hermana' (de él o de ella)?",
+    "opciones": [
+      "son",
+      "ton",
+      "sa",
+      "mon"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Para un sustantivo femenino singular como 'sœur' poseído por una tercera persona, se utiliza el adjetivo posesivo 'sa'."
+  },
+  {
+    "id": 5,
+    "pregunta": "Resuelve la siguiente relación lógica: 'C'est la fille de ma grand-mère. Qui c'est ?'",
+    "opciones": [
+      "ma cousine",
+      "ma mère ou ma tante",
+      "ma sœur",
+      "ma nièce"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La hija de la propia abuela, excluyendo a la persona que habla, solo puede ser la madre o la hermana de esta, es decir, la tía."
+  },
+  {
+    "id": 6,
+    "pregunta": "Resuelve el vínculo familiar: 'C'est le père de mon frère. Qui c'est ?'",
+    "opciones": [
+      "mon grand-père",
+      "mon oncle",
+      "mon père",
+      "mon cousin"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El padre biológico de un hermano es compartido por los mismos hijos, por lo tanto, la respuesta correcta es el propio padre ('mon père')."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué miembro de la familia es 'l'oncle'?",
+    "opciones": [
+      "el tío",
+      "el primo",
+      "el padre",
+      "el abuelo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'L'oncle' es el sustantivo empleado en francés para designar al hermano del padre o de la madre, equivalente a 'el tío'."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué posesivo completa la frase '___ mère' para decir 'tu madre'?",
+    "opciones": [
+      "ton",
+      "son",
+      "ma",
+      "ta"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Mère' es un sustantivo femenino en singular, por lo que exige concordancia con el posesivo de segunda persona 'ta'."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué significa la interrogación 'Qui c'est ?'?",
+    "opciones": [
+      "¿Qué es esto?",
+      "¿Quién es?",
+      "¿Dónde está?",
+      "¿Cómo estás?"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La estructura 'Qui c'est ?' se emplea de forma comunicativa para indagar sobre la identidad de una o varias personas."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cómo se dice 'la prima' en francés?",
+    "opciones": [
+      "la cousine",
+      "le cousin",
+      "la tante",
+      "la sœur"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Para referirse a la hija de los tíos en género femenino se utiliza el término 'la cousine', añadiendo la marca de femenino respecto a 'le cousin'."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué preposición de lugar indica que un objeto está 'debajo' de otro?",
+    "opciones": [
+      "sur",
+      "dans",
+      "sous",
+      "devant"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La preposición 'sous' establece una relación espacial de inferioridad directa, traduciéndose como 'debajo de'."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué preposición indica que algo está situado 'delante'?",
+    "opciones": [
+      "derrière",
+      "devant",
+      "entre",
+      "sous"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La palabra 'devant' se utiliza para ubicar un objeto o persona en la parte frontal de un punto de referencia."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué preposición se usa para decir 'en' o 'dentro de'?",
+    "opciones": [
+      "dans",
+      "sur",
+      "à côté de",
+      "derrière"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Para indicar que un elemento está contenido en el interior de otro espacio u objeto, se usa la preposición 'dans'."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cómo se expresa la idea de estar 'detrás' de algo?",
+    "opciones": [
+      "sur",
+      "devant",
+      "sous",
+      "derrière"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La posición posterior de un objeto respecto a otro se indica utilizando la preposición 'derrière'."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué preposición se utiliza para decir que algo está 'entre' dos cosas?",
+    "opciones": [
+      "entre",
+      "dans",
+      "sur",
+      "à côté de"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Para ubicar a un elemento en el espacio que separa físicamente a otros dos, se emplea la preposición 'entre'."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cómo se dice 'al lado de' en francés?",
+    "opciones": [
+      "sous",
+      "dans",
+      "à côté de",
+      "derrière"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La locución preposicional 'à côté de' sirve para expresar contigüidad o proximidad inmediata entre dos elementos."
+  },
+  {
+    "id": 17,
+    "pregunta": "Si un rotulador está dentro de un estuche, ¿qué preposición usas: '___ la trousse'?",
+    "opciones": [
+      "sous",
+      "dans",
+      "sur",
+      "devant"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Al tratarse de un objeto guardado en un contenedor cerrado, la preposición de lugar adecuada es 'dans'."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué palabra utilizas para decir que un cuaderno está 'sobre' la mesa?",
+    "opciones": [
+      "dans",
+      "devant",
+      "derrière",
+      "sur"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Para elementos que se encuentran apoyados en contacto superior directo con una superficie, se utiliza 'sur'."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cómo se denomina a 'un estuche' escolar en francés?",
+    "opciones": [
+      "un stylo",
+      "une trousse",
+      "une règle",
+      "un cahier"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El término femenino 'une trousse' designa al receptáculo utilizado por los alumnos para transportar lápices y bolígrafos."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cuál es la palabra francesa para 'una goma' de borrar?",
+    "opciones": [
+      "une gomme",
+      "un livre",
+      "un crayon",
+      "un feutre"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Une gomme' es el objeto de papelería que permite corregir y borrar los trazos realizados con lápiz."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cómo expresas 'hace calor' al hablar del estado del tiempo?",
+    "opciones": [
+      "il fait froid",
+      "il pleut",
+      "il fait chaud",
+      "il neige"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La frase impersonal 'il fait chaud' es la expresión correcta para describir un clima con temperaturas elevadas."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué frase describe que está cayendo lluvia?",
+    "opciones": [
+      "il fait beau",
+      "il y a du soleil",
+      "il neige",
+      "il pleut"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La precipitación líquida se expresa en francés conjugando el verbo pleuvoir en forma impersonal: 'il pleut'."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cómo dices 'hace buen tiempo' de forma general?",
+    "opciones": [
+      "il fait beau",
+      "il pleut",
+      "il y a des nuages",
+      "il fait froid"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La expresión 'il fait beau' se utiliza para indicar que el tiempo atmosférico es agradable y propicio."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué expresión usas cuando está nevando?",
+    "opciones": [
+      "il fait chaud",
+      "il neige",
+      "il y a du soleil",
+      "il pleut"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La caída de copos de nieve se indica mediante el verbo impersonal neiger conjugado como 'il neige'."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cómo se describe un cielo parcialmente cubierto donde 'hay nubes'?",
+    "opciones": [
+      "il pleut",
+      "il y a du soleil",
+      "il y a des nuages",
+      "il fait chaud"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La locución 'il y a des nuages' indica la presencia de formaciones nubosas en la bóveda celeste."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Cuál es la expresión para afirmar que 'hace frío'?",
+    "opciones": [
+      "il fait beau",
+      "il y a du soleil",
+      "il neige",
+      "il fait froid"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las bajas temperaturas ambientales se describen utilizando el giro impersonal 'il fait froid'."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué se dice si se observa que 'hace sol' en el exterior?",
+    "opciones": [
+      "il y a du soleil",
+      "il pleut",
+      "il fait froid",
+      "il neige"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La irradiación solar directa en el clima se describe con la estructura partitiva 'il y a du soleil'."
+  },
+  {
+    "id": 28,
+    "pregunta": "Si la temperatura exterior es de 3 grados centígrados, ¿qué frase describe mejor la sensación térmica?",
+    "opciones": [
+      "il fait chaud",
+      "il fait beau",
+      "il fait froid",
+      "il y a du soleil"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Una temperatura de 3 grados se clasifica como gélida, por lo que es natural expresar que 'il fait froid'."
+  },
+  {
+    "id": 29,
+    "pregunta": "Si un termómetro indica 22 grados, ¿qué expresión climática resulta más adecuada?",
+    "opciones": [
+      "il neige",
+      "il fait chaud",
+      "il fait froid",
+      "il pleut"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La temperatura de 22 grados centígrados indica un clima cálido, por lo que corresponde usar la expresión 'il fait chaud'."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cómo se dice 'un arcoíris' en francés?",
+    "opciones": [
+      "un nuage",
+      "le soleil",
+      "un arc-en-ciel",
+      "le ciel"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El fenómeno óptico multicolor visible tras la lluvia recibe el nombre compuesto de 'un arc-en-ciel'."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cómo se conjuga el verbo être para expresar 'Yo soy' o 'Yo estoy'?",
+    "opciones": [
+      "Tu es",
+      "Il est",
+      "Elle est",
+      "Je suis"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La forma verbal 'Je suis' corresponde a la primera persona del singular del verbo être."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Cuál es la conjugación correcta del verbo être para decir 'Tú eres' o 'Tú estás'?",
+    "opciones": [
+      "Tu es",
+      "Je suis",
+      "Il est",
+      "Elle est"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La segunda persona del singular del verbo être toma la forma 'Tu es', con una 's' final muda."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué forma verbal completa la expresión para 'Él es' o 'Él está'?",
+    "opciones": [
+      "Je suis",
+      "Il est",
+      "Tu es",
+      "Elle est"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El pronombre masculino singular 'Il' exige la tercera persona del verbo être, es decir, la forma 'est'."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué área de estudio corresponde a un 'climatologue'?",
+    "opciones": [
+      "los animales",
+      "el clima",
+      "los libros",
+      "los ríos"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La raíz de la palabra 'climatologue' indica claramente que es el especialista dedicado a la investigación del clima."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿En qué entorno desarrollan usualmente sus actuaciones un 'acrobate' y un 'magicien'?",
+    "opciones": [
+      "un colegio regular",
+      "una biblioteca",
+      "un circo",
+      "un hospital"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las rutinas de acrobacia y magia son artes escénicas tradicionalmente arraigadas en el contexto del circo."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué animal exótico recibe el nombre de 'un perroquet'?",
+    "opciones": [
+      "un perro",
+      "un gato",
+      "un hámster",
+      "un loro"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El término francés 'un perroquet' traduce al español como loro, un ave trepadora de colores llamativos."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué territorio insular de habla francesa se localiza geográficamente entre el Océano Atlántico y el Pacífico?",
+    "opciones": [
+      "Guadeloupe",
+      "Corse",
+      "Bretagne",
+      "Normandie"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Guadalupe (Guadeloupe) es un territorio de ultramar situado en la región del mar Caribe."
+  },
+  {
+    "id": 38,
+    "pregunta": "Si un reporte meteorológico indica que en la ciudad de Lyon nieva, ¿qué expresión lo describe?",
+    "opciones": [
+      "il fait beau",
+      "il neige",
+      "il y a du soleil",
+      "il fait chaud"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El verbo impersonal 'neiger' conjugado como 'il neige' es la forma de indicar la presencia de nevadas."
+  },
+  {
+    "id": 39,
+    "pregunta": "Si el cielo de la ciudad de Nantes se muestra totalmente despejado, ¿cómo se describe su clima?",
+    "opciones": [
+      "il pleut",
+      "il neige",
+      "il y a du soleil",
+      "il fait froid"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Un día despejado y luminoso se describe utilizando la locución atmosférica 'il y a du soleil'."
+  },
+  {
+    "id": 40,
+    "pregunta": "Si un objeto se encuentra 'sur la chaise', ¿dónde debes buscarlo?",
+    "opciones": [
+      "debajo de la silla",
+      "dentro del bolso",
+      "sobre la silla",
+      "detrás del mueble"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La preposición 'sur' denota que el elemento está apoyado por encima, en este caso, de la silla."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cuál es la traducción de la palabra 'Le ciel'?",
+    "opciones": [
+      "el sol",
+      "la nube",
+      "la lluvia",
+      "el cielo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El término francés 'le ciel' corresponde semánticamente al espacio celeste o firmamento."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué oración formula una pregunta directa sobre el estado actual del tiempo atmosférico?",
+    "opciones": [
+      "Où est le feutre ?",
+      "Quel temps il fait ?",
+      "Qui c'est ?",
+      "Où tu es ?"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La construcción interrogativa 'Quel temps il fait ?' es la fórmula habitual para preguntar por las condiciones climáticas."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿A qué fenómeno global adverso alude el concepto 'Le réchauffement climatique'?",
+    "opciones": [
+      "al calentamiento global",
+      "a la tormenta de nieve",
+      "al clima tropical",
+      "al cambio de estación"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El sintagma 'réchauffement climatique' traduce directamente como calentamiento global, un tema crítico en ecología."
+  },
+  {
+    "id": 44,
+    "pregunta": "Si un hámster se esconde 'entre les chapeaux', ¿en qué posición relativa se halla?",
+    "opciones": [
+      "dentro de los sombreros",
+      "debajo de un sombrero",
+      "en medio de los sombreros",
+      "sobre los sombreros"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La preposición 'entre' denota una posición intermedia que separa físicamente a los elementos mencionados."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Cuál de estos objetos del material escolar posee género gramatical masculino en francés?",
+    "opciones": [
+      "une règle",
+      "une gomme",
+      "une trousse",
+      "un feutre"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Mientras que reglas, gomas y estuches se emplean en femenino, el rotulador se nombra con el artículo masculino 'un feutre'."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cuál de los siguientes lugares es el nombre de una importante ciudad francesa?",
+    "opciones": [
+      "Océan",
+      "Pacifique",
+      "Bordeaux",
+      "Guadeloupe"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Bordeaux, conocida en español como Burdeos, es una destacada urbe situada en la geografía metropolitana de Francia."
+  },
+  {
+    "id": 47,
+    "pregunta": "En pronunciación, ¿qué palabra de cortesía sirve de modelo para practicar la vocal [ɛ] (e abierta)?",
+    "opciones": [
+      "chapeau",
+      "merci",
+      "soleil",
+      "balle"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La palabra 'merci' posee una e tónica antes de la r que se articula abriendo la boca, conformando el sonido vocálico [ɛ]."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué útil de estudiante representa la palabra 'un cahier'?",
+    "opciones": [
+      "un cuaderno",
+      "una silla",
+      "un sombrero",
+      "un mapa"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El sustantivo 'cahier' designa el conjunto de hojas unidas por un lomo o espiral, es decir, el cuaderno."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué frase direccional se utiliza para decir 'delante de mí'?",
+    "opciones": [
+      "sur moi",
+      "sous moi",
+      "derrière moi",
+      "devant moi"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Combinando la preposición que indica anterioridad ('devant') con el pronombre tónico ('moi') se obtiene 'delante de mí'."
+  },
+  {
+    "id": 50,
+    "pregunta": "En un truco de magia donde desaparece una pelota pequeña ('la balle'), ¿qué animal podría ocultarla cómicamente comiéndosela?",
+    "opciones": [
+      "le perroquet",
+      "le tigre",
+      "le renard",
+      "le hamster"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La resolución humorística de este tipo de relatos infantiles suele implicar a mascotas pequeñas y golosas, como el hámster."
+  }
+]

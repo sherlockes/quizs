@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "5º Francés - Tema 3 (Une seule terre)",
+    "archivo": "cuestionarios/ian-5-frances-t3.json"
+  },
+  {
+    "titulo": "5º Francés - Tema 4 (Il fait chaud)",
+    "archivo": "cuestionarios/ian-5-frances-t4.json"
+  },
+  {
     "titulo": "5º Lengua - Tema 5 (Tu localidad)",
     "archivo": "cuestionarios/ian-5-lengua-t5.json"
   },
