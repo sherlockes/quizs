@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pregunta": "En el cuento Noche de lluvia y truenos, ¿qué problema de mantenimiento tiene el castillo?",
+    "opciones": [
+      "Se ha quedado sin luz",
+      "No tiene agua",
+      "Hay un incendio",
+      "Las puertas están rotas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto narrativo inicia cuando llaman de urgencia al protagonista porque el castillo se había quedado sin luz."
+  },
+  {
+    "id": 2,
+    "pregunta": "Según el cuento del castillo, ¿quién abre la puerta y da órdenes al electricista nada más llegar?",
+    "opciones": [
+      "Un gato",
+      "Una voz de ultratumba",
+      "El mayordomo",
+      "La chica dibujante"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El protagonista relata que, al golpear la inmensa puerta, se abrió y una voz de ultratumba le dio la orden de seguirle."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué significa la palabra haraganes en el vocabulario del cuento?",
+    "opciones": [
+      "Animales voladores",
+      "Puertas de madera",
+      "Personas holgazanas o vagas",
+      "Monedas viejísimas"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El glosario del libro define explícitamente haraganes como sinónimo de holgazanes o vagos."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué es la naftalina según el glosario del texto narrativo?",
+    "opciones": [
+      "Una herramienta de electricista",
+      "Una planta venenosa del castillo",
+      "Un tipo de murciélago",
+      "Sustancia para ahuyentar polillas"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El vocabulario al margen explica que la naftalina es una sustancia que se pone en los armarios para ahuyentar a las polillas que estropean la ropa."
+  },
+  {
+    "id": 5,
+    "pregunta": "En el apartado de literatura sobre narraciones, ¿qué tipo de historias se cuentan en la ficción?",
+    "opciones": [
+      "Historias que podrían suceder en la realidad o fantásticas",
+      "Solo historias sobre hechos históricos",
+      "Solamente historias de animales reales",
+      "Exclusivamente biografías de personas famosas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La teoría indica que las narraciones de ficción cuentan a veces historias que podrían suceder en la realidad y otras veces relatos sobre hechos, monstruos o personajes fantásticos."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué nombre recibe el gato que aparece en el castillo abandonado?",
+    "opciones": [
+      "Manchitas",
+      "Bigotito",
+      "Zarpas",
+      "Invisible"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Durante la conversación en el castillo, se menciona que al gato, que mide un metro y medio, lo llaman Bigotito."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Con qué objeto antiguo intentan pagarle al electricista en lugar de usar dinero?",
+    "opciones": [
+      "Con un reloj de oro",
+      "Con una espada antigua",
+      "Con un jarrón chino",
+      "Con un anillo de diamantes"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La entidad invisible trae flotando un jarrón chino antiguo para intentar pagarle los quinientos pesos de deuda, pero el electricista lo rechaza."
+  },
+  {
+    "id": 8,
+    "pregunta": "Según la teoría de vocabulario de la unidad, ¿qué son los sufijos?",
+    "opciones": [
+      "Palabras que no tienen significado propio",
+      "Letras que se ponen al principio de la palabra",
+      "Signos de puntuación para exclamar",
+      "Morfemas que se añaden al final de algunas palabras"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La definición formal del libro establece que los sufijos son morfemas derivativos que se añaden al final de ciertas palabras para formar otras nuevas."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuál de estos sufijos sirve para formar sustantivos?",
+    "opciones": [
+      "-ero",
+      "-ble",
+      "-izar",
+      "-oso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cuadro de sufijos agrupa terminaciones como -ero, -era, -ista, -eza y -ción en la categoría de formadores de sustantivos."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué tipo de palabras se forman al añadir los sufijos -ble, -oso o -al?",
+    "opciones": [
+      "Sustantivos",
+      "Adjetivos",
+      "Verbos",
+      "Adverbios"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La teoría de vocabulario clasifica estos sufijos específicos como formadores de adjetivos, dando ejemplos como adorable o misterioso."
+  },
+  {
+    "id": 11,
+    "pregunta": "Si a la palabra falso le añadimos un sufijo para formar un verbo, ¿qué palabra obtenemos?",
+    "opciones": [
+      "Falsedad",
+      "Falsamente",
+      "Falsificar",
+      "Falsísimo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El sufijo -ificar se utiliza para formar verbos; al unirlo a falso se obtiene el verbo falsificar, que aparece como ejemplo en el libro."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo se forma correctamente el plural de la palabra hoz?",
+    "opciones": [
+      "Hozes",
+      "Hozs",
+      "Hods",
+      "Hoces"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las reglas de ortografía explican que las palabras terminadas en z forman su plural cambiando la z por c y añadiendo -es, por ejemplo, hoces."
+  },
+  {
+    "id": 13,
+    "pregunta": "Según las reglas de ortografía, las palabras terminadas en z hacen su plural en:",
+    "opciones": [
+      "-ces",
+      "-des",
+      "-ses",
+      "-zes"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El recuadro de herramientas de lengua especifica formalmente que las palabras que acaban en z final tienen el plural en -ces."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuál es el plural correcto de la palabra vid?",
+    "opciones": [
+      "Vidces",
+      "Vides",
+      "Vids",
+      "Videz"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Para las palabras que terminan en d, la regla ortográfica marca que el plural se forma añadiendo -es, por lo que vid pasa a ser vides."
+  },
+  {
+    "id": 15,
+    "pregunta": "De las siguientes palabras, ¿cuál debe escribirse con d final en singular?",
+    "opciones": [
+      "Pez",
+      "Cicatriz",
+      "Libertad",
+      "Audaz"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Libertad termina en d y su plural es libertades. El resto de opciones terminan en z y hacen su plural en ces."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuál de estos nombres propios se escribe con d final según los ejemplos del libro?",
+    "opciones": [
+      "Ruiz",
+      "Badajoz",
+      "Beatriz",
+      "Soledad"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Soledad aparece como ejemplo de nombre propio que se escribe con d final, junto con Ingrid y Madrid."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué información nos dan las formas verbales además del número y la persona?",
+    "opciones": [
+      "Sitúan las acciones en el tiempo",
+      "Indican el tamaño del sujeto",
+      "Señalan la cantidad de objetos",
+      "Muestran la sílaba tónica"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La gramática indica que, además de número y persona, las formas verbales sitúan las acciones en el tiempo (pasado, presente o futuro)."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cómo se llaman las formas verbales que NO expresan la persona que realiza la acción?",
+    "opciones": [
+      "Formas simples",
+      "Formas no personales",
+      "Formas compuestas",
+      "Formas perfectas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El libro define las formas no personales como aquellas que no expresan la persona que realiza la acción."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cuáles son las formas no personales del verbo?",
+    "opciones": [
+      "Pasado, presente y futuro",
+      "Indicativo, subjuntivo e imperativo",
+      "Infinitivo, gerundio y participio",
+      "Simples y compuestas"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto enumera explícitamente el infinitivo, el gerundio y el participio como las tres formas no personales del verbo."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cuál de las siguientes opciones es un ejemplo de forma no personal compuesta?",
+    "opciones": [
+      "Saltando",
+      "Saltar",
+      "Saltado",
+      "Haber saltado"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las formas no personales tienen versiones compuestas; en este caso, el infinitivo compuesto es haber saltado."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Qué actitud del hablante expresa el modo indicativo en los verbos?",
+    "opciones": [
+      "Acciones que presentamos como reales",
+      "Órdenes afirmativas",
+      "Deseos u órdenes negativas",
+      "Dudas y preguntas abstractas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El modo indicativo se define en la lección por expresar acciones que presentamos como reales."
+  },
+  {
+    "id": 22,
+    "pregunta": "Si alguien exclama ¡Ojalá nos veamos pronto!, ¿qué modo verbal está utilizando?",
+    "opciones": [
+      "Indicativo",
+      "Subjuntivo",
+      "Imperativo",
+      "Infinitivo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El modo subjuntivo se usa para expresar deseos u órdenes negativas, siendo este ejemplo literal del libro de texto."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Para qué se utiliza principalmente el modo imperativo?",
+    "opciones": [
+      "Para expresar deseos imposibles",
+      "Para contar historias del pasado",
+      "Para dar órdenes afirmativas",
+      "Para describir acciones irreales"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La gramática de la unidad detalla que el modo imperativo se usa exclusivamente para expresar órdenes afirmativas."
+  },
+  {
+    "id": 24,
+    "pregunta": "Según la teoría de gramática, ¿en qué se diferencian las formas verbales que pertenecen a un mismo tiempo verbal?",
+    "opciones": [
+      "En el modo",
+      "En el significado principal del verbo",
+      "En la raíz verbal",
+      "Solo en el número y la persona"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Todas las formas de un tiempo verbal expresan el mismo tiempo y presentan la acción de la misma manera, diferenciándose únicamente en el número y la persona."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué cualidad de la acción expresan los tiempos verbales perfectos?",
+    "opciones": [
+      "Acciones acabadas",
+      "Acciones en progreso",
+      "Acciones que nunca ocurrirán",
+      "Acciones continuas en el futuro"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto es muy claro al indicar que los tiempos verbales perfectos sirven para expresar acciones acabadas."
+  },
+  {
+    "id": 26,
+    "pregunta": "Además de todos los tiempos compuestos, ¿qué otro tiempo verbal se considera perfecto?",
+    "opciones": [
+      "El presente",
+      "El pretérito perfecto simple",
+      "El pretérito imperfecto",
+      "El futuro simple"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La norma indica que son perfectos todos los tiempos compuestos junto con el pretérito perfecto simple."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué tipo de acciones expresan los tiempos imperfectos?",
+    "opciones": [
+      "Acciones que ya han finalizado",
+      "Acciones que suceden solo en sueños",
+      "Acciones inacabadas",
+      "Acciones repetitivas del pasado"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "A diferencia de los perfectos, los tiempos imperfectos se definen por expresar acciones inacabadas."
+  },
+  {
+    "id": 28,
+    "pregunta": "Según la teoría literaria del tema, ¿qué es una estrofa?",
+    "opciones": [
+      "Un cuento tradicional muy corto",
+      "El conjunto de todos los poemas de un autor",
+      "Un tipo de narrador de poesías",
+      "Un grupo de versos cuya rima y medida siguen un esquema fijo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El apartado de formas poéticas define estrofa como un grupo de versos que mantiene un esquema fijo de rima y medida."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué tipo de estrofa está formada por tres versos de arte mayor que riman en consonante el primero con el tercero?",
+    "opciones": [
+      "Terceto",
+      "Redondilla",
+      "Cuarteta",
+      "Soneto"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La definición formal del terceto es exactamente la de una estrofa de tres versos de arte mayor donde el primero rima con el tercero (A-A)."
+  },
+  {
+    "id": 30,
+    "pregunta": "En la estrofa llamada redondilla, ¿cómo riman sus cuatro versos de arte menor?",
+    "opciones": [
+      "Riman el primero con el segundo",
+      "Riman con el esquema abba",
+      "Riman con el esquema abab",
+      "No tienen rima consonante"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El esquema rítmico enseñado para la redondilla es abba (rima el primero con el cuarto, y el segundo con el tercero)."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cuál es la estrofa compuesta por cuatro versos de arte menor que tiene un esquema de rima abab?",
+    "opciones": [
+      "Redondilla",
+      "Serventesio",
+      "Cuarteta",
+      "Cuarteto"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La cuarteta se caracteriza por ser de arte menor y tener rima cruzada con el esquema abab."
+  },
+  {
+    "id": 32,
+    "pregunta": "Si una estrofa rima como una redondilla (ABBA) pero sus versos son de arte mayor, ¿cómo se denomina?",
+    "opciones": [
+      "Serventesio",
+      "Terceto",
+      "Romance",
+      "Cuarteto"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El libro detalla que si los versos de la redondilla fueran de arte mayor, la estrofa recibiría el nombre de cuarteto."
+  },
+  {
+    "id": 33,
+    "pregunta": "Según la clasificación por la organización de los versos, ¿qué clase de poema es el soneto?",
+    "opciones": [
+      "Poema estrófico",
+      "Poema no estrófico",
+      "Poema narrativo",
+      "Poema sin rima"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En la división de los tipos de poemas, el soneto se presenta como el ejemplo principal de un poema estrófico."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué clase de poema es el romance según los apuntes de literatura de la unidad?",
+    "opciones": [
+      "Estrófico",
+      "No estrófico",
+      "En prosa",
+      "Cuarteta larga"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "A diferencia del soneto, el romance se clasifica formalmente como un poema no estrófico."
+  },
+  {
+    "id": 35,
+    "pregunta": "En el romance La niña adormecida, ¿en qué momento del día sale a caminar la protagonista?",
+    "opciones": [
+      "Al mediodía soleado",
+      "Al atardecer de primavera",
+      "Tres horas antes del día",
+      "A medianoche en invierno"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El poema comienza indicando que la niña sale a caminar tres horas antes del día en la mañana de San Juan."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué árbol se menciona en el romance de La niña adormecida que destaca por tener el tronco de oro?",
+    "opciones": [
+      "Un pino",
+      "Un roble",
+      "Un sauce",
+      "Un ciprés"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los versos del poema describen un alto ciprés que tenía el tronco de oro y las ramas de plata fina."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Quién es el autor del poema titulado Rema, rema, remadora?",
+    "opciones": [
+      "Rafael Alberti",
+      "Dámaso Alonso",
+      "Andrés Fernández de Andrada",
+      "Gerardo Diego"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El poema que habla sobre la remadora y la lancha vapora lleva la firma del poeta Rafael Alberti."
+  },
+  {
+    "id": 38,
+    "pregunta": "En la Edad Media, ¿quiénes eran las personas que dramatizaban historias de carácter épico o amoroso ante el público?",
+    "opciones": [
+      "Los artesanos",
+      "Los juglares",
+      "Los lutieres",
+      "Los reyes"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El taller de literatura explica que en la Edad Media eran los juglares quienes se encargaban de interpretar y dramatizar los romances ante el público."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cómo se transmitían originariamente los romances en la Edad Media?",
+    "opciones": [
+      "Por escrito en libros de texto",
+      "A través de representaciones mudas",
+      "De forma oral",
+      "Mediante cartas formales"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto histórico indica que estas historias poéticas se transmitían de forma oral de unas personas a otras."
+  },
+  {
+    "id": 40,
+    "pregunta": "Según las instrucciones del libro para hacer una encuesta, ¿cuál es el primer paso antes de elaborar las preguntas concretas?",
+    "opciones": [
+      "Exponer los resultados directamente",
+      "Hacer un resumen de respuestas",
+      "Realizar la encuesta a desconocidos",
+      "Hablar en clase sobre el tema"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El paso número 1 de la sección Pasa a la acción indica que primero se debe hablar en clase y debatir sobre el tema de la encuesta."
+  },
+  {
+    "id": 41,
+    "pregunta": "Al elaborar el listado definitivo de preguntas para una encuesta, ¿cómo recomienda el libro ordenarlas?",
+    "opciones": [
+      "Primero las más generales y luego las más concretas",
+      "Primero las difíciles y luego las fáciles",
+      "Por estricto orden alfabético",
+      "Al azar, sin ningún orden específico"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Una de las indicaciones clave para estructurar la encuesta es agrupar las preguntas poniendo primero las más generales y luego las más concretas."
+  },
+  {
+    "id": 42,
+    "pregunta": "Al preparar un resumen de los resultados de una encuesta, ¿qué es importante hacer según las indicaciones estudiadas?",
+    "opciones": [
+      "Escribir el nombre completo de todos los encuestados",
+      "Recoger la información sin decir quién os lo ha dicho",
+      "Inventar las respuestas que falten",
+      "Incluir dibujos explicativos obligatoriamente"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El paso 6 recomienda usar expresiones generales como 'a muchas personas les gusta' porque se debe recoger la información sin revelar qué individuo en concreto lo ha dicho."
+  },
+  {
+    "id": 43,
+    "pregunta": "En la oración Marta estudió Medicina, utilizada como ejemplo gramatical, ¿en qué modo se encuentra el verbo?",
+    "opciones": [
+      "Subjuntivo",
+      "Imperativo",
+      "Indicativo",
+      "Infinitivo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Este es el ejemplo exacto proporcionado en el libro para ilustrar el modo indicativo, pues expresa una acción presentada como real."
+  },
+  {
+    "id": 44,
+    "pregunta": "Identifica cuál de las siguientes palabras presenta un error ortográfico al formar su plural:",
+    "opciones": [
+      "Audaces",
+      "Voraces",
+      "Capacidades",
+      "Antifazes"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Antifazes es incorrecto porque las palabras terminadas en z hacen el plural en -ces, por lo tanto, la forma correcta sería antifaces."
+  },
+  {
+    "id": 45,
+    "pregunta": "En el texto Noche de lluvia y truenos, ¿qué excusa pone el mayordomo para explicar por qué no tienen dinero en el castillo?",
+    "opciones": [
+      "Dice que ninguno trabaja y son unos haraganes",
+      "Dice que el banco más cercano está cerrado",
+      "Afirma que la tormenta lo ha destruido todo",
+      "Asegura que se lo ha robado el gato Bigotito"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El mayordomo explica que no tienen dinero porque ninguno de los fantasmas que habita el castillo trabaja."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué sufijo se utilizaría correctamente para formar el nombre de una profesión relacionada con el instrumento guitarra?",
+    "opciones": [
+      "-ero",
+      "-ista",
+      "-ción",
+      "-ble"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En los ejercicios de formación de palabras, al instrumento guitarra se le añade el sufijo -ista para formar la profesión guitarrista."
+  },
+  {
+    "id": 47,
+    "pregunta": "De las siguientes palabras, ¿cuál forma su plural añadiendo únicamente -des?",
+    "opciones": [
+      "Capaz",
+      "Tapiz",
+      "Falsedad",
+      "Audaz"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Falsedad termina en d, y la regla dicta que estas palabras hacen el plural en -des, resultando en falsedades."
+  },
+  {
+    "id": 48,
+    "pregunta": "Según la narración del poema de La niña adormecida, ¿qué animal bajó y se posó en el pecho de la niña?",
+    "opciones": [
+      "Una mariposa",
+      "Una paloma blanca",
+      "Un halcón peregrino",
+      "Un ruiseñor"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los versos finales del poema cuentan que ha bajado un ruiseñor con alegre cantoría y se ha posado en el pecho de la niña."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué significado tiene la palabra postigos según el cuadro de vocabulario del cuento?",
+    "opciones": [
+      "Puertas de madera para cubrir cristales y aislar el clima",
+      "Ventanas redondas pequeñas de los barcos",
+      "Cortinas de tela muy gruesa",
+      "Escaleras de caracol muy oscuras y largas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El glosario define postigos como puertas de madera que cubren las hojas de cristal de ventanas o puertas para impedir que pase la luz, el frío o el calor."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cómo se titula el poema del autor Dámaso Alonso mencionado en las actividades finales del tema?",
+    "opciones": [
+      "El rap de la paz",
+      "La invasión de las siglas",
+      "Rema, rema, remadora",
+      "Cuentos espantosos"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la sección de valoración del aprendizaje, se propone leer con entonación un fragmento del poema titulado La invasión de las siglas, de Dámaso Alonso."
+  }
+]

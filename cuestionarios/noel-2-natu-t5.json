@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Por qué los seres humanos se han planteado preguntas y hacemos experimentos?",
+    "opciones": [
+      "Para intentar comprender el mundo que nos rodea.",
+      "Para aburrirnos en el colegio.",
+      "Para hacer magia.",
+      "Para no tener que estudiar."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto indica que el ser humano se hace preguntas para intentar comprender el mundo, desarrollando así el método científico."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál es el primer paso del método científico?",
+    "opciones": [
+      "Obtener conclusiones.",
+      "Observación.",
+      "Realizar experimentos.",
+      "Hacernos preguntas."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la lista de los pasos del método científico, el número 1 es la observación."
+  },
+  {
+    "id": 3,
+    "pregunta": "Después de la observación, ¿qué hacemos en el método científico?",
+    "opciones": [
+      "Nos vamos a casa.",
+      "Obtenemos conclusiones.",
+      "Nos hacemos preguntas.",
+      "Realizamos experimentos."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El paso número 2 del método científico, que sigue a la observación, es hacernos preguntas."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué paso va justo antes de obtener conclusiones en el método científico?",
+    "opciones": [
+      "Observación.",
+      "Hacer dibujos.",
+      "Hacernos preguntas.",
+      "Realizamos experimentos."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El paso 3 es realizar experimentos, que se hace justo antes del paso 4, que es obtener conclusiones."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuál es el último paso del método científico?",
+    "opciones": [
+      "Obtenemos conclusiones.",
+      "Observación.",
+      "Hacemos experimentos.",
+      "Hacemos preguntas."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El paso número 4 y final mencionado en el tema es obtener conclusiones."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿De qué están formadas la mayoría de las cosas que nos rodean?",
+    "opciones": [
+      "De luz.",
+      "De materia.",
+      "De sonido.",
+      "De cristales."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto explica claramente que la mayoría de las cosas están formadas por materia."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuáles son los tres estados en los que puede encontrarse la materia?",
+    "opciones": [
+      "Frío, caliente y templado.",
+      "Luz, sonido y calor.",
+      "Sólido, líquido o gaseoso.",
+      "Duro, blando y flexible."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La materia se puede encontrar en estado sólido, líquido o gaseoso."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cómo puede la materia cambiar de estado?",
+    "opciones": [
+      "Solo si la tocamos.",
+      "Si la pintamos de colores.",
+      "Si le aplicamos mucha luz.",
+      "Al calentarse o enfriarse."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El texto afirma que la materia cambia de estado al calentarse o enfriarse."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué es una sustancia según el tema de naturales?",
+    "opciones": [
+      "Cada tipo de materia.",
+      "Una forma de luz.",
+      "Un tipo de experimento.",
+      "El último paso del método científico."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se define sustancia de forma sencilla como cada tipo de materia."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué conseguimos si combinamos dos o más sustancias?",
+    "opciones": [
+      "Una disolución siempre.",
+      "Una mezcla.",
+      "Un material artificial.",
+      "Luz natural."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El documento dice que si combinamos dos o más sustancias obtenemos una mezcla."
+  },
+  {
+    "id": 11,
+    "pregunta": "En algunas mezclas, los componentes se pueden ver a simple vista. ¿Cuál es un ejemplo?",
+    "opciones": [
+      "Azúcar y agua.",
+      "Agua con sal.",
+      "Una ensalada de frutas.",
+      "El aire que respiramos."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto da como ejemplo de mezcla donde se ven los componentes a la ensalada de frutas."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué otro ejemplo da el texto de una mezcla en la que se ven fácilmente sus componentes?",
+    "opciones": [
+      "Un vaso de agua.",
+      "Azúcar y agua.",
+      "Un cristal transparente.",
+      "Un batido de chocolate."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El batido de chocolate se menciona como una mezcla donde los componentes se pueden ver a simple vista."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Cómo llamamos a las mezclas en las que no se distinguen sus componentes a simple vista?",
+    "opciones": [
+      "Disoluciones.",
+      "Materiales naturales.",
+      "Sustancias.",
+      "Ondas sonoras."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Cuando no se distinguen los componentes de la mezcla, las llamamos disoluciones."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuál de estos es un ejemplo de disolución mencionado en el tema?",
+    "opciones": [
+      "Macedonia de frutas.",
+      "Azúcar y agua.",
+      "Cereales con leche.",
+      "Madera y piedra."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto usa el azúcar y agua como ejemplo de disolución porque no se distinguen sus componentes."
+  },
+  {
+    "id": 15,
+    "pregunta": "Según los ejercicios de repaso, el agua con sal es:",
+    "opciones": [
+      "Un material natural.",
+      "Una mezcla donde se ven los ingredientes.",
+      "Una disolución.",
+      "Un experimento fallido."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En las actividades, el agua con sal está marcada correctamente como una disolución porque la sal se disuelve y no se ve."
+  },
+  {
+    "id": 16,
+    "pregunta": "Según los ejercicios, ¿qué son los cereales con leche?",
+    "opciones": [
+      "Una disolución.",
+      "Un tipo de materia gaseosa.",
+      "Una sustancia pura.",
+      "Una mezcla."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En las actividades, los cereales con leche están clasificados como mezcla, ya que se pueden ver y separar la leche de los cereales."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué son los materiales?",
+    "opciones": [
+      "Tipos de materia que utilizamos para fabricar objetos.",
+      "Los pasos del método científico.",
+      "Ondas de sonido.",
+      "Sustancias que no se pueden tocar."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto define los materiales como tipos de materia que utilizamos para fabricar objetos."
+  },
+  {
+    "id": 18,
+    "pregunta": "Los materiales naturales son aquellos que...",
+    "opciones": [
+      "Fabricamos los humanos.",
+      "Vienen de la naturaleza.",
+      "Dejan pasar la luz.",
+      "Siempre son líquidos."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se explica claramente que los materiales naturales son los que vienen de la naturaleza."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cuáles de los siguientes son materiales naturales?",
+    "opciones": [
+      "Plástico, vidrio y papel.",
+      "Agua con sal y azúcar.",
+      "Madera, lana y piedra.",
+      "Cristal y bombillas."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto pone como ejemplos de materiales naturales la madera, la lana y la piedra."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué caracteriza a los materiales artificiales?",
+    "opciones": [
+      "Que crecen en los árboles.",
+      "Que vienen directamente de los animales.",
+      "Que son todos transparentes.",
+      "Que los fabricamos los humanos."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los materiales artificiales son definidos como aquellos que fabricamos los seres humanos."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuáles de los siguientes son ejemplos de materiales artificiales?",
+    "opciones": [
+      "Plástico, vidrio o papel.",
+      "Madera, lana y piedra.",
+      "Sol y luna.",
+      "Sal y azúcar."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El plástico, el vidrio y el papel aparecen como ejemplos de materiales artificiales fabricados por humanos."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Por qué elegimos un material concreto para fabricar un objeto?",
+    "opciones": [
+      "Porque todos son iguales.",
+      "Por sus propiedades diferentes que lo hacen adecuado para un uso.",
+      "Porque es el único que hay.",
+      "Porque todos son naturales."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Cada material tiene unas propiedades diferentes (duro, flexible, etc.) que lo hacen adecuado para un uso determinado."
+  },
+  {
+    "id": 23,
+    "pregunta": "Según los ejercicios de la ficha de repaso, ¿en qué estado está un bloque de barro?",
+    "opciones": [
+      "Gaseoso.",
+      "Líquido.",
+      "Sólido.",
+      "Disolución."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En el ejercicio de repaso se identifica correctamente el bloque de barro como estado sólido."
+  },
+  {
+    "id": 24,
+    "pregunta": "Según la ficha de actividades, ¿en qué estado de la materia está el té?",
+    "opciones": [
+      "Gaseoso.",
+      "Sólido.",
+      "Mezcla.",
+      "Líquido."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En la actividad de los estados de la materia, el té contenido en la taza está clasificado como líquido."
+  },
+  {
+    "id": 25,
+    "pregunta": "En los ejercicios aparece un globo aerostático. ¿En qué estado de la materia está el aire caliente de su interior?",
+    "opciones": [
+      "Gaseoso.",
+      "Líquido.",
+      "Sólido.",
+      "Material natural."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El aire caliente dentro del globo está clasificado como gaseoso en el ejercicio de la ficha."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué es la luz?",
+    "opciones": [
+      "Un estado de la materia.",
+      "Una forma de energía que nos permite ver las cosas que nos rodean.",
+      "Una disolución de rayos.",
+      "Un material artificial."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La luz se define textualmente como una forma de energía que nos permite ver las cosas que nos rodean."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué dos tipos de luz existen según su origen?",
+    "opciones": [
+      "Clara y oscura.",
+      "Sólida y líquida.",
+      "Natural y artificial.",
+      "Fuerte y suave."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto distingue entre luz natural y luz artificial."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cuál es el principal ejemplo de luz natural que da el texto?",
+    "opciones": [
+      "Una linterna.",
+      "Una vela.",
+      "Un cristal.",
+      "El Sol."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El Sol se menciona como el origen de la luz natural que viene de la naturaleza."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cuál de estas es una fuente de luz artificial creada por las personas?",
+    "opciones": [
+      "Bombillas y linternas.",
+      "El Sol y las estrellas.",
+      "El vidrio y el plástico.",
+      "El agua y la sal."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las bombillas y linternas son los ejemplos que da el tema sobre la luz artificial que crean las personas."
+  },
+  {
+    "id": 30,
+    "pregunta": "Según cómo dejan pasar la luz, ¿cómo son los materiales transparentes?",
+    "opciones": [
+      "No dejan pasar nada de luz.",
+      "Dejan pasar la luz y vemos a través de ellos.",
+      "Dejan pasar algo de luz pero no vemos bien.",
+      "Solo dejan pasar la luz artificial."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los materiales transparentes son aquellos que dejan pasar la luz y permiten ver a través de ellos."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Qué ejemplo de material transparente nos da el tema?",
+    "opciones": [
+      "La madera.",
+      "El papel vegetal.",
+      "El cristal.",
+      "El plástico duro."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El cristal es el ejemplo usado en el texto para los materiales transparentes."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué característica principal tienen los materiales translúcidos?",
+    "opciones": [
+      "No dejan pasar ninguna luz.",
+      "Son completamente invisibles.",
+      "Dejan pasar la luz perfectamente y se ve claro.",
+      "Dejan pasar algo de luz pero no vemos bien a través de ellos."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los translúcidos se definen porque dejan pasar algo de luz, pero no permiten ver bien a través de ellos."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué material se nombra como ejemplo de material translúcido?",
+    "opciones": [
+      "El papel vegetal.",
+      "El cristal.",
+      "La madera.",
+      "La lana."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El papel vegetal se nombra en los apuntes como ejemplo de material translúcido."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cómo se llaman los materiales que NO dejan pasar la luz?",
+    "opciones": [
+      "Flexibles.",
+      "Opacos.",
+      "Transparentes.",
+      "Gaseosos."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los materiales opacos son aquellos que no dejan pasar la luz en absoluto."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Qué material es un ejemplo clásico de material opaco en el texto?",
+    "opciones": [
+      "El papel vegetal.",
+      "El cristal.",
+      "La madera.",
+      "El vidrio."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La madera se utiliza como el ejemplo de material opaco en el texto."
+  },
+  {
+    "id": 36,
+    "pregunta": "En la ficha de repaso dice que la goma se puede doblar fácilmente. ¿Qué propiedad tiene entonces?",
+    "opciones": [
+      "Es dura.",
+      "Es opaca.",
+      "Es frágil.",
+      "Es flexible."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El ejercicio se completa diciendo que la goma es flexible porque se puede doblar fácilmente."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Por qué el metal se considera un material duro?",
+    "opciones": [
+      "Porque cuesta rayarlo o romperlo.",
+      "Porque deja pasar la luz.",
+      "Porque viene de la naturaleza.",
+      "Porque se puede doblar sin romperse."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El ejercicio de la ficha indica que el metal es duro porque cuesta rayarlo o romperlo."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Por qué decimos que la madera es opaca?",
+    "opciones": [
+      "Porque es de la naturaleza.",
+      "Porque no deja pasar la luz.",
+      "Porque es muy resistente.",
+      "Porque es líquida."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En el ejercicio de completar frases, la madera es opaca porque no deja pasar la luz."
+  },
+  {
+    "id": 39,
+    "pregunta": Según las actividades, ¿qué propiedad tiene un plástico que se puede doblar sin romperse?",
+    "opciones": [
+      "Es translúcido.",
+      "Es frágil.",
+      "Es elástico.",
+      "Es sonoro."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El ejercicio señala que el plástico puede ser elástico y doblarse sin romperse."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué es el sonido?",
+    "opciones": [
+      "Una mezcla de sustancias.",
+      "Un tipo de luz natural.",
+      "Un material artificial.",
+      "La energía sonora que se produce cuando algo vibra."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El texto define el sonido como la energía sonora que se produce cuando algo vibra."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cómo se propaga y llega el sonido a nuestros oídos?",
+    "opciones": [
+      "A través de ondas sonoras.",
+      "A través de rayos de luz.",
+      "A través de materiales opacos.",
+      "A través de cables."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El documento explica que son las ondas sonoras las que se propagan y llegan a nuestros oídos."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué palabras usamos para la cualidad de 'altura' del sonido?",
+    "opciones": [
+      "Corto o largo.",
+      "Agudo o grave.",
+      "Fuerte o suave.",
+      "Transparente u opaco."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las cualidades que miden la altura del sonido son agudo y grave."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué mide la cualidad de 'duración' en el sonido?",
+    "opciones": [
+      "Si es agudo o grave.",
+      "Si es fuerte o suave.",
+      "Si el sonido es corto o largo.",
+      "Quién produce el sonido."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La cualidad de duración sirve para determinar si el sonido es corto o largo."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cómo puede ser la 'intensidad' de un sonido?",
+    "opciones": [
+      "Transparente o translúcido.",
+      "Sólido o líquido.",
+      "Aguda o grave.",
+      "Fuerte o suave."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La intensidad del sonido se mide como fuerte o suave."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Para qué sirve la cualidad del sonido llamada 'timbre'?",
+    "opciones": [
+      "Ayuda a reconocer qué o quién produce el sonido.",
+      "Para medir la luz.",
+      "Para saber si es sólido o líquido.",
+      "Para crear una mezcla."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El timbre es la cualidad que ayuda a reconocer qué o quién produce el sonido."
+  },
+  {
+    "id": 46,
+    "pregunta": "Según el ejercicio sobre la sirena de la ambulancia, ¿cómo es su altura?",
+    "opciones": [
+      "Grave.",
+      "Aguda.",
+      "Larga.",
+      "Fuerte."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la ficha de repaso, la altura de la sirena de la ambulancia está clasificada como aguda."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cómo es la intensidad del sonido de la sirena de la ambulancia según la ficha?",
+    "opciones": [
+      "Suave.",
+      "Corta.",
+      "Fuerte.",
+      "Grave."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En los ejercicios de repaso, la intensidad de la ambulancia se indica como fuerte."
+  },
+  {
+    "id": 48,
+    "pregunta": "En la ficha de repaso, ¿cómo es la duración del sonido de la sirena de la ambulancia?",
+    "opciones": [
+      "Fuerte.",
+      "Aguda.",
+      "Suave.",
+      "Corta."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El ejercicio completado indica que la duración del sonido de la ambulancia es corta."
+  },
+  {
+    "id": 49,
+    "pregunta": "Indica si es verdadero o falso: Una bombilla es una fuente natural de luz.",
+    "opciones": [
+      "Falso, es artificial.",
+      "Verdadero, sale de la naturaleza.",
+      "Verdadero, nos da calor.",
+      "Falso, es un sonido."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El ejercicio de verdadero o falso marca como Falsa esta afirmación, pues la bombilla fue creada por humanos y es luz artificial."
+  },
+  {
+    "id": 50,
+    "pregunta": "Indica si es verdadero o falso: El cristal transparente nos permite ver lo que hay detrás.",
+    "opciones": [
+      "Falso, no deja pasar luz.",
+      "Verdadero, la luz pasa por él y nos deja ver.",
+      "Falso, deforma la imagen.",
+      "Verdadero, pero solo con luz artificial."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ejercicio marca como Verdadera la afirmación de que el cristal transparente permite ver lo que hay detrás porque deja pasar la luz."
+  }
+]
