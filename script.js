@@ -27,12 +27,30 @@ function renderSelector(temas) {
                 ${temas.map(t => `<option value="${t.archivo}" data-titulo="${t.titulo}">${t.titulo}</option>`).join('')}
             </select>
         </div>
+        <div id="action-buttons" style="display:none; text-align:center; margin-bottom: 20px;">
+            <button id="btn-start" class="btn-restart">Hacer Test</button>
+            <button id="btn-ranking" class="btn-restart" style="background-color: #1976D2; display: none; margin-left: 10px;">Ver Clasificación</button>
+        </div>
+        <div id="tabla-ranking"></div>
     `;
     
     document.getElementById('quiz-selector').addEventListener('change', (e) => {
-        const archivo = e.target.value;
-        currentTitle = e.target.options[e.target.selectedIndex].getAttribute('data-titulo');
+        document.getElementById('action-buttons').style.display = 'block';
+        document.getElementById('tabla-ranking').innerHTML = ''; // Limpiar ranking previo
+    });
+
+    document.getElementById('btn-start').addEventListener('click', () => {
+        const select = document.getElementById('quiz-selector');
+        const archivo = select.value;
+        currentTitle = select.options[select.selectedIndex].getAttribute('data-titulo');
         loadQuiz(archivo);
+    });
+
+    document.getElementById('btn-ranking').addEventListener('click', () => {
+        const select = document.getElementById('quiz-selector');
+        currentTitle = select.options[select.selectedIndex].getAttribute('data-titulo');
+        document.getElementById('tabla-ranking').innerHTML = "<p style='text-align:center; color:gray; font-size:0.9rem;'>Cargando ranking...</p>";
+        cargarRanking();
     });
 }   
 
@@ -167,6 +185,28 @@ async function enviarPuntuacion(puntos) {
     }
 }
 
+function parsePuntuacion(val) {
+    if (typeof val === 'number') {
+        return val;
+    }
+    if (typeof val === 'string') {
+        // Si parece una fecha ISO (contiene "-" y "T" y termina en "Z")
+        if (val.includes('-') && val.includes('T') && val.endsWith('Z')) {
+            const d = new Date(val);
+            if (!isNaN(d.getTime())) {
+                const dia = d.getDate();
+                const mes = d.getMonth() + 1;
+                // Si la fecha corresponde a una nota convertida por Sheets (ej. 9.4 = 9 de abril = dia 9, mes 4)
+                return dia + (mes / 10);
+            }
+        }
+        // Si es un string numérico normal, lo parseamos
+        const parsed = parseFloat(val);
+        return isNaN(parsed) ? 0 : parsed;
+    }
+    return 0;
+}
+
 async function cargarRanking() {
     try {
         const res = await fetch(GOOGLE_SCRIPT_URL);
@@ -179,7 +219,7 @@ async function cargarRanking() {
         const registrosFiltrados = registros.filter(reg => reg[3] === currentTitle);
 
         // 2. ORDENAR: De mayor a menor puntuación (reg[2])
-        registrosFiltrados.sort((a, b) => parseFloat(b[2]) - parseFloat(a[2]));
+        registrosFiltrados.sort((a, b) => parsePuntuacion(b[2]) - parsePuntuacion(a[2]));
 
         // 3. LIMITAR: Top 10
         const top10 = registrosFiltrados.slice(0, 10);
@@ -193,12 +233,8 @@ async function cargarRanking() {
             html += `<tr><td style="color:gray; padding:10px;">Aún no hay puntuaciones para este test.</td></tr>`;
         } else {
             top10.forEach((reg, i) => {
-                // Vamos a "limpiar" y asegurar los índices.
-                // Si reg[2] te da una fecha, intenta cambiarlo por reg[1] o reg[3] 
-                // hasta que veas el número de la nota.
-                
                 const nombreJugador = reg[1]; 
-                const puntosJugador = reg[2]; // <--- CAMBIA ESTE ÍNDICE si sigue saliendo la fecha
+                const puntosJugador = parsePuntuacion(reg[2]);
                 const nombreExamen = reg[3];
 
                 html += `
