@@ -297,7 +297,15 @@
 
     async function cargarJsonAutomatico() {
       try {
-        const respuestaFetch = await fetch("vocabulario.json");
+        // Añadimos un parámetro de tiempo para evitar el almacenamiento en caché (cache busting)
+        const cacheBuster = "?t=" + Date.now();
+        let respuestaFetch = await fetch("vocabulario.json" + cacheBuster);
+
+        // Si la petición falla (por ejemplo, si el servidor sirve la ruta sin barra diagonal final '/spelling'
+        // y busca en la raíz), intentamos buscar en la subcarpeta 'spelling/'
+        if (!respuestaFetch.ok) {
+          respuestaFetch = await fetch("spelling/vocabulario.json" + cacheBuster);
+        }
 
         if (!respuestaFetch.ok) {
           throw new Error("No se pudo cargar vocabulario.json");
@@ -307,9 +315,20 @@
         prepararDatos(json);
         mensajeCarga.style.display = "none";
       } catch (error) {
+        console.error("Error al cargar el vocabulario:", error);
         mensajeCarga.style.display = "block";
-        mensajeCarga.innerHTML =
-          "No se ha podido cargar automáticamente <strong>vocabulario.json</strong>. Puedes seleccionarlo manualmente arriba.";
+
+        // Si se accede por protocolo file:// (doble clic al archivo local), explicamos amigablemente el bloqueo CORS
+        if (window.location.protocol === "file:") {
+          mensajeCarga.innerHTML =
+            "<strong>¡Hola!</strong> Los navegadores modernos bloquean la carga automática de archivos locales por seguridad (CORS) cuando abres el archivo directamente (<code>file://</code>).<br><br>" +
+            "Para jugar, puedes:<br>" +
+            "1. <strong>Seleccionar manualmente</strong> el archivo <code>vocabulario.json</code> usando el botón de abajo.<br>" +
+            "2. O bien, <strong>abrir la carpeta con un servidor local</strong> (por ejemplo, con la extensión <em>Live Server</em> de VS Code o ejecutando <code>python -m http.server 8000</code> en la terminal).";
+        } else {
+          mensajeCarga.innerHTML =
+            "No se ha podido cargar automáticamente <strong>vocabulario.json</strong>. Por favor, asegúrate de que el archivo existe en la misma carpeta o selecciónalo manualmente arriba.";
+        }
       }
     }
 
