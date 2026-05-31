@@ -295,41 +295,80 @@
     const barra = document.getElementById("barra");
     const fallosFinales = document.getElementById("fallosFinales");
 
-    async function cargarJsonAutomatico() {
-      try {
-        // Añadimos un parámetro de tiempo para evitar el almacenamiento en caché (cache busting)
-        const cacheBuster = "?t=" + Date.now();
-        let respuestaFetch = await fetch("vocabulario.json" + cacheBuster);
+    function mostrarErrorCarga(error) {
+      console.error("Error al cargar el vocabulario:", error);
+      mensajeCarga.style.display = "block";
 
-        // Si la petición falla (por ejemplo, si el servidor sirve la ruta sin barra diagonal final '/spelling'
-        // y busca en la raíz), intentamos buscar en la subcarpeta 'spelling/'
-        if (!respuestaFetch.ok) {
-          respuestaFetch = await fetch("spelling/vocabulario.json" + cacheBuster);
-        }
-
-        if (!respuestaFetch.ok) {
-          throw new Error("No se pudo cargar vocabulario.json");
-        }
-
-        const json = await respuestaFetch.json();
-        prepararDatos(json);
-        mensajeCarga.style.display = "none";
-      } catch (error) {
-        console.error("Error al cargar el vocabulario:", error);
-        mensajeCarga.style.display = "block";
-
-        // Si se accede por protocolo file:// (doble clic al archivo local), explicamos amigablemente el bloqueo CORS
-        if (window.location.protocol === "file:") {
-          mensajeCarga.innerHTML =
-            "<strong>¡Hola!</strong> Los navegadores modernos bloquean la carga automática de archivos locales por seguridad (CORS) cuando abres el archivo directamente (<code>file://</code>).<br><br>" +
-            "Para jugar, puedes:<br>" +
-            "1. <strong>Seleccionar manualmente</strong> el archivo <code>vocabulario.json</code> usando el botón de abajo.<br>" +
-            "2. O bien, <strong>abrir la carpeta con un servidor local</strong> (por ejemplo, con la extensión <em>Live Server</em> de VS Code o ejecutando <code>python -m http.server 8000</code> en la terminal).";
-        } else {
-          mensajeCarga.innerHTML =
-            "No se ha podido cargar automáticamente <strong>vocabulario.json</strong>. Por favor, asegúrate de que el archivo existe en la misma carpeta o selecciónalo manualmente arriba.";
-        }
+      if (window.location.protocol === "file:") {
+        mensajeCarga.innerHTML =
+          "<strong>¡Hola!</strong> Los navegadores modernos bloquean la carga automática de archivos locales por seguridad (CORS) cuando abres el archivo directamente (<code>file://</code>).<br><br>" +
+          "Para jugar, puedes:<br>" +
+          "1. <strong>Seleccionar manualmente</strong> el archivo <code>vocabulario.json</code> usando el botón de abajo.<br>" +
+          "2. O bien, <strong>abrir la carpeta con un servidor local</strong> (por ejemplo, con la extensión <em>Live Server</em> de VS Code o ejecutando <code>python -m http.server 8000</code> en la terminal).";
+      } else {
+        mensajeCarga.innerHTML =
+          "No se ha podido cargar automáticamente <strong>vocabulario.json</strong>. Por favor, asegúrate de que el archivo existe en la misma carpeta o selecciónalo manualmente arriba.";
       }
+    }
+
+    function cargarJsonAutomatico() {
+      var cacheBuster = "?t=" + Date.now();
+      
+      // Fallback a XMLHttpRequest si fetch no está soportado en iPads/navegadores antiguos
+      if (!window.fetch) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "vocabulario.json" + cacheBuster, true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              try {
+                prepararDatos(JSON.parse(xhr.responseText));
+                mensajeCarga.style.display = "none";
+              } catch (e) {
+                mostrarErrorCarga(e);
+              }
+            } else {
+              // Intentar en la subcarpeta por si se accede sin barra diagonal al final
+              var xhr2 = new XMLHttpRequest();
+              xhr2.open("GET", "spelling/vocabulario.json" + cacheBuster, true);
+              xhr2.onreadystatechange = function() {
+                if (xhr2.readyState === 4) {
+                  if (xhr2.status === 200) {
+                    try {
+                      prepararDatos(JSON.parse(xhr2.responseText));
+                      mensajeCarga.style.display = "none";
+                    } catch (e) {
+                      mostrarErrorCarga(e);
+                    }
+                  } else {
+                    mostrarErrorCarga();
+                  }
+                }
+              };
+              xhr2.send();
+            }
+          }
+        };
+        xhr.send();
+        return;
+      }
+
+      // Si fetch está disponible, lo usamos con Promises tradicionales
+      fetch("vocabulario.json" + cacheBuster)
+        .then(function(res) {
+          if (res.ok) return res.json();
+          return fetch("spelling/vocabulario.json" + cacheBuster).then(function(res2) {
+            if (res2.ok) return res2.json();
+            throw new Error("No se pudo cargar");
+          });
+        })
+        .then(function(json) {
+          prepararDatos(json);
+          mensajeCarga.style.display = "none";
+        })
+        .catch(function(err) {
+          mostrarErrorCarga(err);
+        });
     }
 
     function prepararDatos(json) {
@@ -343,10 +382,16 @@
       datos = json;
       selectFichas.innerHTML = "";
 
-      datos.fichas.forEach((ficha, index) => {
-        const option = document.createElement("option");
+      datos.fichas.forEach(function(ficha, index) {
+        var option = document.createElement("option");
         option.value = index;
-        option.textContent = `Ficha ${ficha.id ?? index + 1} - ${ficha.tema ?? "Sin tema"}`;
+        
+        // Reemplazo de ?? (Nullish coalescing) para compatibilidad absoluta
+        var idFicha = (ficha.id !== undefined && ficha.id !== null) ? ficha.id : (index + 1);
+        var temaFicha = (ficha.tema !== undefined && ficha.tema !== null) ? ficha.tema : "Sin tema";
+        
+        // Reemplazo de template literals por concatenación estándar
+        option.textContent = "Ficha " + idFicha + " - " + temaFicha;
         selectFichas.appendChild(option);
       });
 
@@ -355,10 +400,14 @@
     }
 
     function mezclarArray(array) {
-      const copia = [...array];
-      for (let i = copia.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [copia[i], copia[j]] = [copia[j], copia[i]];
+      // Reemplazo de spread operator [...] por copia .slice()
+      var copia = array.slice();
+      for (var i = copia.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        // Reemplazo de destructuring assignment por intercambio clásico
+        var temp = copia[i];
+        copia[i] = copia[j];
+        copia[j] = temp;
       }
       return copia;
     }
@@ -371,7 +420,7 @@
     }
 
     function empezarFicha() {
-      const indiceFicha = Number(selectFichas.value);
+      var indiceFicha = Number(selectFichas.value);
       fichaSeleccionada = datos.fichas[indiceFicha];
 
       if (!fichaSeleccionada.palabras || fichaSeleccionada.palabras.length === 0) {
@@ -393,7 +442,7 @@
         return;
       }
 
-      const palabra = palabrasJuego[indiceActual];
+      var palabra = palabrasJuego[indiceActual];
       palabraCastellano.textContent = palabra.castellano;
       respuesta.value = "";
       feedback.textContent = "";
@@ -402,23 +451,33 @@
       fallosTexto.textContent = fallos;
       actualTexto.textContent = indiceActual + 1;
       totalTexto.textContent = palabrasJuego.length;
-      barra.style.width = `${(indiceActual / palabrasJuego.length) * 100}%`;
+      
+      // Reemplazo de template literals por concatenación estándar
+      barra.style.width = ((indiceActual / palabrasJuego.length) * 100) + "%";
 
       respuesta.focus();
     }
 
     function normalizarTexto(texto) {
-      return String(texto)
-        .trim()
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
+      var str = String(texto).trim().toLowerCase();
+      
+      // Salvaguarda para navegadores extremadamente antiguos que no soporten .normalize()
+      if (str.normalize) {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      }
+      
+      // Fallback manual de eliminación de tildes
+      var de = "áéíóúüñ", a = "aeiouun";
+      for (var i = 0; i < de.length; i++) {
+        str = str.replace(new RegExp(de[i], "g"), a[i]);
+      }
+      return str;
     }
 
     function comprobarRespuesta() {
-      const palabra = palabrasJuego[indiceActual];
-      const respuestaNino = normalizarTexto(respuesta.value);
-      const respuestaCorrecta = normalizarTexto(palabra.ingles);
+      var palabra = palabrasJuego[indiceActual];
+      var respuestaNino = normalizarTexto(respuesta.value);
+      var respuestaCorrecta = normalizarTexto(palabra.ingles);
 
       if (respuestaNino === "") {
         feedback.textContent = "Escribe una respuesta.";
@@ -431,7 +490,7 @@
         feedback.textContent = "¡Muy bien!";
         feedback.className = "feedback bien";
 
-        setTimeout(() => {
+        setTimeout(function() {
           indiceActual++;
           mostrarPalabra();
         }, 700);
@@ -454,16 +513,17 @@
       cambiarPantalla(pantallaInicio);
     }
 
-    archivoJson.addEventListener("change", (evento) => {
-      const archivo = evento.target.files[0];
+    // Reemplazo de arrow functions por funciones anónimas estándar
+    archivoJson.addEventListener("change", function(evento) {
+      var archivo = evento.target.files[0];
 
       if (!archivo) return;
 
-      const lector = new FileReader();
+      var lector = new FileReader();
 
-      lector.onload = (e) => {
+      lector.onload = function(e) {
         try {
-          const json = JSON.parse(e.target.result);
+          var json = JSON.parse(e.target.result);
           prepararDatos(json);
           mensajeCarga.style.display = "none";
         } catch (error) {
@@ -481,7 +541,7 @@
     btnVolver.addEventListener("click", volverAlInicio);
     btnRepetir.addEventListener("click", empezarFicha);
 
-    respuesta.addEventListener("keydown", (evento) => {
+    respuesta.addEventListener("keydown", function(evento) {
       if (evento.key === "Enter") {
         comprobarRespuesta();
       }
