@@ -48,6 +48,152 @@
           "ingles": "donkey"
         }
       ]
+    },
+    {
+      "id": 5,
+      "tema": "casa",
+      "palabras": [
+        {
+          "castellano": "baño",
+          "ingles": "bathroom"
+        },
+        {
+          "castellano": "cocina",
+          "ingles": "kitchen"
+        },
+        {
+          "castellano": "dormitorio",
+          "ingles": "bedroom"
+        },
+        {
+          "castellano": "sala",
+          "ingles": "hall"
+        },
+        {
+          "castellano": "jardín",
+          "ingles": "garden"
+        },
+        {
+          "castellano": "garaje",
+          "ingles": "garage"
+        },
+        {
+          "castellano": "salón",
+          "ingles": "living room"
+        },
+        {
+          "castellano": "piso",
+          "ingles": "flat"
+        },
+        {
+          "castellano": "casa",
+          "ingles": "house"
+        },
+        {
+          "castellano": "comedor",
+          "ingles": "dining room"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "tema": "actividades",
+      "palabras": [
+        {
+          "castellano": "jugar a futbol",
+          "ingles": "play football"
+        },
+        {
+          "castellano": "correr",
+          "ingles": "run"
+        },
+        {
+          "castellano": "comer",
+          "ingles": "eat"
+        },
+        {
+          "castellano": "beber",
+          "ingles": "drink"
+        },
+        {
+          "castellano": "saltar",
+          "ingles": "skip"
+        },
+        {
+          "castellano": "pintar",
+          "ingles": "paint"
+        },
+        {
+          "castellano": "volar la cometa",
+          "ingles": "fly a kite"
+        },
+        {
+          "castellano": "bailar",
+          "ingles": "dance"
+        },
+        {
+          "castellano": "leer",
+          "ingles": "read"
+        },
+        {
+          "castellano": "caminar",
+          "ingles": "walk"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tema": "meses",
+      "palabras": [
+        {
+          "castellano": "enero",
+          "ingles": "january"
+        },
+        {
+          "castellano": "febrero",
+          "ingles": "february"
+        },
+        {
+          "castellano": "marzo",
+          "ingles": "march"
+        },
+        {
+          "castellano": "abril",
+          "ingles": "april"
+        },
+        {
+          "castellano": "mayo",
+          "ingles": "may"
+        },
+        {
+          "castellano": "junio",
+          "ingles": "june"
+        },
+        {
+          "castellano": "julio",
+          "ingles": "july"
+        },
+        {
+          "castellano": "agosto",
+          "ingles": "august"
+        },
+        {
+          "castellano": "septiembre",
+          "ingles": "september"
+        },
+        {
+          "castellano": "octubre",
+          "ingles": "october"
+        },
+	{
+          "castellano": "nobiembre",
+          "ingles": "november"
+        },
+	{
+          "castellano": "diciembre",
+          "ingles": "december"
+        }  
+      ]
     }
   ]
 }
