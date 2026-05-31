@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vocabulario de inglés - Infantil</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fff3b0, #b8f7d4, #b7d8ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #263238;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 760px;
+      background: white;
+      border-radius: 32px;
+      padding: 28px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.1rem;
+      color: #1976d2;
+    }
+
+    .pantalla {
+      display: none;
+    }
+
+    .pantalla.activa {
+      display: block;
+    }
+
+    .mensaje-carga {
+      background: #fff8e1;
+      border: 3px dashed #ffb300;
+      border-radius: 22px;
+      padding: 18px;
+      margin: 16px 0;
+      font-size: 1.05rem;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    select,
+    input[type="text"] {
+      width: 100%;
+      max-width: 440px;
+      font-size: 1.5rem;
+      padding: 16px 18px;
+      border: 4px solid #90caf9;
+      border-radius: 22px;
+      text-align: center;
+      outline: none;
+      background: #f8fcff;
+    }
+
+    input[type="file"] {
+      margin: 12px auto;
+      font-size: 1rem;
+      max-width: 100%;
+    }
+
+    input[type="text"]:focus,
+    select:focus {
+      border-color: #1976d2;
+    }
+
+    button {
+      border: none;
+      border-radius: 24px;
+      padding: 15px 24px;
+      margin: 10px 6px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+      background: #43a047;
+      box-shadow: 0 7px 0 #2e7d32;
+      transition: transform 0.08s, box-shadow 0.08s;
+    }
+
+    button:active {
+      transform: translateY(5px);
+      box-shadow: 0 2px 0 #2e7d32;
+    }
+
+    button.secundario {
+      background: #1976d2;
+      box-shadow: 0 7px 0 #0d47a1;
+    }
+
+    button.peligro {
+      background: #ef5350;
+      box-shadow: 0 7px 0 #c62828;
+    }
+
+    .tarjeta-palabra {
+      margin: 24px auto;
+      padding: 30px 20px;
+      border-radius: 30px;
+      background: #e3f2fd;
+      border: 5px solid #90caf9;
+      max-width: 520px;
+    }
+
+    .texto-pequeno {
+      font-size: 1.05rem;
+      color: #546e7a;
+      margin-bottom: 8px;
+    }
+
+    .palabra-castellano {
+      font-size: 3.2rem;
+      font-weight: bold;
+      color: #1565c0;
+      margin: 8px 0 18px;
+      text-transform: lowercase;
+    }
+
+    .contador {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 18px 0;
+    }
+
+    .contador div {
+      background: #f1f8e9;
+      border-radius: 20px;
+      padding: 12px 18px;
+      font-size: 1.15rem;
+      font-weight: bold;
+      border: 3px solid #aed581;
+    }
+
+    .feedback {
+      min-height: 42px;
+      margin-top: 14px;
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+
+    .bien {
+      color: #2e7d32;
+    }
+
+    .mal {
+      color: #c62828;
+    }
+
+    .progreso {
+      margin-top: 16px;
+      height: 20px;
+      width: 100%;
+      background: #eeeeee;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .barra {
+      height: 100%;
+      width: 0%;
+      background: #66bb6a;
+      transition: width 0.3s;
+    }
+
+    .resultado-final {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .ayuda {
+      font-size: 0.95rem;
+      color: #607d8b;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <h1>Aprendo inglés</h1>
+
+    <section id="pantallaInicio" class="pantalla activa">
+      <div id="mensajeCarga" class="mensaje-carga">
+        Cargando vocabulario desde <strong>vocabulario.json</strong>...
+      </div>
+
+      <label for="archivoJson">O carga aquí tu archivo JSON:</label>
+      <input id="archivoJson" type="file" accept=".json,application/json" />
+
+      <div id="selectorFicha" style="display: none; margin-top: 20px;">
+        <label for="fichas">Elige una ficha:</label>
+        <select id="fichas"></select>
+        <br />
+        <button id="btnEmpezar">Empezar</button>
+      </div>
+
+      <p class="ayuda">
+        Para carga automática, coloca este HTML y el archivo <strong>vocabulario.json</strong> en la misma carpeta.
+      </p>
+    </section>
+
+    <section id="pantallaJuego" class="pantalla">
+      <div class="contador">
+        <div>Fallos: <span id="fallos">0</span></div>
+        <div>Palabra: <span id="actual">1</span>/<span id="total">10</span></div>
+      </div>
+
+      <div class="progreso">
+        <div id="barra" class="barra"></div>
+      </div>
+
+      <div class="tarjeta-palabra">
+        <div class="texto-pequeno">Escribe esta palabra en inglés:</div>
+        <div id="palabraCastellano" class="palabra-castellano">---</div>
+
+        <input
+          id="respuesta"
+          type="text"
+          autocomplete="off"
+          autocapitalize="none"
+          placeholder="Escribe en inglés"
+        />
+
+        <div id="feedback" class="feedback"></div>
+      </div>
+
+      <button id="btnComprobar">Comprobar</button>
+      <button id="btnReiniciar" class="secundario">Otra ficha</button>
+    </section>
+
+    <section id="pantallaFinal" class="pantalla">
+      <div class="resultado-final">
+        <h2>¡Ficha terminada!</h2>
+        <p>Has acabado todas las palabras.</p>
+        <p>Fallos totales: <strong id="fallosFinales">0</strong></p>
+      </div>
+      <button id="btnVolver" class="secundario">Elegir otra ficha</button>
+      <button id="btnRepetir" class="peligro">Repetir esta ficha</button>
+    </section>
+  </main>
+
+  <script>
+    let datos = null;
+    let fichaSeleccionada = null;
+    let palabrasJuego = [];
+    let indiceActual = 0;
+    let fallos = 0;
+
+    const pantallaInicio = document.getElementById("pantallaInicio");
+    const pantallaJuego = document.getElementById("pantallaJuego");
+    const pantallaFinal = document.getElementById("pantallaFinal");
+
+    const mensajeCarga = document.getElementById("mensajeCarga");
+    const archivoJson = document.getElementById("archivoJson");
+    const selectorFicha = document.getElementById("selectorFicha");
+    const selectFichas = document.getElementById("fichas");
+
+    const btnEmpezar = document.getElementById("btnEmpezar");
+    const btnComprobar = document.getElementById("btnComprobar");
+    const btnReiniciar = document.getElementById("btnReiniciar");
+    const btnVolver = document.getElementById("btnVolver");
+    const btnRepetir = document.getElementById("btnRepetir");
+
+    const fallosTexto = document.getElementById("fallos");
+    const actualTexto = document.getElementById("actual");
+    const totalTexto = document.getElementById("total");
+    const palabraCastellano = document.getElementById("palabraCastellano");
+    const respuesta = document.getElementById("respuesta");
+    const feedback = document.getElementById("feedback");
+    const barra = document.getElementById("barra");
+    const fallosFinales = document.getElementById("fallosFinales");
+
+    async function cargarJsonAutomatico() {
+      try {
+        const respuestaFetch = await fetch("vocabulario.json");
+
+        if (!respuestaFetch.ok) {
+          throw new Error("No se pudo cargar vocabulario.json");
+        }
+
+        const json = await respuestaFetch.json();
+        prepararDatos(json);
+        mensajeCarga.innerHTML = "Vocabulario cargado correctamente desde <strong>vocabulario.json</strong>.";
+      } catch (error) {
+        mensajeCarga.innerHTML =
+          "No se ha podido cargar automáticamente <strong>vocabulario.json</strong>. Puedes seleccionarlo manualmente arriba.";
+      }
+    }
+
+    function prepararDatos(json) {
+      if (!json.fichas || !Array.isArray(json.fichas) || json.fichas.length === 0) {
+        mensajeCarga.textContent = "El JSON no tiene fichas válidas.";
+        return;
+      }
+
+      datos = json;
+      selectFichas.innerHTML = "";
+
+      datos.fichas.forEach((ficha, index) => {
+        const option = document.createElement("option");
+        option.value = index;
+        option.textContent = `Ficha ${ficha.id ?? index + 1} - ${ficha.tema ?? "Sin tema"}`;
+        selectFichas.appendChild(option);
+      });
+
+      selectorFicha.style.display = "block";
+    }
+
+    function mezclarArray(array) {
+      const copia = [...array];
+      for (let i = copia.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copia[i], copia[j]] = [copia[j], copia[i]];
+      }
+      return copia;
+    }
+
+    function cambiarPantalla(pantalla) {
+      pantallaInicio.classList.remove("activa");
+      pantallaJuego.classList.remove("activa");
+      pantallaFinal.classList.remove("activa");
+      pantalla.classList.add("activa");
+    }
+
+    function empezarFicha() {
+      const indiceFicha = Number(selectFichas.value);
+      fichaSeleccionada = datos.fichas[indiceFicha];
+
+      if (!fichaSeleccionada.palabras || fichaSeleccionada.palabras.length === 0) {
+        mensajeCarga.textContent = "La ficha seleccionada no tiene palabras.";
+        return;
+      }
+
+      palabrasJuego = mezclarArray(fichaSeleccionada.palabras);
+      indiceActual = 0;
+      fallos = 0;
+
+      cambiarPantalla(pantallaJuego);
+      mostrarPalabra();
+    }
+
+    function mostrarPalabra() {
+      if (indiceActual >= palabrasJuego.length) {
+        terminarFicha();
+        return;
+      }
+
+      const palabra = palabrasJuego[indiceActual];
+      palabraCastellano.textContent = palabra.castellano;
+      respuesta.value = "";
+      feedback.textContent = "";
+      feedback.className = "feedback";
+
+      fallosTexto.textContent = fallos;
+      actualTexto.textContent = indiceActual + 1;
+      totalTexto.textContent = palabrasJuego.length;
+      barra.style.width = `${(indiceActual / palabrasJuego.length) * 100}%`;
+
+      respuesta.focus();
+    }
+
+    function normalizarTexto(texto) {
+      return String(texto)
+        .trim()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function comprobarRespuesta() {
+      const palabra = palabrasJuego[indiceActual];
+      const respuestaNino = normalizarTexto(respuesta.value);
+      const respuestaCorrecta = normalizarTexto(palabra.ingles);
+
+      if (respuestaNino === "") {
+        feedback.textContent = "Escribe una respuesta.";
+        feedback.className = "feedback mal";
+        respuesta.focus();
+        return;
+      }
+
+      if (respuestaNino === respuestaCorrecta) {
+        feedback.textContent = "¡Muy bien!";
+        feedback.className = "feedback bien";
+
+        setTimeout(() => {
+          indiceActual++;
+          mostrarPalabra();
+        }, 700);
+      } else {
+        fallos++;
+        fallosTexto.textContent = fallos;
+        feedback.textContent = "Casi, inténtalo otra vez.";
+        feedback.className = "feedback mal";
+        respuesta.select();
+      }
+    }
+
+    function terminarFicha() {
+      barra.style.width = "100%";
+      fallosFinales.textContent = fallos;
+      cambiarPantalla(pantallaFinal);
+    }
+
+    function volverAlInicio() {
+      cambiarPantalla(pantallaInicio);
+    }
+
+    archivoJson.addEventListener("change", (evento) => {
+      const archivo = evento.target.files[0];
+
+      if (!archivo) return;
+
+      const lector = new FileReader();
+
+      lector.onload = (e) => {
+        try {
+          const json = JSON.parse(e.target.result);
+          prepararDatos(json);
+          mensajeCarga.textContent = "Vocabulario cargado correctamente desde el archivo seleccionado.";
+        } catch (error) {
+          mensajeCarga.textContent = "El archivo seleccionado no es un JSON válido.";
+        }
+      };
+
+      lector.readAsText(archivo, "UTF-8");
+    });
+
+    btnEmpezar.addEventListener("click", empezarFicha);
+    btnComprobar.addEventListener("click", comprobarRespuesta);
+    btnReiniciar.addEventListener("click", volverAlInicio);
+    btnVolver.addEventListener("click", volverAlInicio);
+    btnRepetir.addEventListener("click", empezarFicha);
+
+    respuesta.addEventListener("keydown", (evento) => {
+      if (evento.key === "Enter") {
+        comprobarRespuesta();
+      }
+    });
+
+    cargarJsonAutomatico();
+  </script>
+</body>
+</html>
+

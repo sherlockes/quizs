@@ -1,0 +1,53 @@
+{
+  "titulo": "Vocabulario de inglés - 2º de Infantil",
+  "idioma_origen": "es",
+  "idioma_destino": "en",
+  "fichas": [
+    {
+      "id": 6,
+      "tema": "animales",
+      "palabras": [
+        {
+          "castellano": "ratón",
+          "ingles": "mouse"
+        },
+        {
+          "castellano": "toro",
+          "ingles": "bull"
+        },
+        {
+          "castellano": "cabra",
+          "ingles": "goat"
+        },
+        {
+          "castellano": "oveja",
+          "ingles": "sheep"
+        },
+        {
+          "castellano": "pollo",
+          "ingles": "chicken"
+        },
+        {
+          "castellano": "pato",
+          "ingles": "duck"
+        },
+        {
+          "castellano": "caballo",
+          "ingles": "horse"
+        },
+        {
+          "castellano": "vaca",
+          "ingles": "cow"
+        },
+        {
+          "castellano": "ratones",
+          "ingles": "mice"
+        },
+        {
+          "castellano": "burro",
+          "ingles": "donkey"
+        }
+      ]
+    }
+  ]
+}
