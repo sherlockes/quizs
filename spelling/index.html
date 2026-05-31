@@ -294,7 +294,7 @@
 
     async function cargarJsonAutomatico() {
       try {
-        const respuestaFetch = await fetch("./vocabulario.json");
+        const respuestaFetch = await fetch("/spelling/vocabulario.json");
 
         if (!respuestaFetch.ok) {
           throw new Error("No se pudo cargar vocabulario.json");
