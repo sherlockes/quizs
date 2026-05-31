@@ -206,8 +206,10 @@
         Cargando vocabulario desde <strong>vocabulario.json</strong>...
       </div>
 
-      <label for="archivoJson">O carga aquí tu archivo JSON:</label>
-      <input id="archivoJson" type="file" accept=".json,application/json" />
+      <div id="bloqueCargaManual">
+        <label for="archivoJson">O carga aquí tu archivo JSON:</label>
+        <input id="archivoJson" type="file" accept=".json,application/json" />
+      </div>
 
       <div id="selectorFicha" style="display: none; margin-top: 20px;">
         <label for="fichas">Elige una ficha:</label>
@@ -274,6 +276,7 @@
 
     const mensajeCarga = document.getElementById("mensajeCarga");
     const archivoJson = document.getElementById("archivoJson");
+    const bloqueCargaManual = document.getElementById("bloqueCargaManual");
     const selectorFicha = document.getElementById("selectorFicha");
     const selectFichas = document.getElementById("fichas");
 
@@ -294,7 +297,7 @@
 
     async function cargarJsonAutomatico() {
       try {
-        const respuestaFetch = await fetch("/spelling/vocabulario.json");
+        const respuestaFetch = await fetch("vocabulario.json");
 
         if (!respuestaFetch.ok) {
           throw new Error("No se pudo cargar vocabulario.json");
@@ -302,8 +305,9 @@
 
         const json = await respuestaFetch.json();
         prepararDatos(json);
-        mensajeCarga.innerHTML = "Vocabulario cargado correctamente desde <strong>vocabulario.json</strong>.";
+        mensajeCarga.style.display = "none";
       } catch (error) {
+        mensajeCarga.style.display = "block";
         mensajeCarga.innerHTML =
           "No se ha podido cargar automáticamente <strong>vocabulario.json</strong>. Puedes seleccionarlo manualmente arriba.";
       }
@@ -311,7 +315,9 @@
 
     function prepararDatos(json) {
       if (!json.fichas || !Array.isArray(json.fichas) || json.fichas.length === 0) {
+        mensajeCarga.style.display = "block";
         mensajeCarga.textContent = "El JSON no tiene fichas válidas.";
+        bloqueCargaManual.style.display = "block";
         return;
       }
 
@@ -326,6 +332,7 @@
       });
 
       selectorFicha.style.display = "block";
+      bloqueCargaManual.style.display = "none";
     }
 
     function mezclarArray(array) {
@@ -439,8 +446,9 @@
         try {
           const json = JSON.parse(e.target.result);
           prepararDatos(json);
-          mensajeCarga.textContent = "Vocabulario cargado correctamente desde el archivo seleccionado.";
+          mensajeCarga.style.display = "none";
         } catch (error) {
+          mensajeCarga.style.display = "block";
           mensajeCarga.textContent = "El archivo seleccionado no es un JSON válido.";
         }
       };
