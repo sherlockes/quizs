@@ -1,0 +1,589 @@
+```json
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué estrella se encuentra en el centro del Sistema Solar y es la más cercana a la Tierra?",
+    "opciones": [
+      "El Sol",
+      "La Luna",
+      "Polaris",
+      "Júpiter"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El Sol es la estrella central del Sistema Solar alrededor de la cual orbitan la Tierra y los demás planetas."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué posición ocupa el planeta Tierra según su cercanía al Sol?",
+    "opciones": [
+      "Es el primer planeta",
+      "Es el tercer planeta",
+      "Es el segundo planeta",
+      "Es el quinto planeta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Tierra es el tercer planeta en orden de proximidad respecto al Sol."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué forma tiene el planeta Tierra según los contenidos estudiados?",
+    "opciones": [
+      "Es una esfera perfecta",
+      "Es totalmente plana",
+      "Es cúbica con bordes redondeados",
+      "Es casi esférica y ligeramente achatada por los polos"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La Tierra tiene una forma casi esférica, aunque está ligeramente achatada por sus polos."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué proporción de la superficie terrestre está ocupada por los continentes y las islas?",
+    "opciones": [
+      "Tres cuartas partes",
+      "Solo una cuarta parte",
+      "La mitad del planeta",
+      "Toda la superficie"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los mares y océanos cubren la mayor parte de la Tierra, dejando únicamente una cuarta parte para continentes e islas."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cómo se define el concepto de 'órbita' en el Sistema Solar?",
+    "opciones": ["Es la trayectoria que describe un planeta alrededor del Sol", "Es una capa de gases que envuelve a la Tierra", "Es el centro sólido de un planeta", "Es el giro de la Luna sobre sí misma"],
+    "respuestaCorrecta": 0,
+    "explicacion": "La órbita es la trayectoria o camino que describe un planeta durante su recorrido alrededor del Sol."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuáles son las tres capas principales que forman la Tierra?",
+    "opciones": [
+      "Núcleo, manto y corteza",
+      "Geosfera, hidrosfera y atmósfera",
+      "Litosfera, biosfera y ozono",
+      "Norte, Sur y Ecuador"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El planeta se compone de tres capas fundamentales: la geosfera (sólida), la hidrosfera (agua) y la atmósfera (aire)."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué capa de la Tierra comprende toda la parte sólida que forma los continentes e islas?",
+    "opciones": [
+      "La hidrosfera",
+      "La atmósfera",
+      "La geosfera",
+      "El mapa político"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La geosfera es la capa sólida de la Tierra sobre la que se sitúan los continentes y las islas."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué elementos forman la hidrosfera de la Tierra?",
+    "opciones": [
+      "Únicamente los ríos y lagos de agua dulce",
+      "El conjunto del agua del planeta: mares, océanos, ríos, lagos, hielo y nieve",
+      "Solo el agua subterránea y las nubes",
+      "Los gases que rodean el planeta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La hidrosfera abarca la totalidad del agua del planeta en todas sus formas: líquida, sólida, en mares, ríos o hielo."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué capa rodea la Tierra y contiene gases fundamentales como el oxígeno?",
+    "opciones": [
+      "La atmósfera",
+      "La hidrosfera",
+      "La geosfera",
+      "La línea del Ecuador"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La atmósfera es la capa gaseosa que envuelve a la Tierra y nos proporciona el oxígeno necesario para vivir."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué es un satélite según los contenidos de la unidad?",
+    "opciones": [
+      "Una estrella con luz propia que gira en el espacio",
+      "Un tipo de mapa de la superficie terrestre",
+      "Un planeta que orbita en torno al Sol",
+      "Un cuerpo celeste sin luz propia que gira alrededor de un planeta"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Un satélite es un cuerpo celeste sin luz propia que orbita alrededor de un planeta."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿En qué consiste el movimiento de rotación de la Tierra?",
+    "opciones": [
+      "En el giro de la Tierra alrededor de la Luna",
+      "En el giro de la Tierra sobre sí misma",
+      "En el recorrido de la Tierra alrededor del Sol",
+      "En la división del planeta por el Ecuador"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El movimiento de rotación es el giro que realiza nuestro planeta sobre su propio eje."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cuánto tiempo tarda la Tierra en dar una vuelta completa en su movimiento de rotación?",
+    "opciones": [
+      "365 días",
+      "28 días",
+      "12 horas",
+      "24 horas (un día)"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La Tierra tarda exactamente 24 horas (un día entero) en dar una vuelta completa sobre sí misma."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué fenómeno natural es provocado por el movimiento de rotación terrestre?",
+    "opciones": [
+      "Las cuatro estaciones del año",
+      "Las fases de la Luna",
+      "La sucesión del día y de la noche",
+      "Las mareas altas y bajas"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "A medida que la Tierra gira sobre sí misma, una cara queda iluminada por el Sol (día) y la otra en sombra (noche)."
+  },
+  {
+    "id": 14,
+    "pregunta": "Cuando en una cara de la Tierra es de día por recibir luz solar, ¿qué ocurre en la cara opuesta?",
+    "opciones": [
+      "También es de día porque el Sol ilumina toda la Tierra",
+      "Es de noche porque no recibe la luz del Sol",
+      "Es verano inmediatamente",
+      "La atmósfera desaparece"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Al girar la Tierra, la parte no iluminada directamente por el Sol se encuentra en la oscuridad, sucediendo la noche."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿En qué consiste el movimiento de traslación de la Tierra?",
+    "opciones": [
+      "En el giro de la Tierra alrededor del Sol",
+      "En el desplazamiento de los continentes",
+      "En el movimiento del aire en la atmósfera",
+      "En el cambio de forma de la Luna"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El movimiento de traslación es el recorrido que realiza la Tierra girando alrededor del Sol."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuánto tiempo tarda la Tierra en dar una vuelta completa al Sol?",
+    "opciones": [
+      "24 horas",
+      "28 días",
+      "6 meses",
+      "365 días y 6 horas (un año)"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Un año terrestre corresponde a los 365 días y 6 horas que tarda la Tierra en completar su traslación alrededor del Sol."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿A qué da lugar el movimiento de traslación combinado con la inclinación del eje terrestre?",
+    "opciones": [
+      "A las fases lunares",
+      "A los días y las noches",
+      "A las estaciones del año",
+      "A los continentes y los océanos"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La traslación y la inclinación del eje provocan que la luz solar llegue con diferente inclinación, originando las cuatro estaciones."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿En qué fecha suele comenzar la estación del verano?",
+    "opciones": [
+      "21 de junio",
+      "21 de marzo",
+      "23 de septiembre",
+      "21 de diciembre"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El verano comienza el 21 de junio, siendo la estación con las temperaturas más altas del año."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué características destacan en la estación del invierno?",
+    "opciones": [
+      "Los días son los más largos del año y hace mucho calor",
+      "Las temperaturas son siempre cálidas y llueve mucho",
+      "Los días son los más cortos, las noches las más largas y hace frío",
+      "Los días y las noches duran exactamente lo mismo todo el tiempo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En invierno, que comienza el 21 de diciembre, se registran las temperaturas más frías y los días más cortos del año."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué sucede con la duración de los días y las noches al comienzo del otoño y de la primavera?",
+    "opciones": [
+      "Los días duran 24 horas y las noches 0 horas",
+      "Las noches son el doble de largas que los días",
+      "Los días y las noches tienen la misma duración",
+      "Los días duran siempre más que las noches"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Tanto al inicio de la primavera (21 de marzo) como del otoño (23 de septiembre), la duración del día y de la noche es la misma."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuál es el único satélite natural que gira alrededor de la Tierra?",
+    "opciones": [
+      "El Sol",
+      "La Luna",
+      "Venus",
+      "Marte"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Luna es el único satélite natural que orbita alrededor de nuestro planeta."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Por qué podemos ver la Luna desde la Tierra si no tiene luz propia?",
+    "opciones": ["Porque la atmósfera terrestre le da luz", "Porque está hecha de fuego", "Porque refleja la luz de las estrellas lejanas", "Porque el Sol la ilumina"],
+    "respuestaCorrecta": 3,
+    "explicacion": "La Luna no emite luz propia; brilla en el cielo nocturno gracias a la luz que recibe del Sol."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cuánto duran los movimientos de rotación y traslación de la Luna?",
+    "opciones": [
+      "Unos 28 días cada uno",
+      "24 horas cada uno",
+      "365 días cada uno",
+      "12 días cada uno"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Ambos movimientos de la Luna duran lo mismo: unos 28 días, por lo que desde la Tierra siempre vemos la misma cara."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Por qué desde la Tierra siempre vemos la misma cara de la Luna?",
+    "opciones": [
+      "Porque sus movimientos de rotación y traslación duran exactamente lo mismo",
+      "Porque la Luna no realiza movimiento de rotación",
+      "Porque la Luna es totalmente plana",
+      "Porque el Sol solo ilumina un lado de la Luna"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Al tardar aproximadamente 28 días tanto en girar sobre sí misma como en orbitar la Tierra, siempre muestra la misma cara."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Qué ocurre durante la fase de Luna nueva?",
+    "opciones": [
+      "La Tierra está entre la Luna y el Sol y se ve brillante",
+      "Se ve toda la cara de la Luna totalmente iluminada",
+      "La cara de la Luna que mira a la Tierra no está iluminada y no se ve",
+      "Se ve solo una pequeña forma de letra 'C'"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En Luna nueva, la Luna se sitúa entre la Tierra y el Sol, dejando su cara visible en sombra total."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿En qué fase lunar se encuentra la cara de la Luna que mira a la Tierra totalmente iluminada?",
+    "opciones": [
+      "Luna nueva",
+      "Cuarto creciente",
+      "Cuarto menguante",
+      "Luna llena"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En la Luna llena, la Tierra se sitúa entre la Luna y el Sol, permitiendo ver toda la cara iluminada del satélite."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué cambio se observa en la cara visible de la Luna durante la fase de Cuarto Creciente?",
+    "opciones": [
+      "Empieza a iluminarse y se hace cada vez más grande",
+      "Empieza a oscurecerse y se hace más pequeña",
+      "Permanecerá invisible durante un mes",
+      "Se vuelve de color azul brillante"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En cuarto creciente, la zona iluminada que vemos desde la Tierra aumenta gradualmente de tamaño."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿En qué año llegaron por primera vez los astronautas a la Luna en la misión Apolo 11?",
+    "opciones": [
+      "1492",
+      "2000",
+      "1969",
+      "1985"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En 1969, Neil Armstrong, Edwin Aldrin y Michael Collins llegaron a la Luna en la célebre misión Apolo 11."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Qué instrumento es una esfera que representa la superficie de la Tierra de forma muy similar a la real y con su inclinación?",
+    "opciones": [
+      "El plano",
+      "El globo terráqueo",
+      "La brújula",
+      "El mapa temático"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El globo terráqueo mantiene la forma esférica de nuestro planeta, representando fielmente su inclinación."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Qué es un planisferio?",
+    "opciones": [
+      "Una caja redonda con una aguja imantada",
+      "Un mapa que solo muestra ciudades pequeñas",
+      "La representación de toda la Tierra en una superficie plana",
+      "Un tipo de reloj solar"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El planisferio representa la totalidad de la superficie terrestre en un plano horizontal."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cómo se llama la línea imaginaria que divide la Tierra en el Hemisferio Norte y el Hemisferio Sur?",
+    "opciones": [
+      "El eje terrestre",
+      "El Trópico de Cáncer",
+      "El Ecuador",
+      "El Meridiano de Greenwich"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El Ecuador es la línea imaginaria horizontal que divide la Tierra en dos mitades llamadas hemisferios."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué une la línea imaginaria llamada 'eje terrestre'?",
+    "opciones": [
+      "El Este con el Oeste",
+      "Los dos polos pasando por el centro de la Tierra",
+      "España con Australia",
+      "La Tierra con la Luna"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El eje terrestre es la línea ficticia que conecta el Polo Norte y el Polo Sur a través del centro del planeta."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Qué tipo de mapa utilizarías para conocer las fronteras de los países o las Comunidades Autónomas y sus capitales?",
+    "opciones": [
+      "Mapa físico",
+      "Mapa temático",
+      "Plano de carretera",
+      "Mapa político"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los mapas políticos representan las divisiones administrativas, como países, regiones y sus capitales."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué tipo de mapa muestra elementos naturales como montañas, ríos y altitudes del terreno?",
+    "opciones": ["Mapa físico", "Mapa político", "Mapa del tiempo", "Plano urbano"],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los mapas físicos se centran en los accidentes geográficos y el relieve de un territorio."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Para qué sirve un mapa temático como el del tiempo atmosférico?",
+    "opciones": [
+      "Para mostrar los nombres de las calles de un barrio",
+      "Para dividir el planeta en dos hemisferios",
+      "Para ofrecer información sobre un tema específico en un territorio",
+      "Para calcular las fases de la Luna"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los mapas temáticos se especializan en transmitir información concreta de un tema, como el clima o los cultivos."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Qué elemento del mapa indica el tema y el territorio que está representando?",
+    "opciones": [
+      "La leyenda",
+      "La escala",
+      "La toponimia",
+      "El título"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El título se ubica en la parte superior del mapa y describe brevemente de qué trata la representación."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cómo se llama el elemento de un mapa o plano que explica el significado de los símbolos y colores utilizados?",
+    "opciones": [
+      "Toponimia",
+      "Escala",
+      "Eje terrestre",
+      "Leyenda"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La leyenda es el recuadro explicativo que descodifica las convenciones, colores y símbolos del mapa."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué indica la 'escala' en un mapa o plano?",
+    "opciones": [
+      "El nombre de las montañas representadas",
+      "El peso exacto del papel del mapa",
+      "Las veces que se ha reducido el espacio real para poder dibujarlo",
+      "La fecha en la que se dibujó"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La escala establece la relación matemática entre el tamaño del dibujo y la distancia real en el terreno."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cómo se denominan los nombres de pueblos, ciudades, ríos o lugares que aparecen escritos en un mapa?",
+    "opciones": [
+      "Leyenda",
+      "Toponimia",
+      "Escala gráfica",
+      "Coordenadas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La toponimia hace referencia al conjunto de nombres propios de lugares plasmados en la cartografía."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Para qué tipo de espacio es adecuado utilizar un plano en lugar de un mapa?",
+    "opciones": [
+      "Para representar zonas pequeñas como barrios, casas, colegios o habitaciones",
+      "Para representar continentes completos",
+      "Para representar la totalidad del planeta",
+      "Para mostrar los mares del mundo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los planos se utilizan para detallar espacios muy reducidos y concretos como un colegio, un piso o un barrio."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cuáles son los cuatro puntos cardinales que utilizamos para orientarnos?",
+    "opciones": [
+      "Ecuador, Polos, Eje y Órbita",
+      "Norte, Sur, Este y Oeste",
+      "Geosfera, Hidrosfera, Atmósfera y Luna",
+      "Primavera, Verano, Otoño e Invierno"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los puntos cardinales de orientación espacial básica son Norte (N), Sur (S), Este (E) y Oeste (O)."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Por qué punto cardinal sale el Sol cada mañana en su recorrido aparente por el cielo?",
+    "opciones": [
+      "Por el Norte",
+      "Por el Sur",
+      "Por el Este",
+      "Por el Oeste"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El Sol amanece por el punto cardinal Este y se oculta al anochecer por el Oeste."
+  },
+  {
+    "id": 43,
+    "pregunta": "Si extiendes tus brazos en cruz y señalas con el brazo derecho por donde sale el Sol (Este), ¿qué punto cardinal queda enfrente de ti?",
+    "opciones": [
+      "El Sur",
+      "El Oeste",
+      "El Este",
+      "El Norte"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Apuntando con el brazo derecho al Este y el izquierdo al Oeste, el Norte queda situado justo frente a ti."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Hacia qué punto cardinal están orientadas las laderas llamadas 'umbrías'?",
+    "opciones": [
+      "Hacia el Sur",
+      "Hacia el Norte",
+      "Hacia el Este",
+      "Hacia el Oeste"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las umbrías son laderas orientadas al Norte que reciben poca radiación solar directa, siendo húmedas y frescas."
+  },
+  {
+    "id": 45,
+    "pregunta": "¿Qué características presentan las laderas de montaña conocidas como 'solanas'?",
+    "opciones": [
+      "Están orientadas al Norte y tienen mucha vegetación",
+      "Tienen mucha nieve todo el año",
+      "Están orientadas al Sur, reciben mucha luz solar y su vegetación es escasa",
+      "Permanecen en oscuridad total durante meses"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las solanas miran hacia el Sur, reciben luz solar directa de lleno y por ello sufren mayor sequedad."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué instrumento de orientación contiene una aguja imantada que señala siempre al Norte?",
+    "opciones": [
+      "El termómetro",
+      "La brújula",
+      "El GPS",
+      "El telescopio"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La brújula cuenta con una aguja magnética atraída hacia el Norte magnético de la Tierra."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cómo se debe colocar la brújula para que su aguja funcione de forma precisa?",
+    "opciones": [
+      "En posición totalmente vertical colgada del cuello",
+      "En un lugar inclinado hacia el Sur",
+      "Dentro de una caja metálica hermética",
+      "En una superficie bien llana o sobre la palma horizontal de la mano"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Para que la aguja imantada se mueva libremente, la brújula debe posicionarse de manera plana e inalterada."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué significan las siglas del sistema de orientación por satélite denominado GPS?",
+    "opciones": [
+      "Geografía Para Satélites",
+      "Guía Principal del Sol",
+      "Sistema de Posicionamiento Global",
+      "Grafía Plana del Suelo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "GPS corresponde a las siglas de Sistema de Posicionamiento Global (Global Positioning System)."
+  },
+  {
+    "id": 49,
+    "pregunta": "Además de darnos oxígeno, ¿de qué nos protege la capa atmosférica de la Tierra?",
+    "opciones": [
+      "De la gravedad terrestre",
+      "De los terremotos en la geosfera",
+      "De las mareas oceánicas",
+      "De los rayos solares perjudiciales"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La atmósfera actúa como filtro protector absorbiendo las radiaciones solares dañinas para los seres vivos."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué acción contribuye a mantener el aire limpio y cuidar la atmósfera según las recomendaciones del tema?",
+    "opciones": [
+      "Aumentar el uso de vehículos individuales para distancias cortas",
+      "Utilizar transportes colectivos y plantar árboles",
+      "Quemar plásticos al aire libre",
+      "Expulsar humo de fábricas sin filtros"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El transporte público colectivizado y la repoblación forestal reducen las emisiones contaminantes en el aire."
+  }
+]
+```
