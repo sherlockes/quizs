@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué dos características distinguen a las personas de los demás animales mamíferos?",
+    "opciones": [
+      "Tienen cuatro extremidades y pelo.",
+      "Pueden pensar y hablar para comunicarse.",
+      "Pueden nadar y volar.",
+      "Son ovíparos y se alimentan de plantas."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto explica que las personas somos mamíferos, pero nos distinguimos porque podemos pensar y hablar para comunicarnos."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Por qué decimos que el cuerpo humano es simétrico?",
+    "opciones": [
+      "Porque la parte superior es igual a la inferior.",
+      "Porque cada persona tiene una estatura diferente.",
+      "Porque se organiza en dos mitades más o menos parecidas.",
+      "Porque sus huesos no se pueden doblar."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El cuerpo humano es simétrico porque se organiza en dos mitades más o menos parecidas, como tener dos brazos, dos piernas o dos orejas."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cuál de las siguientes es una característica física que nos hace únicos y diferentes de los demás?",
+    "opciones": [
+      "Tener dos ojos y dos orejas.",
+      "Respirar oxígeno del aire.",
+      "Tener esqueleto y músculos.",
+      "La constitución corporal, como ser alto o bajo."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Aunque somos iguales en estructura, la constitución corporal (delgados, gruesos, altos, bajos) o el color de ojos nos hacen únicos y diferentes."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿En qué documento firmado en 1948 se afirma que todas las personas deben ser tratadas por igual?",
+    "opciones": [
+      "En la Declaración Universal de los Derechos Humanos.",
+      "En el Código Internacional de la Salud.",
+      "En el Manual de Educación Física.",
+      "En la Constitución de los Seres Vivos."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En 1948 se firmó la Declaración Universal de los Derechos Humanos, donde se afirma que todas las personas y niños deben recibir un trato igual."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuáles son las tres partes principales en las que se divide el cuerpo humano?",
+    "opciones": [
+      "Ojos, nariz y boca.",
+      "Cabeza, tronco y extremidades.",
+      "Huesos, músculos y articulaciones.",
+      "Tórax, abdomen y pelvis."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cuerpo humano se divide fundamentalmente en tres partes: cabeza, tronco y extremidades."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué dos regiones forman la parte del cuerpo llamada tronco?",
+    "opciones": [
+      "Brazo y antebrazo.",
+      "Frente y cara.",
+      "Tórax y abdomen.",
+      "Muslo y pierna."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El tronco se compone del tórax en la parte superior y el abdomen en la parte inferior."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿A qué parte del cuerpo pertenecen el muslo, la pierna y el pie?",
+    "opciones": [
+      "Al tronco.",
+      "A la cabeza.",
+      "A las extremidades superiores.",
+      "A las extremidades inferiores."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las extremidades inferiores están formadas por el muslo, la pierna y el pie."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Cuáles son las partes que forman las extremidades superiores?",
+    "opciones": [
+      "Brazo, antebrazo y mano.",
+      "Tórax, abdomen y espalda.",
+      "Muslo, pierna y pie.",
+      "Frente, cara y barbilla."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las extremidades superiores comprenden el brazo, el antebrazo y la mano."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Durante qué etapa de la vida transcurre la infancia?",
+    "opciones": [
+      "De los 11 a los 16 años.",
+      "De los 0 a los 11 años.",
+      "De los 16 a los 25 años.",
+      "De los 25 a los 70 años."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La infancia abarca desde el nacimiento (0 años) hasta los 11 años de edad."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿A qué edad aproximada comienzan a sustituirse los dientes de leche por los definitivos?",
+    "opciones": [
+      "Entre los 1 y 2 años.",
+      "A partir de los 16 años.",
+      "Entre los 5 y 6 años.",
+      "A partir de los 25 años."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los primeros dientes de leche aparecen antes del primer año y se empiezan a sustituir por los definitivos entre los 5 y 6 años."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿En qué etapa de la vida se producen grandes cambios físicos como la aparición de las características sexuales secundarias?",
+    "opciones": [
+      "En la vejez.",
+      "En la infancia.",
+      "En la edad adulta.",
+      "En la adolescencia."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Durante la adolescencia (11 a 16 años) se producen grandes cambios físicos, como el desarrollo de características sexuales y cambios de carácter."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué caracteriza a la etapa de la juventud (16 a 25 años)?",
+    "opciones": [
+      "El cuerpo acaba de desarrollarse y adquiere mayor fuerza física.",
+      "Se empiezan a perder los dientes de leche.",
+      "Disminuye notablemente la agilidad y la fuerza física.",
+      "Se aprende a andar y a comer solo por primera vez."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En la juventud el cuerpo termina de desarrollarse, adquiere más fuerza física y se acaba de definir la personalidad."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué ocurre con el cuerpo durante la edad adulta (25 a 70 años)?",
+    "opciones": [
+      "Aparecen los primeros dientes de leche.",
+      "El cuerpo está totalmente formado y aumenta la responsabilidad laboral y familiar.",
+      "Se acelera el crecimiento rápido de los huesos.",
+      "Disminuyen las capacidades mentales de forma brusca e inmediata."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la edad adulta el cuerpo está totalmente formado, las parejas se estabilizan y aumentan las responsabilidades personales y laborales."
+  },
+  {
+    "id": 14,
+    "pregunta": "En la vejez (a partir de los 70 años), ¿qué hábitos ayudan a las personas mayores a mantenerse activas?",
+    "opciones": [
+      "Comer alimentos muy calientes y no dormir.",
+      "Evitar cualquier tipo de actividad física o ejercicio.",
+      "Mantener hábitos saludables y contar con avances de la medicina.",
+      "Ducharse solo una vez al mes."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En la vejez disminuye la fuerza y agilidad, pero los hábitos saludables y la medicina permiten a las personas mayores mantenerse activas."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Cuáles son las tres funciones vitales que realizan los seres humanos?",
+    "opciones": [
+      "Pensar, hablar y correr.",
+      "Ver, oír y tocar.",
+      "Caminar, trabajar y estudiar.",
+      "Nutrición, reproducción y relación."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las tres funciones vitales que realizan todos los seres vivos y los seres humanos son nutrición, reproducción y relación."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿En qué consiste la función de nutrición?",
+    "opciones": [
+      "En un conjunto de procesos para alimentarse, obtener energía y asimilar lo necesario para vivir.",
+      "En tener hijos iguales o parecidos a los progenitores.",
+      "En captar lo que sucede alrededor y reaccionar ante ello.",
+      "En mover únicamente los huesos y los músculos."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La nutrición es el conjunto de procesos mediante los cuales nos alimentamos, obtenemos energía y asimilamos sustancias para desarrollarnos y vivir."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué cuatro aparatos trabajan coordinados para realizar la función de nutrición?",
+    "opciones": [
+      "Aparato locomotor, sistema nervioso, vista y oído.",
+      "Aparato digestivo, respiratorio, circulatorio y excretor.",
+      "Aparato reproductor, esqueleto, músculos y piel.",
+      "Aparato bucal, nasal, auditivo y óptico."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los cuatro aparatos encargados de la nutrición son el digestivo, el respiratorio, el circulatorio y el excretor."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cuál es la función principal del aparato digestivo?",
+    "opciones": [
+      "Obtener oxígeno del aire y expulsar dióxido de carbono.",
+      "Limpiar las sustancias de desecho de la sangre.",
+      "Transformar la comida en sustancias que el cuerpo pueda asimilar.",
+      "Llevar información sobre las imágenes al cerebro."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El aparato digestivo transforma los alimentos en sustancias o nutrientes que el cuerpo puede asimilar."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿De qué se encarga el aparato respiratorio en la función de nutrición?",
+    "opciones": [
+      "De expulsar el sudor por la piel.",
+      "De digerir los alimentos en el estómago.",
+      "De mover las piernas al hacer deporte.",
+      "De obtener oxígeno del aire y expulsar dióxido de carbono."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El aparato respiratorio se encarga de captar el oxígeno que necesitamos del aire y eliminar el dióxido de carbono."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Qué aparato transporta el oxígeno y los nutrientes y recoge las sustancias de desecho por todo el cuerpo?",
+    "opciones": [
+      "El aparato circulatorio.",
+      "El aparato excretor.",
+      "El aparato locomotor.",
+      "El sistema nervioso."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El aparato circulatorio es el encargado de transportar el oxígeno y los nutrientes y recoger los desechos a través de la sangre."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuál es la función del aparato excretor?",
+    "opciones": [
+      "Fabricar el alimento mediante la fotosíntesis.",
+      "Limpiar de la sangre las sustancias de desecho y eliminarlas.",
+      "Transportar la información de los ojos al cerebro.",
+      "Permitir que el cuerpo crezca de tamaño."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El aparato excretor limpia la sangre filtrando las sustancias de desecho para eliminarlas del organismo."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Por qué decimos que la reproducción humana es de tipo sexual?",
+    "opciones": [
+      "Porque solo interviene el aparato reproductor femenino.",
+      "Porque no se necesitan descendientes.",
+      "Porque intervienen los aparatos reproductores masculino y femenino.",
+      "Porque la realizan los cuatro aparatos de la nutrición."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Nuestra reproducción es sexual porque requiere la intervención combinada de los aparatos reproductores masculino y femenino."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿En qué consiste la función de relación?",
+    "opciones": [
+      "En ingerir alimentos para obtener energía.",
+      "En tener descendientes iguales a los padres.",
+      "En eliminar dióxido de carbono por los pulmones.",
+      "En captar lo que sucede a nuestro alrededor y reaccionar adecuadamente."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La función de relación nos permite percibir la información del entorno y dar una respuesta adecuada."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué elementos intervienen en la función de relación?",
+    "opciones": [
+      "Los órganos de los sentidos, el sistema nervioso y el aparato locomotor.",
+      "El aparato digestivo, el hígado y el estómago.",
+      "Las etapas de la infancia, juventud y vejez.",
+      "Los dientes de leche y los dientes definitivos."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En la función de relación participan los sentidos (captan), el sistema nervioso (interpreta y ordena) y el aparato locomotor (ejecuta)."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cuál es el papel del sistema nervioso en la función de relación?",
+    "opciones": [
+      "Transformar los alimentos en nutrientes.",
+      "Llevar la información al cerebro, interpretarla y ordenar la respuesta.",
+      "Mover los huesos de forma mecánica sin orden previa.",
+      "Expulsar los desechos de la digestión."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los nervios transmiten la información captada al cerebro, el cual la procesa y envía la orden correspondiente."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Qué elementos forman el aparato locomotor?",
+    "opciones": [
+      "La sangre, las arterias y el corazón.",
+      "Los ojos, las orejas y la piel.",
+      "El esqueleto, las articulaciones y los músculos.",
+      "Los pulmones, la tráquea y el estómago."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El aparato locomotor está constituido por el esqueleto (huesos), las articulaciones y la musculatura."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cómo se definen los huesos en el cuerpo humano?",
+    "opciones": [
+      "Son las partes blandas y elásticas del cuerpo.",
+      "Son órganos que captan la luz del exterior.",
+      "Son cavidades por donde entra el aire al respirar.",
+      "Son las partes rígidas y duras del cuerpo."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los huesos son los componentes rígidos y duros que sostienen y forman el esqueleto."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cómo se clasifican las articulaciones según su movimiento?",
+    "opciones": [
+      "Móviles, semimóviles y fijas.",
+      "Largas, cortas y blandas.",
+      "Elásticas, rígidas y transparentes.",
+      "Superiores, inferiores y centrales."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Según su capacidad de movimiento, las articulaciones pueden ser móviles (como el tobillo), semimóviles (vértebras) o fijas (cráneo)."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cuál de las siguientes articulaciones es un ejemplo de articulación fija?",
+    "opciones": [
+      "La rodilla.",
+      "Los huesos del cráneo.",
+      "El codo.",
+      "El tobillo."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los huesos del cráneo están unidos por articulaciones fijas que no permiten movimiento."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿A qué parte del esqueleto pertenecen el fémur, la tibia y el peroné?",
+    "opciones": [
+      "A la cabeza.",
+      "Al tronco.",
+      "A las extremidades inferiores.",
+      "A las extremidades superiores."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El fémur, la tibia y el peroné son huesos situados en las extremidades inferiores."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cuáles de los siguientes huesos se encuentran en el tronco?",
+    "opciones": [
+      "Cráneo y mandíbula.",
+      "Húmero y radio.",
+      "Fémur y peroné.",
+      "Esternón, costillas y columna vertebral."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En el tronco se localizan huesos como la columna vertebral, las costillas, el esternón, la clavícula y la pelvis."
+  },
+  {
+    "id": 32,
+    "pregunta": "¿Qué son los músculos?",
+    "opciones": [
+      "Partes blandas y elásticas que permiten mover el esqueleto.",
+      "Estructuras duras y rígidas que no se flexionan.",
+      "Nervios que conducen la luz hacia el cerebro.",
+      "Capas blancas que cubren el ojo."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los músculos son las partes blandas y elásticas del cuerpo que se contraen y estiran para mover los huesos."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cómo se llama el conjunto de todos los músculos del cuerpo humano?",
+    "opciones": [
+      "Esqueleto.",
+      "Musculatura.",
+      "Sistema nervioso.",
+      "Aparato excretor."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El conjunto de todos los músculos del organismo recibe el nombre de musculatura."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cuáles son dos músculos situados en el tronco?",
+    "opciones": [
+      "Bíceps y tríceps.",
+      "Gemelos y cuádriceps.",
+      "Pectoral y abdominales.",
+      "Cráneo y mandíbula."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los pectorales, abdominales y el dorsal son músculos situados en la zona del tronco."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿En qué parte del cuerpo se localizan los músculos bíceps y tríceps?",
+    "opciones": [
+      "En la pierna.",
+      "En la cabeza.",
+      "En el abdomen.",
+      "En las extremidades superiores (brazo)."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El bíceps y el tríceps son músculos situados en los brazos, pertenecientes a las extremidades superiores."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuáles son los cinco sentidos que tenemos los seres humanos?",
+    "opciones": [
+      "Vista, oído, olfato, gusto y tacto.",
+      "Nutrición, relación, reproducción, crecimiento y movimiento.",
+      "Cabeza, tronco, brazos, piernas y pies.",
+      "Córnea, retina, iris, pupila y cristalino."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los cinco sentidos del ser humano son la vista, el oído, el olfato, el gusto y el tacto."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Qué función cumple el cristalino en el ojo?",
+    "opciones": [
+      "Es la parte coloreada que regula la entrada de luz.",
+      "Funciona como una lupa para enfocar las imágenes en la retina.",
+      "Es la capa blanca externa que protege el ojo.",
+      "Lleva las señales nerviosas desde la nariz al cerebro."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El cristalino actúa como una lente o lupa para que las imágenes lleguen bien enfocadas a la retina."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Cómo se llama la abertura del centro del iris que se ve como un círculo negro?",
+    "opciones": [
+      "Esclerótica.",
+      "Córnea.",
+      "Pupila.",
+      "Retina."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La pupila es la abertura en el centro del iris a través de la cual entra la luz al ojo."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Qué nervio se encarga de transportar las señales visuales desde el ojo hasta el cerebro?",
+    "opciones": [
+      "El nervio auditivo.",
+      "El nervio olfativo.",
+      "El nervio gustativo.",
+      "El nervio óptico."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El nervio óptico es la vía que transmite la información captada por la retina directamente al cerebro."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué cualidad del sonido nos permite diferenciar quién o qué lo produce (por ejemplo, reconocer una flauta de un piano)?",
+    "opciones": [
+      "El timbre.",
+      "La intensidad.",
+      "La duración.",
+      "El tono."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El timbre es la cualidad sonora que nos permite diferenciar un sonido de otro, como voces o instrumentos distintos."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Qué membrana del oído separa el oído externo del oído medio?",
+    "opciones": [
+      "El caracol.",
+      "El tímpano.",
+      "La pituitaria.",
+      "El pabellón auditivo."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El tímpano es la membrana elástica que marca el límite entre el conducto auditivo externo y el oído medio."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿En qué parte de la nariz se capta y transmite la información que permite percibir los olores?",
+    "opciones": [
+      "En las papilas gustativas.",
+      "En el conducto auditivo.",
+      "En la pituitaria amarilla.",
+      "En la córnea."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La pituitaria amarilla, situada en la parte superior del interior de la nariz, es la zona sensible que capta las sustancias olorosas."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Dónde se encuentran las papilas gustativas responsables de detectar los sabores?",
+    "opciones": [
+      "En la piel del rostro.",
+      "En el tímpano del oído.",
+      "En la retina del ojo.",
+      "En la lengua."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las papilas gustativas son pequeñas rugosidades situadas sobre la lengua que identifican los sabores."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Por qué órgano está repartido el sentido del tacto?",
+    "opciones": [
+      "Por toda la piel.",
+      "Únicamente por las palmas de las manos.",
+      "Por el cerebro y los nervios.",
+      "Por los músculos y las articulaciones."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "A diferencia de otros sentidos, el tacto está distribuido por la piel de todo el cuerpo humano."
+  },
+  {
+    "id": 45,
+    "pregunta": "Para cuidar el sentido de la vista, ¿a qué distancia mínima aproximada debemos situarnos al ver la televisión?",
+    "opciones": [
+      "A unos 10 centímetros.",
+      "A unos tres metros.",
+      "A diez metros.",
+      "A medio metro."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Para proteger la vista, las recomendaciones del texto señalan colocar la televisión a unos tres metros de distancia."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Qué hábito es fundamental para cuidar la piel y mantenerla limpia todos los días?",
+    "opciones": [
+      "Echarse colonia fuerte sin lavarse.",
+      "Tomar el sol muchas horas al mediodía.",
+      "Ducharse diariamente.",
+      "Evitar lavar las heridas pequeñas."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Ducharse todos los días es una pauta de higiene básica para eliminar impurezas y cuidar la piel."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué recomendación debemos seguir para proteger nuestros oídos después de ducharnos o bañarnos?",
+    "opciones": [
+      "Introducir bastoncillos u objetos puntiagudos.",
+      "Escuchar música a volumen muy alto.",
+      "Dejar el agua dentro para refrescar el caracol.",
+      "Secar bien los oídos para que no quede agua en su interior."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Debemos secar bien las orejas y oídos tras el baño y evitar introducir cualquier objeto en ellos."
+  },
+  {
+    "id": 48,
+    "pregunta": "¿Qué precaución debemos tomar para evitar quemarnos la lengua?",
+    "opciones": [
+      "No comer ni beber alimentos extremadamente calientes.",
+      "Beber siempre agua helada con hielo.",
+      "Masticar solo alimentos ácidos como el limón.",
+      "No cepillarse nunca los dientes."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Evitar ingerir comida o bebida hirviendo o muy caliente previene quemaduras en la lengua y daños en las papilas gustativas."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Qué beneficio aporta la práctica de disciplinas saludables como el yoga al aparato locomotor?",
+    "opciones": [
+      "Aumenta la fragilidad de los huesos.",
+      "Fortalece la espalda, tonifica la musculatura y favorece la flexibilidad.",
+      "Impide el movimiento de las articulaciones móviles.",
+      "Daña la columna vertebral de forma permanente."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ejercicio y la práctica de yoga benefician la salud tonificando los músculos, fortaleciendo la espalda y mejorando la flexibilidad y postura."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Qué conducta es adecuada para sonarse la nariz sin dañar las fosas nasales?",
+    "opciones": [
+      "Meterse los dedos en la nariz con fuerza.",
+      "Usar objetos rígidos dentro de los orificios.",
+      "Suavizar los golpes y sonarse suavemente con un pañuelo.",
+      "Respirar polvo u olores tóxicos durante mucho tiempo."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Para cuidar el aparato respiratorio y el sentido del olfato se debe sonarse suavemente con un pañuelo limpio y evitar hurgarse."
+  }
+]
