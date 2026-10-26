@@ -70,5 +70,9 @@
   {
     "titulo": "5º Ingles - Tema 5",
     "archivo": "cuestionarios/ian-5-ingles-t5.json"
+  },
+  {
+    "titulo": "6º Francés - Tema 1",
+    "archivo": "cuestionarios/ian-6-frances-t1.json"
   }
 ]

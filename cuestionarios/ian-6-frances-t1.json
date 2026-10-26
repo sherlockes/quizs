@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cómo se dice 'la puerta' en francés según el vocabulario de la Unidad 1?",
+    "opciones": [
+      "La fenêtre",
+      "La porte",
+      "Le mur",
+      "Le toit"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En francés, 'la puerta' se traduce como 'la porte'."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál de las siguientes palabras significa 'el balcón'?",
+    "opciones": [
+      "Le balcon",
+      "L'escalier",
+      "Le jardin",
+      "Le salon"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Le balcon' es la palabra francesa transparente para 'el balcón'."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué estancia de la casa corresponde a 'la cocina' en francés?",
+    "opciones": [
+      "La chambre",
+      "La salle de bains",
+      "La cuisine",
+      "Le salon"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'La cuisine' es el término en francés para referirse a la cocina."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cómo se llama el lugar de la casa donde dormimos?",
+    "opciones": [
+      "Les toilettes",
+      "Le jardin",
+      "La cuisine",
+      "La chambre"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'La chambre' significa el dormitorio o habitación donde se duerme."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuál es la traducción correcta de 'el tejado'?",
+    "opciones": [
+      "Le toit",
+      "Le mur",
+      "L'escalier",
+      "La fenêtre"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Le toit' hace referencia al tejado o techo exterior de una casa."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué palabra se utiliza para 'el cuarto de baño'?",
+    "opciones": [
+      "Le salon",
+      "La salle de bains",
+      "La chambre",
+      "La cuisine"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'La salle de bains' es la expresión francesa para el cuarto de baño."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cómo se dice 'el jardín' en francés?",
+    "opciones": [
+      "Le mur",
+      "Le balcon",
+      "Le jardin",
+      "L'escalier"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Le jardin' es la palabra masculina para decir 'el jardín'."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué significa la palabra 'l'escalier'?",
+    "opciones": [
+      "El pasillo",
+      "La ventana",
+      "El ascensor",
+      "La escalera"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'L'escalier' es un sustantivo masculino que significa 'la escalera'."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cómo se dice 'la pared' o 'el muro' en francés?",
+    "opciones": [
+      "Le mur",
+      "Le toit",
+      "La porte",
+      "La fenêtre"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Le mur' es la palabra para designar la pared o el muro de un edificio."
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuál es el término en francés para 'la ventana'?",
+    "opciones": [
+      "La porte",
+      "La fenêtre",
+      "Le balcon",
+      "Le mur"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'La fenêtre' es el sustantivo femenino que significa 'la ventana'."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué mueble de la habitación se llama 'le lit'?",
+    "opciones": [
+      "El armario",
+      "El escritorio",
+      "La cama",
+      "La mesilla"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Le lit' es la palabra francesa para 'la cama'."
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cómo se dice 'la mesilla de noche' en francés?",
+    "opciones": [
+      "La table",
+      "La chaise",
+      "L'étagère",
+      "La table de chevet"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'La table de chevet' es la expresión exacta para 'la mesilla de noche'."
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Qué mueble utilizas para guardar la ropa en el dormitorio?",
+    "opciones": [
+      "L'armoire",
+      "Le canapé",
+      "Le tapis",
+      "Le bureau"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'L'armoire' (femenino en francés) es el armario donde se guarda la ropa."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cómo se llama en francés 'el sofá' que está en el salón?",
+    "opciones": [
+      "Le fauteuil",
+      "Le canapé",
+      "La chaise",
+      "Le lit"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Le canapé' es el término para 'el sofá' en el salón."
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Cuál es la diferencia entre 'le canapé' y 'le fauteuil'?",
+    "opciones": [
+      "Le canapé es una mesa y le fauteuil una silla",
+      "Le fauteuil es un armario y le canapé una cama",
+      "Le canapé es un sofá y le fauteuil es un sillón",
+      "Son exactamente la misma palabra"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Le canapé' hace referencia al sofá (varias plazas) y 'le fauteuil' al sillón (una plaza)."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cómo se dice 'la estantería' en francés?",
+    "opciones": [
+      "La table",
+      "Le bureau",
+      "Le miroir",
+      "L'étagère"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'L'étagère' es el sustantivo femenino para 'la estantería'."
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Qué elemento de la cocina sirve para mantener los alimentos fríos?",
+    "opciones": [
+      "Le frigo",
+      "Le lavabo",
+      "La douche",
+      "Le cadre photo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Le frigo' es la forma abreviada y común en francés para el frigorífico."
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Cómo se dice 'el escritorio' donde estudias y trabajas?",
+    "opciones": [
+      "La table de chevet",
+      "Le bureau",
+      "Le fauteuil",
+      "Le tapis"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Le bureau' significa tanto 'el escritorio' (mueble) como el despacho."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Qué objeto decorativo sirve para mirarse y ver el reflejo?",
+    "opciones": [
+      "Le coussin",
+      "Le rideau",
+      "Le miroir",
+      "Le cadre photo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Le miroir' es la palabra francesa para 'el espejo'."
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cómo se dice 'la cortina' en francés?",
+    "opciones": [
+      "Le tapis",
+      "La lampe",
+      "Le coussin",
+      "Le rideau"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Le rideau' es el sustantivo masculino que significa 'la cortina'."
+  },
+  {
+    "id": 21,
+    "pregunta": "Si un objeto está 'sur la table', ¿dónde se encuentra?",
+    "opciones": [
+      "Encima de la mesa",
+      "Debajo de la mesa",
+      "Al lado de la mesa",
+      "Detrás de la mesa"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La preposición 'sur' significa 'sobre' o 'encima de'."
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué preposición francesa se utiliza para indicar que algo está 'debajo'?",
+    "opciones": [
+      "Sur",
+      "Sous",
+      "Devant",
+      "Derrière"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Sous' significa 'debajo' o 'bajo' en francés."
+  },
+  {
+    "id": 23,
+    "pregunta": "¿Cómo se dice 'al lado de' en francés?",
+    "opciones": [
+      "Derrière",
+      "Devant",
+      "À côté de",
+      "Sous"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'À côté (de)' es la locución preposicional que significa 'al lado (de)'."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Qué significa la preposición 'devant'?",
+    "opciones": [
+      "Detrás",
+      "Encima",
+      "Debajo",
+      "Delante de"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Devant' se traduce en español como 'delante de'."
+  },
+  {
+    "id": 25,
+    "pregunta": "¿Cuál es lo contrario de la preposición 'devant' (delante)?",
+    "opciones": [
+      "Derrière",
+      "Sur",
+      "Sous",
+      "À côté"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Derrière' significa 'detrás', siendo el antónimo de 'devant'."
+  },
+  {
+    "id": 26,
+    "pregunta": "En la frase 'Le tapis est sous le bureau', ¿dónde está la alfombra?",
+    "opciones": [
+      "Encima del escritorio",
+      "Debajo del escritorio",
+      "Detrás del escritorio",
+      "Al lado del escritorio"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Como 'sous' significa 'debajo', la alfombra está debajo del escritorio."
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Cómo se dice 'un cojín' en francés?",
+    "opciones": [
+      "Un tapis",
+      "Un rideau",
+      "Un coussin",
+      "Un cadre photo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Un coussin' es la palabra para referirse a un cojín."
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Cómo se traduce 'la lámpara' en francés?",
+    "opciones": [
+      "Le rideau",
+      "Le miroir",
+      "Le cadre photo",
+      "La lampe"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'La lampe' es un sustantivo femenino transparente que significa 'la lámpara'."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cuál es la terminación de la primera persona del plural (nous) en los verbos regulares en -er como 'parler'?",
+    "opciones": [
+      "-ons",
+      "-ez",
+      "-ent",
+      "-es"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La forma de 'nous' en los verbos regulares en -er termina en '-ons' (nous parlons, nous habitons)."
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Cómo se conjuga el verbo 'habiter' con el pronombre 'tu'?",
+    "opciones": [
+      "Tu habite",
+      "Tu habites",
+      "Tu habitons",
+      "Tu habitez"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Con el pronombre 'tu', los verbos regulares en -er añaden la terminación '-es' (tu habites)."
+  },
+  {
+    "id": 31,
+    "pregunta": "En francés, ¿a qué pronombre equivale frecuentemente la palabra 'on' en el lenguaje cotidiano?",
+    "opciones": [
+      "Je",
+      "Tu",
+      "Nous",
+      "Vous"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El pronombre 'on' equivale en significado a 'nous' (nosotros/as), aunque se conjuga como il/elle."
+  },
+  {
+    "id": 32,
+    "pregunta": "Si queremos decir 'Nosotros vivimos en el número 4' usando 'on', ¿cuál es la frase correcta?",
+    "opciones": [
+      "On habitons au numéro 4",
+      "On habitez au numéro 4",
+      "On habitent au numéro 4",
+      "On habite au numéro 4"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El pronombre 'on' se conjuga como la 3ª persona del singular (il/elle), por lo que se dice 'on habite'."
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Cómo se dice correctamente 'Vosotros habláis' o 'Ustedes hablan' en francés?",
+    "opciones": [
+      "Vous parlez",
+      "Vous parlons",
+      "Vous parles",
+      "Vous parlent"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La terminación verbal para 'vous' en el presente de verbos en -er es '-ez' (vous parlez)."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cuál es la forma correcta de decir 'Ellos o ellas hablan' (ils / elles)?",
+    "opciones": [
+      "Ils parlons",
+      "Ils parlent",
+      "Ils parlez",
+      "Ils parles"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La terminación para la 3ª persona del plural (ils/elles) es '-ent' (ils/elles parlent)."
+  },
+  {
+    "id": 35,
+    "pregunta": "¿Cómo se pregunta '¿Dónde vivís?' o '¿Dónde viven ustedes?' en francés?",
+    "opciones": [
+      "Tu habites où ?",
+      "On habite où ?",
+      "Vous habitez où ?",
+      "Ils habitent où ?"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Vous habitez où ?' es la pregunta estándar aprendida en la Lección 3 para preguntar por la residencia."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es la forma verbal correcta para decir 'Yo hablo' (je)?",
+    "opciones": [
+      "Je parles",
+      "Je parlons",
+      "Je parlez",
+      "Je parle"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Con el pronombre 'je', los verbos regulares en -er terminan en '-e' (je parle)."
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Cómo se llama en francés el dispositivo portátil con pantalla táctil como 'la tableta'?",
+    "opciones": [
+      "Une tablette",
+      "Un ordinateur",
+      "Une souris",
+      "Un clavier"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Une tablette' es la palabra femenina para referirse a la tableta."
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Qué palabra se utiliza para 'el ordenador' o 'la computadora'?",
+    "opciones": [
+      "Un écran",
+      "Un ordinateur",
+      "Un clavier",
+      "Une souris"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Un ordinateur' es el término en francés para el ordenador."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cómo se dice 'la pantalla' de un ordenador o tableta?",
+    "opciones": [
+      "Le clavier",
+      "La souris",
+      "L'écran",
+      "Le bureau"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'L'écran' (masculino) es la palabra para designar la pantalla."
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Qué accesorio del ordenador se utiliza para escribir letras y números?",
+    "opciones": [
+      "La souris",
+      "L'écran",
+      "La tablette",
+      "Le clavier"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "'Le clavier' es el teclado del ordenador."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cómo se dice 'el ratón' del ordenador en francés?",
+    "opciones": [
+      "Une souris",
+      "Un clavier",
+      "Un écran",
+      "Un ordinateur"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "'Une souris' es la palabra femenina que designa el ratón del ordenador."
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Qué verbo francés significa 'hacer clic' con el ratón?",
+    "opciones": [
+      "Regarder",
+      "Cliquer",
+      "Ecouter",
+      "Dessiner"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "'Cliquer' es el verbo utilizado para hacer clic en el ámbito informático."
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Qué verbo se utiliza en aplicaciones digitales para 'guardar' o 'grabar' el trabajo?",
+    "opciones": [
+      "Parler",
+      "Répéter",
+      "Enregistrer",
+      "Copier"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "'Enregistrer' es el verbo en francés para guardar o grabar un archivo digital."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Qué sonido vocálico nasal se practica en la frase 'Il y a un ballon sur le balcon de mon salon !'?",
+    "opciones": [
+      "El sonido [a]",
+      "El sonido [i]",
+      "El sonido [u]",
+      "El sonido [ɔ̃] (como en 'c'est bon!')"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La lección de fonética de la Unidad 1 trabaja el sonido nasal [ɔ̃] presente en 'ballon', 'balcon', 'salon', 'bon'."
+  },
+  {
+    "id": 45,
+    "pregunta": "Según el texto 'Une maison en A', ¿cuál es la forma geométrica de esta casa ecológica?",
+    "opciones": [
+      "Forma de triángulo",
+      "Forma de cuadrado",
+      "Forma de círculo",
+      "Forma de rectángulo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El texto explica que la 'maison en A' es una 'maison en forme de triangle'."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿De qué material principal suele estar construida la 'maison en A' por ser un material ecológico?",
+    "opciones": [
+      "De plástico",
+      "De madera (bois)",
+      "De cristal",
+      "De metal"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El texto indica: 'Elle est généralement en bois, un matériau écologique'."
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Qué elemento ecológico se puede instalar en el tejado de la 'maison en A' según la lectura?",
+    "opciones": [
+      "Un ascenseur",
+      "Une grande piscine",
+      "Des panneaux solaires",
+      "Un terrain de football"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El texto señala que el tejado permite instalar 'panneaux solaires' (paneles solares) y un recuperador de agua."
+  },
+  {
+    "id": 48,
+    "pregunta": "Según la lectura 'Français des villes, Français des champs', ¿qué porcentaje de franceses considera la vida en el campo como su modo de vida ideal?",
+    "opciones": [
+      "50%",
+      "65%",
+      "75%",
+      "81%"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El texto especifica expresamente que 'Pour 81% des Français, vivre à la campagne est le mode de vie idéal'."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Cuál es el antónimo (palabra de sentido contrario) de 'cher' (caro) según la lección de vocabulario?",
+    "opciones": [
+      "Économique / bon marché",
+      "Lent",
+      "Compliqué",
+      "Polluant"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En el texto y ejercicios de opuestos de la Unidad 1, el contrario de 'cher' (caro) es 'bon marché' o 'économique'."
+  },
+  {
+    "id": 50,
+    "pregunta": "¿Cuál es el opuesto de 'solide' (sólido/resistente) en la lectura?",
+    "opciones": [
+      "Simple",
+      "Fragile",
+      "Rapide",
+      "Écologique"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En el ejercicio de antónimos del Doc 1, el contrario de 'solide' es 'fragile' (frágil)."
+  }
+]
